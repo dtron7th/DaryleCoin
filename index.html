@@ -5868,6 +5868,403 @@
             background: rgba(26, 26, 26, 0.04);
         }
 
+        /* ==========================================================================
+           DARYLE COIN WALLET / CARD CUSTOMIZER
+           ========================================================================== */
+        .dc-page { display: none; }
+        .dc-page.active { display: block; }
+
+        .dc-wallet-shell {
+            display: flex;
+            min-height: 100%;
+            min-height: 600px;
+            background: linear-gradient(135deg, #0d2429 0%, #132f35 40%, #09181c 100%);
+            color: #fff;
+            font-family: 'Quantico', sans-serif;
+            border-radius: 0 0 16px 16px;
+            overflow: hidden;
+        }
+
+        .dc-wallet-sidebar {
+            width: 210px;
+            flex-shrink: 0;
+            background: rgba(0, 0, 0, 0.22);
+            border-right: 1px solid rgba(255, 255, 255, 0.06);
+            padding: 28px 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 36px;
+        }
+
+        .dc-wallet-logo {
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #4ecdc4;
+            text-transform: uppercase;
+        }
+
+        .dc-wallet-sidebar nav {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .dc-wallet-sidebar nav a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 14px;
+            border-radius: 10px;
+            color: rgba(255, 255, 255, 0.65);
+            text-decoration: none;
+            font-size: 13px;
+            transition: all .2s ease;
+        }
+
+        .dc-wallet-sidebar nav a:hover,
+        .dc-wallet-sidebar nav a.active {
+            background: rgba(255, 255, 255, 0.08);
+            color: #fff;
+        }
+
+        .dc-wallet-sidebar nav a.active {
+            box-shadow: inset 3px 0 0 #4ecdc4;
+        }
+
+        .dc-wallet-main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 28px 32px;
+            overflow: hidden;
+        }
+
+        .dc-wallet-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        .dc-wallet-header h1 {
+            font-size: 26px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .dc-wallet-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .dc-premium-btn {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .dc-icon-btn {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(255, 255, 255, 0.08);
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dc-wallet-tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 28px;
+        }
+
+        .dc-wallet-tabs a {
+            padding: 8px 16px;
+            border-radius: 8px;
+            color: rgba(255, 255, 255, 0.55);
+            text-decoration: none;
+            font-size: 13px;
+            transition: all .2s ease;
+        }
+
+        .dc-wallet-tabs a:hover,
+        .dc-wallet-tabs a.active {
+            background: rgba(255, 255, 255, 0.08);
+            color: #fff;
+        }
+
+        .dc-wallet-content {
+            display: flex;
+            gap: 32px;
+            flex: 1;
+            min-height: 0;
+        }
+
+        .dc-wallet-card-col {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .dc-card-preview {
+            width: 360px;
+            height: 220px;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+            background: #111;
+        }
+
+        .dc-card-bg {
+            position: absolute;
+            inset: -50%;
+            width: 200%;
+            height: 200%;
+            background: var(--card-bg, linear-gradient(120deg, #ff9a9e 0%, #fad0c4 35%, #fad0c4 65%, #ffd1ff 100%));
+            background-size: cover;
+            background-position: center;
+            transform: scale(var(--card-scale, 1)) rotate(var(--card-rotate, 0deg));
+            transform-origin: center;
+        }
+
+        .dc-card-inner {
+            position: relative;
+            z-index: 2;
+            height: 100%;
+            padding: 22px 26px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-family: var(--card-font, 'Quantico', monospace);
+            color: #fff;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+        }
+
+        .dc-card-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .dc-card-wifi {
+            width: 18px;
+            height: 18px;
+            opacity: 0.9;
+        }
+
+        .dc-card-chip {
+            width: 38px;
+            height: 28px;
+            border-radius: 5px;
+            background: linear-gradient(135deg, #e6c86e 0%, #d4af37 50%, #b8860b 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .dc-card-chip::before {
+            content: '';
+            position: absolute;
+            inset: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.25);
+            border-radius: 3px;
+        }
+
+        .dc-card-chip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 14px;
+            height: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.25);
+            transform: translate(-50%, -50%);
+            border-radius: 2px;
+        }
+
+        .dc-card-number {
+            font-size: 22px;
+            letter-spacing: 2px;
+            word-spacing: 8px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .dc-card-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .dc-card-name {
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .dc-card-expiry {
+            font-size: 13px;
+            opacity: 0.9;
+        }
+
+        .dc-card-logo {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            opacity: 0.85;
+            align-self: flex-end;
+        }
+
+        .dc-wallet-controls-col {
+            width: 420px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            overflow-y: auto;
+            padding-right: 4px;
+        }
+
+        .dc-wallet-panel {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            border-radius: 16px;
+            padding: 20px;
+        }
+
+        .dc-wallet-panel h3 {
+            margin: 0 0 16px 0;
+            font-size: 14px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .dc-bg-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+        }
+
+        .dc-bg-thumb {
+            aspect-ratio: 1;
+            border-radius: 10px;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: transform .15s ease, border-color .15s ease;
+        }
+
+        .dc-bg-thumb:hover {
+            transform: scale(1.05);
+        }
+
+        .dc-bg-thumb.active {
+            border-color: #4ecdc4;
+        }
+
+        .dc-slider-row {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 14px;
+        }
+
+        .dc-slider-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .dc-slider-row label {
+            width: 50px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .dc-slider-row input[type='range'] {
+            flex: 1;
+            accent-color: #4ecdc4;
+        }
+
+        .dc-slider-value {
+            width: 44px;
+            text-align: right;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.85);
+            font-family: 'Courier New', monospace;
+        }
+
+        .dc-font-row {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .dc-font-row select {
+            flex: 1;
+            background: rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #fff;
+            padding: 8px 10px;
+            border-radius: 8px;
+            font-size: 13px;
+        }
+
+        .dc-font-row select option {
+            background: #132f35;
+            color: #fff;
+        }
+
+        .dc-wallet-actions-row {
+            display: flex;
+            justify-content: flex-end;
+            gap: 12px;
+            margin-top: auto;
+            padding-top: 8px;
+        }
+
+        .dc-reset-btn,
+        .dc-apply-btn {
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-size: 13px;
+            cursor: pointer;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: all .2s ease;
+        }
+
+        .dc-reset-btn {
+            background: transparent;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .dc-apply-btn {
+            background: #4ecdc4;
+            color: #09181c;
+            border-color: #4ecdc4;
+            font-weight: 600;
+        }
+
+        .dc-apply-btn:hover {
+            background: #3dbdb4;
+        }
+
+        @media (max-width: 980px) {
+            .dc-wallet-shell { flex-direction: column; }
+            .dc-wallet-sidebar { width: auto; flex-direction: row; align-items: center; }
+            .dc-wallet-sidebar nav { flex-direction: row; }
+            .dc-wallet-content { flex-direction: column; }
+            .dc-wallet-controls-col { width: auto; }
+        }
+
     </style>
 
     <div class="Dev_Settings">
@@ -8691,9 +9088,9 @@
                     <a href="#" data-dc-page="marketplace">Goods &amp; Services</a>
                     <a href="#" data-dc-page="map">World Map Businesses</a>
                     <a href="#" data-dc-page="wallet">Wallet</a>
-                    <a href="analytics.html">Analytics</a>
                 </nav>
 
+                <div class='dc-page active' data-dc-page='overview'>
                 <div class="daryle-coin-ticker-strip">
                     <div class="daryle-coin-ticker-item">
                         <span class="daryle-coin-ticker-symbol">DRL / USD</span>
@@ -8868,6 +9265,100 @@
                         </div>
                     </section>
                 </div>
+            <section class='dc-page' data-dc-page='wallet'>
+                <div class='dc-wallet-shell'>
+                    <aside class='dc-wallet-sidebar'>
+                        <div class='dc-wallet-logo'>DARYLE COIN</div>
+                        <nav>
+                            <a href='#'><svg width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><rect x='3' y='3' width='7' height='7'/><rect x='14' y='3' width='7' height='7'/><rect x='14' y='14' width='7' height='7'/><rect x='3' y='14' width='7' height='7'/></svg> Dashboard</a>
+                            <a href='#'><svg width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M12 19l7-7 3 3-7 7-3-3z'/><path d='M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z'/><path d='M2 2l7.5 8.5'/><path d='M22 22l-5-5'/></svg> Transfers</a>
+                            <a href='#' class='active'><svg width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><rect x='2' y='5' width='20' height='14' rx='2'/><line x1='2' y1='10' x2='22' y2='10'/></svg> Your cards</a>
+                            <a href='#'><svg width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><circle cx='12' cy='12' r='3'/><path d='M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z'/></svg> Settings</a>
+                        </nav>
+                    </aside>
+                    <main class='dc-wallet-main'>
+                        <header class='dc-wallet-header'>
+                            <h1>Your cards</h1>
+                            <div class='dc-wallet-actions'>
+                                <button class='dc-premium-btn' type='button'>Try premium</button>
+                                <button class='dc-icon-btn' type='button' aria-label='Notifications'>🔔</button>
+                                <button class='dc-icon-btn' type='button' aria-label='Menu'>⋮</button>
+                            </div>
+                        </header>
+                        <nav class='dc-wallet-tabs'>
+                            <a href='#'>General</a>
+                            <a href='#' class='active'>Appearance</a>
+                            <a href='#'>Blocked</a>
+                            <a href='#'>Accessibility</a>
+                        </nav>
+                        <div class='dc-wallet-content'>
+                            <div class='dc-wallet-card-col'>
+                                <div class='dc-card-preview' id='dcCardPreview'>
+                                    <div class='dc-card-bg' id='dcCardBg'></div>
+                                    <div class='dc-card-inner'>
+                                        <div class='dc-card-top'>
+                                            <svg class='dc-card-wifi' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M5 12.55a11 11 0 0 1 14.08 0'/><path d='M1.42 9a16 16 0 0 1 21.16 0'/><path d='M8.53 16.11a6 6 0 0 1 6.95 0'/><line x1='12' y1='20' x2='12.01' y2='20'/></svg>
+                                            <div class='dc-card-chip'></div>
+                                        </div>
+                                        <div class='dc-card-number' id='dcCardNumber'>5449 7247 5256 4598</div>
+                                        <div class='dc-card-bottom'>
+                                            <div>
+                                                <div class='dc-card-name' id='dcCardName'>Guy Hawkins</div>
+                                                <div class='dc-card-expiry' id='dcCardExpiry'>11/27</div>
+                                            </div>
+                                            <div class='dc-card-logo'>DARYLE</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='dc-wallet-controls-col'>
+                                <div class='dc-wallet-panel'>
+                                    <h3>Card background image</h3>
+                                    <div class='dc-bg-grid' id='dcBgGrid'>
+                                        <button class='dc-bg-thumb active' data-bg='linear-gradient(120deg, #ff9a9e 0%, #fad0c4 35%, #ffd1ff 100%)' style='background: linear-gradient(120deg, #ff9a9e 0%, #fad0c4 35%, #ffd1ff 100%);' type='button' aria-label='Sunset gradient'></button>
+                                        <button class='dc-bg-thumb' data-bg='linear-gradient(120deg, #a18cd1 0%, #fbc2eb 100%)' style='background: linear-gradient(120deg, #a18cd1 0%, #fbc2eb 100%);' type='button' aria-label='Purple gradient'></button>
+                                        <button class='dc-bg-thumb' data-bg='linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%)' style='background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);' type='button' aria-label='Teal gradient'></button>
+                                        <button class='dc-bg-thumb' data-bg='linear-gradient(120deg, #fccb90 0%, #d57eeb 100%)' style='background: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);' type='button' aria-label='Warm gradient'></button>
+                                        <button class='dc-bg-thumb' data-bg='linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%)' style='background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);' type='button' aria-label='Cool gradient'></button>
+                                        <button class='dc-bg-thumb' data-bg='linear-gradient(120deg, #43e97b 0%, #38f9d7 100%)' style='background: linear-gradient(120deg, #43e97b 0%, #38f9d7 100%);' type='button' aria-label='Mint gradient'></button>
+                                    </div>
+                                </div>
+                                <div class='dc-wallet-panel'>
+                                    <h3>Image placement</h3>
+                                    <div class='dc-slider-row'>
+                                        <label>Scale</label>
+                                        <input type='range' id='dcScale' min='50' max='200' value='100'>
+                                        <span class='dc-slider-value' id='dcScaleVal'>100%</span>
+                                    </div>
+                                    <div class='dc-slider-row'>
+                                        <label>Rotate</label>
+                                        <input type='range' id='dcRotate' min='0' max='360' value='120'>
+                                        <span class='dc-slider-value' id='dcRotateVal'>120°</span>
+                                    </div>
+                                </div>
+                                <div class='dc-wallet-panel'>
+                                    <h3>Font Settings</h3>
+                                    <div class='dc-font-row'>
+                                        <select id='dcFontFamily'>
+                                            <option value='quantico'>Quantico</option>
+                                            <option value='inter'>Inter</option>
+                                            <option value='courier'>Courier New</option>
+                                            <option value='georgia'>Georgia</option>
+                                            <option value='orbitron'>Orbitron</option>
+                                        </select>
+                                        <input type='range' id='dcFontSize' min='12' max='24' value='16'>
+                                        <span class='dc-slider-value' id='dcFontSizeVal'>16px</span>
+                                    </div>
+                                </div>
+                                <div class='dc-wallet-actions-row'>
+                                    <button class='dc-reset-btn' type='button' id='dcResetBtn'>Reset all</button>
+                                    <button class='dc-apply-btn' type='button' id='dcApplyBtn'>Apply changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </section>
             </div>
         </div><!-- /#daryleCoinAppCard -->
 
@@ -12900,6 +13391,94 @@
         updateDeckClock();
         setInterval(updateDeckClock, 1000);
 
+    </script>
+    <script>
+    (function() {
+      const dcMenu = document.querySelector('.daryle-coin-menu');
+      if (dcMenu) {
+        dcMenu.addEventListener('click', function(e) {
+          const link = e.target.closest('a[data-dc-page]');
+          if (!link) return;
+          e.preventDefault();
+          const page = link.getAttribute('data-dc-page');
+          const target = document.querySelector('.dc-page[data-dc-page=\'' + page + '\']');
+          if (!target) return;
+          dcMenu.querySelectorAll('a').forEach(function(a) { a.classList.remove('active'); });
+          link.classList.add('active');
+          document.querySelectorAll('.dc-page').forEach(function(p) { p.classList.remove('active'); });
+          target.classList.add('active');
+        });
+      }
+
+      const preview = document.getElementById('dcCardPreview');
+      if (!preview) return;
+
+      const bgGrid = document.getElementById('dcBgGrid');
+      const scaleInput = document.getElementById('dcScale');
+      const rotateInput = document.getElementById('dcRotate');
+      const fontSelect = document.getElementById('dcFontFamily');
+      const sizeInput = document.getElementById('dcFontSize');
+      const scaleVal = document.getElementById('dcScaleVal');
+      const rotateVal = document.getElementById('dcRotateVal');
+      const sizeVal = document.getElementById('dcFontSizeVal');
+      const resetBtn = document.getElementById('dcResetBtn');
+      const applyBtn = document.getElementById('dcApplyBtn');
+
+      const fontMap = {
+        quantico: 'Quantico, sans-serif',
+        inter: 'Inter, sans-serif',
+        courier: '\'Courier New\', monospace',
+        georgia: 'Georgia, serif',
+        orbitron: 'Orbitron, sans-serif'
+      };
+
+      function updateCard() {
+        const activeThumb = bgGrid ? bgGrid.querySelector('.dc-bg-thumb.active') : null;
+        const bg = activeThumb ? activeThumb.getAttribute('data-bg') : '';
+        preview.style.setProperty('--card-bg', bg);
+        preview.style.setProperty('--card-scale', (parseInt(scaleInput.value, 10) / 100).toFixed(2));
+        preview.style.setProperty('--card-rotate', rotateInput.value + 'deg');
+        preview.style.setProperty('--card-font', fontMap[fontSelect.value] || 'Quantico, sans-serif');
+        preview.style.setProperty('--card-font-size', sizeInput.value + 'px');
+        if (scaleVal) scaleVal.textContent = scaleInput.value + '%';
+        if (rotateVal) rotateVal.textContent = rotateInput.value + '\u00B0';
+        if (sizeVal) sizeVal.textContent = sizeInput.value + 'px';
+      }
+
+      if (bgGrid) {
+        bgGrid.addEventListener('click', function(e) {
+          const btn = e.target.closest('.dc-bg-thumb');
+          if (!btn) return;
+          bgGrid.querySelectorAll('.dc-bg-thumb').forEach(function(b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          updateCard();
+        });
+      }
+
+      [scaleInput, rotateInput, fontSelect, sizeInput].forEach(function(el) {
+        if (el) el.addEventListener('input', updateCard);
+      });
+
+      if (resetBtn) {
+        resetBtn.addEventListener('click', function() {
+          bgGrid.querySelectorAll('.dc-bg-thumb').forEach(function(b, i) { b.classList.toggle('active', i === 0); });
+          scaleInput.value = 100;
+          rotateInput.value = 120;
+          fontSelect.value = 'quantico';
+          sizeInput.value = 16;
+          updateCard();
+        });
+      }
+
+      if (applyBtn) {
+        applyBtn.addEventListener('click', function() {
+          applyBtn.textContent = 'Saved';
+          setTimeout(function() { applyBtn.textContent = 'Apply changes'; }, 1200);
+        });
+      }
+
+      updateCard();
+    })();
     </script>
 </body>
 </html>
