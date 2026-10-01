@@ -1,7 +1,7 @@
 /* the whole website */
 @font-face {
   font-family: "Manrope";
-  src: url("fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+  src: url("Fonts/Manrope-VariableFont_wght.ttf") format("truetype");
 }
 body {
   font-family: "Manrope", sans-serif;
