@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Exec(cp)",
+      "Exec(find)",
+      "Exec(py)",
+      "Exec(node)"
+    ]
+  }
+}

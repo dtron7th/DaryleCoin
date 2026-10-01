@@ -1,0 +1,189 @@
+/* the whole website */
+@font-face {
+  font-family: "Manrope";
+  src: url("fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+}
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 10px;
+}
+
+/* <canvas>  object "canvas.001" */
+.Front_Page_Visual_Effects {
+  background-color: #c2c2c2;
+  font-size: 11px;
+}
+
+/* <p>  object "p" */
+.Front_Page_Time {
+  text-align: start;
+  width: 80px;
+  height: 20px;
+  font-size: 11px;
+  color: #ffffff;
+}
+
+/* <p>  object "p.001"  (no class or id: give it id="bw-p-001") */
+#bw-p-001 {
+  z-index: 1;
+  color: #ffffff;
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* <p>  object "p.002" */
+.Front_Page_Date {
+  text-align: end;
+  width: 120px;
+  height: 20px;
+  font-size: 11px;
+  color: #ffffff;
+}
+
+/* <p>  object "p.003" */
+.App_Counter {
+  width: 420px;
+  height: 40px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+/* <p>  object "p.004"  (no class or id: give it id="bw-p-004") */
+#bw-p-004 {
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  font-size: 11px;
+  color: #ffffff;
+}
+
+/* <p>  object "p.005"  (no class or id: give it id="bw-p-005") */
+#bw-p-005 {
+  width: 60px;
+  height: 40px;
+  font-size: 24px;
+  border-bottom-style: none;
+  color: #ffffff;
+}
+
+/* <div>  object "Rectangle"  (no class or id: give it id="bw-Rectangle") */
+#bw-Rectangle {
+  width: 140px;
+  height: 140px;
+  background-color: #d9d9d9;
+  box-shadow: 0 2px 6px #9e9e9e;
+  border-radius: 5px;
+}
+
+/* <div>  object "Rectangle.001"  (no class or id: give it id="bw-Rectangle-001") */
+#bw-Rectangle-001 {
+  width: 140px;
+  height: 140px;
+  background-color: #d9d9d9;
+  box-shadow: 0 2px 6px #9e9e9e;
+  border-radius: 5px;
+}
+
+/* <div>  object "Rectangle.002"  (no class or id: give it id="bw-Rectangle-002") */
+#bw-Rectangle-002 {
+  width: 140px;
+  height: 140px;
+  background-color: #d9d9d9;
+  box-shadow: 0 2px 6px #9e9e9e;
+  border-radius: 5px;
+}
+
+/* <div>  object "Rectangle.003"  (no class or id: give it id="bw-Rectangle-003") */
+#bw-Rectangle-003 {
+  width: 140px;
+  height: 140px;
+  background-color: #d9d9d9;
+  box-shadow: 0 2px 6px #9e9e9e;
+  border-radius: 5px;
+}
+
+/* <div>  object "Rectangle.004" */
+.App_3 {
+  width: 140px;
+  height: 140px;
+  background-color: #d9d9d9;
+  box-shadow: 0 2px 6px #9e9e9e;
+  border-radius: 5px;
+}
+
+/* <div>  object "Rectangle.005"  (no class or id: give it id="bw-Rectangle-005") */
+#bw-Rectangle-005 {
+  width: 440px;
+  height: 420px;
+  background-color: #d9d9d9;
+  box-shadow: 0 2px 6px #9e9e9e;
+  border-radius: 5px;
+}
+
+/* <div>  object "Rectangle.008" */
+.App_2 {
+  width: 140px;
+  height: 140px;
+  background-color: #d9d9d9;
+  box-shadow: 0 2px 6px #9e9e9e;
+  border-radius: 5px;
+}
+
+/* <div>  object "Rectangle.009" */
+.App_1 {
+  width: 140px;
+  height: 140px;
+  background-color: #d9d9d9;
+  box-shadow: 0 2px 6px #9e9e9e;
+  border-radius: 5px;
+}
+
+/* <div>  object "Rectangle.010" */
+.App_4 {
+  width: 140px;
+  height: 140px;
+  background-color: #d9d9d9;
+  box-shadow: 0 2px 6px #9e9e9e;
+  border-radius: 5px;
+}
+
+/* Page layout: design made for a 1366 x 599 px template, absolute coordinates */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  width: 1366px;
+  height: 599px;
+  overflow: hidden;
+}
+p {
+  margin: 0;
+  position: absolute;
+  line-height: 20px;
+}
+.Front_Page_Visual_Effects {
+  z-index: 0;
+  pointer-events: none;
+}
+.Front_Page_Date,
+#bw-p-001,
+#bw-p-004,
+.Front_Page_Time,
+#bw-Rectangle,
+#bw-Rectangle-001,
+#bw-Rectangle-002,
+#bw-Rectangle-003,
+#bw-Rectangle-005,
+.App_1,
+.App_2,
+.App_3,
+.App_4,
+#bw-p-005,
+.App_Counter {
+  z-index: 1;
+}
