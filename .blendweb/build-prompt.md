@@ -34,7 +34,7 @@ canvas.001  <canvas>
 p.001  <p>
   id="bw-p-001"  (it has no class or id: use this id for it)
   x 20   y 20   width 100   height 40
-  text "Daryle Coin"
+  text "Sozin X"
 
 p.002  <p>
   x 140   y 20   width 120   height 20
@@ -145,7 +145,7 @@ body {
   color: #ffffff;
   width: 100px;
   height: 40px;
-  font-size: 16px;
+  font-size: 24px;
   text-align: center;
 }
 
