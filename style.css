@@ -1,17 +1,64 @@
 /* the whole website */
 @font-face {
   font-family: "Manrope";
-  src: url("Fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+  src: url("fonts/Manrope-VariableFont_wght.ttf") format("truetype");
 }
 body {
   font-family: "Manrope", sans-serif;
   font-size: 10px;
 }
 
-/* <canvas>  object "canvas.001" */
-.Front_Page_Visual_Effects {
-  background-color: #c2c2c2;
-  font-size: 11px;
+/* Uploaded fonts: copy each file into the website's fonts/ folder (they are in fonts/ next to the .blend) */
+@font-face {
+  font-family: "Bank Gothic Light";
+  src: url("fonts/Bank Gothic Light Regular.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* <div>  object "Blend ACS" */
+.Blend_ACS {
+  width: 140px;
+  height: 140px;
+  background-color: #d9d9d9;
+  box-shadow: 0px 2px 6px 0 #9e9e9e;
+  border-radius: 5px;
+  z-index: 1;
+  opacity: 1;
+}
+
+/* <div>  object "Blend EDA" */
+.Blend_EDA {
+  width: 140px;
+  height: 140px;
+  background-color: #d9d9d9;
+  box-shadow: 0px 2px 6px 0 #9e9e9e;
+  border-radius: 5px;
+  z-index: 1;
+  opacity: 1;
+}
+
+/* <div>  object "Blend Web" */
+.Blend_Web {
+  width: 140px;
+  height: 140px;
+  background-color: #d9d9d9;
+  box-shadow: 0px 2px 6px 0 #9e9e9e;
+  border-radius: 5px;
+  z-index: 1;
+  opacity: 1;
+}
+
+/* <div>  object "Kin Flow" */
+.Kin_Flow {
+  width: 140px;
+  height: 140px;
+  background-color: #d9d9d9;
+  box-shadow: 0px 2px 6px 0 #9e9e9e;
+  border-radius: 5px;
+  z-index: 1;
+  opacity: 1;
 }
 
 /* <p>  object "p" */
@@ -21,16 +68,18 @@ body {
   height: 20px;
   font-size: 11px;
   color: #ffffff;
+  z-index: 1;
 }
 
 /* <p>  object "p.001"  (no class or id: give it id="bw-p-001") */
 #bw-p-001 {
   z-index: 1;
   color: #ffffff;
-  width: 100px;
+  width: 131px;
   height: 40px;
-  font-size: 16px;
+  font-size: 24px;
   text-align: center;
+  font-family: "Bank Gothic Light";
 }
 
 /* <p>  object "p.002" */
@@ -40,6 +89,7 @@ body {
   height: 20px;
   font-size: 11px;
   color: #ffffff;
+  z-index: 1;
 }
 
 /* <p>  object "p.003" */
@@ -57,6 +107,7 @@ body {
   height: 20px;
   font-size: 11px;
   color: #ffffff;
+  z-index: 1;
 }
 
 /* <p>  object "p.005"  (no class or id: give it id="bw-p-005") */
@@ -68,51 +119,6 @@ body {
   color: #ffffff;
 }
 
-/* <div>  object "Rectangle"  (no class or id: give it id="bw-Rectangle") */
-#bw-Rectangle {
-  width: 140px;
-  height: 140px;
-  background-color: #d9d9d9;
-  box-shadow: 0 2px 6px #9e9e9e;
-  border-radius: 5px;
-}
-
-/* <div>  object "Rectangle.001"  (no class or id: give it id="bw-Rectangle-001") */
-#bw-Rectangle-001 {
-  width: 140px;
-  height: 140px;
-  background-color: #d9d9d9;
-  box-shadow: 0 2px 6px #9e9e9e;
-  border-radius: 5px;
-}
-
-/* <div>  object "Rectangle.002"  (no class or id: give it id="bw-Rectangle-002") */
-#bw-Rectangle-002 {
-  width: 140px;
-  height: 140px;
-  background-color: #d9d9d9;
-  box-shadow: 0 2px 6px #9e9e9e;
-  border-radius: 5px;
-}
-
-/* <div>  object "Rectangle.003"  (no class or id: give it id="bw-Rectangle-003") */
-#bw-Rectangle-003 {
-  width: 140px;
-  height: 140px;
-  background-color: #d9d9d9;
-  box-shadow: 0 2px 6px #9e9e9e;
-  border-radius: 5px;
-}
-
-/* <div>  object "Rectangle.004" */
-.App_3 {
-  width: 140px;
-  height: 140px;
-  background-color: #d9d9d9;
-  box-shadow: 0 2px 6px #9e9e9e;
-  border-radius: 5px;
-}
-
 /* <div>  object "Rectangle.005"  (no class or id: give it id="bw-Rectangle-005") */
 #bw-Rectangle-005 {
   width: 440px;
@@ -120,33 +126,28 @@ body {
   background-color: #d9d9d9;
   box-shadow: 0 2px 6px #9e9e9e;
   border-radius: 5px;
+  z-index: 1;
 }
 
-/* <div>  object "Rectangle.008" */
-.App_2 {
+/* <div>  object "Rectangle.007"  (no class or id: give it id="bw-Rectangle-007") */
+#bw-Rectangle-007 {
+  width: 1366px;
+  height: 599px;
+  background-color: #4d4d4d;
+  z-index: 0;
+  background-image: linear-gradient(138deg, #ffffff 0%, #ffffff 100%);
+  background: #ffffff;
+}
+
+/* <div>  object "Sun Tzu AI" */
+.Sun_Tzu_AI {
   width: 140px;
   height: 140px;
   background-color: #d9d9d9;
-  box-shadow: 0 2px 6px #9e9e9e;
+  box-shadow: 0px 2px 6px 0 #9e9e9e;
   border-radius: 5px;
-}
-
-/* <div>  object "Rectangle.009" */
-.App_1 {
-  width: 140px;
-  height: 140px;
-  background-color: #d9d9d9;
-  box-shadow: 0 2px 6px #9e9e9e;
-  border-radius: 5px;
-}
-
-/* <div>  object "Rectangle.010" */
-.App_4 {
-  width: 140px;
-  height: 140px;
-  background-color: #d9d9d9;
-  box-shadow: 0 2px 6px #9e9e9e;
-  border-radius: 5px;
+  z-index: 1;
+  opacity: 1;
 }
 
 /* Page layout: design made for a 1366 x 599 px template, absolute coordinates */
@@ -166,24 +167,538 @@ p {
   position: absolute;
   line-height: 20px;
 }
+/* The effects canvas covers the whole screen in the page background: it sits
+   above #bw-Rectangle-007 (z-index 0, later in DOM order) and below every
+   content element (z-index 1+). Its own background is the first node's
+   gradient; the canvas draws both node gradients breathing and bent by a
+   sine wave (the second one joins after a 1s wait and they alternate),
+   with the waves and particle network on top (see script.js). */
 .Front_Page_Visual_Effects {
   z-index: 0;
   pointer-events: none;
+  background: linear-gradient(135deg, #d5cbd3, #848ab1);
 }
-.Front_Page_Date,
-#bw-p-001,
-#bw-p-004,
-.Front_Page_Time,
-#bw-Rectangle,
-#bw-Rectangle-001,
-#bw-Rectangle-002,
-#bw-Rectangle-003,
-#bw-Rectangle-005,
-.App_1,
-.App_2,
-.App_3,
-.App_4,
 #bw-p-005,
 .App_Counter {
   z-index: 1;
 }
+
+/* Animation "Sun Tzu AI-Open/Close Animation" */
+/* "Sun Tzu AI" (.Sun_Tzu_AI) - action "Sun Tzu AI-Open/Close Animation", frames 0-12 (0.5s); animates color, css border-radius, css box-shadow, css height, css opacity, css width, css z-index, location, rotation_euler, scale */
+/* played by 2 animation nodes (see below), not on page load */
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-move {
+  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { transform: translate(-80px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+  100% { transform: translate(-80px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+}
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-color {
+  0% { background-color: #d9d9d9; }
+  25% { background-color: #d9d9d9; }
+  100% { background-color: #d9d9d9; }
+}
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-fade {
+  0% { opacity: 1; }
+  25% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-border-radius {
+  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { border-radius: 0px; }
+  100% { border-radius: 0px; }
+}
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-box-shadow {
+  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
+  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+}
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-height {
+  0% { height: 140px; }
+  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { height: 599px; }
+}
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-opacity {
+  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { opacity: 1; }
+}
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-width {
+  0% { width: 140px; }
+  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { width: 1366px; }
+}
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-z-index {
+  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { z-index: 2; }
+  100% { z-index: 2; }
+}
+
+/* Animation "Sun Tzu AI-Open/Close Animation" on "Sun Tzu AI" (.Sun_Tzu_AI), frames 0-12 (0.5s) */
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-move {
+  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { transform: translate(-80px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+  100% { transform: translate(-80px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+}
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-color {
+  0% { background-color: #d9d9d9; }
+  25% { background-color: #d9d9d9; }
+  100% { background-color: #d9d9d9; }
+}
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-fade {
+  0% { opacity: 1; }
+  25% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-border-radius {
+  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { border-radius: 0px; }
+  100% { border-radius: 0px; }
+}
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-box-shadow {
+  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
+  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+}
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-height {
+  0% { height: 140px; }
+  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { height: 599px; }
+}
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-opacity {
+  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { opacity: 1; }
+}
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-width {
+  0% { width: 140px; }
+  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { width: 1366px; }
+}
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-z-index {
+  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { z-index: 2; }
+  100% { z-index: 2; }
+}
+
+/* Reverse Animation node (runs when: Double Click) on .Sun_Tzu_AI:
+   add this class to play "Sun Tzu AI-Open/Close Animation" backwards, staying on the first frame */
+.bw-reverse-sun-tzu-ai-sun-tzu-ai-open-close-animation { animation: bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-move 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-color 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-fade 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-border-radius 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-box-shadow 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-height 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-opacity 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-width 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-z-index 0.5s linear 0s 1 reverse both; transform-origin: 0% 0%; }
+
+/* Timeline Animation node (runs on Click Step "SunTzuAI_OpenApp"):
+   add this class to .Sun_Tzu_AI to play frames 0-12 (0.5s), staying on the last frame */
+.bw-play-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12 { animation: bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0%; }
+
+/* Animation "Blend Web-Open/Close Animation" */
+/* "Blend Web" (.Blend_Web) - action "Blend Web-Open/Close Animation", frames 0-12 (0.5s); animates color, css border-radius, css box-shadow, css height, css opacity, css width, css z-index, location, rotation_euler, scale */
+/* played by 2 animation nodes (see below), not on page load */
+@keyframes bw-blend-web-blend-web-open-close-animation-move {
+  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { transform: translate(-260px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+  100% { transform: translate(-260px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+}
+@keyframes bw-blend-web-blend-web-open-close-animation-color {
+  0% { background-color: #d9d9d9; }
+  25% { background-color: #d9d9d9; }
+  100% { background-color: #d9d9d9; }
+}
+@keyframes bw-blend-web-blend-web-open-close-animation-fade {
+  0% { opacity: 1; }
+  25% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes bw-blend-web-blend-web-open-close-animation-css-border-radius {
+  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { border-radius: 0px; }
+  100% { border-radius: 0px; }
+}
+@keyframes bw-blend-web-blend-web-open-close-animation-css-box-shadow {
+  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
+  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+}
+@keyframes bw-blend-web-blend-web-open-close-animation-css-height {
+  0% { height: 140px; }
+  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { height: 599px; }
+}
+@keyframes bw-blend-web-blend-web-open-close-animation-css-opacity {
+  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { opacity: 1; }
+}
+@keyframes bw-blend-web-blend-web-open-close-animation-css-width {
+  0% { width: 140px; }
+  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { width: 1366px; }
+}
+@keyframes bw-blend-web-blend-web-open-close-animation-css-z-index {
+  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { z-index: 2; }
+  100% { z-index: 2; }
+}
+
+/* Animation "Blend Web-Open/Close Animation" on "Blend Web" (.Blend_Web), frames 0-12 (0.5s) */
+@keyframes bw-blend-web-blend-web-open-close-animation-0-12-move {
+  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { transform: translate(-260px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+  100% { transform: translate(-260px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+}
+@keyframes bw-blend-web-blend-web-open-close-animation-0-12-color {
+  0% { background-color: #d9d9d9; }
+  25% { background-color: #d9d9d9; }
+  100% { background-color: #d9d9d9; }
+}
+@keyframes bw-blend-web-blend-web-open-close-animation-0-12-fade {
+  0% { opacity: 1; }
+  25% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-border-radius {
+  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { border-radius: 0px; }
+  100% { border-radius: 0px; }
+}
+@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-box-shadow {
+  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
+  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+}
+@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-height {
+  0% { height: 140px; }
+  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { height: 599px; }
+}
+@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-opacity {
+  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { opacity: 1; }
+}
+@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-width {
+  0% { width: 140px; }
+  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { width: 1366px; }
+}
+@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-z-index {
+  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { z-index: 2; }
+  100% { z-index: 2; }
+}
+
+/* Reverse Animation node (runs when: Double Click) on .Blend_Web:
+   add this class to play "Blend Web-Open/Close Animation" backwards, staying on the first frame */
+.bw-reverse-blend-web-blend-web-open-close-animation { animation: bw-blend-web-blend-web-open-close-animation-move 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-color 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-fade 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-border-radius 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-box-shadow 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-height 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-opacity 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-width 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-z-index 0.5s linear 0s 1 reverse both; transform-origin: 0% 0%; }
+
+/* Timeline Animation node (runs on Click Step "BlendWeb_OpenApp"):
+   add this class to .Blend_Web to play frames 0-12 (0.5s), staying on the last frame */
+.bw-play-blend-web-blend-web-open-close-animation-0-12 { animation: bw-blend-web-blend-web-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0%; }
+
+/* Animation "Blend EDA-Open/Close Animation" */
+/* "Blend EDA" (.Blend_EDA) - action "Blend EDA-Open/Close Animation", frames 0-12 (0.5s); animates color, css border-radius, css box-shadow, css height, css opacity, css width, css z-index, location, rotation_euler, scale */
+/* played by 2 animation nodes (see below), not on page load */
+@keyframes bw-blend-eda-blend-eda-open-close-animation-move {
+  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { transform: translate(-440px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+  100% { transform: translate(-440px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+}
+@keyframes bw-blend-eda-blend-eda-open-close-animation-color {
+  0% { background-color: #d9d9d9; }
+  25% { background-color: #d9d9d9; }
+  100% { background-color: #d9d9d9; }
+}
+@keyframes bw-blend-eda-blend-eda-open-close-animation-fade {
+  0% { opacity: 1; }
+  25% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes bw-blend-eda-blend-eda-open-close-animation-css-border-radius {
+  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { border-radius: 0px; }
+  100% { border-radius: 0px; }
+}
+@keyframes bw-blend-eda-blend-eda-open-close-animation-css-box-shadow {
+  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
+  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+}
+@keyframes bw-blend-eda-blend-eda-open-close-animation-css-height {
+  0% { height: 140px; }
+  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { height: 599px; }
+}
+@keyframes bw-blend-eda-blend-eda-open-close-animation-css-opacity {
+  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { opacity: 1; }
+}
+@keyframes bw-blend-eda-blend-eda-open-close-animation-css-width {
+  0% { width: 140px; }
+  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { width: 1366px; }
+}
+@keyframes bw-blend-eda-blend-eda-open-close-animation-css-z-index {
+  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { z-index: 2; }
+  100% { z-index: 2; }
+}
+
+/* Animation "Blend EDA-Open/Close Animation" on "Blend EDA" (.Blend_EDA), frames 0-12 (0.5s) */
+@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-move {
+  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { transform: translate(-440px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+  100% { transform: translate(-440px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+}
+@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-color {
+  0% { background-color: #d9d9d9; }
+  25% { background-color: #d9d9d9; }
+  100% { background-color: #d9d9d9; }
+}
+@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-fade {
+  0% { opacity: 1; }
+  25% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-border-radius {
+  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { border-radius: 0px; }
+  100% { border-radius: 0px; }
+}
+@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-box-shadow {
+  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
+  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+}
+@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-height {
+  0% { height: 140px; }
+  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { height: 599px; }
+}
+@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-opacity {
+  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { opacity: 1; }
+}
+@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-width {
+  0% { width: 140px; }
+  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { width: 1366px; }
+}
+@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-z-index {
+  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { z-index: 2; }
+  100% { z-index: 2; }
+}
+
+/* Reverse Animation node (runs when: Double Click) on .Blend_EDA:
+   add this class to play "Blend EDA-Open/Close Animation" backwards, staying on the first frame */
+.bw-reverse-blend-eda-blend-eda-open-close-animation { animation: bw-blend-eda-blend-eda-open-close-animation-move 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-color 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-fade 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-border-radius 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-box-shadow 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-height 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-opacity 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-width 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-z-index 0.5s linear 0s 1 reverse both; transform-origin: 0% 0%; }
+
+/* Timeline Animation node (runs on Click Step "BlendEDA_OpenApp"):
+   add this class to .Blend_EDA to play frames 0-12 (0.5s), staying on the last frame */
+.bw-play-blend-eda-blend-eda-open-close-animation-0-12 { animation: bw-blend-eda-blend-eda-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0%; }
+
+/* Animation "Blend ACS-Open/Close Animation" */
+/* "Blend ACS" (.Blend_ACS) - action "Blend ACS-Open/Close Animation", frames 0-12 (0.5s); animates color, css border-radius, css box-shadow, css height, css opacity, css width, css z-index, location, rotation_euler, scale */
+/* played by 2 animation nodes (see below), not on page load */
+@keyframes bw-blend-acs-blend-acs-open-close-animation-move {
+  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { transform: translate(-620px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+  100% { transform: translate(-620px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+}
+@keyframes bw-blend-acs-blend-acs-open-close-animation-color {
+  0% { background-color: #d9d9d9; }
+  25% { background-color: #d9d9d9; }
+  100% { background-color: #d9d9d9; }
+}
+@keyframes bw-blend-acs-blend-acs-open-close-animation-fade {
+  0% { opacity: 1; }
+  25% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes bw-blend-acs-blend-acs-open-close-animation-css-border-radius {
+  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { border-radius: 0px; }
+  100% { border-radius: 0px; }
+}
+@keyframes bw-blend-acs-blend-acs-open-close-animation-css-box-shadow {
+  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
+  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+}
+@keyframes bw-blend-acs-blend-acs-open-close-animation-css-height {
+  0% { height: 140px; }
+  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { height: 599px; }
+}
+@keyframes bw-blend-acs-blend-acs-open-close-animation-css-opacity {
+  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { opacity: 1; }
+}
+@keyframes bw-blend-acs-blend-acs-open-close-animation-css-width {
+  0% { width: 140px; }
+  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { width: 1366px; }
+}
+@keyframes bw-blend-acs-blend-acs-open-close-animation-css-z-index {
+  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { z-index: 2; }
+  100% { z-index: 2; }
+}
+
+/* Animation "Blend ACS-Open/Close Animation" on "Blend ACS" (.Blend_ACS), frames 0-12 (0.5s) */
+@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-move {
+  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { transform: translate(-620px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+  100% { transform: translate(-620px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+}
+@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-color {
+  0% { background-color: #d9d9d9; }
+  25% { background-color: #d9d9d9; }
+  100% { background-color: #d9d9d9; }
+}
+@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-fade {
+  0% { opacity: 1; }
+  25% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-border-radius {
+  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { border-radius: 0px; }
+  100% { border-radius: 0px; }
+}
+@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-box-shadow {
+  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
+  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+}
+@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-height {
+  0% { height: 140px; }
+  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { height: 599px; }
+}
+@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-opacity {
+  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { opacity: 1; }
+}
+@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-width {
+  0% { width: 140px; }
+  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { width: 1366px; }
+}
+@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-z-index {
+  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { z-index: 2; }
+  100% { z-index: 2; }
+}
+
+/* Reverse Animation node (runs when: Double Click) on .Blend_ACS:
+   add this class to play "Blend ACS-Open/Close Animation" backwards, staying on the first frame */
+.bw-reverse-blend-acs-blend-acs-open-close-animation { animation: bw-blend-acs-blend-acs-open-close-animation-move 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-color 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-fade 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-border-radius 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-box-shadow 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-height 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-opacity 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-width 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-z-index 0.5s linear 0s 1 reverse both; transform-origin: 0% 0%; }
+
+/* Timeline Animation node (runs on Click Step "BlendACS_OpenApp"):
+   add this class to .Blend_ACS to play frames 0-12 (0.5s), staying on the last frame */
+.bw-play-blend-acs-blend-acs-open-close-animation-0-12 { animation: bw-blend-acs-blend-acs-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0%; }
+
+/* Animation "Kin Flow-Open/Close Animation" */
+/* "Kin Flow" (.Kin_Flow) - action "Kin Flow-Open/Close Animation", frames 0-12 (0.5s); animates color, css border-radius, css box-shadow, css height, css opacity, css width, css z-index, location, rotation_euler, scale */
+/* played by 2 animation nodes (see below), not on page load */
+@keyframes bw-kin-flow-kin-flow-open-close-animation-move {
+  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { transform: translate(-80px, -380px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+  100% { transform: translate(-80px, -380px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+}
+@keyframes bw-kin-flow-kin-flow-open-close-animation-color {
+  0% { background-color: #d9d9d9; }
+  25% { background-color: #d9d9d9; }
+  100% { background-color: #d9d9d9; }
+}
+@keyframes bw-kin-flow-kin-flow-open-close-animation-fade {
+  0% { opacity: 1; }
+  25% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes bw-kin-flow-kin-flow-open-close-animation-css-border-radius {
+  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { border-radius: 0px; }
+  100% { border-radius: 0px; }
+}
+@keyframes bw-kin-flow-kin-flow-open-close-animation-css-box-shadow {
+  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
+  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+}
+@keyframes bw-kin-flow-kin-flow-open-close-animation-css-height {
+  0% { height: 140px; }
+  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { height: 599px; }
+}
+@keyframes bw-kin-flow-kin-flow-open-close-animation-css-opacity {
+  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { opacity: 1; }
+}
+@keyframes bw-kin-flow-kin-flow-open-close-animation-css-width {
+  0% { width: 140px; }
+  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { width: 1366px; }
+}
+@keyframes bw-kin-flow-kin-flow-open-close-animation-css-z-index {
+  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { z-index: 2; }
+  100% { z-index: 2; }
+}
+
+/* Animation "Kin Flow-Open/Close Animation" on "Kin Flow" (.Kin_Flow), frames 0-12 (0.5s) */
+@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-move {
+  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { transform: translate(-80px, -380px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+  100% { transform: translate(-80px, -380px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+}
+@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-color {
+  0% { background-color: #d9d9d9; }
+  25% { background-color: #d9d9d9; }
+  100% { background-color: #d9d9d9; }
+}
+@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-fade {
+  0% { opacity: 1; }
+  25% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-border-radius {
+  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { border-radius: 0px; }
+  100% { border-radius: 0px; }
+}
+@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-box-shadow {
+  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
+  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+}
+@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-height {
+  0% { height: 140px; }
+  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { height: 599px; }
+}
+@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-opacity {
+  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { opacity: 1; }
+}
+@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-width {
+  0% { width: 140px; }
+  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { width: 1366px; }
+}
+@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-z-index {
+  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { z-index: 2; }
+  100% { z-index: 2; }
+}
+
+/* Reverse Animation node (runs when: Double Click) on .Kin_Flow:
+   add this class to play "Kin Flow-Open/Close Animation" backwards, staying on the first frame */
+.bw-reverse-kin-flow-kin-flow-open-close-animation { animation: bw-kin-flow-kin-flow-open-close-animation-move 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-color 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-fade 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-border-radius 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-box-shadow 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-height 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-opacity 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-width 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-z-index 0.5s linear 0s 1 reverse both; transform-origin: 0% 0%; }
+
+/* Timeline Animation node (runs on Click Step "KinFow_OpenApp"):
+   add this class to .Kin_Flow to play frames 0-12 (0.5s), staying on the last frame */
+.bw-play-kin-flow-kin-flow-open-close-animation-0-12 { animation: bw-kin-flow-kin-flow-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0%; }

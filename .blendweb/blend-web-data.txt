@@ -5,15 +5,12 @@ Shapes: use every "exact svg" / "exact shape" line as-is, so each outline is exa
 
 == SVG shapes (0) ==
 
-== HTML elements (16) ==
-
-canvas.001  <canvas>
-  x 0   y 0   width 1366   height 599
+== HTML elements (12) ==
 
 p.001  <p>
   id="bw-p-001"  (it has no class or id: use this id for it)
-  x 20   y 20   width 100   height 40
-  text "Sozin X"
+  x 20   y 20   width 131   height 40
+  text "Sozin - X"
 
 p.002  <p>
   x 140   y 20   width 120   height 20
@@ -31,8 +28,6 @@ p  <p>
 Rectangle.005  <div>
   id="bw-Rectangle-005"  (it has no class or id: use this id for it)
   x 840   y 120   width 440   height 420
-  shape d="M 840 125 L 840.02 124.51 L 840.1 124.02 L 840.22 123.55 L 840.38 123.09 L 840.59 122.64 L 840.84 122.22 L 841.13 121.83 L 841.46 121.46 L 841.83 121.13 L 842.22 120.84 L 842.64 120.59 L 843.09 120.38 L 843.55 120.22 L 844.02 120.1 L 844.51 120.02 L 845 120 L 1275 120 L 1275.49 120.02 L 1275.98 120.1 L 1276.45 120.22 L 1276.91 120.38 L 1277.36 120.59 L 1277.78 120.84 L 1278.17 121.13 L 1278.54 121.46 L 1278.86 121.83 L 1279.16 122.22 L 1279.41 122.64 L 1279.62 123.09 L 1279.78 123.55 L 1279.9 124.02 L 1279.98 124.51 L 1280 125 L 1280 535 L 1279.98 535.49 L 1279.9 535.98 L 1279.78 536.45 L 1279.62 536.91 L 1279.41 537.36 L 1279.16 537.78 L 1278.86 538.17 L 1278.54 538.54 L 1278.17 538.87 L 1277.78 539.16 L 1277.36 539.41 L 1276.91 539.62 L 1276.45 539.78 L 1275.98 539.9 L 1275.49 539.98 L 1275 540 L 845 540 L 844.51 539.98 L 844.02 539.9 L 843.55 539.78 L 843.09 539.62 L 842.64 539.41 L 842.22 539.16 L 841.83 538.87 L 841.46 538.54 L 841.13 538.17 L 840.84 537.78 L 840.59 537.36 L 840.38 536.91 L 840.22 536.45 L 840.1 535.98 L 840.02 535.49 L 840 535 Z"
-  exact shape (use as-is): clip-path: path('M 0 5 L 0.02 4.51 L 0.1 4.02 L 0.22 3.55 L 0.38 3.09 L 0.59 2.64 L 0.84 2.22 L 1.13 1.83 L 1.46 1.46 L 1.83 1.13 L 2.22 0.84 L 2.64 0.59 L 3.09 0.38 L 3.55 0.22 L 4.02 0.1 L 4.51 0.02 L 5 0 L 435 0 L 435.49 0.02 L 435.98 0.1 L 436.45 0.22 L 436.91 0.38 L 437.36 0.59 L 437.78 0.84 L 438.17 1.13 L 438.54 1.46 L 438.86 1.83 L 439.16 2.22 L 439.41 2.64 L 439.62 3.09 L 439.78 3.55 L 439.9 4.02 L 439.98 4.51 L 440 5 L 440 415 L 439.98 415.49 L 439.9 415.98 L 439.78 416.45 L 439.62 416.91 L 439.41 417.36 L 439.16 417.78 L 438.86 418.17 L 438.54 418.54 L 438.17 418.87 L 437.78 419.16 L 437.36 419.41 L 436.91 419.62 L 436.45 419.78 L 435.98 419.9 L 435.49 419.98 L 435 420 L 5 420 L 4.51 419.98 L 4.02 419.9 L 3.55 419.78 L 3.09 419.62 L 2.64 419.41 L 2.22 419.16 L 1.83 418.87 L 1.46 418.54 L 1.13 418.17 L 0.84 417.78 L 0.59 417.36 L 0.38 416.91 L 0.22 416.45 L 0.1 415.98 L 0.02 415.49 L 0 415 Z');
 
 p.005  <p>
   id="bw-p-005"  (it has no class or id: use this id for it)
@@ -43,52 +38,23 @@ p.003  <p>
   x 160   y 140   width 420   height 40
   text "--"
 
-Rectangle.009  <div>
+Sun Tzu AI  <div>
   x 80   y 200   width 140   height 140
-  shape d="M 80 205 L 80.02 204.51 L 80.1 204.02 L 80.22 203.55 L 80.38 203.09 L 80.59 202.64 L 80.84 202.22 L 81.13 201.83 L 81.46 201.46 L 81.83 201.13 L 82.22 200.84 L 82.64 200.59 L 83.09 200.38 L 83.55 200.22 L 84.02 200.1 L 84.51 200.02 L 85 200 L 215 200 L 215.49 200.02 L 215.98 200.1 L 216.45 200.22 L 216.91 200.38 L 217.36 200.59 L 217.78 200.84 L 218.17 201.13 L 218.54 201.46 L 218.87 201.83 L 219.16 202.22 L 219.41 202.64 L 219.62 203.09 L 219.78 203.55 L 219.9 204.02 L 219.98 204.51 L 220 205 L 220 335 L 219.98 335.49 L 219.9 335.98 L 219.78 336.45 L 219.62 336.91 L 219.41 337.36 L 219.16 337.78 L 218.87 338.17 L 218.54 338.54 L 218.17 338.87 L 217.78 339.16 L 217.36 339.41 L 216.91 339.62 L 216.45 339.78 L 215.98 339.9 L 215.49 339.98 L 215 340 L 85 340 L 84.51 339.98 L 84.02 339.9 L 83.55 339.78 L 83.09 339.62 L 82.64 339.41 L 82.22 339.16 L 81.83 338.87 L 81.46 338.54 L 81.13 338.17 L 80.84 337.78 L 80.59 337.36 L 80.38 336.91 L 80.22 336.45 L 80.1 335.98 L 80.02 335.49 L 80 335 Z"
-  exact shape (use as-is): clip-path: path('M 0 5 L 0.02 4.51 L 0.1 4.02 L 0.22 3.55 L 0.38 3.09 L 0.59 2.64 L 0.84 2.22 L 1.13 1.83 L 1.46 1.46 L 1.83 1.13 L 2.22 0.84 L 2.64 0.59 L 3.09 0.38 L 3.55 0.22 L 4.02 0.1 L 4.51 0.02 L 5 0 L 135 0 L 135.49 0.02 L 135.98 0.1 L 136.45 0.22 L 136.91 0.38 L 137.36 0.59 L 137.78 0.84 L 138.17 1.13 L 138.54 1.46 L 138.87 1.83 L 139.16 2.22 L 139.41 2.64 L 139.62 3.09 L 139.78 3.55 L 139.9 4.02 L 139.98 4.51 L 140 5 L 140 135 L 139.98 135.49 L 139.9 135.98 L 139.78 136.45 L 139.62 136.91 L 139.41 137.36 L 139.16 137.78 L 138.87 138.17 L 138.54 138.54 L 138.17 138.87 L 137.78 139.16 L 137.36 139.41 L 136.91 139.62 L 136.45 139.78 L 135.98 139.9 L 135.49 139.98 L 135 140 L 5 140 L 4.51 139.98 L 4.02 139.9 L 3.55 139.78 L 3.09 139.62 L 2.64 139.41 L 2.22 139.16 L 1.83 138.87 L 1.46 138.54 L 1.13 138.17 L 0.84 137.78 L 0.59 137.36 L 0.38 136.91 L 0.22 136.45 L 0.1 135.98 L 0.02 135.49 L 0 135 Z');
 
-Rectangle.008  <div>
+Blend Web  <div>
   x 260   y 200   width 140   height 140
-  shape d="M 260 205 L 260.02 204.51 L 260.1 204.02 L 260.22 203.55 L 260.38 203.09 L 260.59 202.64 L 260.84 202.22 L 261.13 201.83 L 261.46 201.46 L 261.83 201.13 L 262.22 200.84 L 262.64 200.59 L 263.09 200.38 L 263.55 200.22 L 264.02 200.1 L 264.51 200.02 L 265 200 L 395 200 L 395.49 200.02 L 395.98 200.1 L 396.45 200.22 L 396.91 200.38 L 397.36 200.59 L 397.78 200.84 L 398.17 201.13 L 398.54 201.46 L 398.87 201.83 L 399.16 202.22 L 399.41 202.64 L 399.62 203.09 L 399.78 203.55 L 399.9 204.02 L 399.98 204.51 L 400 205 L 400 335 L 399.98 335.49 L 399.9 335.98 L 399.78 336.45 L 399.62 336.91 L 399.41 337.36 L 399.16 337.78 L 398.87 338.17 L 398.54 338.54 L 398.17 338.87 L 397.78 339.16 L 397.36 339.41 L 396.91 339.62 L 396.45 339.78 L 395.98 339.9 L 395.49 339.98 L 395 340 L 265 340 L 264.51 339.98 L 264.02 339.9 L 263.55 339.78 L 263.09 339.62 L 262.64 339.41 L 262.22 339.16 L 261.83 338.87 L 261.46 338.54 L 261.13 338.17 L 260.84 337.78 L 260.59 337.36 L 260.38 336.91 L 260.22 336.45 L 260.1 335.98 L 260.02 335.49 L 260 335 Z"
-  exact shape (use as-is): clip-path: path('M 0 5 L 0.02 4.51 L 0.1 4.02 L 0.22 3.55 L 0.38 3.09 L 0.59 2.64 L 0.84 2.22 L 1.13 1.83 L 1.46 1.46 L 1.83 1.13 L 2.22 0.84 L 2.64 0.59 L 3.09 0.38 L 3.55 0.22 L 4.02 0.1 L 4.51 0.02 L 5 0 L 135 0 L 135.49 0.02 L 135.98 0.1 L 136.45 0.22 L 136.91 0.38 L 137.36 0.59 L 137.78 0.84 L 138.17 1.13 L 138.54 1.46 L 138.87 1.83 L 139.16 2.22 L 139.41 2.64 L 139.62 3.09 L 139.78 3.55 L 139.9 4.02 L 139.98 4.51 L 140 5 L 140 135 L 139.98 135.49 L 139.9 135.98 L 139.78 136.45 L 139.62 136.91 L 139.41 137.36 L 139.16 137.78 L 138.87 138.17 L 138.54 138.54 L 138.17 138.87 L 137.78 139.16 L 137.36 139.41 L 136.91 139.62 L 136.45 139.78 L 135.98 139.9 L 135.49 139.98 L 135 140 L 5 140 L 4.51 139.98 L 4.02 139.9 L 3.55 139.78 L 3.09 139.62 L 2.64 139.41 L 2.22 139.16 L 1.83 138.87 L 1.46 138.54 L 1.13 138.17 L 0.84 137.78 L 0.59 137.36 L 0.38 136.91 L 0.22 136.45 L 0.1 135.98 L 0.02 135.49 L 0 135 Z');
 
-Rectangle.004  <div>
+Blend EDA  <div>
   x 440   y 200   width 140   height 140
-  shape d="M 440 205 L 440.02 204.51 L 440.1 204.02 L 440.22 203.55 L 440.38 203.09 L 440.59 202.64 L 440.84 202.22 L 441.13 201.83 L 441.46 201.46 L 441.83 201.13 L 442.22 200.84 L 442.64 200.59 L 443.09 200.38 L 443.55 200.22 L 444.02 200.1 L 444.51 200.02 L 445 200 L 575 200 L 575.49 200.02 L 575.98 200.1 L 576.45 200.22 L 576.91 200.38 L 577.36 200.59 L 577.78 200.84 L 578.17 201.13 L 578.54 201.46 L 578.87 201.83 L 579.16 202.22 L 579.41 202.64 L 579.62 203.09 L 579.78 203.55 L 579.9 204.02 L 579.98 204.51 L 580 205 L 580 335 L 579.98 335.49 L 579.9 335.98 L 579.78 336.45 L 579.62 336.91 L 579.41 337.36 L 579.16 337.78 L 578.87 338.17 L 578.54 338.54 L 578.17 338.87 L 577.78 339.16 L 577.36 339.41 L 576.91 339.62 L 576.45 339.78 L 575.98 339.9 L 575.49 339.98 L 575 340 L 445 340 L 444.51 339.98 L 444.02 339.9 L 443.55 339.78 L 443.09 339.62 L 442.64 339.41 L 442.22 339.16 L 441.83 338.87 L 441.46 338.54 L 441.13 338.17 L 440.84 337.78 L 440.59 337.36 L 440.38 336.91 L 440.22 336.45 L 440.1 335.98 L 440.02 335.49 L 440 335 Z"
-  exact shape (use as-is): clip-path: path('M 0 5 L 0.02 4.51 L 0.1 4.02 L 0.22 3.55 L 0.38 3.09 L 0.59 2.64 L 0.84 2.22 L 1.13 1.83 L 1.46 1.46 L 1.83 1.13 L 2.22 0.84 L 2.64 0.59 L 3.09 0.38 L 3.55 0.22 L 4.02 0.1 L 4.51 0.02 L 5 0 L 135 0 L 135.49 0.02 L 135.98 0.1 L 136.45 0.22 L 136.91 0.38 L 137.36 0.59 L 137.78 0.84 L 138.17 1.13 L 138.54 1.46 L 138.87 1.83 L 139.16 2.22 L 139.41 2.64 L 139.62 3.09 L 139.78 3.55 L 139.9 4.02 L 139.98 4.51 L 140 5 L 140 135 L 139.98 135.49 L 139.9 135.98 L 139.78 136.45 L 139.62 136.91 L 139.41 137.36 L 139.16 137.78 L 138.87 138.17 L 138.54 138.54 L 138.17 138.87 L 137.78 139.16 L 137.36 139.41 L 136.91 139.62 L 136.45 139.78 L 135.98 139.9 L 135.49 139.98 L 135 140 L 5 140 L 4.51 139.98 L 4.02 139.9 L 3.55 139.78 L 3.09 139.62 L 2.64 139.41 L 2.22 139.16 L 1.83 138.87 L 1.46 138.54 L 1.13 138.17 L 0.84 137.78 L 0.59 137.36 L 0.38 136.91 L 0.22 136.45 L 0.1 135.98 L 0.02 135.49 L 0 135 Z');
 
-Rectangle.010  <div>
+Blend ACS  <div>
   x 620   y 200   width 140   height 140
-  shape d="M 620 205 L 620.02 204.51 L 620.1 204.02 L 620.22 203.55 L 620.38 203.09 L 620.59 202.64 L 620.84 202.22 L 621.13 201.83 L 621.46 201.46 L 621.83 201.13 L 622.22 200.84 L 622.64 200.59 L 623.09 200.38 L 623.55 200.22 L 624.02 200.1 L 624.51 200.02 L 625 200 L 755 200 L 755.49 200.02 L 755.98 200.1 L 756.45 200.22 L 756.91 200.38 L 757.36 200.59 L 757.78 200.84 L 758.17 201.13 L 758.54 201.46 L 758.87 201.83 L 759.16 202.22 L 759.41 202.64 L 759.62 203.09 L 759.78 203.55 L 759.9 204.02 L 759.98 204.51 L 760 205 L 760 335 L 759.98 335.49 L 759.9 335.98 L 759.78 336.45 L 759.62 336.91 L 759.41 337.36 L 759.16 337.78 L 758.87 338.17 L 758.54 338.54 L 758.17 338.87 L 757.78 339.16 L 757.36 339.41 L 756.91 339.62 L 756.45 339.78 L 755.98 339.9 L 755.49 339.98 L 755 340 L 625 340 L 624.51 339.98 L 624.02 339.9 L 623.55 339.78 L 623.09 339.62 L 622.64 339.41 L 622.22 339.16 L 621.83 338.87 L 621.46 338.54 L 621.13 338.17 L 620.84 337.78 L 620.59 337.36 L 620.38 336.91 L 620.22 336.45 L 620.1 335.98 L 620.02 335.49 L 620 335 Z"
-  exact shape (use as-is): clip-path: path('M 0 5 L 0.02 4.51 L 0.1 4.02 L 0.22 3.55 L 0.38 3.09 L 0.59 2.64 L 0.84 2.22 L 1.13 1.83 L 1.46 1.46 L 1.83 1.13 L 2.22 0.84 L 2.64 0.59 L 3.09 0.38 L 3.55 0.22 L 4.02 0.1 L 4.51 0.02 L 5 0 L 135 0 L 135.49 0.02 L 135.98 0.1 L 136.45 0.22 L 136.91 0.38 L 137.36 0.59 L 137.78 0.84 L 138.17 1.13 L 138.54 1.46 L 138.87 1.83 L 139.16 2.22 L 139.41 2.64 L 139.62 3.09 L 139.78 3.55 L 139.9 4.02 L 139.98 4.51 L 140 5 L 140 135 L 139.98 135.49 L 139.9 135.98 L 139.78 136.45 L 139.62 136.91 L 139.41 137.36 L 139.16 137.78 L 138.87 138.17 L 138.54 138.54 L 138.17 138.87 L 137.78 139.16 L 137.36 139.41 L 136.91 139.62 L 136.45 139.78 L 135.98 139.9 L 135.49 139.98 L 135 140 L 5 140 L 4.51 139.98 L 4.02 139.9 L 3.55 139.78 L 3.09 139.62 L 2.64 139.41 L 2.22 139.16 L 1.83 138.87 L 1.46 138.54 L 1.13 138.17 L 0.84 137.78 L 0.59 137.36 L 0.38 136.91 L 0.22 136.45 L 0.1 135.98 L 0.02 135.49 L 0 135 Z');
 
-Rectangle.001  <div>
-  id="bw-Rectangle-001"  (it has no class or id: use this id for it)
+Kin Flow  <div>
   x 80   y 380   width 140   height 140
-  shape d="M 80 385 L 80.02 384.51 L 80.1 384.02 L 80.22 383.55 L 80.38 383.09 L 80.59 382.64 L 80.84 382.22 L 81.13 381.83 L 81.46 381.46 L 81.83 381.13 L 82.22 380.84 L 82.64 380.59 L 83.09 380.38 L 83.55 380.22 L 84.02 380.1 L 84.51 380.02 L 85 380 L 215 380 L 215.49 380.02 L 215.98 380.1 L 216.45 380.22 L 216.91 380.38 L 217.36 380.59 L 217.78 380.84 L 218.17 381.13 L 218.54 381.46 L 218.87 381.83 L 219.16 382.22 L 219.41 382.64 L 219.62 383.09 L 219.78 383.55 L 219.9 384.02 L 219.98 384.51 L 220 385 L 220 515 L 219.98 515.49 L 219.9 515.98 L 219.78 516.45 L 219.62 516.91 L 219.41 517.36 L 219.16 517.78 L 218.87 518.17 L 218.54 518.54 L 218.17 518.87 L 217.78 519.16 L 217.36 519.41 L 216.91 519.62 L 216.45 519.78 L 215.98 519.9 L 215.49 519.98 L 215 520 L 85 520 L 84.51 519.98 L 84.02 519.9 L 83.55 519.78 L 83.09 519.62 L 82.64 519.41 L 82.22 519.16 L 81.83 518.87 L 81.46 518.54 L 81.13 518.17 L 80.84 517.78 L 80.59 517.36 L 80.38 516.91 L 80.22 516.45 L 80.1 515.98 L 80.02 515.49 L 80 515 Z"
-  exact shape (use as-is): clip-path: path('M 0 5 L 0.02 4.51 L 0.1 4.02 L 0.22 3.55 L 0.38 3.09 L 0.59 2.64 L 0.84 2.22 L 1.13 1.83 L 1.46 1.46 L 1.83 1.13 L 2.22 0.84 L 2.64 0.59 L 3.09 0.38 L 3.55 0.22 L 4.02 0.1 L 4.51 0.02 L 5 0 L 135 0 L 135.49 0.02 L 135.98 0.1 L 136.45 0.22 L 136.91 0.38 L 137.36 0.59 L 137.78 0.84 L 138.17 1.13 L 138.54 1.46 L 138.87 1.83 L 139.16 2.22 L 139.41 2.64 L 139.62 3.09 L 139.78 3.55 L 139.9 4.02 L 139.98 4.51 L 140 5 L 140 135 L 139.98 135.49 L 139.9 135.98 L 139.78 136.45 L 139.62 136.91 L 139.41 137.36 L 139.16 137.78 L 138.87 138.17 L 138.54 138.54 L 138.17 138.87 L 137.78 139.16 L 137.36 139.41 L 136.91 139.62 L 136.45 139.78 L 135.98 139.9 L 135.49 139.98 L 135 140 L 5 140 L 4.51 139.98 L 4.02 139.9 L 3.55 139.78 L 3.09 139.62 L 2.64 139.41 L 2.22 139.16 L 1.83 138.87 L 1.46 138.54 L 1.13 138.17 L 0.84 137.78 L 0.59 137.36 L 0.38 136.91 L 0.22 136.45 L 0.1 135.98 L 0.02 135.49 L 0 135 Z');
-
-Rectangle.002  <div>
-  id="bw-Rectangle-002"  (it has no class or id: use this id for it)
-  x 260   y 380   width 140   height 140
-  shape d="M 260 385 L 260.02 384.51 L 260.1 384.02 L 260.22 383.55 L 260.38 383.09 L 260.59 382.64 L 260.84 382.22 L 261.13 381.83 L 261.46 381.46 L 261.83 381.13 L 262.22 380.84 L 262.64 380.59 L 263.09 380.38 L 263.55 380.22 L 264.02 380.1 L 264.51 380.02 L 265 380 L 395 380 L 395.49 380.02 L 395.98 380.1 L 396.45 380.22 L 396.91 380.38 L 397.36 380.59 L 397.78 380.84 L 398.17 381.13 L 398.54 381.46 L 398.87 381.83 L 399.16 382.22 L 399.41 382.64 L 399.62 383.09 L 399.78 383.55 L 399.9 384.02 L 399.98 384.51 L 400 385 L 400 515 L 399.98 515.49 L 399.9 515.98 L 399.78 516.45 L 399.62 516.91 L 399.41 517.36 L 399.16 517.78 L 398.87 518.17 L 398.54 518.54 L 398.17 518.87 L 397.78 519.16 L 397.36 519.41 L 396.91 519.62 L 396.45 519.78 L 395.98 519.9 L 395.49 519.98 L 395 520 L 265 520 L 264.51 519.98 L 264.02 519.9 L 263.55 519.78 L 263.09 519.62 L 262.64 519.41 L 262.22 519.16 L 261.83 518.87 L 261.46 518.54 L 261.13 518.17 L 260.84 517.78 L 260.59 517.36 L 260.38 516.91 L 260.22 516.45 L 260.1 515.98 L 260.02 515.49 L 260 515 Z"
-  exact shape (use as-is): clip-path: path('M 0 5 L 0.02 4.51 L 0.1 4.02 L 0.22 3.55 L 0.38 3.09 L 0.59 2.64 L 0.84 2.22 L 1.13 1.83 L 1.46 1.46 L 1.83 1.13 L 2.22 0.84 L 2.64 0.59 L 3.09 0.38 L 3.55 0.22 L 4.02 0.1 L 4.51 0.02 L 5 0 L 135 0 L 135.49 0.02 L 135.98 0.1 L 136.45 0.22 L 136.91 0.38 L 137.36 0.59 L 137.78 0.84 L 138.17 1.13 L 138.54 1.46 L 138.87 1.83 L 139.16 2.22 L 139.41 2.64 L 139.62 3.09 L 139.78 3.55 L 139.9 4.02 L 139.98 4.51 L 140 5 L 140 135 L 139.98 135.49 L 139.9 135.98 L 139.78 136.45 L 139.62 136.91 L 139.41 137.36 L 139.16 137.78 L 138.87 138.17 L 138.54 138.54 L 138.17 138.87 L 137.78 139.16 L 137.36 139.41 L 136.91 139.62 L 136.45 139.78 L 135.98 139.9 L 135.49 139.98 L 135 140 L 5 140 L 4.51 139.98 L 4.02 139.9 L 3.55 139.78 L 3.09 139.62 L 2.64 139.41 L 2.22 139.16 L 1.83 138.87 L 1.46 138.54 L 1.13 138.17 L 0.84 137.78 L 0.59 137.36 L 0.38 136.91 L 0.22 136.45 L 0.1 135.98 L 0.02 135.49 L 0 135 Z');
-
-Rectangle.003  <div>
-  id="bw-Rectangle-003"  (it has no class or id: use this id for it)
-  x 440   y 380   width 140   height 140
-  shape d="M 440 385 L 440.02 384.51 L 440.1 384.02 L 440.22 383.55 L 440.38 383.09 L 440.59 382.64 L 440.84 382.22 L 441.13 381.83 L 441.46 381.46 L 441.83 381.13 L 442.22 380.84 L 442.64 380.59 L 443.09 380.38 L 443.55 380.22 L 444.02 380.1 L 444.51 380.02 L 445 380 L 575 380 L 575.49 380.02 L 575.98 380.1 L 576.45 380.22 L 576.91 380.38 L 577.36 380.59 L 577.78 380.84 L 578.17 381.13 L 578.54 381.46 L 578.87 381.83 L 579.16 382.22 L 579.41 382.64 L 579.62 383.09 L 579.78 383.55 L 579.9 384.02 L 579.98 384.51 L 580 385 L 580 515 L 579.98 515.49 L 579.9 515.98 L 579.78 516.45 L 579.62 516.91 L 579.41 517.36 L 579.16 517.78 L 578.87 518.17 L 578.54 518.54 L 578.17 518.87 L 577.78 519.16 L 577.36 519.41 L 576.91 519.62 L 576.45 519.78 L 575.98 519.9 L 575.49 519.98 L 575 520 L 445 520 L 444.51 519.98 L 444.02 519.9 L 443.55 519.78 L 443.09 519.62 L 442.64 519.41 L 442.22 519.16 L 441.83 518.87 L 441.46 518.54 L 441.13 518.17 L 440.84 517.78 L 440.59 517.36 L 440.38 516.91 L 440.22 516.45 L 440.1 515.98 L 440.02 515.49 L 440 515 Z"
-  exact shape (use as-is): clip-path: path('M 0 5 L 0.02 4.51 L 0.1 4.02 L 0.22 3.55 L 0.38 3.09 L 0.59 2.64 L 0.84 2.22 L 1.13 1.83 L 1.46 1.46 L 1.83 1.13 L 2.22 0.84 L 2.64 0.59 L 3.09 0.38 L 3.55 0.22 L 4.02 0.1 L 4.51 0.02 L 5 0 L 135 0 L 135.49 0.02 L 135.98 0.1 L 136.45 0.22 L 136.91 0.38 L 137.36 0.59 L 137.78 0.84 L 138.17 1.13 L 138.54 1.46 L 138.87 1.83 L 139.16 2.22 L 139.41 2.64 L 139.62 3.09 L 139.78 3.55 L 139.9 4.02 L 139.98 4.51 L 140 5 L 140 135 L 139.98 135.49 L 139.9 135.98 L 139.78 136.45 L 139.62 136.91 L 139.41 137.36 L 139.16 137.78 L 138.87 138.17 L 138.54 138.54 L 138.17 138.87 L 137.78 139.16 L 137.36 139.41 L 136.91 139.62 L 136.45 139.78 L 135.98 139.9 L 135.49 139.98 L 135 140 L 5 140 L 4.51 139.98 L 4.02 139.9 L 3.55 139.78 L 3.09 139.62 L 2.64 139.41 L 2.22 139.16 L 1.83 138.87 L 1.46 138.54 L 1.13 138.17 L 0.84 137.78 L 0.59 137.36 L 0.38 136.91 L 0.22 136.45 L 0.1 135.98 L 0.02 135.49 L 0 135 Z');
-
-Rectangle  <div>
-  id="bw-Rectangle"  (it has no class or id: use this id for it)
-  x 620   y 380   width 140   height 140
-  shape d="M 620 385 L 620.02 384.51 L 620.1 384.02 L 620.22 383.55 L 620.38 383.09 L 620.59 382.64 L 620.84 382.22 L 621.13 381.83 L 621.46 381.46 L 621.83 381.13 L 622.22 380.84 L 622.64 380.59 L 623.09 380.38 L 623.55 380.22 L 624.02 380.1 L 624.51 380.02 L 625 380 L 755 380 L 755.49 380.02 L 755.98 380.1 L 756.45 380.22 L 756.91 380.38 L 757.36 380.59 L 757.78 380.84 L 758.17 381.13 L 758.54 381.46 L 758.87 381.83 L 759.16 382.22 L 759.41 382.64 L 759.62 383.09 L 759.78 383.55 L 759.9 384.02 L 759.98 384.51 L 760 385 L 760 515 L 759.98 515.49 L 759.9 515.98 L 759.78 516.45 L 759.62 516.91 L 759.41 517.36 L 759.16 517.78 L 758.87 518.17 L 758.54 518.54 L 758.17 518.87 L 757.78 519.16 L 757.36 519.41 L 756.91 519.62 L 756.45 519.78 L 755.98 519.9 L 755.49 519.98 L 755 520 L 625 520 L 624.51 519.98 L 624.02 519.9 L 623.55 519.78 L 623.09 519.62 L 622.64 519.41 L 622.22 519.16 L 621.83 518.87 L 621.46 518.54 L 621.13 518.17 L 620.84 517.78 L 620.59 517.36 L 620.38 516.91 L 620.22 516.45 L 620.1 515.98 L 620.02 515.49 L 620 515 Z"
-  exact shape (use as-is): clip-path: path('M 0 5 L 0.02 4.51 L 0.1 4.02 L 0.22 3.55 L 0.38 3.09 L 0.59 2.64 L 0.84 2.22 L 1.13 1.83 L 1.46 1.46 L 1.83 1.13 L 2.22 0.84 L 2.64 0.59 L 3.09 0.38 L 3.55 0.22 L 4.02 0.1 L 4.51 0.02 L 5 0 L 135 0 L 135.49 0.02 L 135.98 0.1 L 136.45 0.22 L 136.91 0.38 L 137.36 0.59 L 137.78 0.84 L 138.17 1.13 L 138.54 1.46 L 138.87 1.83 L 139.16 2.22 L 139.41 2.64 L 139.62 3.09 L 139.78 3.55 L 139.9 4.02 L 139.98 4.51 L 140 5 L 140 135 L 139.98 135.49 L 139.9 135.98 L 139.78 136.45 L 139.62 136.91 L 139.41 137.36 L 139.16 137.78 L 138.87 138.17 L 138.54 138.54 L 138.17 138.87 L 137.78 139.16 L 137.36 139.41 L 136.91 139.62 L 136.45 139.78 L 135.98 139.9 L 135.49 139.98 L 135 140 L 5 140 L 4.51 139.98 L 4.02 139.9 L 3.55 139.78 L 3.09 139.62 L 2.64 139.41 L 2.22 139.16 L 1.83 138.87 L 1.46 138.54 L 1.13 138.17 L 0.84 137.78 L 0.59 137.36 L 0.38 136.91 L 0.22 136.45 L 0.1 135.98 L 0.02 135.49 L 0 135 Z');
 
 == Main_*{} ==
-Main Font: "Manrope"  (file: C:\Users\dtron\OneDrive\Desktop\Sun Tzu AI Kickstarter\Website\Fonts\Manrope,Quantico,Silkscreen\Manrope\Manrope-VariableFont_wght.ttf)
+Main Font: "Manrope"  (file: C:\Users\dtron\OneDrive\Desktop\Sun Tzu AI Kickstarter\Website\fonts\Manrope-VariableFont_wght.ttf)
 Main Font Size: 10px
 
 /* the whole website */
@@ -101,12 +67,59 @@ body {
   font-size: 10px;
 }
 
-== CSS (16 elements) ==
+/* Uploaded fonts: copy each file into the website's fonts/ folder (they are in fonts/ next to the .blend) */
+@font-face {
+  font-family: "Bank Gothic Light";
+  src: url("fonts/Bank Gothic Light Regular.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 
-/* <canvas>  object "canvas.001" */
-.Front_Page_Visual_Effects {
-  background-color: #c2c2c2;
-  font-size: 11px;
+== CSS (13 elements) ==
+
+/* <div>  object "Blend ACS" */
+.Blend_ACS {
+  width: 140px;
+  height: 140px;
+  background-color: #d9d9d9;
+  box-shadow: 0px 2px 6px 0 9e9e9e;
+  border-radius: 5px;
+  z-index: 1;
+  opacity: 1;
+}
+
+/* <div>  object "Blend EDA" */
+.Blend_EDA {
+  width: 140px;
+  height: 140px;
+  background-color: #d9d9d9;
+  box-shadow: 0px 2px 6px 0px 9e9e9e;
+  border-radius: 5px;
+  z-index: 1;
+  opacity: 1;
+}
+
+/* <div>  object "Blend Web" */
+.Blend_Web {
+  width: 140px;
+  height: 140px;
+  background-color: #d9d9d9;
+  box-shadow: 0px 2px 6px 0px 9e9e9e;
+  border-radius: 5px;
+  z-index: 1;
+  opacity: 1;
+}
+
+/* <div>  object "Kin Flow" */
+.Kin_Flow {
+  width: 140px;
+  height: 140px;
+  background-color: #d9d9d9;
+  box-shadow: 0px 2px 6px 0px 9e9e9e;
+  border-radius: 5px;
+  z-index: 1;
+  opacity: 1;
 }
 
 /* <p>  object "p" */
@@ -116,16 +129,18 @@ body {
   height: 20px;
   font-size: 11px;
   color: #ffffff;
+  z-index: 1;
 }
 
 /* <p>  object "p.001"  (no class or id: give it id="bw-p-001") */
 #bw-p-001 {
   z-index: 1;
   color: #ffffff;
-  width: 100px;
+  width: 131px;
   height: 40px;
   font-size: 24px;
   text-align: center;
+  font-family: "Bank Gothic Light";
 }
 
 /* <p>  object "p.002" */
@@ -135,6 +150,7 @@ body {
   height: 20px;
   font-size: 11px;
   color: #ffffff;
+  z-index: 1;
 }
 
 /* <p>  object "p.003" */
@@ -152,6 +168,7 @@ body {
   height: 20px;
   font-size: 11px;
   color: #ffffff;
+  z-index: 1;
 }
 
 /* <p>  object "p.005"  (no class or id: give it id="bw-p-005") */
@@ -163,51 +180,6 @@ body {
   color: #ffffff;
 }
 
-/* <div>  object "Rectangle"  (no class or id: give it id="bw-Rectangle") */
-#bw-Rectangle {
-  width: 140px;
-  height: 140px;
-  background-color: #d9d9d9;
-  box-shadow: 0 2px 6px #9e9e9e;
-  border-radius: 5px;
-}
-
-/* <div>  object "Rectangle.001"  (no class or id: give it id="bw-Rectangle-001") */
-#bw-Rectangle-001 {
-  width: 140px;
-  height: 140px;
-  background-color: #d9d9d9;
-  box-shadow: 0 2px 6px #9e9e9e;
-  border-radius: 5px;
-}
-
-/* <div>  object "Rectangle.002"  (no class or id: give it id="bw-Rectangle-002") */
-#bw-Rectangle-002 {
-  width: 140px;
-  height: 140px;
-  background-color: #d9d9d9;
-  box-shadow: 0 2px 6px #9e9e9e;
-  border-radius: 5px;
-}
-
-/* <div>  object "Rectangle.003"  (no class or id: give it id="bw-Rectangle-003") */
-#bw-Rectangle-003 {
-  width: 140px;
-  height: 140px;
-  background-color: #d9d9d9;
-  box-shadow: 0 2px 6px #9e9e9e;
-  border-radius: 5px;
-}
-
-/* <div>  object "Rectangle.004" */
-.App_3 {
-  width: 140px;
-  height: 140px;
-  background-color: #d9d9d9;
-  box-shadow: 0 2px 6px #9e9e9e;
-  border-radius: 5px;
-}
-
 /* <div>  object "Rectangle.005"  (no class or id: give it id="bw-Rectangle-005") */
 #bw-Rectangle-005 {
   width: 440px;
@@ -215,80 +187,1056 @@ body {
   background-color: #d9d9d9;
   box-shadow: 0 2px 6px #9e9e9e;
   border-radius: 5px;
+  z-index: 1;
 }
 
-/* <div>  object "Rectangle.008" */
-.App_2 {
+/* <div>  object "Rectangle.007"  (no class or id: give it id="bw-Rectangle-007") */
+#bw-Rectangle-007 {
+  width: 1366px;
+  height: 599px;
+  background-color: #4d4d4d;
+  z-index: 0;
+  background-image: linear-gradient(138deg, #ffffff 0%, #ffffff 100%);
+  background: #ffffff;
+}
+
+/* <div>  object "Sun Tzu AI" */
+.Sun_Tzu_AI {
   width: 140px;
   height: 140px;
   background-color: #d9d9d9;
-  box-shadow: 0 2px 6px #9e9e9e;
+  box-shadow: 0px 2px 6px 0 9e9e9e;
   border-radius: 5px;
-}
-
-/* <div>  object "Rectangle.009" */
-.App_1 {
-  width: 140px;
-  height: 140px;
-  background-color: #d9d9d9;
-  box-shadow: 0 2px 6px #9e9e9e;
-  border-radius: 5px;
-}
-
-/* <div>  object "Rectangle.010" */
-.App_4 {
-  width: 140px;
-  height: 140px;
-  background-color: #d9d9d9;
-  box-shadow: 0 2px 6px #9e9e9e;
-  border-radius: 5px;
+  z-index: 1;
+  opacity: 1;
 }
 
 == Node logic (AI prompt) ==
 Build these interactions into the website. Each flow starts with its trigger, then does its numbered
 steps in order (indented steps belong to the step above them). .name = elements with that class,
 #name = the element with that id, #rrggbb = a color.
+SCRIPTING: write ALL of the website's logic from these nodes - the JavaScript, and any other language a
+node needs (server code, SQL for database nodes, API routes for network nodes, CSS @keyframes for effects).
+The Node Window is the only source of behaviour: don't add interactions that aren't here, and don't leave
+any flow out. "Node data" at the end lists every node's exact settings and wires.
 
 Components (build these on the page):
-   - Canvas: .Front_Page_Visual_Effects is a <canvas> that covers the whole screen, drawn sharp on retina screens (scale by devicePixelRatio) and resized with the window, background linear-gradient(135deg, #d9d9d9, #757575); Canvas steps draw on it.
-   - Particle network: 80 slowly drifting dots joined by faint lines when close in #ffffff, reaching toward the mouse; draw it on a canvas in the page background, behind everything (full size, sharp on retina, paused when off screen or the tab is hidden, calm for reduced motion).
    - Waves: 4 smooth, layered sine waves gently moving, 100px high; draw it on a canvas in the page background, behind everything (full size, sharp on retina, paused when off screen or the tab is hidden, calm for reduced motion).
+   - Particle network: 80 slowly drifting dots joined by faint lines when close in #ffffff, reaching toward the mouse; draw it on a canvas in the page background, behind everything (full size, sharp on retina, paused when off screen or the tab is hidden, calm for reduced motion).
+   - Animated linear gradient of linear-gradient(135deg, #d5cbd3, #848ab1) at 135deg; motion: it breathes - the gradient's length goes from 60% to 200% of the area and back (the bands visibly widen and narrow), one loop every 12s; distorted by moving waves: the color bands are bent into waves whose height is 30% of the area's height, about 1.5 waves across the width, travelling sideways a full wave every 4s. The movement must be plain to see at a glance, not a faint shimmer: repeat the colors across the area (first color again at the end, 2-3 bands visible) so moving them shows, and keep it smooth (60 fps); draw it on a canvas in the page background, behind everything (full size, sharp on retina, paused when off screen or the tab is hidden, calm for reduced motion).
+   - Animated linear gradient of linear-gradient(135deg, #d5988b, #55aeb1) at 135deg; motion: it breathes - the gradient's length goes from 60% to 200% of the area and back (the bands visibly widen and narrow), one loop every 12s; distorted by moving waves: the color bands are bent into waves whose height is 30% of the area's height, about 1.5 waves across the width, travelling sideways a full wave every 4s. The movement must be plain to see at a glance, not a faint shimmer: repeat the colors across the area (first color again at the end, 2-3 bands visible) so moving them shows, and keep it smooth (60 fps); draw it on a canvas in the page background, behind everything (full size, sharp on retina, paused when off screen or the tab is hidden, calm for reduced motion).
+   - App link "Sun Tzu AI": the address the site's own address + #sun-tzu-ai opens Sun Tzu AI directly - when the page loads with that address (typed, a link, or a scanned QR code), wait until the page is ready, then wait 1 more second, and then do exactly what a click / tap on .Sun_Tzu_AI does, without the visitor clicking (run that element's click flow once; if it has an opening animation, play it); when it is opened by a click, put the link in the address bar (history.pushState), and take it out again when it closes; the browser's Back button closes it (popstate) instead of leaving the site; while it is open the tab title is "Sun Tzu AI". An unknown link just shows the normal page.
+   - App link "Blend Web": the address the site's own address + #blend-web opens Blend Web directly - when the page loads with that address (typed, a link, or a scanned QR code), wait until the page is ready, then wait 1 more second, and then do exactly what a click / tap on .Blend_Web does, without the visitor clicking (run that element's click flow once; if it has an opening animation, play it); when it is opened by a click, put the link in the address bar (history.pushState), and take it out again when it closes; the browser's Back button closes it (popstate) instead of leaving the site; while it is open the tab title is "Blend Web". An unknown link just shows the normal page.
+   - App link "Blend EDA": the address the site's own address + #blend-eda opens Blend EDA directly - when the page loads with that address (typed, a link, or a scanned QR code), wait until the page is ready, then wait 1 more second, and then do exactly what a click / tap on .Blend_EDA does, without the visitor clicking (run that element's click flow once; if it has an opening animation, play it); when it is opened by a click, put the link in the address bar (history.pushState), and take it out again when it closes; the browser's Back button closes it (popstate) instead of leaving the site; while it is open the tab title is "Blend EDA". An unknown link just shows the normal page.
+   - App link "Blend ACS": the address the site's own address + #blend-acs opens Blend ACS directly - when the page loads with that address (typed, a link, or a scanned QR code), wait until the page is ready, then wait 1 more second, and then do exactly what a click / tap on .Blend_ACS does, without the visitor clicking (run that element's click flow once; if it has an opening animation, play it); when it is opened by a click, put the link in the address bar (history.pushState), and take it out again when it closes; the browser's Back button closes it (popstate) instead of leaving the site; while it is open the tab title is "Blend ACS". An unknown link just shows the normal page.
+   - App link "Kin Flow": the address the site's own address + #kin-flow opens Kin Flow directly - when the page loads with that address (typed, a link, or a scanned QR code), wait until the page is ready, then wait 1 more second, and then do exactly what a click / tap on .Kin_Flow does, without the visitor clicking (run that element's click flow once; if it has an opening animation, play it); when it is opened by a click, put the link in the address bar (history.pushState), and take it out again when it closes; the browser's Back button closes it (popstate) instead of leaving the site; while it is open the tab title is "Kin Flow". An unknown link just shows the normal page.
+   - Link delay: an app opened by its link (any app link) waits 1 second after the page is ready before it opens; a normal click on the app still opens it at once.
+   - App link "Sun Tzu AI": the address the site's own address + #https-sozin-x-com-suntzuai opens Sun Tzu AI directly - when the page loads with that address (typed, a link, or a scanned QR code), wait until the page is ready, then wait 1 more second, and then do exactly what a click / tap on .Blend_ACS does, without the visitor clicking (run that element's click flow once; if it has an opening animation, play it); when it is opened by a click, put the link in the address bar (history.pushState), and take it out again when it closes; the browser's Back button closes it (popstate) instead of leaving the site; while it is open the tab title is "Sun Tzu AI". An unknown link just shows the normal page.
 
-Flow 1 - When the mouse enters .App_1:
+Flow 1 - When the mouse enters .Sun_Tzu_AI:
    1. Change the text of (no element chosen) to "Sun Tzu AI".
-   and When the mouse leaves .App_1:
+   and When the mouse leaves .Sun_Tzu_AI:
    1. Change the text of (no element chosen) to "--".
 
-Flow 2 - When the mouse enters .App_2:
+Flow 2 - When the mouse enters .Blen_Web:
    1. Change the text of (no element chosen) to "Blend Web".
-   and When the mouse leaves .App_2:
+   and When the mouse leaves .Blen_Web:
    1. Change the text of (no element chosen) to "--".
 
-Flow 3 - When the mouse enters .App_3:
-   1. Change the text of (no element chosen) to "B-SMC".
-   and When the mouse leaves .App_3:
+Flow 3 - When the mouse enters .Blend_EDA:
+   1. Change the text of (no element chosen) to "Blend EDA".
+   and When the mouse leaves .Blend_EDA:
    1. Change the text of (no element chosen) to "--".
 
-Flow 4 - When the mouse enters .App_4:
+Flow 4 - When the mouse enters .Blend_ACS:
    1. Change the text of (no element chosen) to "Owl".
-   and When the mouse leaves .App_4:
+   and When the mouse leaves .Blend_ACS:
    1. Change the text of (no element chosen) to "--".
+
+Flow 5 - "SunTzuAI_OpenApp": when the user clicks or taps (touch) .Sun_Tzu_AI:
+   Every time:
+      1. Go on only if the gate "Sun Tzu AI" is open (it starts open; Open / Close Gate steps change it):
+         If it's open:
+            1.1. Close the gate "Sun Tzu AI".
+            1.2. Animate .Sun_Tzu_AI exactly like the Blender timeline animation "Sun Tzu AI-Open/Close Animation" on "Sun Tzu AI" (frames 0-12 = 0.5s at 24 fps), relative to where it is, with this CSS (each key's own timing is kept): @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-move {  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { transform: translate(-80px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }  100% { transform: translate(-80px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-color {  0% { background-color: #d9d9d9; }  25% { background-color: #d9d9d9; }  100% { background-color: #d9d9d9; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-fade {  0% { opacity: 1; }  25% { opacity: 1; }  100% { opacity: 1; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-border-radius {  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { border-radius: 0px; }  100% { border-radius: 0px; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-box-shadow {  0% { box-shadow: 0px 2px 6px 0 9e9e9e; animation-timing-function: steps(1, end); }  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-height {  0% { height: 140px; }  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { height: 599px; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-opacity {  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { opacity: 1; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-width {  0% { width: 140px; }  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { width: 1366px; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-z-index {  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { z-index: 2; }  100% { z-index: 2; } }; run it with animation: bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0% (linear easing).
+
+Flow 6 - "BlendWeb_OpenApp": when the user clicks or taps (touch) .Blen_Web:
+   Every time:
+      1. Go on only if the gate "Blend Web" is open (it starts open; Open / Close Gate steps change it):
+         If it's open:
+            1.1. Close the gate "Blend Web".
+            1.2. Animate .Blend_Web exactly like the Blender timeline animation "Blend Web-Open/Close Animation" on "Blend Web" (frames 0-12 = 0.5s at 24 fps), relative to where it is, with this CSS (each key's own timing is kept): @keyframes bw-blend-web-blend-web-open-close-animation-0-12-move {  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { transform: translate(-260px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }  100% { transform: translate(-260px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); } } @keyframes bw-blend-web-blend-web-open-close-animation-0-12-color {  0% { background-color: #d9d9d9; }  25% { background-color: #d9d9d9; }  100% { background-color: #d9d9d9; } } @keyframes bw-blend-web-blend-web-open-close-animation-0-12-fade {  0% { opacity: 1; }  25% { opacity: 1; }  100% { opacity: 1; } } @keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-border-radius {  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { border-radius: 0px; }  100% { border-radius: 0px; } } @keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-box-shadow {  0% { box-shadow: 0px 2px 6px 0px 9e9e9e; animation-timing-function: steps(1, end); }  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); } } @keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-height {  0% { height: 140px; }  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { height: 599px; } } @keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-opacity {  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { opacity: 1; } } @keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-width {  0% { width: 140px; }  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { width: 1366px; } } @keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-z-index {  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { z-index: 2; }  100% { z-index: 2; } }; run it with animation: bw-blend-web-blend-web-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0% (linear easing).
+
+Flow 7 - When the user double-clicks (or double-taps) .Sun_Tzu_AI:
+   1. Animate .Sun_Tzu_AI exactly like the Blender timeline animation "Sun Tzu AI-Open/Close Animation" on "Sun Tzu AI" (frames 0-12 = 0.5s at 24 fps), PLAYED BACKWARDS - from its last keyframe to its first (animation-direction: reverse) - relative to where it is, with this CSS (each key's own timing is kept): @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-move {  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { transform: translate(-80px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }  100% { transform: translate(-80px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-color {  0% { background-color: #d9d9d9; }  25% { background-color: #d9d9d9; }  100% { background-color: #d9d9d9; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-fade {  0% { opacity: 1; }  25% { opacity: 1; }  100% { opacity: 1; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-border-radius {  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { border-radius: 0px; }  100% { border-radius: 0px; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-box-shadow {  0% { box-shadow: 0px 2px 6px 0 9e9e9e; animation-timing-function: steps(1, end); }  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-height {  0% { height: 140px; }  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { height: 599px; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-opacity {  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { opacity: 1; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-width {  0% { width: 140px; }  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { width: 1366px; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-z-index {  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { z-index: 2; }  100% { z-index: 2; } }; run it with animation: bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-move 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-color 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-fade 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-border-radius 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-box-shadow 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-height 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-opacity 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-width 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-z-index 0.5s linear 0s 1 reverse both; transform-origin: 0% 0% (linear easing).
+   2. Open the gate "Sun Tzu AI".
+
+Flow 8 - When the user double-clicks (or double-taps) .Blend_Web:
+   1. Animate .Blend_Web exactly like the Blender timeline animation "Blend Web-Open/Close Animation" on "Blend Web" (frames 0-12 = 0.5s at 24 fps), PLAYED BACKWARDS - from its last keyframe to its first (animation-direction: reverse) - relative to where it is, with this CSS (each key's own timing is kept): @keyframes bw-blend-web-blend-web-open-close-animation-move {  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { transform: translate(-260px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }  100% { transform: translate(-260px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); } } @keyframes bw-blend-web-blend-web-open-close-animation-color {  0% { background-color: #d9d9d9; }  25% { background-color: #d9d9d9; }  100% { background-color: #d9d9d9; } } @keyframes bw-blend-web-blend-web-open-close-animation-fade {  0% { opacity: 1; }  25% { opacity: 1; }  100% { opacity: 1; } } @keyframes bw-blend-web-blend-web-open-close-animation-css-border-radius {  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { border-radius: 0px; }  100% { border-radius: 0px; } } @keyframes bw-blend-web-blend-web-open-close-animation-css-box-shadow {  0% { box-shadow: 0px 2px 6px 0px 9e9e9e; animation-timing-function: steps(1, end); }  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); } } @keyframes bw-blend-web-blend-web-open-close-animation-css-height {  0% { height: 140px; }  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { height: 599px; } } @keyframes bw-blend-web-blend-web-open-close-animation-css-opacity {  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { opacity: 1; } } @keyframes bw-blend-web-blend-web-open-close-animation-css-width {  0% { width: 140px; }  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { width: 1366px; } } @keyframes bw-blend-web-blend-web-open-close-animation-css-z-index {  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { z-index: 2; }  100% { z-index: 2; } }; run it with animation: bw-blend-web-blend-web-open-close-animation-move 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-color 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-fade 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-border-radius 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-box-shadow 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-height 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-opacity 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-width 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-z-index 0.5s linear 0s 1 reverse both; transform-origin: 0% 0% (linear easing).
+   2. Open the gate "Blend Web".
+
+Flow 9 - When the user double-clicks (or double-taps) .Blend_EDA:
+   1. Animate .Blend_EDA exactly like the Blender timeline animation "Blend EDA-Open/Close Animation" on "Blend EDA" (frames 0-12 = 0.5s at 24 fps), PLAYED BACKWARDS - from its last keyframe to its first (animation-direction: reverse) - relative to where it is, with this CSS (each key's own timing is kept): @keyframes bw-blend-eda-blend-eda-open-close-animation-move {  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { transform: translate(-440px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }  100% { transform: translate(-440px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); } } @keyframes bw-blend-eda-blend-eda-open-close-animation-color {  0% { background-color: #d9d9d9; }  25% { background-color: #d9d9d9; }  100% { background-color: #d9d9d9; } } @keyframes bw-blend-eda-blend-eda-open-close-animation-fade {  0% { opacity: 1; }  25% { opacity: 1; }  100% { opacity: 1; } } @keyframes bw-blend-eda-blend-eda-open-close-animation-css-border-radius {  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { border-radius: 0px; }  100% { border-radius: 0px; } } @keyframes bw-blend-eda-blend-eda-open-close-animation-css-box-shadow {  0% { box-shadow: 0px 2px 6px 0px 9e9e9e; animation-timing-function: steps(1, end); }  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); } } @keyframes bw-blend-eda-blend-eda-open-close-animation-css-height {  0% { height: 140px; }  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { height: 599px; } } @keyframes bw-blend-eda-blend-eda-open-close-animation-css-opacity {  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { opacity: 1; } } @keyframes bw-blend-eda-blend-eda-open-close-animation-css-width {  0% { width: 140px; }  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { width: 1366px; } } @keyframes bw-blend-eda-blend-eda-open-close-animation-css-z-index {  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { z-index: 2; }  100% { z-index: 2; } }; run it with animation: bw-blend-eda-blend-eda-open-close-animation-move 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-color 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-fade 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-border-radius 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-box-shadow 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-height 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-opacity 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-width 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-z-index 0.5s linear 0s 1 reverse both; transform-origin: 0% 0% (linear easing).
+   2. Open the gate "Blend EDA".
+
+Flow 10 - "BlendEDA_OpenApp": when the user clicks or taps (touch) .Blend_EDA:
+   Every time:
+      1. Go on only if the gate "Blend EDA" is open (it starts open; Open / Close Gate steps change it):
+         If it's open:
+            1.1. Close the gate "Blend EDA".
+            1.2. Animate .Blend_EDA exactly like the Blender timeline animation "Blend EDA-Open/Close Animation" on "Blend EDA" (frames 0-12 = 0.5s at 24 fps), relative to where it is, with this CSS (each key's own timing is kept): @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-move {  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { transform: translate(-440px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }  100% { transform: translate(-440px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); } } @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-color {  0% { background-color: #d9d9d9; }  25% { background-color: #d9d9d9; }  100% { background-color: #d9d9d9; } } @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-fade {  0% { opacity: 1; }  25% { opacity: 1; }  100% { opacity: 1; } } @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-border-radius {  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { border-radius: 0px; }  100% { border-radius: 0px; } } @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-box-shadow {  0% { box-shadow: 0px 2px 6px 0px 9e9e9e; animation-timing-function: steps(1, end); }  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); } } @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-height {  0% { height: 140px; }  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { height: 599px; } } @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-opacity {  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { opacity: 1; } } @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-width {  0% { width: 140px; }  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { width: 1366px; } } @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-z-index {  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { z-index: 2; }  100% { z-index: 2; } }; run it with animation: bw-blend-eda-blend-eda-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0% (linear easing).
+
+Flow 11 - When the user double-clicks (or double-taps) .Blend_ACS:
+   1. Animate .Blend_ACS exactly like the Blender timeline animation "Blend ACS-Open/Close Animation" on "Blend ACS" (frames 0-12 = 0.5s at 24 fps), PLAYED BACKWARDS - from its last keyframe to its first (animation-direction: reverse) - relative to where it is, with this CSS (each key's own timing is kept): @keyframes bw-blend-acs-blend-acs-open-close-animation-move {  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { transform: translate(-620px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }  100% { transform: translate(-620px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); } } @keyframes bw-blend-acs-blend-acs-open-close-animation-color {  0% { background-color: #d9d9d9; }  25% { background-color: #d9d9d9; }  100% { background-color: #d9d9d9; } } @keyframes bw-blend-acs-blend-acs-open-close-animation-fade {  0% { opacity: 1; }  25% { opacity: 1; }  100% { opacity: 1; } } @keyframes bw-blend-acs-blend-acs-open-close-animation-css-border-radius {  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { border-radius: 0px; }  100% { border-radius: 0px; } } @keyframes bw-blend-acs-blend-acs-open-close-animation-css-box-shadow {  0% { box-shadow: 0px 2px 6px 0 9e9e9e; animation-timing-function: steps(1, end); }  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); } } @keyframes bw-blend-acs-blend-acs-open-close-animation-css-height {  0% { height: 140px; }  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { height: 599px; } } @keyframes bw-blend-acs-blend-acs-open-close-animation-css-opacity {  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { opacity: 1; } } @keyframes bw-blend-acs-blend-acs-open-close-animation-css-width {  0% { width: 140px; }  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { width: 1366px; } } @keyframes bw-blend-acs-blend-acs-open-close-animation-css-z-index {  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { z-index: 2; }  100% { z-index: 2; } }; run it with animation: bw-blend-acs-blend-acs-open-close-animation-move 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-color 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-fade 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-border-radius 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-box-shadow 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-height 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-opacity 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-width 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-z-index 0.5s linear 0s 1 reverse both; transform-origin: 0% 0% (linear easing).
+   2. Open the gate "Blend ACS".
+
+Flow 12 - "BlendACS_OpenApp": when the user clicks or taps (touch) .Blend_ACS:
+   Every time:
+      1. Go on only if the gate "Blend ACS" is open (it starts open; Open / Close Gate steps change it):
+         If it's open:
+            1.1. Close the gate "Blend ACS".
+            1.2. Animate .Blend_ACS exactly like the Blender timeline animation "Blend ACS-Open/Close Animation" on "Blend ACS" (frames 0-12 = 0.5s at 24 fps), relative to where it is, with this CSS (each key's own timing is kept): @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-move {  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { transform: translate(-620px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }  100% { transform: translate(-620px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); } } @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-color {  0% { background-color: #d9d9d9; }  25% { background-color: #d9d9d9; }  100% { background-color: #d9d9d9; } } @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-fade {  0% { opacity: 1; }  25% { opacity: 1; }  100% { opacity: 1; } } @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-border-radius {  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { border-radius: 0px; }  100% { border-radius: 0px; } } @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-box-shadow {  0% { box-shadow: 0px 2px 6px 0 9e9e9e; animation-timing-function: steps(1, end); }  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); } } @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-height {  0% { height: 140px; }  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { height: 599px; } } @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-opacity {  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { opacity: 1; } } @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-width {  0% { width: 140px; }  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { width: 1366px; } } @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-z-index {  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { z-index: 2; }  100% { z-index: 2; } }; run it with animation: bw-blend-acs-blend-acs-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0% (linear easing).
+
+Flow 13 - "KinFow_OpenApp": when the user clicks or taps (touch) .Kin_Flow:
+   Every time:
+      1. Go on only if the gate "Kin Flow" is open (it starts open; Open / Close Gate steps change it):
+         If it's open:
+            1.1. Close the gate "Kin Flow".
+            1.2. Animate .Kin_Flow exactly like the Blender timeline animation "Kin Flow-Open/Close Animation" on "Kin Flow" (frames 0-12 = 0.5s at 24 fps), relative to where it is, with this CSS (each key's own timing is kept): @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-move {  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { transform: translate(-80px, -380px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }  100% { transform: translate(-80px, -380px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); } } @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-color {  0% { background-color: #d9d9d9; }  25% { background-color: #d9d9d9; }  100% { background-color: #d9d9d9; } } @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-fade {  0% { opacity: 1; }  25% { opacity: 1; }  100% { opacity: 1; } } @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-border-radius {  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { border-radius: 0px; }  100% { border-radius: 0px; } } @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-box-shadow {  0% { box-shadow: 0px 2px 6px 0px 9e9e9e; animation-timing-function: steps(1, end); }  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); } } @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-height {  0% { height: 140px; }  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { height: 599px; } } @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-opacity {  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { opacity: 1; } } @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-width {  0% { width: 140px; }  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { width: 1366px; } } @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-z-index {  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { z-index: 2; }  100% { z-index: 2; } }; run it with animation: bw-kin-flow-kin-flow-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0% (linear easing).
+
+Flow 14 - When the user double-clicks (or double-taps) .Kin_Flow:
+   1. Animate .Kin_Flow exactly like the Blender timeline animation "Kin Flow-Open/Close Animation" on "Kin Flow" (frames 0-12 = 0.5s at 24 fps), PLAYED BACKWARDS - from its last keyframe to its first (animation-direction: reverse) - relative to where it is, with this CSS (each key's own timing is kept): @keyframes bw-kin-flow-kin-flow-open-close-animation-move {  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { transform: translate(-80px, -380px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }  100% { transform: translate(-80px, -380px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); } } @keyframes bw-kin-flow-kin-flow-open-close-animation-color {  0% { background-color: #d9d9d9; }  25% { background-color: #d9d9d9; }  100% { background-color: #d9d9d9; } } @keyframes bw-kin-flow-kin-flow-open-close-animation-fade {  0% { opacity: 1; }  25% { opacity: 1; }  100% { opacity: 1; } } @keyframes bw-kin-flow-kin-flow-open-close-animation-css-border-radius {  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { border-radius: 0px; }  100% { border-radius: 0px; } } @keyframes bw-kin-flow-kin-flow-open-close-animation-css-box-shadow {  0% { box-shadow: 0px 2px 6px 0px 9e9e9e; animation-timing-function: steps(1, end); }  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); } } @keyframes bw-kin-flow-kin-flow-open-close-animation-css-height {  0% { height: 140px; }  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { height: 599px; } } @keyframes bw-kin-flow-kin-flow-open-close-animation-css-opacity {  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { opacity: 1; } } @keyframes bw-kin-flow-kin-flow-open-close-animation-css-width {  0% { width: 140px; }  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { width: 1366px; } } @keyframes bw-kin-flow-kin-flow-open-close-animation-css-z-index {  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { z-index: 2; }  100% { z-index: 2; } }; run it with animation: bw-kin-flow-kin-flow-open-close-animation-move 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-color 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-fade 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-border-radius 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-box-shadow 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-height 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-opacity 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-width 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-z-index 0.5s linear 0s 1 reverse both; transform-origin: 0% 0% (linear easing).
+   2. Open the gate "Kin Flow".
+
+Also do these (nothing triggers them yet - do them when the page loads unless they say otherwise):
+   P1. Change the text of .Front_Page_Date to "now written as long (September 27, 2026) in the visitor's language (Intl)".
+   P2. Change the text of .Front_Page_Time to "now written as 12:40:00 in the visitor's language (Intl)".
 
 Elements used:
-   .Front_Page_Visual_Effects = <canvas> (object canvas.001)
-   .Front_Page_Time = <p> "4:20:00 pm" (object p)
+   .Sun_Tzu_AI = <div> (object Sun Tzu AI)
+   .Blen_Web (not in the website yet)
+   .Blend_Web = <div> (object Blend Web)
+   .Blend_EDA = <div> (object Blend EDA)
+   .Blend_ACS = <div> (object Blend ACS)
+   .Kin_Flow = <div> (object Kin Flow)
+   #sun-tzu-ai (not in the website yet)
+   #blend-web (not in the website yet)
+   #blend-eda (not in the website yet)
+   #blend-acs (not in the website yet)
+   #kin-flow (not in the website yet)
+   #https-sozin-x-com-suntzuai (not in the website yet)
    .Front_Page_Date = <p> "October 7th, 2026" (object p.002)
-   .App_1 = <div> (object Rectangle.009)
-   .App_2 = <div> (object Rectangle.008)
-   .App_3 = <div> (object Rectangle.004)
-   .App_4 = <div> (object Rectangle.010)
+   .Front_Page_Time = <p> "4:20:00 pm" (object p)
+   .Front_Page_Visual_Effects (not in the website yet)
+
+Node data (every node in the Node Window: [id] node (folder): settings -> wires out):
+   [n1] Format Date (Other Nodes > Date & Time): Date (empty = now) = (empty); As = long (September 27, 2026); Pattern = MMM d, yyyy; Language = (empty)  ->  Text -> n4.Text
+   [n2] Format Date (Other Nodes > Date & Time): Date (empty = now) = (empty); As = custom pattern (below); Pattern = 12:40:00; Language = (empty)  ->  Text -> n5.Text
+   [n3] Get Element by Class Name (Values): .Front_Page_Time  ->  Elements -> n5.Element
+   [n4] Change Text (Actions): Element = .Front_Page_Date (wired); Text = now written as long (September 27, 2026) in the visitor's language (Intl) (wired)
+   [n5] Change Text (Actions): Element = .Front_Page_Time (wired); Text = now written as 12:40:00 in the visitor's language (Intl) (wired)
+   [n6] Get Element by Class Name (Values): .Front_Page_Date  ->  Elements -> n4.Element
+   [n7] Hover (Triggers): Element = .Sun_Tzu_AI (wired)  ->  On Leave -> n10.Run, On Enter -> n11.Run
+   [n8] Text (Values): Text = Sun Tzu AI  ->  Text -> n11.Text
+   [n9] Text (Values): Text = --  ->  Text -> n10.Text
+   [n10] Change Text (Actions): Element = (choose); Text = -- (wired)
+   [n11] Change Text (Actions): Element = (choose); Text = Sun Tzu AI (wired)
+   [n12] Hover (Triggers): Element = .Blen_Web (wired)  ->  On Leave -> n14.Run, On Enter -> n15.Run
+   [n13] Text (Values): Text = --  ->  Text -> n14.Text
+   [n14] Change Text (Actions): Element = (choose); Text = -- (wired)
+   [n15] Change Text (Actions): Element = (choose); Text = Blend Web (wired)
+   [n16] Hover (Triggers): Element = .Blend_EDA (wired)  ->  On Leave -> n19.Run, On Enter -> n20.Run
+   [n17] Text (Values): Text = Blend EDA  ->  Text -> n20.Text
+   [n18] Text (Values): Text = --  ->  Text -> n19.Text
+   [n19] Change Text (Actions): Element = (choose); Text = -- (wired)
+   [n20] Change Text (Actions): Element = (choose); Text = Blend EDA (wired)
+   [n21] Hover (Triggers): Element = .Blend_ACS (wired)  ->  On Leave -> n24.Run, On Enter -> n25.Run
+   [n22] Text (Values): Text = Owl  ->  Text -> n25.Text
+   [n23] Text (Values): Text = --  ->  Text -> n24.Text
+   [n24] Change Text (Actions): Element = (choose); Text = -- (wired)
+   [n25] Change Text (Actions): Element = (choose); Text = Owl (wired)
+   [n26] Get Element by Class Name (Values): .Blen_Web  ->  Elements -> n12.Element
+   [n27] Get Element by Class Name (Values): .Blend_EDA  ->  Elements -> n16.Element
+   [n28] Get Element by Class Name (Values): .Blend_ACS  ->  Elements -> n21.Element
+   [n29] Text (Values): Text = Blend Web  ->  Text -> n15.Text
+   [n30] Click Step (Triggers): "SunTzuAI_OpenApp" on .Sun_Tzu_AI  ->  Clicked -> n31.Run
+   [n31] Gate (Flow > Branches): Gate name = Sun Tzu AI; Starts open = True  ->  Then -> n33.Run
+   [n32] Get Element by Class Name (Values): .Sun_Tzu_AI  ->  Elements -> n57.Element
+   [n33] Open / Close Gate (Actions): Gate name = Sun Tzu AI; Do = close it  ->  Next -> n53.Run
+   [n34] Open / Close Gate (Actions): Gate name = Sun Tzu AI; Do = open it
+   [n35] Reverse Animation (Animation > Play): Element = .Sun_Tzu_AI; Animated object = Sun Tzu AI; Animation (blank = its own) = Sun Tzu AI-Open/Close Animation; Play = all its keys; From marker = (choose); To marker = (choose); From frame = 1; To frame = 60; When it ends = stay on the first frame; Seconds (0 = Blender's) = 0; Delay (s) = 0; Easing = linear; Repeat = Once; Back and forth = False; Stagger (s) = 0  ->  Next -> n34.Run
+   [n36] Color (Values): #ffffff  ->  Color -> n42.Color
+   [n37] Waves (Canvas > Canvas Effects): Element (empty = page) = .Front_Page_Visual_Effects (wired); Draw in = the page background (behind everything); Wave lines = 4; Height (px) = 100; Color = (empty)
+   [n38] Color (Values): #848ab1  ->  Color -> n39.Color 2
+   [n39] Gradient (Color > Make): Type = linear; Angle (deg) = 135; Color 1 = #d5cbd3 (wired); Color 2 = #848ab1 (wired); Color 3 (optional) = (empty)  ->  Gradient -> n43.Colors
+   [n40] Get Element by Class Name (Values): .Front_Page_Visual_Effects  ->  Elements -> n37.Element (empty = page), Elements -> n42.Element (empty = page), Elements -> n43.Element (empty = page)
+   [n41] Color (Values): #d5cbd3  ->  Color -> n39.Color 1
+   [n42] Particle Network (Canvas > Canvas Effects): Element (empty = page) = .Front_Page_Visual_Effects (wired); Draw in = the page background (behind everything); Dots = 80; Color = #ffffff (wired); React to the mouse = True
+   [n43] Animated Gradient (Canvas > Gradient Animation): Element (empty = page) = .Front_Page_Visual_Effects (wired); Draw in = the page background (behind everything); Type = linear; Colors = linear-gradient(135deg, #d5cbd3, #848ab1) (wired); Angle (deg) = 135; Motion = breathe (grow / shrink); Seconds per loop = 12; Distortion = waves; Distortion amount (0-100) = 30  ->  Next -> n44.Run
+   [n44] Wait (Flow): Seconds = 1  ->  Then -> n48.Run
+   [n45] Color (Values): #d5988b  ->  Color -> n47.Color 1
+   [n46] Color (Values): #55aeb1  ->  Color -> n47.Color 2
+   [n47] Gradient (Color > Make): Type = linear; Angle (deg) = 135; Color 1 = #d5988b (wired); Color 2 = #55aeb1 (wired); Color 3 (optional) = (empty)  ->  Gradient -> n48.Colors
+   [n48] Animated Gradient (Canvas > Gradient Animation): Element (empty = page) = (choose); Draw in = the page background (behind everything); Type = linear; Colors = linear-gradient(135deg, #d5988b, #55aeb1) (wired); Angle (deg) = 135; Motion = breathe (grow / shrink); Seconds per loop = 12; Distortion = waves; Distortion amount (0-100) = 30
+   [n49] Gate (Flow > Branches): Gate name = Blend Web; Starts open = True  ->  Then -> n50.Run
+   [n50] Open / Close Gate (Actions): Gate name = Blend Web; Do = close it  ->  Next -> n56.Run
+   [n51] Open / Close Gate (Actions): Gate name = Blend Web; Do = open it
+   [n52] Reverse Animation (Animation > Play): Element = .Blend_Web; Animated object = Blend Web; Animation (blank = its own) = Blend Web-Open/Close Animation; Play = all its keys; From marker = (choose); To marker = (choose); From frame = 1; To frame = 60; When it ends = stay on the first frame; Seconds (0 = Blender's) = 0; Delay (s) = 0; Easing = linear; Repeat = Once; Back and forth = False; Stagger (s) = 0  ->  Next -> n51.Run
+   [n53] Timeline Animation (Effects > From Blender): Element = .Sun_Tzu_AI; Animated object = Sun Tzu AI; Action (blank = its own) = Sun Tzu AI-Open/Close Animation; Play = a frame range; From marker = (choose); To marker = (choose); From frame = 0; To frame = 12; When it ends = stay on the last frame; Seconds (0 = Blender's) = 0; Delay (s) = 0; Easing = linear; Repeat = Once; Back and forth = False; Stagger (s) = 0
+   [n54] Get Element by Class Name (Values): .Sun_Tzu_AI  ->  Elements -> n7.Element
+   [n55] Click Step (Triggers): "BlendWeb_OpenApp" on .Blen_Web  ->  Clicked -> n49.Run
+   [n56] Timeline Animation (Effects > From Blender): Element = .Blend_Web; Animated object = Blend Web; Action (blank = its own) = Blend Web-Open/Close Animation; Play = a frame range; From marker = (choose); To marker = (choose); From frame = 0; To frame = 12; When it ends = stay on the last frame; Seconds (0 = Blender's) = 0; Delay (s) = 0; Easing = linear; Repeat = Once; Back and forth = False; Stagger (s) = 0
+   [n57] Double Click (Triggers > Mouse & Touch): Element = .Sun_Tzu_AI (wired)  ->  Then -> n35.Run
+   [n58] Double Click (Triggers > Mouse & Touch): Element = .Blend_Web (wired)  ->  Then -> n52.Run
+   [n59] Get Element by Class Name (Values): .Blend_Web  ->  Elements -> n58.Element
+   [n60] Gate (Flow > Branches): Gate name = Blend EDA; Starts open = True  ->  Then -> n61.Run
+   [n61] Open / Close Gate (Actions): Gate name = Blend EDA; Do = close it  ->  Next -> n65.Run
+   [n62] Open / Close Gate (Actions): Gate name = Blend EDA; Do = open it
+   [n63] Reverse Animation (Animation > Play): Element = .Blend_EDA; Animated object = Blend EDA; Animation (blank = its own) = Blend EDA-Open/Close Animation; Play = all its keys; From marker = (choose); To marker = (choose); From frame = 1; To frame = 60; When it ends = stay on the first frame; Seconds (0 = Blender's) = 0; Delay (s) = 0; Easing = linear; Repeat = Once; Back and forth = False; Stagger (s) = 0  ->  Next -> n62.Run
+   [n64] Double Click (Triggers > Mouse & Touch): Element = .Blend_EDA (wired)  ->  Then -> n63.Run
+   [n65] Timeline Animation (Effects > From Blender): Element = .Blend_EDA; Animated object = Blend EDA; Action (blank = its own) = Blend EDA-Open/Close Animation; Play = a frame range; From marker = (choose); To marker = (choose); From frame = 0; To frame = 12; When it ends = stay on the last frame; Seconds (0 = Blender's) = 0; Delay (s) = 0; Easing = linear; Repeat = Once; Back and forth = False; Stagger (s) = 0
+   [n66] Get Element by Class Name (Values): .Blend_EDA  ->  Elements -> n64.Element
+   [n67] Click Step (Triggers): "BlendEDA_OpenApp" on .Blend_EDA  ->  Clicked -> n60.Run
+   [n68] Gate (Flow > Branches): Gate name = Blend ACS; Starts open = True  ->  Then -> n69.Run
+   [n69] Open / Close Gate (Actions): Gate name = Blend ACS; Do = close it  ->  Next -> n72.Run
+   [n70] Open / Close Gate (Actions): Gate name = Blend ACS; Do = open it
+   [n71] Double Click (Triggers > Mouse & Touch): Element = .Blend_ACS (wired)  ->  Then -> n74.Run
+   [n72] Timeline Animation (Effects > From Blender): Element = .Blend_ACS; Animated object = Blend ACS; Action (blank = its own) = Blend ACS-Open/Close Animation; Play = a frame range; From marker = (choose); To marker = (choose); From frame = 0; To frame = 12; When it ends = stay on the last frame; Seconds (0 = Blender's) = 0; Delay (s) = 0; Easing = linear; Repeat = Once; Back and forth = False; Stagger (s) = 0
+   [n73] Click Step (Triggers): "BlendACS_OpenApp" on .Blend_ACS  ->  Clicked -> n68.Run
+   [n74] Reverse Animation (Animation > Play): Element = .Blend_ACS; Animated object = Blend ACS; Animation (blank = its own) = Blend ACS-Open/Close Animation; Play = all its keys; From marker = (choose); To marker = (choose); From frame = 1; To frame = 60; When it ends = stay on the first frame; Seconds (0 = Blender's) = 0; Delay (s) = 0; Easing = linear; Repeat = Once; Back and forth = False; Stagger (s) = 0  ->  Next -> n70.Run
+   [n75] Gate (Flow > Branches): Gate name = Kin Flow; Starts open = True  ->  Then -> n76.Run
+   [n76] Open / Close Gate (Actions): Gate name = Kin Flow; Do = close it  ->  Next -> n82.Run
+   [n77] Open / Close Gate (Actions): Gate name = Kin Flow; Do = open it
+   [n78] Reverse Animation (Animation > Play): Element = .Kin_Flow; Animated object = Kin Flow; Animation (blank = its own) = Kin Flow-Open/Close Animation; Play = all its keys; From marker = (choose); To marker = (choose); From frame = 1; To frame = 60; When it ends = stay on the first frame; Seconds (0 = Blender's) = 0; Delay (s) = 0; Easing = linear; Repeat = Once; Back and forth = False; Stagger (s) = 0  ->  Next -> n77.Run
+   [n79] Click Step (Triggers): "KinFow_OpenApp" on .Kin_Flow  ->  Clicked -> n75.Run
+   [n80] Get Element by Class Name (Values): .Kin_Flow  ->  Elements -> n81.Element
+   [n81] Double Click (Triggers > Mouse & Touch): Element = .Kin_Flow (wired)  ->  Then -> n78.Run
+   [n82] Timeline Animation (Effects > From Blender): Element = .Kin_Flow; Animated object = Kin Flow; Action (blank = its own) = Kin Flow-Open/Close Animation; Play = a frame range; From marker = (choose); To marker = (choose); From frame = 0; To frame = 12; When it ends = stay on the last frame; Seconds (0 = Blender's) = 0; Delay (s) = 0; Easing = linear; Repeat = Once; Back and forth = False; Stagger (s) = 0
+   [n83] App Link (Links & QR > App Links): App name = Sun Tzu AI; Link name (blank = from the name) = sun-tzu-ai; Opens (what a click on it does) = .Sun_Tzu_AI; Wait before opening (s) = 0; Address = #name   (works everywhere, no server setup); Show it in the address bar while open = True; Back button closes it = True; Put the app name in the tab title = True
+   [n84] App Link (Links & QR > App Links): App name = Blend Web; Link name (blank = from the name) = blend-web; Opens (what a click on it does) = .Blend_Web; Wait before opening (s) = 0; Address = #name   (works everywhere, no server setup); Show it in the address bar while open = True; Back button closes it = True; Put the app name in the tab title = True
+   [n85] App Link (Links & QR > App Links): App name = Blend EDA; Link name (blank = from the name) = blend-eda; Opens (what a click on it does) = .Blend_EDA; Wait before opening (s) = 0; Address = #name   (works everywhere, no server setup); Show it in the address bar while open = True; Back button closes it = True; Put the app name in the tab title = True
+   [n86] App Link (Links & QR > App Links): App name = Blend ACS; Link name (blank = from the name) = blend-acs; Opens (what a click on it does) = .Blend_ACS; Wait before opening (s) = 0; Address = #name   (works everywhere, no server setup); Show it in the address bar while open = True; Back button closes it = True; Put the app name in the tab title = True
+   [n87] App Link (Links & QR > App Links): App name = Kin Flow; Link name (blank = from the name) = kin-flow; Opens (what a click on it does) = .Kin_Flow; Wait before opening (s) = 0; Address = #name   (works everywhere, no server setup); Show it in the address bar while open = True; Back button closes it = True; Put the app name in the tab title = True
+   [n88] Link Delay (Links & QR > App Links): Wait (s) = 1; Link name (blank = every app link) = (empty); Meanwhile show = nothing; Only for links (clicks open at once) = True
+   [n89] Get Element by Class Name (Values): .Blend_ACS  ->  Elements -> n71.Element, Elements -> n90.Opens (what a click on it does)
+   [n90] App Link (Links & QR > App Links): App name = Sun Tzu AI; Link name (blank = from the name) = https://sozin-x.com/suntzuai; Opens (what a click on it does) = .Blend_ACS (wired); Wait before opening (s) = 1; Address = #name   (works everywhere, no server setup); Show it in the address bar while open = True; Back button closes it = True; Put the app name in the tab title = True
 
 
 Animations  (24 fps; px = website pixels; transforms are relative to where each element sits)
 ========================================================================
 
-Timeline animations (keyframes on objects):
-   (no object has keyframes)
+Timeline animations (Animations panel):
+
+/* Animation "Sun Tzu AI-Open/Close Animation" */
+/* "Sun Tzu AI" (.Sun_Tzu_AI) - action "Sun Tzu AI-Open/Close Animation", frames 0-12 (0.5s); animates color, css border-radius, css box-shadow, css height, css opacity, css width, css z-index, location, rotation_euler, scale */
+/* played by 2 animation nodes (see below), not on page load */
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-move {
+  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { transform: translate(-80px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+  100% { transform: translate(-80px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+}
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-color {
+  0% { background-color: #d9d9d9; }
+  25% { background-color: #d9d9d9; }
+  100% { background-color: #d9d9d9; }
+}
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-fade {
+  0% { opacity: 1; }
+  25% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-border-radius {
+  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { border-radius: 0px; }
+  100% { border-radius: 0px; }
+}
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-box-shadow {
+  0% { box-shadow: 0px 2px 6px 0 9e9e9e; animation-timing-function: steps(1, end); }
+  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+}
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-height {
+  0% { height: 140px; }
+  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { height: 599px; }
+}
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-opacity {
+  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { opacity: 1; }
+}
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-width {
+  0% { width: 140px; }
+  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { width: 1366px; }
+}
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-z-index {
+  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { z-index: 2; }
+  100% { z-index: 2; }
+}
+
+/* Animation "Blend Web-Open/Close Animation" */
+/* "Blend Web" (.Blend_Web) - action "Blend Web-Open/Close Animation", frames 0-12 (0.5s); animates color, css border-radius, css box-shadow, css height, css opacity, css width, css z-index, location, rotation_euler, scale */
+/* played by 2 animation nodes (see below), not on page load */
+@keyframes bw-blend-web-blend-web-open-close-animation-move {
+  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { transform: translate(-260px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+  100% { transform: translate(-260px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+}
+@keyframes bw-blend-web-blend-web-open-close-animation-color {
+  0% { background-color: #d9d9d9; }
+  25% { background-color: #d9d9d9; }
+  100% { background-color: #d9d9d9; }
+}
+@keyframes bw-blend-web-blend-web-open-close-animation-fade {
+  0% { opacity: 1; }
+  25% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes bw-blend-web-blend-web-open-close-animation-css-border-radius {
+  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { border-radius: 0px; }
+  100% { border-radius: 0px; }
+}
+@keyframes bw-blend-web-blend-web-open-close-animation-css-box-shadow {
+  0% { box-shadow: 0px 2px 6px 0px 9e9e9e; animation-timing-function: steps(1, end); }
+  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+}
+@keyframes bw-blend-web-blend-web-open-close-animation-css-height {
+  0% { height: 140px; }
+  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { height: 599px; }
+}
+@keyframes bw-blend-web-blend-web-open-close-animation-css-opacity {
+  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { opacity: 1; }
+}
+@keyframes bw-blend-web-blend-web-open-close-animation-css-width {
+  0% { width: 140px; }
+  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { width: 1366px; }
+}
+@keyframes bw-blend-web-blend-web-open-close-animation-css-z-index {
+  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { z-index: 2; }
+  100% { z-index: 2; }
+}
+
+/* Animation "Blend EDA-Open/Close Animation" */
+/* "Blend EDA" (.Blend_EDA) - action "Blend EDA-Open/Close Animation", frames 0-12 (0.5s); animates color, css border-radius, css box-shadow, css height, css opacity, css width, css z-index, location, rotation_euler, scale */
+/* played by 2 animation nodes (see below), not on page load */
+@keyframes bw-blend-eda-blend-eda-open-close-animation-move {
+  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { transform: translate(-440px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+  100% { transform: translate(-440px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+}
+@keyframes bw-blend-eda-blend-eda-open-close-animation-color {
+  0% { background-color: #d9d9d9; }
+  25% { background-color: #d9d9d9; }
+  100% { background-color: #d9d9d9; }
+}
+@keyframes bw-blend-eda-blend-eda-open-close-animation-fade {
+  0% { opacity: 1; }
+  25% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes bw-blend-eda-blend-eda-open-close-animation-css-border-radius {
+  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { border-radius: 0px; }
+  100% { border-radius: 0px; }
+}
+@keyframes bw-blend-eda-blend-eda-open-close-animation-css-box-shadow {
+  0% { box-shadow: 0px 2px 6px 0px 9e9e9e; animation-timing-function: steps(1, end); }
+  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+}
+@keyframes bw-blend-eda-blend-eda-open-close-animation-css-height {
+  0% { height: 140px; }
+  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { height: 599px; }
+}
+@keyframes bw-blend-eda-blend-eda-open-close-animation-css-opacity {
+  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { opacity: 1; }
+}
+@keyframes bw-blend-eda-blend-eda-open-close-animation-css-width {
+  0% { width: 140px; }
+  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { width: 1366px; }
+}
+@keyframes bw-blend-eda-blend-eda-open-close-animation-css-z-index {
+  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { z-index: 2; }
+  100% { z-index: 2; }
+}
+
+/* Animation "Blend ACS-Open/Close Animation" */
+/* "Blend ACS" (.Blend_ACS) - action "Blend ACS-Open/Close Animation", frames 0-12 (0.5s); animates color, css border-radius, css box-shadow, css height, css opacity, css width, css z-index, location, rotation_euler, scale */
+/* played by 2 animation nodes (see below), not on page load */
+@keyframes bw-blend-acs-blend-acs-open-close-animation-move {
+  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { transform: translate(-620px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+  100% { transform: translate(-620px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+}
+@keyframes bw-blend-acs-blend-acs-open-close-animation-color {
+  0% { background-color: #d9d9d9; }
+  25% { background-color: #d9d9d9; }
+  100% { background-color: #d9d9d9; }
+}
+@keyframes bw-blend-acs-blend-acs-open-close-animation-fade {
+  0% { opacity: 1; }
+  25% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes bw-blend-acs-blend-acs-open-close-animation-css-border-radius {
+  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { border-radius: 0px; }
+  100% { border-radius: 0px; }
+}
+@keyframes bw-blend-acs-blend-acs-open-close-animation-css-box-shadow {
+  0% { box-shadow: 0px 2px 6px 0 9e9e9e; animation-timing-function: steps(1, end); }
+  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+}
+@keyframes bw-blend-acs-blend-acs-open-close-animation-css-height {
+  0% { height: 140px; }
+  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { height: 599px; }
+}
+@keyframes bw-blend-acs-blend-acs-open-close-animation-css-opacity {
+  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { opacity: 1; }
+}
+@keyframes bw-blend-acs-blend-acs-open-close-animation-css-width {
+  0% { width: 140px; }
+  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { width: 1366px; }
+}
+@keyframes bw-blend-acs-blend-acs-open-close-animation-css-z-index {
+  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { z-index: 2; }
+  100% { z-index: 2; }
+}
+
+/* Animation "Kin Flow-Open/Close Animation" */
+/* "Kin Flow" (.Kin_Flow) - action "Kin Flow-Open/Close Animation", frames 0-12 (0.5s); animates color, css border-radius, css box-shadow, css height, css opacity, css width, css z-index, location, rotation_euler, scale */
+/* played by 2 animation nodes (see below), not on page load */
+@keyframes bw-kin-flow-kin-flow-open-close-animation-move {
+  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { transform: translate(-80px, -380px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+  100% { transform: translate(-80px, -380px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+}
+@keyframes bw-kin-flow-kin-flow-open-close-animation-color {
+  0% { background-color: #d9d9d9; }
+  25% { background-color: #d9d9d9; }
+  100% { background-color: #d9d9d9; }
+}
+@keyframes bw-kin-flow-kin-flow-open-close-animation-fade {
+  0% { opacity: 1; }
+  25% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes bw-kin-flow-kin-flow-open-close-animation-css-border-radius {
+  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { border-radius: 0px; }
+  100% { border-radius: 0px; }
+}
+@keyframes bw-kin-flow-kin-flow-open-close-animation-css-box-shadow {
+  0% { box-shadow: 0px 2px 6px 0px 9e9e9e; animation-timing-function: steps(1, end); }
+  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+}
+@keyframes bw-kin-flow-kin-flow-open-close-animation-css-height {
+  0% { height: 140px; }
+  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { height: 599px; }
+}
+@keyframes bw-kin-flow-kin-flow-open-close-animation-css-opacity {
+  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { opacity: 1; }
+}
+@keyframes bw-kin-flow-kin-flow-open-close-animation-css-width {
+  0% { width: 140px; }
+  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { width: 1366px; }
+}
+@keyframes bw-kin-flow-kin-flow-open-close-animation-css-z-index {
+  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { z-index: 2; }
+  100% { z-index: 2; }
+}
 
 Animation nodes (Node Window):
-   (no animation nodes)
+
+- Reverse Animation node (runs when: Double Click):
+   Animate .Sun_Tzu_AI exactly like the Blender timeline animation "Sun Tzu AI-Open/Close Animation" on "Sun Tzu AI" (frames 0-12 = 0.5s at 24 fps), PLAYED BACKWARDS - from its last keyframe to its first (animation-direction: reverse) - relative to where it is, with this CSS (each key's own timing is kept): @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-move {  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { transform: translate(-80px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }  100% { transform: translate(-80px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-color {  0% { background-color: #d9d9d9; }  25% { background-color: #d9d9d9; }  100% { background-color: #d9d9d9; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-fade {  0% { opacity: 1; }  25% { opacity: 1; }  100% { opacity: 1; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-border-radius {  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { border-radius: 0px; }  100% { border-radius: 0px; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-box-shadow {  0% { box-shadow: 0px 2px 6px 0 9e9e9e; animation-timing-function: steps(1, end); }  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-height {  0% { height: 140px; }  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { height: 599px; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-opacity {  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { opacity: 1; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-width {  0% { width: 140px; }  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { width: 1366px; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-z-index {  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { z-index: 2; }  100% { z-index: 2; } }; run it with animation: bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-move 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-color 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-fade 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-border-radius 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-box-shadow 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-height 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-opacity 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-width 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-z-index 0.5s linear 0s 1 reverse both; transform-origin: 0% 0% (linear easing).
+   CSS - add the class bw-reverse-sun-tzu-ai-sun-tzu-ai-open-close-animation to .Sun_Tzu_AI to play it backwards:
+   .bw-reverse-sun-tzu-ai-sun-tzu-ai-open-close-animation { animation: bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-move 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-color 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-fade 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-border-radius 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-box-shadow 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-height 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-opacity 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-width 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-z-index 0.5s linear 0s 1 reverse both; transform-origin: 0% 0%; }
+   @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-move {
+     0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { transform: translate(-80px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+     100% { transform: translate(-80px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+   }
+   @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-color {
+     0% { background-color: #d9d9d9; }
+     25% { background-color: #d9d9d9; }
+     100% { background-color: #d9d9d9; }
+   }
+   @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-fade {
+     0% { opacity: 1; }
+     25% { opacity: 1; }
+     100% { opacity: 1; }
+   }
+   @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-border-radius {
+     0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { border-radius: 0px; }
+     100% { border-radius: 0px; }
+   }
+   @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-box-shadow {
+     0% { box-shadow: 0px 2px 6px 0 9e9e9e; animation-timing-function: steps(1, end); }
+     25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+     100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+   }
+   @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-height {
+     0% { height: 140px; }
+     25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { height: 599px; }
+   }
+   @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-opacity {
+     0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { opacity: 1; }
+   }
+   @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-width {
+     0% { width: 140px; }
+     25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { width: 1366px; }
+   }
+   @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-z-index {
+     0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { z-index: 2; }
+     100% { z-index: 2; }
+   }
+
+- Reverse Animation node (runs when: Double Click):
+   Animate .Blend_Web exactly like the Blender timeline animation "Blend Web-Open/Close Animation" on "Blend Web" (frames 0-12 = 0.5s at 24 fps), PLAYED BACKWARDS - from its last keyframe to its first (animation-direction: reverse) - relative to where it is, with this CSS (each key's own timing is kept): @keyframes bw-blend-web-blend-web-open-close-animation-move {  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { transform: translate(-260px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }  100% { transform: translate(-260px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); } } @keyframes bw-blend-web-blend-web-open-close-animation-color {  0% { background-color: #d9d9d9; }  25% { background-color: #d9d9d9; }  100% { background-color: #d9d9d9; } } @keyframes bw-blend-web-blend-web-open-close-animation-fade {  0% { opacity: 1; }  25% { opacity: 1; }  100% { opacity: 1; } } @keyframes bw-blend-web-blend-web-open-close-animation-css-border-radius {  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { border-radius: 0px; }  100% { border-radius: 0px; } } @keyframes bw-blend-web-blend-web-open-close-animation-css-box-shadow {  0% { box-shadow: 0px 2px 6px 0px 9e9e9e; animation-timing-function: steps(1, end); }  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); } } @keyframes bw-blend-web-blend-web-open-close-animation-css-height {  0% { height: 140px; }  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { height: 599px; } } @keyframes bw-blend-web-blend-web-open-close-animation-css-opacity {  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { opacity: 1; } } @keyframes bw-blend-web-blend-web-open-close-animation-css-width {  0% { width: 140px; }  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { width: 1366px; } } @keyframes bw-blend-web-blend-web-open-close-animation-css-z-index {  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { z-index: 2; }  100% { z-index: 2; } }; run it with animation: bw-blend-web-blend-web-open-close-animation-move 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-color 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-fade 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-border-radius 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-box-shadow 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-height 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-opacity 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-width 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-z-index 0.5s linear 0s 1 reverse both; transform-origin: 0% 0% (linear easing).
+   CSS - add the class bw-reverse-blend-web-blend-web-open-close-animation to .Blend_Web to play it backwards:
+   .bw-reverse-blend-web-blend-web-open-close-animation { animation: bw-blend-web-blend-web-open-close-animation-move 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-color 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-fade 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-border-radius 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-box-shadow 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-height 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-opacity 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-width 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-z-index 0.5s linear 0s 1 reverse both; transform-origin: 0% 0%; }
+   @keyframes bw-blend-web-blend-web-open-close-animation-move {
+     0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { transform: translate(-260px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+     100% { transform: translate(-260px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+   }
+   @keyframes bw-blend-web-blend-web-open-close-animation-color {
+     0% { background-color: #d9d9d9; }
+     25% { background-color: #d9d9d9; }
+     100% { background-color: #d9d9d9; }
+   }
+   @keyframes bw-blend-web-blend-web-open-close-animation-fade {
+     0% { opacity: 1; }
+     25% { opacity: 1; }
+     100% { opacity: 1; }
+   }
+   @keyframes bw-blend-web-blend-web-open-close-animation-css-border-radius {
+     0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { border-radius: 0px; }
+     100% { border-radius: 0px; }
+   }
+   @keyframes bw-blend-web-blend-web-open-close-animation-css-box-shadow {
+     0% { box-shadow: 0px 2px 6px 0px 9e9e9e; animation-timing-function: steps(1, end); }
+     25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+     100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+   }
+   @keyframes bw-blend-web-blend-web-open-close-animation-css-height {
+     0% { height: 140px; }
+     25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { height: 599px; }
+   }
+   @keyframes bw-blend-web-blend-web-open-close-animation-css-opacity {
+     0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { opacity: 1; }
+   }
+   @keyframes bw-blend-web-blend-web-open-close-animation-css-width {
+     0% { width: 140px; }
+     25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { width: 1366px; }
+   }
+   @keyframes bw-blend-web-blend-web-open-close-animation-css-z-index {
+     0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { z-index: 2; }
+     100% { z-index: 2; }
+   }
+
+- Timeline Animation node (runs on Click Step 1):
+   Animate .Sun_Tzu_AI exactly like the Blender timeline animation "Sun Tzu AI-Open/Close Animation" on "Sun Tzu AI" (frames 0-12 = 0.5s at 24 fps), relative to where it is, with this CSS (each key's own timing is kept): @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-move {  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { transform: translate(-80px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }  100% { transform: translate(-80px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-color {  0% { background-color: #d9d9d9; }  25% { background-color: #d9d9d9; }  100% { background-color: #d9d9d9; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-fade {  0% { opacity: 1; }  25% { opacity: 1; }  100% { opacity: 1; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-border-radius {  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { border-radius: 0px; }  100% { border-radius: 0px; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-box-shadow {  0% { box-shadow: 0px 2px 6px 0 9e9e9e; animation-timing-function: steps(1, end); }  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-height {  0% { height: 140px; }  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { height: 599px; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-opacity {  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { opacity: 1; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-width {  0% { width: 140px; }  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { width: 1366px; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-z-index {  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { z-index: 2; }  100% { z-index: 2; } }; run it with animation: bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0% (linear easing).
+   CSS - add the class bw-play-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12 to .Sun_Tzu_AI to play it:
+   .bw-play-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12 { animation: bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0%; }
+   @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-move {
+     0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { transform: translate(-80px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+     100% { transform: translate(-80px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+   }
+   @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-color {
+     0% { background-color: #d9d9d9; }
+     25% { background-color: #d9d9d9; }
+     100% { background-color: #d9d9d9; }
+   }
+   @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-fade {
+     0% { opacity: 1; }
+     25% { opacity: 1; }
+     100% { opacity: 1; }
+   }
+   @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-border-radius {
+     0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { border-radius: 0px; }
+     100% { border-radius: 0px; }
+   }
+   @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-box-shadow {
+     0% { box-shadow: 0px 2px 6px 0 9e9e9e; animation-timing-function: steps(1, end); }
+     25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+     100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+   }
+   @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-height {
+     0% { height: 140px; }
+     25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { height: 599px; }
+   }
+   @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-opacity {
+     0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { opacity: 1; }
+   }
+   @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-width {
+     0% { width: 140px; }
+     25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { width: 1366px; }
+   }
+   @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-z-index {
+     0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { z-index: 2; }
+     100% { z-index: 2; }
+   }
+
+- Timeline Animation node (runs on Click Step 2):
+   Animate .Blend_Web exactly like the Blender timeline animation "Blend Web-Open/Close Animation" on "Blend Web" (frames 0-12 = 0.5s at 24 fps), relative to where it is, with this CSS (each key's own timing is kept): @keyframes bw-blend-web-blend-web-open-close-animation-0-12-move {  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { transform: translate(-260px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }  100% { transform: translate(-260px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); } } @keyframes bw-blend-web-blend-web-open-close-animation-0-12-color {  0% { background-color: #d9d9d9; }  25% { background-color: #d9d9d9; }  100% { background-color: #d9d9d9; } } @keyframes bw-blend-web-blend-web-open-close-animation-0-12-fade {  0% { opacity: 1; }  25% { opacity: 1; }  100% { opacity: 1; } } @keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-border-radius {  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { border-radius: 0px; }  100% { border-radius: 0px; } } @keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-box-shadow {  0% { box-shadow: 0px 2px 6px 0px 9e9e9e; animation-timing-function: steps(1, end); }  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); } } @keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-height {  0% { height: 140px; }  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { height: 599px; } } @keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-opacity {  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { opacity: 1; } } @keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-width {  0% { width: 140px; }  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { width: 1366px; } } @keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-z-index {  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { z-index: 2; }  100% { z-index: 2; } }; run it with animation: bw-blend-web-blend-web-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0% (linear easing).
+   CSS - add the class bw-play-blend-web-blend-web-open-close-animation-0-12 to .Blend_Web to play it:
+   .bw-play-blend-web-blend-web-open-close-animation-0-12 { animation: bw-blend-web-blend-web-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0%; }
+   @keyframes bw-blend-web-blend-web-open-close-animation-0-12-move {
+     0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { transform: translate(-260px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+     100% { transform: translate(-260px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+   }
+   @keyframes bw-blend-web-blend-web-open-close-animation-0-12-color {
+     0% { background-color: #d9d9d9; }
+     25% { background-color: #d9d9d9; }
+     100% { background-color: #d9d9d9; }
+   }
+   @keyframes bw-blend-web-blend-web-open-close-animation-0-12-fade {
+     0% { opacity: 1; }
+     25% { opacity: 1; }
+     100% { opacity: 1; }
+   }
+   @keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-border-radius {
+     0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { border-radius: 0px; }
+     100% { border-radius: 0px; }
+   }
+   @keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-box-shadow {
+     0% { box-shadow: 0px 2px 6px 0px 9e9e9e; animation-timing-function: steps(1, end); }
+     25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+     100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+   }
+   @keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-height {
+     0% { height: 140px; }
+     25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { height: 599px; }
+   }
+   @keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-opacity {
+     0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { opacity: 1; }
+   }
+   @keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-width {
+     0% { width: 140px; }
+     25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { width: 1366px; }
+   }
+   @keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-z-index {
+     0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { z-index: 2; }
+     100% { z-index: 2; }
+   }
+
+- Reverse Animation node (runs when: Double Click):
+   Animate .Blend_EDA exactly like the Blender timeline animation "Blend EDA-Open/Close Animation" on "Blend EDA" (frames 0-12 = 0.5s at 24 fps), PLAYED BACKWARDS - from its last keyframe to its first (animation-direction: reverse) - relative to where it is, with this CSS (each key's own timing is kept): @keyframes bw-blend-eda-blend-eda-open-close-animation-move {  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { transform: translate(-440px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }  100% { transform: translate(-440px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); } } @keyframes bw-blend-eda-blend-eda-open-close-animation-color {  0% { background-color: #d9d9d9; }  25% { background-color: #d9d9d9; }  100% { background-color: #d9d9d9; } } @keyframes bw-blend-eda-blend-eda-open-close-animation-fade {  0% { opacity: 1; }  25% { opacity: 1; }  100% { opacity: 1; } } @keyframes bw-blend-eda-blend-eda-open-close-animation-css-border-radius {  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { border-radius: 0px; }  100% { border-radius: 0px; } } @keyframes bw-blend-eda-blend-eda-open-close-animation-css-box-shadow {  0% { box-shadow: 0px 2px 6px 0px 9e9e9e; animation-timing-function: steps(1, end); }  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); } } @keyframes bw-blend-eda-blend-eda-open-close-animation-css-height {  0% { height: 140px; }  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { height: 599px; } } @keyframes bw-blend-eda-blend-eda-open-close-animation-css-opacity {  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { opacity: 1; } } @keyframes bw-blend-eda-blend-eda-open-close-animation-css-width {  0% { width: 140px; }  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { width: 1366px; } } @keyframes bw-blend-eda-blend-eda-open-close-animation-css-z-index {  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { z-index: 2; }  100% { z-index: 2; } }; run it with animation: bw-blend-eda-blend-eda-open-close-animation-move 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-color 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-fade 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-border-radius 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-box-shadow 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-height 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-opacity 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-width 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-z-index 0.5s linear 0s 1 reverse both; transform-origin: 0% 0% (linear easing).
+   CSS - add the class bw-reverse-blend-eda-blend-eda-open-close-animation to .Blend_EDA to play it backwards:
+   .bw-reverse-blend-eda-blend-eda-open-close-animation { animation: bw-blend-eda-blend-eda-open-close-animation-move 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-color 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-fade 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-border-radius 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-box-shadow 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-height 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-opacity 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-width 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-z-index 0.5s linear 0s 1 reverse both; transform-origin: 0% 0%; }
+   @keyframes bw-blend-eda-blend-eda-open-close-animation-move {
+     0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { transform: translate(-440px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+     100% { transform: translate(-440px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+   }
+   @keyframes bw-blend-eda-blend-eda-open-close-animation-color {
+     0% { background-color: #d9d9d9; }
+     25% { background-color: #d9d9d9; }
+     100% { background-color: #d9d9d9; }
+   }
+   @keyframes bw-blend-eda-blend-eda-open-close-animation-fade {
+     0% { opacity: 1; }
+     25% { opacity: 1; }
+     100% { opacity: 1; }
+   }
+   @keyframes bw-blend-eda-blend-eda-open-close-animation-css-border-radius {
+     0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { border-radius: 0px; }
+     100% { border-radius: 0px; }
+   }
+   @keyframes bw-blend-eda-blend-eda-open-close-animation-css-box-shadow {
+     0% { box-shadow: 0px 2px 6px 0px 9e9e9e; animation-timing-function: steps(1, end); }
+     25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+     100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+   }
+   @keyframes bw-blend-eda-blend-eda-open-close-animation-css-height {
+     0% { height: 140px; }
+     25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { height: 599px; }
+   }
+   @keyframes bw-blend-eda-blend-eda-open-close-animation-css-opacity {
+     0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { opacity: 1; }
+   }
+   @keyframes bw-blend-eda-blend-eda-open-close-animation-css-width {
+     0% { width: 140px; }
+     25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { width: 1366px; }
+   }
+   @keyframes bw-blend-eda-blend-eda-open-close-animation-css-z-index {
+     0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { z-index: 2; }
+     100% { z-index: 2; }
+   }
+
+- Timeline Animation node (runs on Click Step 3):
+   Animate .Blend_EDA exactly like the Blender timeline animation "Blend EDA-Open/Close Animation" on "Blend EDA" (frames 0-12 = 0.5s at 24 fps), relative to where it is, with this CSS (each key's own timing is kept): @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-move {  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { transform: translate(-440px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }  100% { transform: translate(-440px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); } } @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-color {  0% { background-color: #d9d9d9; }  25% { background-color: #d9d9d9; }  100% { background-color: #d9d9d9; } } @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-fade {  0% { opacity: 1; }  25% { opacity: 1; }  100% { opacity: 1; } } @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-border-radius {  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { border-radius: 0px; }  100% { border-radius: 0px; } } @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-box-shadow {  0% { box-shadow: 0px 2px 6px 0px 9e9e9e; animation-timing-function: steps(1, end); }  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); } } @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-height {  0% { height: 140px; }  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { height: 599px; } } @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-opacity {  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { opacity: 1; } } @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-width {  0% { width: 140px; }  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { width: 1366px; } } @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-z-index {  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { z-index: 2; }  100% { z-index: 2; } }; run it with animation: bw-blend-eda-blend-eda-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0% (linear easing).
+   CSS - add the class bw-play-blend-eda-blend-eda-open-close-animation-0-12 to .Blend_EDA to play it:
+   .bw-play-blend-eda-blend-eda-open-close-animation-0-12 { animation: bw-blend-eda-blend-eda-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0%; }
+   @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-move {
+     0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { transform: translate(-440px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+     100% { transform: translate(-440px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+   }
+   @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-color {
+     0% { background-color: #d9d9d9; }
+     25% { background-color: #d9d9d9; }
+     100% { background-color: #d9d9d9; }
+   }
+   @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-fade {
+     0% { opacity: 1; }
+     25% { opacity: 1; }
+     100% { opacity: 1; }
+   }
+   @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-border-radius {
+     0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { border-radius: 0px; }
+     100% { border-radius: 0px; }
+   }
+   @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-box-shadow {
+     0% { box-shadow: 0px 2px 6px 0px 9e9e9e; animation-timing-function: steps(1, end); }
+     25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+     100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+   }
+   @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-height {
+     0% { height: 140px; }
+     25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { height: 599px; }
+   }
+   @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-opacity {
+     0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { opacity: 1; }
+   }
+   @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-width {
+     0% { width: 140px; }
+     25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { width: 1366px; }
+   }
+   @keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-z-index {
+     0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { z-index: 2; }
+     100% { z-index: 2; }
+   }
+
+- Timeline Animation node (runs on Click Step 4):
+   Animate .Blend_ACS exactly like the Blender timeline animation "Blend ACS-Open/Close Animation" on "Blend ACS" (frames 0-12 = 0.5s at 24 fps), relative to where it is, with this CSS (each key's own timing is kept): @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-move {  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { transform: translate(-620px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }  100% { transform: translate(-620px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); } } @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-color {  0% { background-color: #d9d9d9; }  25% { background-color: #d9d9d9; }  100% { background-color: #d9d9d9; } } @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-fade {  0% { opacity: 1; }  25% { opacity: 1; }  100% { opacity: 1; } } @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-border-radius {  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { border-radius: 0px; }  100% { border-radius: 0px; } } @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-box-shadow {  0% { box-shadow: 0px 2px 6px 0 9e9e9e; animation-timing-function: steps(1, end); }  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); } } @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-height {  0% { height: 140px; }  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { height: 599px; } } @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-opacity {  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { opacity: 1; } } @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-width {  0% { width: 140px; }  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { width: 1366px; } } @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-z-index {  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { z-index: 2; }  100% { z-index: 2; } }; run it with animation: bw-blend-acs-blend-acs-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0% (linear easing).
+   CSS - add the class bw-play-blend-acs-blend-acs-open-close-animation-0-12 to .Blend_ACS to play it:
+   .bw-play-blend-acs-blend-acs-open-close-animation-0-12 { animation: bw-blend-acs-blend-acs-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0%; }
+   @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-move {
+     0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { transform: translate(-620px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+     100% { transform: translate(-620px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+   }
+   @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-color {
+     0% { background-color: #d9d9d9; }
+     25% { background-color: #d9d9d9; }
+     100% { background-color: #d9d9d9; }
+   }
+   @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-fade {
+     0% { opacity: 1; }
+     25% { opacity: 1; }
+     100% { opacity: 1; }
+   }
+   @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-border-radius {
+     0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { border-radius: 0px; }
+     100% { border-radius: 0px; }
+   }
+   @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-box-shadow {
+     0% { box-shadow: 0px 2px 6px 0 9e9e9e; animation-timing-function: steps(1, end); }
+     25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+     100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+   }
+   @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-height {
+     0% { height: 140px; }
+     25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { height: 599px; }
+   }
+   @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-opacity {
+     0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { opacity: 1; }
+   }
+   @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-width {
+     0% { width: 140px; }
+     25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { width: 1366px; }
+   }
+   @keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-z-index {
+     0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { z-index: 2; }
+     100% { z-index: 2; }
+   }
+
+- Reverse Animation node (runs when: Double Click):
+   Animate .Blend_ACS exactly like the Blender timeline animation "Blend ACS-Open/Close Animation" on "Blend ACS" (frames 0-12 = 0.5s at 24 fps), PLAYED BACKWARDS - from its last keyframe to its first (animation-direction: reverse) - relative to where it is, with this CSS (each key's own timing is kept): @keyframes bw-blend-acs-blend-acs-open-close-animation-move {  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { transform: translate(-620px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }  100% { transform: translate(-620px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); } } @keyframes bw-blend-acs-blend-acs-open-close-animation-color {  0% { background-color: #d9d9d9; }  25% { background-color: #d9d9d9; }  100% { background-color: #d9d9d9; } } @keyframes bw-blend-acs-blend-acs-open-close-animation-fade {  0% { opacity: 1; }  25% { opacity: 1; }  100% { opacity: 1; } } @keyframes bw-blend-acs-blend-acs-open-close-animation-css-border-radius {  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { border-radius: 0px; }  100% { border-radius: 0px; } } @keyframes bw-blend-acs-blend-acs-open-close-animation-css-box-shadow {  0% { box-shadow: 0px 2px 6px 0 9e9e9e; animation-timing-function: steps(1, end); }  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); } } @keyframes bw-blend-acs-blend-acs-open-close-animation-css-height {  0% { height: 140px; }  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { height: 599px; } } @keyframes bw-blend-acs-blend-acs-open-close-animation-css-opacity {  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { opacity: 1; } } @keyframes bw-blend-acs-blend-acs-open-close-animation-css-width {  0% { width: 140px; }  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { width: 1366px; } } @keyframes bw-blend-acs-blend-acs-open-close-animation-css-z-index {  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { z-index: 2; }  100% { z-index: 2; } }; run it with animation: bw-blend-acs-blend-acs-open-close-animation-move 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-color 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-fade 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-border-radius 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-box-shadow 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-height 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-opacity 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-width 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-z-index 0.5s linear 0s 1 reverse both; transform-origin: 0% 0% (linear easing).
+   CSS - add the class bw-reverse-blend-acs-blend-acs-open-close-animation to .Blend_ACS to play it backwards:
+   .bw-reverse-blend-acs-blend-acs-open-close-animation { animation: bw-blend-acs-blend-acs-open-close-animation-move 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-color 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-fade 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-border-radius 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-box-shadow 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-height 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-opacity 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-width 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-z-index 0.5s linear 0s 1 reverse both; transform-origin: 0% 0%; }
+   @keyframes bw-blend-acs-blend-acs-open-close-animation-move {
+     0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { transform: translate(-620px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+     100% { transform: translate(-620px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+   }
+   @keyframes bw-blend-acs-blend-acs-open-close-animation-color {
+     0% { background-color: #d9d9d9; }
+     25% { background-color: #d9d9d9; }
+     100% { background-color: #d9d9d9; }
+   }
+   @keyframes bw-blend-acs-blend-acs-open-close-animation-fade {
+     0% { opacity: 1; }
+     25% { opacity: 1; }
+     100% { opacity: 1; }
+   }
+   @keyframes bw-blend-acs-blend-acs-open-close-animation-css-border-radius {
+     0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { border-radius: 0px; }
+     100% { border-radius: 0px; }
+   }
+   @keyframes bw-blend-acs-blend-acs-open-close-animation-css-box-shadow {
+     0% { box-shadow: 0px 2px 6px 0 9e9e9e; animation-timing-function: steps(1, end); }
+     25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+     100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+   }
+   @keyframes bw-blend-acs-blend-acs-open-close-animation-css-height {
+     0% { height: 140px; }
+     25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { height: 599px; }
+   }
+   @keyframes bw-blend-acs-blend-acs-open-close-animation-css-opacity {
+     0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { opacity: 1; }
+   }
+   @keyframes bw-blend-acs-blend-acs-open-close-animation-css-width {
+     0% { width: 140px; }
+     25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { width: 1366px; }
+   }
+   @keyframes bw-blend-acs-blend-acs-open-close-animation-css-z-index {
+     0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { z-index: 2; }
+     100% { z-index: 2; }
+   }
+
+- Reverse Animation node (runs when: Double Click):
+   Animate .Kin_Flow exactly like the Blender timeline animation "Kin Flow-Open/Close Animation" on "Kin Flow" (frames 0-12 = 0.5s at 24 fps), PLAYED BACKWARDS - from its last keyframe to its first (animation-direction: reverse) - relative to where it is, with this CSS (each key's own timing is kept): @keyframes bw-kin-flow-kin-flow-open-close-animation-move {  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { transform: translate(-80px, -380px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }  100% { transform: translate(-80px, -380px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); } } @keyframes bw-kin-flow-kin-flow-open-close-animation-color {  0% { background-color: #d9d9d9; }  25% { background-color: #d9d9d9; }  100% { background-color: #d9d9d9; } } @keyframes bw-kin-flow-kin-flow-open-close-animation-fade {  0% { opacity: 1; }  25% { opacity: 1; }  100% { opacity: 1; } } @keyframes bw-kin-flow-kin-flow-open-close-animation-css-border-radius {  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { border-radius: 0px; }  100% { border-radius: 0px; } } @keyframes bw-kin-flow-kin-flow-open-close-animation-css-box-shadow {  0% { box-shadow: 0px 2px 6px 0px 9e9e9e; animation-timing-function: steps(1, end); }  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); } } @keyframes bw-kin-flow-kin-flow-open-close-animation-css-height {  0% { height: 140px; }  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { height: 599px; } } @keyframes bw-kin-flow-kin-flow-open-close-animation-css-opacity {  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { opacity: 1; } } @keyframes bw-kin-flow-kin-flow-open-close-animation-css-width {  0% { width: 140px; }  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { width: 1366px; } } @keyframes bw-kin-flow-kin-flow-open-close-animation-css-z-index {  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { z-index: 2; }  100% { z-index: 2; } }; run it with animation: bw-kin-flow-kin-flow-open-close-animation-move 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-color 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-fade 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-border-radius 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-box-shadow 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-height 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-opacity 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-width 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-z-index 0.5s linear 0s 1 reverse both; transform-origin: 0% 0% (linear easing).
+   CSS - add the class bw-reverse-kin-flow-kin-flow-open-close-animation to .Kin_Flow to play it backwards:
+   .bw-reverse-kin-flow-kin-flow-open-close-animation { animation: bw-kin-flow-kin-flow-open-close-animation-move 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-color 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-fade 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-border-radius 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-box-shadow 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-height 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-opacity 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-width 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-z-index 0.5s linear 0s 1 reverse both; transform-origin: 0% 0%; }
+   @keyframes bw-kin-flow-kin-flow-open-close-animation-move {
+     0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { transform: translate(-80px, -380px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+     100% { transform: translate(-80px, -380px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+   }
+   @keyframes bw-kin-flow-kin-flow-open-close-animation-color {
+     0% { background-color: #d9d9d9; }
+     25% { background-color: #d9d9d9; }
+     100% { background-color: #d9d9d9; }
+   }
+   @keyframes bw-kin-flow-kin-flow-open-close-animation-fade {
+     0% { opacity: 1; }
+     25% { opacity: 1; }
+     100% { opacity: 1; }
+   }
+   @keyframes bw-kin-flow-kin-flow-open-close-animation-css-border-radius {
+     0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { border-radius: 0px; }
+     100% { border-radius: 0px; }
+   }
+   @keyframes bw-kin-flow-kin-flow-open-close-animation-css-box-shadow {
+     0% { box-shadow: 0px 2px 6px 0px 9e9e9e; animation-timing-function: steps(1, end); }
+     25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+     100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+   }
+   @keyframes bw-kin-flow-kin-flow-open-close-animation-css-height {
+     0% { height: 140px; }
+     25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { height: 599px; }
+   }
+   @keyframes bw-kin-flow-kin-flow-open-close-animation-css-opacity {
+     0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { opacity: 1; }
+   }
+   @keyframes bw-kin-flow-kin-flow-open-close-animation-css-width {
+     0% { width: 140px; }
+     25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { width: 1366px; }
+   }
+   @keyframes bw-kin-flow-kin-flow-open-close-animation-css-z-index {
+     0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { z-index: 2; }
+     100% { z-index: 2; }
+   }
+
+- Timeline Animation node (runs on Click Step 5):
+   Animate .Kin_Flow exactly like the Blender timeline animation "Kin Flow-Open/Close Animation" on "Kin Flow" (frames 0-12 = 0.5s at 24 fps), relative to where it is, with this CSS (each key's own timing is kept): @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-move {  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { transform: translate(-80px, -380px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }  100% { transform: translate(-80px, -380px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); } } @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-color {  0% { background-color: #d9d9d9; }  25% { background-color: #d9d9d9; }  100% { background-color: #d9d9d9; } } @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-fade {  0% { opacity: 1; }  25% { opacity: 1; }  100% { opacity: 1; } } @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-border-radius {  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { border-radius: 0px; }  100% { border-radius: 0px; } } @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-box-shadow {  0% { box-shadow: 0px 2px 6px 0px 9e9e9e; animation-timing-function: steps(1, end); }  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); } } @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-height {  0% { height: 140px; }  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { height: 599px; } } @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-opacity {  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { opacity: 1; } } @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-width {  0% { width: 140px; }  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { width: 1366px; } } @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-z-index {  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { z-index: 2; }  100% { z-index: 2; } }; run it with animation: bw-kin-flow-kin-flow-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0% (linear easing).
+   CSS - add the class bw-play-kin-flow-kin-flow-open-close-animation-0-12 to .Kin_Flow to play it:
+   .bw-play-kin-flow-kin-flow-open-close-animation-0-12 { animation: bw-kin-flow-kin-flow-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0%; }
+   @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-move {
+     0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { transform: translate(-80px, -380px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+     100% { transform: translate(-80px, -380px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+   }
+   @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-color {
+     0% { background-color: #d9d9d9; }
+     25% { background-color: #d9d9d9; }
+     100% { background-color: #d9d9d9; }
+   }
+   @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-fade {
+     0% { opacity: 1; }
+     25% { opacity: 1; }
+     100% { opacity: 1; }
+   }
+   @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-border-radius {
+     0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { border-radius: 0px; }
+     100% { border-radius: 0px; }
+   }
+   @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-box-shadow {
+     0% { box-shadow: 0px 2px 6px 0px 9e9e9e; animation-timing-function: steps(1, end); }
+     25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+     100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+   }
+   @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-height {
+     0% { height: 140px; }
+     25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { height: 599px; }
+   }
+   @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-opacity {
+     0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { opacity: 1; }
+   }
+   @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-width {
+     0% { width: 140px; }
+     25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     100% { width: 1366px; }
+   }
+   @keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-z-index {
+     0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+     25% { z-index: 2; }
+     100% { z-index: 2; }
+   }
+
+Anchors  (points pinned to the page's edges; page = 1366 x 599 px, x right, y down from its top-left)
+========================================================================
+An anchored point keeps its distance to the edge(s) it's anchored to when the page changes size: right /
+bottom anchors move with that edge, left + right (or top + bottom) keep the point's place as a percentage.
+Build the layout so each element behaves like this at every screen size (CSS left / right / top / bottom,
+percentages, or flex / grid that gives the same result).
+
+(nothing is anchored yet: use the Anchor tool to pin points to the page's edges)
+
+
+== Shader information (7 elements) ==
+These are the effects Blender draws with shaders: shadows, blur, glass (backdrop-filter), gradients and
+see-through. The website must show every one of them exactly. For each element below:
+  1. Put its CSS in the stylesheet as written (it's also in the CSS section).
+  2. An element marked "no clip-path" must NOT have a clip-path (remove one if the page has it): its
+     rounded corners come from border-radius, and a clip-path cuts off the shadow around it.
+  3. No parent of it may have overflow: hidden / clip closer than the shadow reaches, and nothing may
+     cover it (keep the z-order from the coordinates).
+  4. backdrop-filter also needs -webkit-backdrop-filter, and a background that is partly see-through.
+
+/* <div>  object "Blend ACS"  -  no clip-path */
+.Blend_ACS {
+  box-shadow: 0px 2px 6px 0 9e9e9e;
+  opacity: 1;
+  border-radius: 5px;
+}
+
+/* <div>  object "Blend EDA"  -  no clip-path */
+.Blend_EDA {
+  box-shadow: 0px 2px 6px 0px 9e9e9e;
+  opacity: 1;
+  border-radius: 5px;
+}
+
+/* <div>  object "Blend Web"  -  no clip-path */
+.Blend_Web {
+  box-shadow: 0px 2px 6px 0px 9e9e9e;
+  opacity: 1;
+  border-radius: 5px;
+}
+
+/* <div>  object "Kin Flow"  -  no clip-path */
+.Kin_Flow {
+  box-shadow: 0px 2px 6px 0px 9e9e9e;
+  opacity: 1;
+  border-radius: 5px;
+}
+
+/* <div>  object "Rectangle.005"  -  no clip-path */
+#bw-Rectangle-005 {
+  box-shadow: 0 2px 6px #9e9e9e;
+  border-radius: 5px;
+}
+
+/* <div>  object "Rectangle.007"  -  no clip-path */
+#bw-Rectangle-007 {
+  background-image: linear-gradient(138deg, #ffffff 0%, #ffffff 100%);
+}
+
+/* <div>  object "Sun Tzu AI"  -  no clip-path */
+.Sun_Tzu_AI {
+  box-shadow: 0px 2px 6px 0 9e9e9e;
+  opacity: 1;
+  border-radius: 5px;
+}
+
