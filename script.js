@@ -1,22 +1,27 @@
 // Components (Blend Web node logic):
-// - .Front_Page_Visual_Effects (n44, n49): a full-screen <canvas> in the
+// - .Front_Page_Visual_Effects (n43, n48): a full-screen <canvas> in the
 //   page background - above #bw-Rectangle-007, below every content
 //   element. It draws two animated gradients with identical motion
 //   (135deg, colors repeating so the first color comes again at the end,
 //   2-3 bands visible, breathing from 60% to 200% of the area's gradient
 //   length and back every 12s, bent into a sine wave 30% of the area's
 //   height, ~1.5 waves across the width, travelling sideways a full wave
-//   every 4s). n44 runs linear-gradient(135deg, #d5cbd3, #848ab1) from
-//   page load; after the Wait node (n45, 1s) n49 runs
+//   every 4s). n43 runs linear-gradient(135deg, #d5cbd3, #848ab1) from
+//   page load; after the Wait node (n44, 1s) n48 runs
 //   linear-gradient(135deg, #d5988b, #55aeb1): it fades in and the two
 //   schemes keep slowly alternating. Then on top of them:
-// - Waves (n38): 4 smooth, layered sine waves gently moving inside a
+// - Waves (n37): 4 smooth, layered sine waves gently moving inside a
 //   100px-high band at the bottom of the page, filled in #ffffff.
-// - Particle network (n43): 80 slowly drifting dots joined by faint lines
+// - Particle network (n42): 80 slowly drifting dots joined by faint lines
 //   when close, drawn in #ffffff, gently reaching toward the mouse.
-// The canvas is sharp on retina (backing store scaled by devicePixelRatio),
-// resizes with the window, pauses while off screen or the tab is hidden,
-// and stays calm when the user prefers reduced motion.
+// Everything (canvas drawing + the header clock) runs from ONE shared
+// requestAnimationFrame loop: drawing is capped at 60 fps even on faster
+// screens, motion uses real elapsed time clamped at 100 ms, the backing
+// store is capped at 1.5x devicePixelRatio and steps down (x0.75, x0.5,
+// coarser strips/wave points) when the average frame time stays above
+// 21 ms, stepping back up after 5 s of easy frames. The loop pauses
+// while the canvas is off screen or the tab is hidden, and stays calm
+// when the user prefers reduced motion.
 
 var WAVE_COLOR = '#ffffff';
 var WAVE_BAND = 100;     // px-high band at the bottom of the page
@@ -49,6 +54,7 @@ var DIST_LOOP = 4;       // s: the wave travels sideways one full wave
 var DIST_STRIP = 4;      // px: column width used to draw the bent gradient
 var GRAD2_DELAY = 1;     // s: Wait node before the second gradient starts
 var GRAD_XFADE = 24;     // s for a full there-and-back crossfade
+var WAVE_STEP = 3;       // px between points on each wave line
 
 // Back-to-front wave layers inside the 100px band (base = band centre).
 var WAVE_LAYERS = [
@@ -58,6 +64,12 @@ var WAVE_LAYERS = [
   { alpha: 0.85, amp: 6,  freq: 0.006, speed: -0.18, yOff:  21 }
 ];
 
+var DIST_STRIP_STEPS = [4, 6, 8];      // bent-gradient column width per detail step
+var WAVE_STEP_STEPS = [3, 4, 6];       // wave point spacing per detail step
+var RES_STEPS = [1, 0.75, 0.5];        // backing-store scale per detail step
+var detail = 0;                        // current detail step (0 = full)
+var pxScale = 1;                       // CSS px -> backing store px
+
 var canvas = null;       // .Front_Page_Visual_Effects
 var ctx = null;
 var cssW = 0;
@@ -66,7 +78,11 @@ var gradSrc1 = null;     // offscreen canvas holding the first flat gradient
 var gradSrc2 = null;     // offscreen canvas holding the second flat gradient
 
 var rafId = null;
-var lastFrame = 0;
+var lastDraw = 0;
+var lastClock = 0;
+var frameAcc = 0;        // frame-time sum over the last ~60 drawn frames
+var frameCount = 0;
+var lastHeavy = 0;       // last time frames were slow (or detail dropped)
 var onScreen = true;
 var calm = false;
 
@@ -78,17 +94,21 @@ var timeEl = null;
 var dateEl = null;
 
 function syncSize() {
-  var dpr = window.devicePixelRatio || 1;
+  // cap the backing store at 1.5x devicePixelRatio so a tablet doesn't
+  // draw 2-3x the pixels; the detail step can shrink it further
+  pxScale = Math.min(window.devicePixelRatio || 1, 1.5) * RES_STEPS[detail];
+  DIST_STRIP = DIST_STRIP_STEPS[detail];
+  WAVE_STEP = WAVE_STEP_STEPS[detail];
 
   cssW = canvas.clientWidth;
   cssH = canvas.clientHeight;
-  canvas.width = Math.round(cssW * dpr);
-  canvas.height = Math.round(cssH * dpr);
-  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  canvas.width = Math.round(cssW * pxScale);
+  canvas.height = Math.round(cssH * pxScale);
+  ctx.setTransform(pxScale, 0, 0, pxScale, 0, 0);
   ctx.imageSmoothingEnabled = true;
 
-  gradSrc1 = buildGradientSource(dpr, GRAD_A, GRAD_B);
-  gradSrc2 = buildGradientSource(dpr, GRAD2_A, GRAD2_B);
+  gradSrc1 = buildGradientSource(pxScale, GRAD_A, GRAD_B);
+  gradSrc2 = buildGradientSource(pxScale, GRAD2_A, GRAD2_B);
 }
 
 // Length (px) of the gradient axis: the CSS gradient line through the
@@ -115,19 +135,19 @@ function breatheScale(tSec) {
 // P = the area's gradient length) into a texture in screen orientation.
 // It is big enough for the tightest breathe (sample factor 1/GRAD_MIN)
 // plus the wave's vertical shift at top and bottom.
-function buildGradientSource(dpr, colorA, colorB) {
+function buildGradientSource(scale, colorA, colorB) {
   var aMax = 1 / GRAD_MIN;
   var A = distAmp();
   var texW = Math.ceil(aMax * cssW) + 2;
   var texH = Math.ceil(aMax * (cssH + 2 * A)) + 2;
 
   var src = document.createElement('canvas');
-  src.width = Math.max(1, Math.round(texW * dpr));
-  src.height = Math.max(1, Math.round(texH * dpr));
+  src.width = Math.max(1, Math.round(texW * scale));
+  src.height = Math.max(1, Math.round(texH * scale));
   var gctx = src.getContext('2d');
-  gctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  gctx.setTransform(scale, 0, 0, scale, 0, 0);
 
-  var P = Math.max(2, Math.round(gradAxisLen() * dpr));
+  var P = Math.max(2, Math.round(gradAxisLen() * scale));
   var tile = document.createElement('canvas');
   tile.width = P;
   tile.height = 8;
@@ -170,13 +190,12 @@ function secondGradientMix(tSec) {
 // colour bands by 30% of the area's height, ~1.5 waves across, moving a
 // full wave every DIST_LOOP seconds.
 function drawBentGradient(src, tSec, alpha) {
-  var dpr = window.devicePixelRatio || 1;
   var A = distAmp();
   var lambda = cssW / DIST_WAVES;
   var phase = 2 * Math.PI * tSec / DIST_LOOP;
   var a = 1 / breatheScale(tSec);
-  var texCx = src.width / (2 * dpr);
-  var texCy = src.height / (2 * dpr);
+  var texCx = src.width / (2 * pxScale);
+  var texCy = src.height / (2 * pxScale);
   var cx = cssW / 2;
   var cy = cssH / 2;
   ctx.globalAlpha = alpha;
@@ -184,9 +203,9 @@ function drawBentGradient(src, tSec, alpha) {
     var w = Math.min(DIST_STRIP, cssW - x);
     var dy = A * Math.sin(2 * Math.PI * (x + w / 2) / lambda - phase);
     ctx.drawImage(src,
-      (texCx + a * (x - cx)) * dpr,
-      (texCy + a * (dy - cy)) * dpr,
-      a * w * dpr, a * cssH * dpr,
+      (texCx + a * (x - cx)) * pxScale,
+      (texCy + a * (dy - cy)) * pxScale,
+      a * w * pxScale, a * cssH * pxScale,
       x, 0, w, cssH);
   }
   ctx.globalAlpha = 1;
@@ -272,7 +291,7 @@ function drawWaves(tSec) {
     ctx.fillStyle = WAVE_COLOR;
     ctx.beginPath();
     ctx.moveTo(0, cssH);
-    for (var x = 0; x <= cssW; x += 3) {
+    for (var x = 0; x <= cssW; x += WAVE_STEP) {
       ctx.lineTo(x, base + L.yOff +
         L.amp * Math.sin(x * L.freq + tSec * L.speed + li * 1.7));
     }
@@ -298,24 +317,59 @@ function drawStill() {
   drawScene(0);
 }
 
+// The shared loop runs whenever the canvas could be visible; reduced
+// motion only stops the canvas drawing, the clock text still updates.
 function running() {
-  return onScreen && !document.hidden && !calm;
+  return onScreen && !document.hidden;
+}
+
+// Frame-time average over the last ~60 drawn frames: above 21 ms drops
+// the canvas detail one step; 5 s of easy frames steps it back up.
+function measureFrame(dt, t) {
+  frameAcc += dt;
+  frameCount++;
+  if (frameCount < 60) return;
+  var avg = frameAcc / frameCount;
+  frameAcc = 0;
+  frameCount = 0;
+  if (avg > 21) {
+    lastHeavy = t;
+    if (detail < RES_STEPS.length - 1) {
+      detail++;
+      syncSize();
+    }
+  } else if (detail > 0 && t - lastHeavy > 5000) {
+    detail--;
+    syncSize();
+    lastHeavy = t;
+  }
 }
 
 function frame(t) {
   rafId = null;
   if (!running()) return;
   rafId = requestAnimationFrame(frame);
-  var tSec = t / 1000;
-  var dt = lastFrame ? Math.min(t - lastFrame, 100) : 16;
-  lastFrame = t;
+
+  if (t - lastClock >= 250) {      // header clock text (~4x a second)
+    lastClock = t;
+    tickClock();
+  }
+
+  if (calm) return;                // reduced motion: keep the still frame
+  if (t - lastDraw < 16.5) return; // draw at 60 fps on faster screens
+  var dt = lastDraw ? Math.min(t - lastDraw, 100) : 16.7;
+  lastDraw = t;
 
   stepDots(dt / 1000);
-  drawScene(tSec);
+  drawScene(t / 1000);
+  measureFrame(dt, t);
 }
 
 function startLoop() {
-  lastFrame = 0;
+  lastDraw = 0;
+  lastClock = 0;
+  frameAcc = 0;
+  frameCount = 0;
   if (rafId === null && running()) rafId = requestAnimationFrame(frame);
 }
 
@@ -345,24 +399,23 @@ function tickClock() {
 //
 // Flow 5 ("SunTzuAI_OpenApp", n30), Flow 6 ("BlendWeb_OpenApp", n55),
 // Flow 10 ("BlendEDA_OpenApp", n67), Flow 12 ("BlendACS_OpenApp", n73)
-// and Flow 13 ("KinFow_OpenApp", n80) are Click Steps: every click or
+// and Flow 13 ("KinFow_OpenApp", n79) are Click Steps: every click or
 // tap on the trigger element goes on only while its gate is open -
 // "Sun Tzu AI" for Sun Tzu (n31), "Blend Web" for Blend Web (n49),
 // "Blend EDA" for Blend EDA (n60), "Blend ACS" for Blend ACS (n68) and
-// "Kin Flow" for Kin Flow (n76); all start open. If it's open: close the
+// "Kin Flow" for Kin Flow (n75); all start open. If it's open: close the
 // app's own gate, then play the Blender "Open/Close Animation" timeline
 // clip (frames 0-12, 0.5s, linear, stays on the last frame) on the app.
 // Flows 7, 8, 9, 11 and 14 are the Double Click (or double-tap) steps
-// (n57, n58, n64, n71, n82): play the app's "Open/Close Animation"
+// (n57, n58, n64, n71, n81): play the app's "Open/Close Animation"
 // backwards (all its keys, 0.5s, linear, staying on the first frame),
 // then re-open the app's gate.
-// App Links (n83-n87, n90) and Link Delay (n88): the site's address +
-// #sun-tzu-ai, #blend-web, #blend-eda, #blend-acs, #kin-flow or
-// #https-sozin-x-com-suntzuai opens the matching app's click flow -
-// on page load it waits until the page is ready plus 1 more second,
-// while an app is open its hash shows in the address bar and the tab
-// title is the app name, the Back button closes it, and an unknown
-// hash just shows the normal page.
+// App Links (n85-n89) and Link Delay (n83): the site's address +
+// #sun-tzu-ai, #blend-web, #blend-eda, #blend-acs or #kin-flow opens
+// the matching app's click flow - on page load it waits until the page
+// is ready plus 1 more second, while an app is open its hash shows in
+// the address bar and the tab title is the app name, the Back button
+// closes it, and an unknown hash just shows the normal page.
 // Note: the "BlendWeb_OpenApp" trigger and Flow 2's hover reference
 // class .Blen_Web; the Blend Web div carries it as a second class so
 // those wired triggers resolve to the .Blend_Web element.
@@ -431,17 +484,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // App links (n83-n87, n90): each hash runs its element's click flow.
-  // The first link listed for an element is the one a click shows in
-  // the address bar; #https-sozin-x-com-suntzuai (n90) is an extra
-  // address that opens .Blend_ACS but titles the tab "Sun Tzu AI".
+  // App links (n85-n89): each hash runs its element's click flow.
   var appLinks = [
     { hash: '#sun-tzu-ai', targets: '.Sun_Tzu_AI', title: 'Sun Tzu AI' },
     { hash: '#blend-web', targets: '.Blend_Web', title: 'Blend Web' },
     { hash: '#blend-eda', targets: '.Blend_EDA', title: 'Blend EDA' },
     { hash: '#blend-acs', targets: '.Blend_ACS', title: 'Blend ACS' },
-    { hash: '#kin-flow', targets: '.Kin_Flow', title: 'Kin Flow' },
-    { hash: '#https-sozin-x-com-suntzuai', targets: '.Blend_ACS', title: 'Sun Tzu AI' }
+    { hash: '#kin-flow', targets: '.Kin_Flow', title: 'Kin Flow' }
   ];
   var baseTitle = document.title;
   var openLink = null;                           // link whose app is open
@@ -556,7 +605,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // Page loaded with an app link: wait until ready, then 1 more second
-  // (Link Delay n88), then run that element's click flow once. An
+  // (Link Delay n83), then run that element's click flow once. An
   // unknown hash just shows the normal page.
   setTimeout(function () {
     var link = findLink(location.hash);
@@ -590,15 +639,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
   timeEl = document.querySelector('.Front_Page_Time');
   dateEl = document.querySelector('.Front_Page_Date');
-  tickClock();
-  setInterval(tickClock, 50);
+  tickClock();                        // the shared loop keeps it ticking
 
   var reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
   calm = reduced.matches;
   if (reduced.addEventListener) {
     reduced.addEventListener('change', function () {
       calm = reduced.matches;
-      if (calm) { stopLoop(); drawStill(); } else { startLoop(); }
+      if (calm) drawStill();
     });
   }
 
@@ -608,12 +656,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   window.addEventListener('resize', function () {
     syncSize();
-    if (!running()) drawStill();
+    if (calm || !running()) drawStill();
   });
+  // the canvas is fixed at 0,0 and covers the viewport: client
+  // coordinates map straight onto it (no layout reads needed)
   function updatePointer(clientX, clientY) {
-    var r = canvas.getBoundingClientRect();
-    mouseX = clientX - r.left;
-    mouseY = clientY - r.top;
+    mouseX = clientX;
+    mouseY = clientY;
   }
   window.addEventListener('mousemove', function (e) {
     updatePointer(e.clientX, e.clientY);
@@ -631,7 +680,7 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('touchend', clearPointer);
   window.addEventListener('touchcancel', clearPointer);
   document.addEventListener('visibilitychange', function () {
-    if (running()) startLoop(); else stopLoop();
+    if (running()) { tickClock(); startLoop(); } else { stopLoop(); }
   });
 
   if ('IntersectionObserver' in window) {

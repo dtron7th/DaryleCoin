@@ -4,7 +4,8 @@
       "Exec(cp)",
       "Exec(find)",
       "Exec(py)",
-      "Exec(node)"
+      "Exec(node)",
+      "Exec(git status)"
     ]
   }
 }
