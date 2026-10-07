@@ -37,6 +37,9 @@ These rules apply to EVERY animation on the site: CSS animations and transitions
 NESTING  -  these elements are INSIDE another element (set with Put Inside)
 In the HTML each one is a CHILD of its container element (not a sibling). Keep it exactly where it was designed: the container gets position: relative (or keeps its own absolute / fixed), the child is position: absolute with left = its x - the container's x and top = its y - the container's y. Whatever happens to the container happens to its contents: display: none, visibility, Show / Hide, opacity, moving. Do NOT repeat the container's display / visibility / opacity on the contents.
 - .Sun_Tzu_AI_Content (Sun_Szu_AI_Content) is inside .Sun_Tzu_AI (Sun Tzu AI)
+- #bw-Circle (Circle) is inside .Sun_Tzu_AI_Content (Sun_Szu_AI_Content)
+- #bw-Circle-001 (Circle.001) is inside .Sun_Tzu_AI_Content (Sun_Szu_AI_Content)
+- #bw-Circle-002 (Circle.002) is inside .Sun_Tzu_AI_Content (Sun_Szu_AI_Content)
 - #bw-STU_Title (STU_Title) is inside .Sun_Tzu_AI_Content (Sun_Szu_AI_Content)
 
 Coordinates are website pixels: 0,0 = top-left corner of the boundaries box, y goes down.
@@ -44,7 +47,7 @@ Shapes: use every "exact svg" / "exact shape" line as-is, so each outline is exa
 
 == SVG shapes (0) ==
 
-== HTML elements (14) ==
+== HTML elements (17) ==
 
 p.001  <p>
   id="bw-p-001"  (it has no class or id: use this id for it)
@@ -99,6 +102,18 @@ STU_Title  <p>
   x 100   y 220   width 140.46   height 22
   text "A paragraph of text."
 
+Circle  <div>
+  id="bw-Circle"  (it has no class or id: use this id for it)
+  x 120   y 260   width 40   height 40
+
+Circle.001  <div>
+  id="bw-Circle-001"  (it has no class or id: use this id for it)
+  x 180   y 260   width 20   height 20
+
+Circle.002  <div>
+  id="bw-Circle-002"  (it has no class or id: use this id for it)
+  x 200   y 320   width 40   height 40
+
 Kin Flow  <div>
   x 80   y 380   width 140   height 140
 
@@ -125,7 +140,7 @@ body {
   font-display: swap;
 }
 
-== CSS (15 elements) ==
+== CSS (18 elements) ==
 
 /* <div>  object "Blend ACS" */
 .Blend_ACS {
@@ -158,6 +173,33 @@ body {
   border-radius: 5px;
   z-index: 1;
   opacity: 1;
+}
+
+/* <div>  object "Circle"  (no class or id: give it id="bw-Circle") */
+#bw-Circle {
+  width: 40px;
+  height: 40px;
+  background-color: #676767;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* <div>  object "Circle.001"  (no class or id: give it id="bw-Circle-001") */
+#bw-Circle-001 {
+  width: 20px;
+  height: 20px;
+  background-color: #676767;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* <div>  object "Circle.002"  (no class or id: give it id="bw-Circle-002") */
+#bw-Circle-002 {
+  width: 40px;
+  height: 40px;
+  background-color: #676767;
+  border-radius: 50%;
+  z-index: 2;
 }
 
 /* <div>  object "Kin Flow" */
@@ -272,7 +314,7 @@ body {
   height: 140px;
   background-color: none;
   z-index: 1;
-  display: flex;
+  display: none;
   opacity: 1;
   border-radius: 5px;
   box-shadow: 0px 2px 6px 0 9e9e9e;
