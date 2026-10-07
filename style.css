@@ -708,3 +708,80 @@ p {
 /* Timeline Animation node (runs on Click Step "KinFow_OpenApp"):
    add this class to .Kin_Flow to play frames 0-12 (0.5s), staying on the last frame */
 .bw-play-kin-flow-kin-flow-open-close-animation-0-12 { animation: bw-kin-flow-kin-flow-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0%; }
+
+/* <div>  object "Sun_Szu_AI_Content" - nested inside .Sun_Tzu_AI */
+.Sun_Tzu_AI_Content {
+  width: 140px;
+  height: 140px;
+  background-color: none;
+  z-index: 1;
+  display: none;
+  opacity: 1;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px 0 #9e9e9e;
+  clip-path: path('M 0 5 L 0.04 4.35 L 0.17 3.71 L 0.38 3.09 L 0.67 2.5 L 1.03 1.96 L 1.46 1.46 L 1.96 1.03 L 2.5 0.67 L 3.09 0.38 L 3.71 0.17 L 4.35 0.04 L 5 0 L 135 0 L 135.65 0.04 L 136.29 0.17 L 136.91 0.38 L 137.5 0.67 L 138.04 1.03 L 138.54 1.46 L 138.97 1.96 L 139.33 2.5 L 139.62 3.09 L 139.83 3.71 L 139.96 4.35 L 140 5 L 140 135 L 139.96 135.65 L 139.83 136.29 L 139.62 136.91 L 139.33 137.5 L 138.97 138.04 L 138.54 138.54 L 138.04 138.97 L 137.5 139.33 L 136.91 139.62 L 136.29 139.83 L 135.65 139.96 L 135 140 L 5 140 L 4.35 139.96 L 3.71 139.83 L 3.09 139.62 L 2.5 139.33 L 1.96 138.97 L 1.46 138.54 L 1.03 138.04 L 0.67 137.5 L 0.38 136.91 L 0.17 136.29 L 0.04 135.65 L 0 135 Z');
+}
+/* its outline is a custom shape (clip-path), and a clip-path hides
+   box-shadow: this wrapper sits at the same position and carries the
+   shadow as a drop-shadow filter, which follows the clipped shape */
+.Sun_Tzu_AI_Content-shadow-wrap {
+  width: 140px;
+  height: 140px;
+  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.5));
+}
+
+/* <p>  object "STU_Title"  (no class or id: give it id="bw-STU_Title") -
+   nested inside .Sun_Tzu_AI_Content */
+#bw-STU_Title {
+  z-index: 2;
+  color: #767676;
+}
+
+/* Animation "Sun_Szu_AI_Content - Sun Tzu AI-Open/Close Animation" */
+/* "Sun_Szu_AI_Content" (.Sun_Tzu_AI_Content) - action "Sun_Szu_AI_Content - Sun Tzu AI-Open/Close Animation", frames 0-12 (0.5s); animates color, css border-radius, css box-shadow, css height, css opacity, css width, css z-index, location, rotation_euler, scale */
+/* NOT played anywhere yet: no animation rule uses these - the element stays as it is until a node plays it (keyframes kept for when one does) */
+@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-move {
+  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+  25% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+  100% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+}
+@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-color {
+  0% { background-color: #d9d9d9; }
+  25% { background-color: #d9d9d9; }
+  100% { background-color: #d9d9d9; }
+}
+@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-fade {
+  0% { opacity: 1; }
+  25% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-border-radius {
+  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { border-radius: 0px; }
+  100% { border-radius: 0px; }
+}
+@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-box-shadow {
+  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
+  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+}
+@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-height {
+  0% { height: 140px; }
+  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { height: 599px; }
+}
+@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-opacity {
+  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { opacity: 1; }
+}
+@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-width {
+  0% { width: 140px; }
+  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { width: 1366px; }
+}
+@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-z-index {
+  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { z-index: 2; }
+  100% { z-index: 2; }
+}

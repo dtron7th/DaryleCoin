@@ -567,6 +567,8 @@ function tickClock() {
 // "Kin Flow" for Kin Flow (n75); all start open. If it's open: close the
 // app's own gate, then play the Blender "Open/Close Animation" timeline
 // clip (frames 0-12, 0.5s, linear, stays on the last frame) on the app.
+// Flow 5 goes on: Wait 1s (n90), set .Sun_Tzu_AI_Content's display to
+// flex (n92), then fade it in to opacity 0.5 over 0.6s ease-out (n93).
 // Flows 7, 8, 9, 11 and 14 are the Double Click (or double-tap) steps
 // (n57, n58, n64, n71, n81): play the app's "Open/Close Animation"
 // backwards (all its keys, 0.5s, linear, staying on the first frame),
@@ -593,7 +595,41 @@ document.addEventListener('DOMContentLoaded', function () {
       gate: 'Sun Tzu AI',
       play: 'bw-play-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12',
       rev: 'bw-reverse-sun-tzu-ai-sun-tzu-ai-open-close-animation',
-      moveKey: 'bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-move'
+      openMoveKey: 'bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-move',
+      moveKey: 'bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-move',
+      openSeq: 0,
+      // Flow 5 steps 1.3-1.5 (n53 -> n90 -> n92 -> n93): once the open
+      // animation has run, wait 1s, set .Sun_Tzu_AI_Content's display to
+      // flex, then fade it in to opacity 0.5 over 0.6s (ease-out).
+      afterOpen: function () {
+        var app = this;
+        var seq = (app.openSeq = app.openSeq + 1);
+        var el = document.querySelector(app.targets);
+        if (!el) return;
+        el.addEventListener('animationend', function shown(e) {
+          if (e.animationName !== app.openMoveKey) return;
+          el.removeEventListener('animationend', shown);
+          setTimeout(function () {               // n90: wait 1 second
+            if (app.openSeq !== seq || !app.isOpen) return;
+            var content = document.querySelector('.Sun_Tzu_AI_Content');
+            if (!content) return;
+            content.style.display = 'flex';      // n92: display = flex
+            content.style.transition = 'opacity 0.6s ease-out';
+            content.style.opacity = '0';
+            void content.offsetWidth;            // start the fade from 0
+            content.style.opacity = '0.5';       // n93: fade in to 0.5
+          }, 1000);
+        });
+      },
+      // put the content back so the next open replays steps 1.3-1.5
+      onClose: function () {
+        this.openSeq++;
+        var content = document.querySelector('.Sun_Tzu_AI_Content');
+        if (!content) return;
+        content.style.transition = '';
+        content.style.opacity = '';
+        content.style.display = '';
+      }
     },
     {
       clickSelector: '.Blen_Web',                // n55 Click Step "BlendWeb_OpenApp"
@@ -603,6 +639,7 @@ document.addEventListener('DOMContentLoaded', function () {
       gate: 'Blend Web',
       play: 'bw-play-blend-web-blend-web-open-close-animation-0-12',
       rev: 'bw-reverse-blend-web-blend-web-open-close-animation',
+      openMoveKey: 'bw-blend-web-blend-web-open-close-animation-0-12-move',
       moveKey: 'bw-blend-web-blend-web-open-close-animation-move'
     },
     {
@@ -613,6 +650,7 @@ document.addEventListener('DOMContentLoaded', function () {
       gate: 'Blend EDA',
       play: 'bw-play-blend-eda-blend-eda-open-close-animation-0-12',
       rev: 'bw-reverse-blend-eda-blend-eda-open-close-animation',
+      openMoveKey: 'bw-blend-eda-blend-eda-open-close-animation-0-12-move',
       moveKey: 'bw-blend-eda-blend-eda-open-close-animation-move'
     },
     {
@@ -623,6 +661,7 @@ document.addEventListener('DOMContentLoaded', function () {
       gate: 'Blend ACS',
       play: 'bw-play-blend-acs-blend-acs-open-close-animation-0-12',
       rev: 'bw-reverse-blend-acs-blend-acs-open-close-animation',
+      openMoveKey: 'bw-blend-acs-blend-acs-open-close-animation-0-12-move',
       moveKey: 'bw-blend-acs-blend-acs-open-close-animation-move'
     },
     {
@@ -633,6 +672,7 @@ document.addEventListener('DOMContentLoaded', function () {
       gate: 'Kin Flow',
       play: 'bw-play-kin-flow-kin-flow-open-close-animation-0-12',
       rev: 'bw-reverse-kin-flow-kin-flow-open-close-animation',
+      openMoveKey: 'bw-kin-flow-kin-flow-open-close-animation-0-12-move',
       moveKey: 'bw-kin-flow-kin-flow-open-close-animation-move'
     }
   ];
@@ -708,7 +748,7 @@ document.addEventListener('DOMContentLoaded', function () {
       replayAnimation(app, app.play);            // play frames 0-12
       if (el0) {
         el0.addEventListener('animationend', function covered(e) {
-          if (e.animationName !== app.moveKey) return;
+          if (e.animationName !== app.openMoveKey) return;
           el0.removeEventListener('animationend', covered);
           app.isOpen = true;                     // app window covers the page
           refreshCovered();
@@ -720,12 +760,14 @@ document.addEventListener('DOMContentLoaded', function () {
         document.title = link.title;
         if (!viaLink) showHash(link.hash);       // put the link in the address bar
       }
+      if (app.afterOpen) app.afterOpen();        // rest of the click flow
     }
     // Runs the app's double-click flow; fromPop = the browser's Back
     // button already took the hash out of the address bar.
     function closeApp(fromPop) {
       app.isOpen = false;                        // uncover the background
       refreshCovered();
+      if (app.onClose) app.onClose();            // reset what the open flow showed
       replayAnimation(app, app.rev);             // play it backwards
       var el = document.querySelector(app.targets);
       if (!el) { gates[app.gate] = true; return; }

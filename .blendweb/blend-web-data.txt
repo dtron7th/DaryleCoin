@@ -13,12 +13,17 @@ These rules apply to EVERY animation on the site: CSS animations and transitions
 - Keep the pace: measure the average frame time over the last ~60 frames. When it is above 21 ms, lower the canvas detail one step (resolution x0.75, down to 0.5x; fewer wave points / layers) and measure again. Changing detail must be cheap (no rebuilding big textures) and must not flip back and forth: step back up only after 30 s of easy frames, and if that step up is slow again stay down for good. Never drop the animation itself.
 - Pause what can't be seen: stop the loop on document.hidden (visibilitychange), and skip a canvas that is off screen or covered by an open app window (IntersectionObserver).
 
+NESTING  -  these elements are INSIDE another element (set with Put Inside)
+In the HTML each one is a CHILD of its container element (not a sibling). Keep it exactly where it was designed: the container gets position: relative (or keeps its own absolute / fixed), the child is position: absolute with left = its x - the container's x and top = its y - the container's y. Whatever happens to the container happens to its contents: display: none, visibility, Show / Hide, opacity, moving. Do NOT repeat the container's display / visibility / opacity on the contents.
+- .Sun_Tzu_AI_Content (Sun_Szu_AI_Content) is inside .Sun_Tzu_AI (Sun Tzu AI)
+- #bw-STU_Title (STU_Title) is inside .Sun_Tzu_AI_Content (Sun_Szu_AI_Content)
+
 Coordinates are website pixels: 0,0 = top-left corner of the boundaries box, y goes down.
 Shapes: use every "exact svg" / "exact shape" line as-is, so each outline is exactly as designed.
 
 == SVG shapes (0) ==
 
-== HTML elements (12) ==
+== HTML elements (14) ==
 
 p.001  <p>
   id="bw-p-001"  (it has no class or id: use this id for it)
@@ -54,6 +59,11 @@ p.003  <p>
 Sun Tzu AI  <div>
   x 80   y 200   width 140   height 140
 
+Sun_Szu_AI_Content  <div>
+  x 80   y 200   width 140   height 140
+  shape d="M 80 205 L 80.04 204.35 L 80.17 203.71 L 80.38 203.09 L 80.67 202.5 L 81.03 201.96 L 81.46 201.46 L 81.96 201.03 L 82.5 200.67 L 83.09 200.38 L 83.71 200.17 L 84.35 200.04 L 85 200 L 215 200 L 215.65 200.04 L 216.29 200.17 L 216.91 200.38 L 217.5 200.67 L 218.04 201.03 L 218.54 201.46 L 218.97 201.96 L 219.33 202.5 L 219.62 203.09 L 219.83 203.71 L 219.96 204.35 L 220 205 L 220 335 L 219.96 335.65 L 219.83 336.29 L 219.62 336.91 L 219.33 337.5 L 218.97 338.04 L 218.54 338.54 L 218.04 338.97 L 217.5 339.33 L 216.91 339.62 L 216.29 339.83 L 215.65 339.96 L 215 340 L 85 340 L 84.35 339.96 L 83.71 339.83 L 83.09 339.62 L 82.5 339.33 L 81.96 338.97 L 81.46 338.54 L 81.03 338.04 L 80.67 337.5 L 80.38 336.91 L 80.17 336.29 L 80.04 335.65 L 80 335 Z"
+  exact shape (use as-is): clip-path: path('M 0 5 L 0.04 4.35 L 0.17 3.71 L 0.38 3.09 L 0.67 2.5 L 1.03 1.96 L 1.46 1.46 L 1.96 1.03 L 2.5 0.67 L 3.09 0.38 L 3.71 0.17 L 4.35 0.04 L 5 0 L 135 0 L 135.65 0.04 L 136.29 0.17 L 136.91 0.38 L 137.5 0.67 L 138.04 1.03 L 138.54 1.46 L 138.97 1.96 L 139.33 2.5 L 139.62 3.09 L 139.83 3.71 L 139.96 4.35 L 140 5 L 140 135 L 139.96 135.65 L 139.83 136.29 L 139.62 136.91 L 139.33 137.5 L 138.97 138.04 L 138.54 138.54 L 138.04 138.97 L 137.5 139.33 L 136.91 139.62 L 136.29 139.83 L 135.65 139.96 L 135 140 L 5 140 L 4.35 139.96 L 3.71 139.83 L 3.09 139.62 L 2.5 139.33 L 1.96 138.97 L 1.46 138.54 L 1.03 138.04 L 0.67 137.5 L 0.38 136.91 L 0.17 136.29 L 0.04 135.65 L 0 135 Z');
+
 Blend Web  <div>
   x 260   y 200   width 140   height 140
 
@@ -62,6 +72,11 @@ Blend EDA  <div>
 
 Blend ACS  <div>
   x 620   y 200   width 140   height 140
+
+STU_Title  <p>
+  id="bw-STU_Title"  (it has no class or id: use this id for it)
+  x 100   y 220   width 140.46   height 22
+  text "A paragraph of text."
 
 Kin Flow  <div>
   x 80   y 380   width 140   height 140
@@ -89,7 +104,7 @@ body {
   font-display: swap;
 }
 
-== CSS (13 elements) ==
+== CSS (15 elements) ==
 
 /* <div>  object "Blend ACS" */
 .Blend_ACS {
@@ -213,6 +228,12 @@ body {
   background: #ffffff;
 }
 
+/* <p>  object "STU_Title"  (no class or id: give it id="bw-STU_Title") */
+#bw-STU_Title {
+  z-index: 2;
+  color: #767676;
+}
+
 /* <div>  object "Sun Tzu AI" */
 .Sun_Tzu_AI {
   width: 140px;
@@ -222,6 +243,18 @@ body {
   border-radius: 5px;
   z-index: 1;
   opacity: 1;
+}
+
+/* <div>  object "Sun_Szu_AI_Content" */
+.Sun_Tzu_AI_Content {
+  width: 140px;
+  height: 140px;
+  background-color: none;
+  z-index: 1;
+  display: flex;
+  opacity: 1;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px 0 9e9e9e;
 }
 
 == Node logic (AI prompt) ==
@@ -271,6 +304,9 @@ Flow 5 - "SunTzuAI_OpenApp": when the user clicks or taps (touch) .Sun_Tzu_AI:
          If it's open:
             1.1. Close the gate "Sun Tzu AI".
             1.2. Animate .Sun_Tzu_AI exactly like the Blender timeline animation "Sun Tzu AI-Open/Close Animation" on "Sun Tzu AI" (frames 0-12 = 0.5s at 24 fps), relative to where it is, with this CSS (each key's own timing is kept): @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-move {  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { transform: translate(-80px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }  100% { transform: translate(-80px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-color {  0% { background-color: #d9d9d9; }  25% { background-color: #d9d9d9; }  100% { background-color: #d9d9d9; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-fade {  0% { opacity: 1; }  25% { opacity: 1; }  100% { opacity: 1; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-border-radius {  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { border-radius: 0px; }  100% { border-radius: 0px; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-box-shadow {  0% { box-shadow: 0px 2px 6px 0 9e9e9e; animation-timing-function: steps(1, end); }  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-height {  0% { height: 140px; }  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { height: 599px; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-opacity {  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { opacity: 1; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-width {  0% { width: 140px; }  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  100% { width: 1366px; } } @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-z-index {  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }  25% { z-index: 2; }  100% { z-index: 2; } }; run it with animation: bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0% (linear easing).
+            1.3. Wait 1 seconds, then go on.
+            1.4. Set the CSS property display of .Sun_Tzu_AI_Content to flex.
+            1.5. Fade .Sun_Tzu_AI_Content in (over 0.6s, ease-out easing).
 
 Flow 6 - "BlendWeb_OpenApp": when the user clicks or taps (touch) .Blen_Web:
    Every time:
@@ -326,6 +362,7 @@ Also do these (nothing triggers them yet - do them when the page loads unless th
 
 Elements used:
    .Sun_Tzu_AI = <div> (object Sun Tzu AI)
+   .Sun_Tzu_AI_Content = <div> (object Sun_Szu_AI_Content)
    .Blen_Web (not in the website yet)
    .Blend_Web = <div> (object Blend Web)
    .Blend_EDA = <div> (object Blend EDA)
@@ -393,7 +430,7 @@ Node data (every node in the Node Window: [id] node (folder): settings -> wires 
    [n50] Open / Close Gate (Actions): Gate name = Blend Web; Do = close it  ->  Next -> n56.Run
    [n51] Open / Close Gate (Actions): Gate name = Blend Web; Do = open it
    [n52] Reverse Animation (Animation > Play): Element = .Blend_Web; Animated object = Blend Web; Animation (blank = its own) = Blend Web-Open/Close Animation; Play = all its keys; From marker = (choose); To marker = (choose); From frame = 1; To frame = 60; When it ends = stay on the first frame; Seconds (0 = Blender's) = 0; Delay (s) = 0; Easing = linear; Repeat = Once; Back and forth = False; Stagger (s) = 0  ->  Next -> n51.Run
-   [n53] Timeline Animation (Effects > From Blender): Element = .Sun_Tzu_AI; Animated object = Sun Tzu AI; Action (blank = its own) = Sun Tzu AI-Open/Close Animation; Play = a frame range; From marker = (choose); To marker = (choose); From frame = 0; To frame = 12; When it ends = stay on the last frame; Seconds (0 = Blender's) = 0; Delay (s) = 0; Easing = linear; Repeat = Once; Back and forth = False; Stagger (s) = 0
+   [n53] Timeline Animation (Effects > From Blender): Element = .Sun_Tzu_AI; Animated object = Sun Tzu AI; Action (blank = its own) = Sun Tzu AI-Open/Close Animation; Play = a frame range; From marker = (choose); To marker = (choose); From frame = 0; To frame = 12; When it ends = stay on the last frame; Seconds (0 = Blender's) = 0; Delay (s) = 0; Easing = linear; Repeat = Once; Back and forth = False; Stagger (s) = 0  ->  Next -> n90.Run
    [n54] Get Element by Class Name (Values): .Sun_Tzu_AI  ->  Elements -> n7.Element
    [n55] Click Step (Triggers): "BlendWeb_OpenApp" on .Blen_Web  ->  Clicked -> n49.Run
    [n56] Timeline Animation (Effects > From Blender): Element = .Blend_Web; Animated object = Blend Web; Action (blank = its own) = Blend Web-Open/Close Animation; Play = a frame range; From marker = (choose); To marker = (choose); From frame = 0; To frame = 12; When it ends = stay on the last frame; Seconds (0 = Blender's) = 0; Delay (s) = 0; Easing = linear; Repeat = Once; Back and forth = False; Stagger (s) = 0
@@ -430,6 +467,10 @@ Node data (every node in the Node Window: [id] node (folder): settings -> wires 
    [n87] App Link (Links & QR > App Links): App name = Blend EDA; Link name (blank = from the name) = blend-eda; Opens (what a click on it does) = .Blend_EDA (wired); Wait before opening (s) = 1; Address = #name   (works everywhere, no server setup); Show it in the address bar while open = True; Back button closes it = True; Put the app name in the tab title = True
    [n88] App Link (Links & QR > App Links): App name = Blend ACS; Link name (blank = from the name) = blend-acs; Opens (what a click on it does) = .Blend_ACS (wired); Wait before opening (s) = 1; Address = #name   (works everywhere, no server setup); Show it in the address bar while open = True; Back button closes it = True; Put the app name in the tab title = True
    [n89] App Link (Links & QR > App Links): App name = Kin Flow; Link name (blank = from the name) = kin-flow; Opens (what a click on it does) = .Kin_Flow (wired); Wait before opening (s) = 1; Address = #name   (works everywhere, no server setup); Show it in the address bar while open = True; Back button closes it = True; Put the app name in the tab title = True
+   [n90] Wait (Flow): Seconds = 1  ->  Then -> n92.Run
+   [n91] Get Element by Class Name (Values): .Sun_Tzu_AI_Content  ->  Elements -> n92.Element, Elements -> n93.Element
+   [n92] display (CSS > Display): Element = .Sun_Tzu_AI_Content (wired); Value = flex; Change over (s) = 0; Back to its stylesheet value = False  ->  Next -> n93.Run
+   [n93] Fade (Effects): Element = .Sun_Tzu_AI_Content (wired); Fade = in (appear); To opacity (0-1) = 0.5; Seconds = 0.6; Delay (s) = 0; Easing = ease-out; Repeat = Once; Back and forth = False; Stagger (s) = 0
 
 
 Animations  (24 fps; px = website pixels; transforms are relative to where each element sits)
@@ -677,6 +718,55 @@ Timeline animations (Animations panel):
   100% { width: 1366px; }
 }
 @keyframes bw-kin-flow-kin-flow-open-close-animation-css-z-index {
+  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { z-index: 2; }
+  100% { z-index: 2; }
+}
+
+/* Animation "Sun_Szu_AI_Content - Sun Tzu AI-Open/Close Animation" */
+/* "Sun_Szu_AI_Content" (.Sun_Tzu_AI_Content) - action "Sun_Szu_AI_Content - Sun Tzu AI-Open/Close Animation", frames 0-12 (0.5s); animates color, css border-radius, css box-shadow, css height, css opacity, css width, css z-index, location, rotation_euler, scale */
+/* NOT played anywhere yet: do NOT add an animation rule for it - the element stays as it is until a node plays it (its keyframes follow, for when one does) */
+@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-move {
+  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+  25% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+  100% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+}
+@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-color {
+  0% { background-color: #d9d9d9; }
+  25% { background-color: #d9d9d9; }
+  100% { background-color: #d9d9d9; }
+}
+@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-fade {
+  0% { opacity: 1; }
+  25% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-border-radius {
+  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { border-radius: 0px; }
+  100% { border-radius: 0px; }
+}
+@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-box-shadow {
+  0% { box-shadow: 0px 2px 6px 0 9e9e9e; animation-timing-function: steps(1, end); }
+  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
+  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
+}
+@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-height {
+  0% { height: 140px; }
+  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { height: 599px; }
+}
+@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-opacity {
+  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { opacity: 1; }
+}
+@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-width {
+  0% { width: 140px; }
+  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
+  100% { width: 1366px; }
+}
+@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-z-index {
   0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
   25% { z-index: 2; }
   100% { z-index: 2; }
@@ -1184,6 +1274,9 @@ Animation nodes (Node Window):
      100% { z-index: 2; }
    }
 
+- Fade node (runs on Click Step 1):
+   Fade .Sun_Tzu_AI_Content in (over 0.6s, ease-out easing).
+
 Anchors  (points pinned to the page's edges; page = 1366 x 599 px, x right, y down from its top-left)
 ========================================================================
 An anchored point keeps its distance to the edge(s) it's anchored to when the page changes size: right /
@@ -1194,7 +1287,7 @@ percentages, or flex / grid that gives the same result).
 (nothing is anchored yet: use the Anchor tool to pin points to the page's edges)
 
 
-== Shader information (7 elements) ==
+== Shader information (8 elements) ==
 These are the effects Blender draws with shaders: shadows, blur, glass (backdrop-filter), gradients and
 see-through. The website must show every one of them exactly. For each element below:
   1. Put its CSS in the stylesheet as written (it's also in the CSS section).
@@ -1249,4 +1342,13 @@ see-through. The website must show every one of them exactly. For each element b
   opacity: 1;
   border-radius: 5px;
 }
+
+/* <div>  object "Sun_Szu_AI_Content"  -  custom outline: keeps its clip-path, see the wrapper below */
+.Sun_Tzu_AI_Content {
+  opacity: 1;
+  box-shadow: 0px 2px 6px 0 9e9e9e;
+}
+/* its outline is a custom shape (clip-path), and a clip-path hides box-shadow: wrap it in a
+   <div> (same position) and put the shadow on the wrapper, which follows the clipped shape: */
+.Sun_Tzu_AI_Content-shadow-wrap { filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.5)); }
 

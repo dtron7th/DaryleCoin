@@ -23,7 +23,16 @@
     <p id="bw-p-005" style="position:absolute;left:80px;top:140px;">Apps</p>
     <p class="App_Counter" style="position:absolute;left:160px;top:140px;">--</p>
 
-    <div class="Sun_Tzu_AI" style="position:absolute;left:80px;top:200px;"></div>
+    <div class="Sun_Tzu_AI" style="position:absolute;left:80px;top:200px;">
+        <!-- nested: .Sun_Tzu_AI_Content sits inside .Sun_Tzu_AI at its own
+             x/y minus the container's (0,0); the wrapper carries the
+             drop-shadow because a clip-path hides box-shadow -->
+        <div class="Sun_Tzu_AI_Content-shadow-wrap" style="position:absolute;left:0px;top:0px;">
+            <div class="Sun_Tzu_AI_Content" style="position:absolute;left:0px;top:0px;">
+                <p id="bw-STU_Title" style="position:absolute;left:20px;top:20px;width:140.46px;height:22px;">A paragraph of text.</p>
+            </div>
+        </div>
+    </div>
     <div class="Blend_Web Blen_Web" style="position:absolute;left:260px;top:200px;"></div>
     <div class="Blend_EDA" style="position:absolute;left:440px;top:200px;"></div>
     <div class="Blend_ACS" style="position:absolute;left:620px;top:200px;"></div>
