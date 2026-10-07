@@ -665,8 +665,8 @@ document.addEventListener('DOMContentLoaded', function () {
       moveKey: 'bw-blend-acs-blend-acs-open-close-animation-move'
     },
     {
-      clickSelector: '.Kin_Flow',                // n80 Click Step "KinFow_OpenApp"
-      dblSelector: '.Kin_Flow',                  // n82 Double Click
+      clickSelector: '.Kin_Flow',                // n79 Click Step "KinFow_OpenApp"
+      dblSelector: '.Kin_Flow',                  // n81 Double Click
       targets: '.Kin_Flow',
       gateCheck: 'Kin Flow',                     // n76: go on only if open
       gate: 'Kin Flow',

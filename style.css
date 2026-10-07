@@ -846,3 +846,12 @@ p {
   25% { z-index: 2; }
   100% { z-index: 2; }
 }
+
+/* <div>  object "Triangle"  (no class or id: give it id="bw-Triangle") */
+#bw-Triangle {
+  width: 40px;
+  height: 40px;
+  background-color: #5c5c5c;
+  z-index: 2;
+  clip-path: path('M 20 0 L 40 40 L 0 40 Z');
+}
