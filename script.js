@@ -555,25 +555,24 @@ function tickClock() {
   dateEl.textContent = DATE_FMT.format(now);
 }
 
-// Flows 1-4 - hovering an app element changes the counter text in
-// .App_Counter; leaving it restores "--".
+// Flows 1, 2, 3, 14 and 15 - hovering an app element changes the counter
+// text in .App_Counter; leaving it restores "--".
 //
-// Flow 5 ("SunTzuAI_OpenApp", n30), Flow 6 ("BlendWeb_OpenApp", n55),
-// Flow 10 ("BlendEDA_OpenApp", n67), Flow 12 ("BlendACS_OpenApp", n73)
-// and Flow 13 ("KinFow_OpenApp", n79) are Click Steps: every click or
-// tap on the trigger element goes on only while its gate is open -
-// "Sun Tzu AI" for Sun Tzu (n31), "Blend Web" for Blend Web (n49),
-// "Blend EDA" for Blend EDA (n60), "Blend ACS" for Blend ACS (n68) and
-// "Kin Flow" for Kin Flow (n75); all start open. If it's open: close the
-// app's own gate, then play the Blender "Open/Close Animation" timeline
-// clip (frames 0-12, 0.5s, linear, stays on the last frame) on the app.
-// Flow 5 goes on: Wait 1s (n90), set .Sun_Tzu_AI_Content's display to
-// flex (n92), then fade it in to opacity 0.5 over 0.6s ease-out (n93).
-// Flows 7, 8, 9, 11 and 14 are the Double Click (or double-tap) steps
-// (n57, n58, n64, n71, n81): play the app's "Open/Close Animation"
-// backwards (all its keys, 0.5s, linear, staying on the first frame),
-// then re-open the app's gate.
-// App Links (n85-n89) and Link Delay (n83): the site's address +
+// Flow 4 ("SunTzuAI_OpenApp"), Flow 5 ("BlendWeb_OpenApp"),
+// Flow 9 ("BlendEDA_OpenApp"), Flow 11 ("BlendACS_OpenApp")
+// and Flow 12 ("KinFow_OpenApp") are Click Steps: every click or
+// tap on the trigger element goes on only while its gate is open
+// ("Sun Tzu AI", "Blend Web", "Blend EDA", "Blend ACS", "Kin Flow";
+// all start open). If it's open: close the app's own gate, then play the
+// Blender "Open/Close Animation" timeline clip (frames 0-12, 0.5s,
+// linear, stays on the last frame) on the app.
+// Flow 4 goes on: Wait 0.5s, set .Sun_Tzu_AI_Content's display to
+// flex, then fade it in to opacity 1 over 0.5s ease-out.
+// Flows 6, 7, 8, 10 and 13 are the Double Click (or double-tap) steps:
+// play the app's "Open/Close Animation" backwards (all its keys, 0.5s,
+// linear, staying on the first frame), then re-open the app's gate.
+// App Links (Sun Tzu AI, Blend Web, Blend EDA, Blend ACS, Kin Flow)
+// and Link Delay: the site's address +
 // #sun-tzu-ai, #blend-web, #blend-eda, #blend-acs or #kin-flow opens
 // the matching app's click flow - on page load it waits until the page
 // is ready plus 1 more second, while an app is open its hash shows in
@@ -588,19 +587,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var apps = [
     {
-      clickSelector: '.Sun_Tzu_AI',              // n30 Click Step "SunTzuAI_OpenApp"
-      dblSelector: '.Sun_Tzu_AI',                // n57 Double Click
+      clickSelector: '.Sun_Tzu_AI',              // Flow 4 Click Step "SunTzuAI_OpenApp"
+      dblSelector: '.Sun_Tzu_AI',                // Flow 6 Double Click
       targets: '.Sun_Tzu_AI',
-      gateCheck: 'Sun Tzu AI',                   // n31: go on only if open
+      gateCheck: 'Sun Tzu AI',                   // go on only if open
       gate: 'Sun Tzu AI',
       play: 'bw-play-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12',
       rev: 'bw-reverse-sun-tzu-ai-sun-tzu-ai-open-close-animation',
       openMoveKey: 'bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-move',
       moveKey: 'bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-move',
       openSeq: 0,
-      // Flow 5 steps 1.3-1.5 (n53 -> n90 -> n92 -> n93): once the open
-      // animation has run, wait 1s, set .Sun_Tzu_AI_Content's display to
-      // flex, then fade it in to opacity 0.5 over 0.6s (ease-out).
+      // Flow 4 steps 1.3-1.5: once the open animation has run, wait 0.5s,
+      // set .Sun_Tzu_AI_Content's display to flex, then fade it in to
+      // opacity 1 over 0.5s (ease-out).
       afterOpen: function () {
         var app = this;
         var seq = (app.openSeq = app.openSeq + 1);
@@ -609,16 +608,16 @@ document.addEventListener('DOMContentLoaded', function () {
         el.addEventListener('animationend', function shown(e) {
           if (e.animationName !== app.openMoveKey) return;
           el.removeEventListener('animationend', shown);
-          setTimeout(function () {               // n90: wait 1 second
+          setTimeout(function () {               // step 1.3: wait 0.5s
             if (app.openSeq !== seq || !app.isOpen) return;
             var content = document.querySelector('.Sun_Tzu_AI_Content');
             if (!content) return;
-            content.style.display = 'flex';      // n92: display = flex
-            content.style.transition = 'opacity 0.6s ease-out';
+            content.style.display = 'flex';      // step 1.4: display = flex
+            content.style.transition = 'opacity 0.5s ease-out';
             content.style.opacity = '0';
             void content.offsetWidth;            // start the fade from 0
-            content.style.opacity = '0.5';       // n93: fade in to 0.5
-          }, 1000);
+            content.style.opacity = '1';         // step 1.5: fade in
+          }, 500);
         });
       },
       // put the content back so the next open replays steps 1.3-1.5
@@ -632,10 +631,10 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     },
     {
-      clickSelector: '.Blen_Web',                // n55 Click Step "BlendWeb_OpenApp"
-      dblSelector: '.Blend_Web',                 // n58 Double Click
+      clickSelector: '.Blen_Web',                // Flow 5 Click Step "BlendWeb_OpenApp"
+      dblSelector: '.Blend_Web',                 // Flow 7 Double Click
       targets: '.Blend_Web',
-      gateCheck: 'Blend Web',                    // n49: go on only if open
+      gateCheck: 'Blend Web',                    // go on only if open
       gate: 'Blend Web',
       play: 'bw-play-blend-web-blend-web-open-close-animation-0-12',
       rev: 'bw-reverse-blend-web-blend-web-open-close-animation',
@@ -643,10 +642,10 @@ document.addEventListener('DOMContentLoaded', function () {
       moveKey: 'bw-blend-web-blend-web-open-close-animation-move'
     },
     {
-      clickSelector: '.Blend_EDA',               // n67 Click Step "BlendEDA_OpenApp"
-      dblSelector: '.Blend_EDA',                 // n64 Double Click
+      clickSelector: '.Blend_EDA',               // Flow 9 Click Step "BlendEDA_OpenApp"
+      dblSelector: '.Blend_EDA',                 // Flow 8 Double Click
       targets: '.Blend_EDA',
-      gateCheck: 'Blend EDA',                    // n60: go on only if open
+      gateCheck: 'Blend EDA',                    // go on only if open
       gate: 'Blend EDA',
       play: 'bw-play-blend-eda-blend-eda-open-close-animation-0-12',
       rev: 'bw-reverse-blend-eda-blend-eda-open-close-animation',
@@ -654,10 +653,10 @@ document.addEventListener('DOMContentLoaded', function () {
       moveKey: 'bw-blend-eda-blend-eda-open-close-animation-move'
     },
     {
-      clickSelector: '.Blend_ACS',               // n73 Click Step "BlendACS_OpenApp"
-      dblSelector: '.Blend_ACS',                 // n71 Double Click
+      clickSelector: '.Blend_ACS',               // Flow 11 Click Step "BlendACS_OpenApp"
+      dblSelector: '.Blend_ACS',                 // Flow 10 Double Click
       targets: '.Blend_ACS',
-      gateCheck: 'Blend ACS',                    // n68: go on only if open
+      gateCheck: 'Blend ACS',                    // go on only if open
       gate: 'Blend ACS',
       play: 'bw-play-blend-acs-blend-acs-open-close-animation-0-12',
       rev: 'bw-reverse-blend-acs-blend-acs-open-close-animation',
@@ -665,10 +664,10 @@ document.addEventListener('DOMContentLoaded', function () {
       moveKey: 'bw-blend-acs-blend-acs-open-close-animation-move'
     },
     {
-      clickSelector: '.Kin_Flow',                // n79 Click Step "KinFow_OpenApp"
-      dblSelector: '.Kin_Flow',                  // n81 Double Click
+      clickSelector: '.Kin_Flow',                // Flow 12 Click Step "KinFow_OpenApp"
+      dblSelector: '.Kin_Flow',                  // Flow 13 Double Click
       targets: '.Kin_Flow',
-      gateCheck: 'Kin Flow',                     // n76: go on only if open
+      gateCheck: 'Kin Flow',                     // go on only if open
       gate: 'Kin Flow',
       play: 'bw-play-kin-flow-kin-flow-open-close-animation-0-12',
       rev: 'bw-reverse-kin-flow-kin-flow-open-close-animation',
@@ -891,11 +890,22 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // mark the platform the page is using on <html data-platform=...>
+  // (Phone <= 605px, Tablet 606-1093px, Desktop >= 1094px); kept in
+  // step with the media queries in style.css as the window resizes
+  function setPlatform() {
+    var w = window.innerWidth;
+    document.documentElement.dataset.platform =
+      w <= 605 ? 'phone' : w <= 1093 ? 'tablet' : 'desktop';
+  }
+  setPlatform();
+
   syncSize();
   spawnDots();
   drawStill();
 
   window.addEventListener('resize', function () {
+    setPlatform();
     syncSize();
     if (calm || !running()) drawStill();
   });
