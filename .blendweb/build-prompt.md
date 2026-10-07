@@ -40,6 +40,9 @@ In the HTML each one is a CHILD of its container element (not a sibling). Keep i
 - #bw-Circle (Circle) is inside .Sun_Tzu_AI_Content (Sun_Szu_AI_Content)
 - #bw-Circle-001 (Circle.001) is inside .Sun_Tzu_AI_Content (Sun_Szu_AI_Content)
 - #bw-Circle-002 (Circle.002) is inside .Sun_Tzu_AI_Content (Sun_Szu_AI_Content)
+- #bw-Circle-003 (Circle.003) is inside .Sun_Tzu_AI_Content (Sun_Szu_AI_Content)
+- #bw-Circle-004 (Circle.004) is inside .Sun_Tzu_AI_Content (Sun_Szu_AI_Content)
+- #bw-Rectangle (Rectangle) is inside .Sun_Tzu_AI_Content (Sun_Szu_AI_Content)
 - #bw-STU_Title (STU_Title) is inside .Sun_Tzu_AI_Content (Sun_Szu_AI_Content)
 
 Coordinates are website pixels: 0,0 = top-left corner of the boundaries box, y goes down.
@@ -47,7 +50,7 @@ Shapes: use every "exact svg" / "exact shape" line as-is, so each outline is exa
 
 == SVG shapes (0) ==
 
-== HTML elements (17) ==
+== HTML elements (20) ==
 
 p.001  <p>
   id="bw-p-001"  (it has no class or id: use this id for it)
@@ -110,9 +113,21 @@ Circle.001  <div>
   id="bw-Circle-001"  (it has no class or id: use this id for it)
   x 180   y 260   width 20   height 20
 
+Rectangle  <div>
+  id="bw-Rectangle"  (it has no class or id: use this id for it)
+  x 160   y 280   width 180   height 20
+
+Circle.004  <div>
+  id="bw-Circle-004"  (it has no class or id: use this id for it)
+  x 180   y 320   width 20   height 20
+
 Circle.002  <div>
   id="bw-Circle-002"  (it has no class or id: use this id for it)
   x 200   y 320   width 40   height 40
+
+Circle.003  <div>
+  id="bw-Circle-003"  (it has no class or id: use this id for it)
+  x 140   y 340   width 20   height 20
 
 Kin Flow  <div>
   x 80   y 380   width 140   height 140
@@ -140,7 +155,7 @@ body {
   font-display: swap;
 }
 
-== CSS (18 elements) ==
+== CSS (21 elements) ==
 
 /* <div>  object "Blend ACS" */
 .Blend_ACS {
@@ -197,6 +212,24 @@ body {
 #bw-Circle-002 {
   width: 40px;
   height: 40px;
+  background-color: #676767;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* <div>  object "Circle.003"  (no class or id: give it id="bw-Circle-003") */
+#bw-Circle-003 {
+  width: 20px;
+  height: 20px;
+  background-color: #676767;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* <div>  object "Circle.004"  (no class or id: give it id="bw-Circle-004") */
+#bw-Circle-004 {
+  width: 20px;
+  height: 20px;
   background-color: #676767;
   border-radius: 50%;
   z-index: 2;
@@ -269,6 +302,16 @@ body {
   font-size: 24px;
   border-bottom-style: none;
   color: #ffffff;
+}
+
+/* <div>  object "Rectangle"  (no class or id: give it id="bw-Rectangle") */
+#bw-Rectangle {
+  width: 180px;
+  height: 20px;
+  background-color: #2e327f;
+  z-index: 2;
+  background: #5a3d6c;
+  display: block;
 }
 
 /* <div>  object "Rectangle.005"  (no class or id: give it id="bw-Rectangle-005") */

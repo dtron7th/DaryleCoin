@@ -760,6 +760,37 @@ p {
   z-index: 2;
 }
 
+/* <div>  object "Circle.003"  (no class or id: give it id="bw-Circle-003") -
+   nested inside .Sun_Tzu_AI_Content */
+#bw-Circle-003 {
+  width: 20px;
+  height: 20px;
+  background-color: #676767;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* <div>  object "Circle.004"  (no class or id: give it id="bw-Circle-004") -
+   nested inside .Sun_Tzu_AI_Content */
+#bw-Circle-004 {
+  width: 20px;
+  height: 20px;
+  background-color: #676767;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* <div>  object "Rectangle"  (no class or id: give it id="bw-Rectangle") -
+   nested inside .Sun_Tzu_AI_Content */
+#bw-Rectangle {
+  width: 180px;
+  height: 20px;
+  background-color: #2e327f;
+  z-index: 2;
+  background: #5a3d6c;
+  display: block;
+}
+
 /* <p>  object "STU_Title"  (no class or id: give it id="bw-STU_Title") -
    nested inside .Sun_Tzu_AI_Content */
 #bw-STU_Title {
