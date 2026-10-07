@@ -846,7 +846,8 @@ document.addEventListener('DOMContentLoaded', function () {
     ['.Sun_Tzu_AI', 'Sun Tzu AI'],
     ['.Blen_Web', 'Blend Web'],
     ['.Blend_EDA', 'Blend EDA'],
-    ['.Blend_ACS', 'Owl']
+    ['.Blend_ACS', 'Blend ACS'],
+    ['.Kin_Flow', 'Kinflow']
   ];
   flows.forEach(function (f) {
     var show = function () { appCounter.textContent = f[1]; };
