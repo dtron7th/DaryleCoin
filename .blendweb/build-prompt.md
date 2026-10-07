@@ -14,7 +14,7 @@ positions, the Main font, the CSS, and the click logic as a prompt). Build or up
 - Keep existing work in this folder unless the data replaces it.
 
 Model picked in Blender: SWE-2.
-Template: Blend Web data  -  Desktop  1366 x 599 px
+Template: Blend Web data  -  Tablet  820 x 1180 px
 Blender file: C:\Users\dtron\OneDrive\Documents\GitHub\DaryleCoin\Blend Web Test.blend
 
 ---
@@ -43,7 +43,7 @@ Make the site responsive in ONE page with CSS media queries (no separate pages, 
 Also set <html data-platform="..."> to the current platform's name in lowercase (update it on resize), so scripts and the Platform nodes can read it.
 
 Tablet layout - what changes from the base, inside @media (min-width: 606px) and (max-width: 1093px) (same elements, same HTML; x / y / sizes are website px at the designed width 820px):
-- #bw-p-001 (p.001):  width: 120px; height: 24px
+- #bw-p-001 (p.001):  x 220  y 260   |   width: 120px; height: 24px
 - #bw-p-004 (p.004):  width: 12px; height: 12px
 - .Front_Page_Time (p):  height: 12px
 - .Front_Page_Date (p.002):  width: 115.96px; height: 12px

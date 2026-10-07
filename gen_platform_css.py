@@ -231,7 +231,7 @@ DESKTOP_NARROW_LAYOUT = f'''  body {{ width: auto; }}
 
 TABLET_LAYOUT = f'''  body {{ width: auto; height: auto; min-height: 1180px; }}
   #bw-Rectangle-007 {{ width: 100%; height: 1180px; }}
-  #bw-p-001 {{ left: {pct(20, 820)} !important; top: 20px !important; width: {pct(120, 820)}; height: 24px; }}
+  #bw-p-001 {{ left: {pct(220, 820)} !important; top: 260px !important; width: {pct(120, 820)}; height: 24px; }}
   #bw-p-004 {{ left: {pct(260, 820)} !important; top: 20px !important; width: {pct(12, 820)}; height: 12px; }}
   .Front_Page_Time {{ left: {pct(280, 820)} !important; top: 20px !important; width: {pct(80, 820)}; height: 12px; }}
   .Front_Page_Date {{ left: {pct(140, 820)} !important; top: 20px !important; width: {pct(115.96, 820)}; height: 12px; }}
