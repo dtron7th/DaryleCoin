@@ -16,47 +16,165 @@ body {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Silkscreen";
+  src: url("fonts/Silkscreen-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* <div>  object "Blend ACS" */
 .Blend_ACS {
-  width: 140px;
-  height: 140px;
+  width: 70px;
+  height: 70px;
   background-color: #d9d9d9;
-  box-shadow: 0px 2px 6px 0 #9e9e9e;
-  border-radius: 5px;
+  box-shadow: 2px 2px 2px 0px #424242;
+  border-radius: 0px;
   z-index: 1;
   opacity: 1;
 }
 
 /* <div>  object "Blend EDA" */
 .Blend_EDA {
-  width: 140px;
-  height: 140px;
+  width: 70px;
+  height: 70px;
   background-color: #d9d9d9;
-  box-shadow: 0px 2px 6px 0 #9e9e9e;
-  border-radius: 5px;
+  box-shadow: 2px 2px 2px 0px #424242;
+  border-radius: 0px;
   z-index: 1;
   opacity: 1;
 }
 
-/* <div>  object "Blend Web" */
+/* <div>  object "Blend Web.001" */
 .Blend_Web {
-  width: 140px;
-  height: 140px;
+  width: 70px;
+  height: 70px;
   background-color: #d9d9d9;
-  box-shadow: 0px 2px 6px 0 #9e9e9e;
-  border-radius: 5px;
+  box-shadow: 2px 2px 2px 0px #424242;
+  border-radius: 0px;
   z-index: 1;
   opacity: 1;
 }
 
-/* <div>  object "Kin Flow" */
+/* <button>  object "button.001"  (no class or id: give it id="bw-button-001") */
+#bw-button-001 {
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: #3c0a0000;
+  background-image: linear-gradient(0, #57575700 0%, #8a1c00 100%);
+  width: 316.5px;
+  height: 66.6px;
+  font-family: "Silkscreen";
+}
+
+/* <button>  object "button.002"  (no class or id: give it id="bw-button-002") */
+#bw-button-002 {
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: #79140000;
+  background-image: linear-gradient(0, #57575700 0%, #c52800 100%);
+  width: 199.9px;
+  height: 66.6px;
+  font-family: "Silkscreen";
+}
+
+/* <button>  object "button.003"  (no class or id: give it id="bw-button-003") */
+#bw-button-003 {
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: #79140000;
+  background-image: linear-gradient(0, #57575700 0%, #c52800 100%);
+  width: 199.9px;
+  height: 66.6px;
+  font-family: "Silkscreen";
+}
+
+/* <button>  object "button.004"  (no class or id: give it id="bw-button-004") */
+#bw-button-004 {
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: #79140000;
+  background-image: linear-gradient(0, #57575700 0%, #8a1c00 100%);
+  width: 316.5px;
+  height: 66.6px;
+  font-family: "Silkscreen";
+}
+
+/* <button>  object "button.005"  (no class or id: give it id="bw-button-005") */
+#bw-button-005 {
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: #79140000;
+  background-image: linear-gradient(0, #57575700 0%, #8a1c00 100%);
+  width: 316.5px;
+  height: 66.6px;
+  font-family: "Silkscreen";
+}
+
+/* <button>  object "button.006"  (no class or id: give it id="bw-button-006") */
+#bw-button-006 {
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: #79140000;
+  background-image: linear-gradient(0, #57575700 0%, #8a1c00 100%);
+  width: 316.5px;
+  height: 66.6px;
+  font-family: "Silkscreen";
+}
+
+/* <div>  object "div"  (no class or id: give it id="bw-div")
+   width/height come from the element list (the exported CSS omits them) */
+#bw-div {
+  width: 1366px;
+  height: 599px;
+  background-color: #00000018;
+  background-image: linear-gradient(0, #181818 0%, #68686800 100%);
+}
+
+/* <div>  object "div.001"  (no class or id: give it id="bw-div-001")
+   width/height come from the element list (the exported CSS omits them);
+   % of the window keeps its shape and never overflows the window */
+#bw-div-001 {
+  width: 21.9627%;
+  aspect-ratio: 2 / 1;
+}
+
+/* <div>  object "Donation Progress" */
+.Donation_Progress {
+  width: 499.8px;
+  height: 20px;
+  border-radius: 6px;
+  border-width: 0px;
+  background-color: #ffffff2e;
+}
+
+/* <div>  object "Donation Progress Fill" */
+.Donation_Progress_Fill {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border-width: 0px;
+  background-image: linear-gradient(90deg, #c52800 0%, #ff7a1a 100%);
+}
+
+/* <p>  object "Donation Progress Label" */
+.Donation_Progress_Label {
+  width: 483.1px;
+  height: 26.7px;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Silkscreen";
+}
+
+/* <div>  object "Kin Flow.001" */
 .Kin_Flow {
-  width: 140px;
-  height: 140px;
+  width: 70px;
+  height: 70px;
   background-color: #d9d9d9;
-  box-shadow: 0px 2px 6px 0 #9e9e9e;
-  border-radius: 5px;
+  box-shadow: 2px 2px 2px 0px #424242;
+  border-radius: 0px;
   z-index: 1;
   opacity: 1;
 }
@@ -64,8 +182,8 @@ body {
 /* <p>  object "p" */
 .Front_Page_Time {
   text-align: start;
-  width: 80px;
-  height: 20px;
+  width: 104.4px;
+  height: 26.1px;
   font-size: 11px;
   color: #ffffff;
   z-index: 1;
@@ -75,8 +193,8 @@ body {
 #bw-p-001 {
   z-index: 1;
   color: #ffffff;
-  width: 131px;
-  height: 40px;
+  width: 170.9px;
+  height: 52.2px;
   font-size: 24px;
   text-align: center;
   font-family: "Bank Gothic Light";
@@ -85,8 +203,8 @@ body {
 /* <p>  object "p.002" */
 .Front_Page_Date {
   text-align: end;
-  width: 120px;
-  height: 20px;
+  width: 156.5px;
+  height: 26.1px;
   font-size: 11px;
   color: #ffffff;
   z-index: 1;
@@ -94,8 +212,8 @@ body {
 
 /* <p>  object "p.003" */
 .App_Counter {
-  width: 420px;
-  height: 40px;
+  width: 547.9px;
+  height: 52.2px;
   font-size: 24px;
   color: #ffffff;
 }
@@ -103,8 +221,8 @@ body {
 /* <p>  object "p.004"  (no class or id: give it id="bw-p-004") */
 #bw-p-004 {
   text-align: center;
-  width: 20px;
-  height: 20px;
+  width: 26.1px;
+  height: 26.1px;
   font-size: 11px;
   color: #ffffff;
   z-index: 1;
@@ -112,22 +230,62 @@ body {
 
 /* <p>  object "p.005"  (no class or id: give it id="bw-p-005") */
 #bw-p-005 {
-  width: 60px;
-  height: 40px;
+  width: 78.3px;
+  height: 52.2px;
   font-size: 24px;
   border-bottom-style: none;
   color: #ffffff;
 }
 
-/* <div>  object "Rectangle.005"  (no class or id: give it id="bw-Rectangle-005") */
-#bw-Rectangle-005 {
-  width: 440px;
-  height: 420px;
-  background-color: #d9d9d9;
-  box-shadow: 0 2px 6px #9e9e9e;
-  border-radius: 5px;
-  z-index: 1;
-  display: block;
+/* <p>  object "p.006"  (no class or id: give it id="bw-p-006") */
+#bw-p-006 {
+  width: 160px;
+  height: 50px;
+  font-size: 48px;
+  text-align: center;
+  font-family: "Silkscreen";
+}
+
+/* <p>  object "p.007"  (no class or id: give it id="bw-p-007") */
+#bw-p-007 {
+  width: 166.6px;
+  height: 33.3px;
+  font-family: "Silkscreen";
+}
+
+/* <p>  object "p.008"  (no class or id: give it id="bw-p-008") */
+#bw-p-008 {
+  width: 149.9px;
+  height: 33.3px;
+  font-family: "Silkscreen";
+}
+
+/* <p>  object "p.009"  (no class or id: give it id="bw-p-009") */
+#bw-p-009 {
+  width: 149.9px;
+  height: 33.3px;
+  font-family: "Silkscreen";
+}
+
+/* <p>  object "p.010"  (no class or id: give it id="bw-p-010") */
+#bw-p-010 {
+  width: 166.6px;
+  height: 33.3px;
+  font-family: "Silkscreen";
+}
+
+/* <p>  object "p.011"  (no class or id: give it id="bw-p-011") */
+#bw-p-011 {
+  width: 166.6px;
+  height: 33.3px;
+  font-family: "Silkscreen";
+}
+
+/* <p>  object "p.012"  (no class or id: give it id="bw-p-012") */
+#bw-p-012 {
+  width: 149.9px;
+  height: 33.3px;
+  font-family: "Silkscreen";
 }
 
 /* <div>  object "Rectangle.007"  (no class or id: give it id="bw-Rectangle-007") */
@@ -142,13 +300,37 @@ body {
 
 /* <div>  object "Sun Tzu AI" */
 .Sun_Tzu_AI {
-  width: 140px;
-  height: 140px;
+  width: 70px;
+  height: 70px;
   background-color: #d9d9d9;
-  box-shadow: 0px 2px 6px 0 #9e9e9e;
-  border-radius: 5px;
+  box-shadow: 2px 2px 2px 0px #424242;
+  border-radius: 0px;
   z-index: 1;
   opacity: 1;
+  display: flex;
+}
+
+/* <div>  object "Sun Tzu AI Content"
+   width/height come from the element list (the exported CSS omits them) */
+.Sun_Tzu_AI_Content {
+  width: 1366px;
+  height: 599px;
+  display: flex;
+  background: #2e2e2e;
+  background-image: url("images/Wallpaper/katerina-kirillova-katerina-kirillova-friz-final.jpg");
+  background-position: 39.53% 0%;
+  background-size: 2094.2px 1178.3px;
+}
+
+/* <div>  object "Under Construction"  (no class or id: give it id="bw-Under-Construction")
+   width/height come from the element list (the exported CSS omits them) */
+#bw-Under-Construction {
+  width: 820px;
+  height: 1180px;
+  display: flex;
+  background-image: linear-gradient(0, #6b6b6bd9 0%, #41819d8e 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 /* Page layout: design made for a 1366 x 599 px template, absolute coordinates */
@@ -165,8 +347,12 @@ body {
 }
 p {
   margin: 0;
-  position: absolute;
   line-height: 20px;
+}
+button {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
 }
 /* The effects canvas covers the whole screen in the page background: it sits
    above #bw-Rectangle-007 (z-index 0, later in DOM order) and below every
@@ -190,2283 +376,140 @@ p {
   z-index: 1;
 }
 
-/* Animation "Sun Tzu AI-Open/Close Animation" */
-/* "Sun Tzu AI" (.Sun_Tzu_AI) - action "Sun Tzu AI-Open/Close Animation", frames 0-12 (0.5s); animates color, css border-radius, css box-shadow, css height, css opacity, css width, css z-index, location, rotation_euler, scale */
-/* played by 2 animation nodes (see below), not on page load */
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-80px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-80px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-height {
-  0% { height: 140px; }
-  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 599px; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-width {
-  0% { width: 140px; }
-  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 1366px; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-/* Animation "Sun Tzu AI-Open/Close Animation" on "Sun Tzu AI" (.Sun_Tzu_AI), frames 0-12 (0.5s) */
+/* Animation "Sun Tzu AI-Open/Close Animation" on .Sun_Tzu_AI, frames 0-12
+   (0.5s): the action has no keys - nothing moves. A constant keyframe on
+   the resting transform keeps it that way and still fires animationend
+   (the click flow's Wait step needs it). The play class also lifts the
+   tile (and the app window inside it) above the other tiles while open.
+   The keyframes are the same on every platform, so they are defined once
+   here - the media queries below don't repeat them. */
 @keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-80px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-80px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-height {
-  0% { height: 140px; }
-  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 599px; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-width {
-  0% { width: 140px; }
-  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 1366px; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-/* Reverse Animation node (runs when: Double Click) on .Sun_Tzu_AI:
-   add this class to play "Sun Tzu AI-Open/Close Animation" backwards, staying on the first frame */
-.bw-reverse-sun-tzu-ai-sun-tzu-ai-open-close-animation { animation: bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-move 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-color 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-fade 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-border-radius 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-box-shadow 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-height 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-opacity 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-width 0.5s linear 0s 1 reverse both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-z-index 0.5s linear 0s 1 reverse both; transform-origin: 0% 0%; }
-
-/* Timeline Animation node (runs on Click Step "SunTzuAI_OpenApp"):
-   add this class to .Sun_Tzu_AI to play frames 0-12 (0.5s), staying on the last frame */
-.bw-play-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12 { animation: bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0%; }
-
-/* Animation "Blend Web-Open/Close Animation" */
-/* "Blend Web" (.Blend_Web) - action "Blend Web-Open/Close Animation", frames 0-12 (0.5s); animates color, css border-radius, css box-shadow, css height, css opacity, css width, css z-index, location, rotation_euler, scale */
-/* played by 2 animation nodes (see below), not on page load */
-@keyframes bw-blend-web-blend-web-open-close-animation-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-260px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-260px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-css-height {
-  0% { height: 140px; }
-  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 599px; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-css-width {
-  0% { width: 140px; }
-  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 1366px; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-/* Animation "Blend Web-Open/Close Animation" on "Blend Web" (.Blend_Web), frames 0-12 (0.5s) */
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-260px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-260px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-height {
-  0% { height: 140px; }
-  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 599px; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-width {
-  0% { width: 140px; }
-  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 1366px; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-/* Reverse Animation node (runs when: Double Click) on .Blend_Web:
-   add this class to play "Blend Web-Open/Close Animation" backwards, staying on the first frame */
-.bw-reverse-blend-web-blend-web-open-close-animation { animation: bw-blend-web-blend-web-open-close-animation-move 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-color 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-fade 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-border-radius 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-box-shadow 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-height 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-opacity 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-width 0.5s linear 0s 1 reverse both, bw-blend-web-blend-web-open-close-animation-css-z-index 0.5s linear 0s 1 reverse both; transform-origin: 0% 0%; }
-
-/* Timeline Animation node (runs on Click Step "BlendWeb_OpenApp"):
-   add this class to .Blend_Web to play frames 0-12 (0.5s), staying on the last frame */
-.bw-play-blend-web-blend-web-open-close-animation-0-12 { animation: bw-blend-web-blend-web-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-blend-web-blend-web-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0%; }
-
-/* Animation "Blend EDA-Open/Close Animation" */
-/* "Blend EDA" (.Blend_EDA) - action "Blend EDA-Open/Close Animation", frames 0-12 (0.5s); animates color, css border-radius, css box-shadow, css height, css opacity, css width, css z-index, location, rotation_euler, scale */
-/* played by 2 animation nodes (see below), not on page load */
-@keyframes bw-blend-eda-blend-eda-open-close-animation-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-440px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-440px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-css-height {
-  0% { height: 140px; }
-  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 599px; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-css-width {
-  0% { width: 140px; }
-  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 1366px; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-/* Animation "Blend EDA-Open/Close Animation" on "Blend EDA" (.Blend_EDA), frames 0-12 (0.5s) */
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-440px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-440px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-height {
-  0% { height: 140px; }
-  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 599px; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-width {
-  0% { width: 140px; }
-  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 1366px; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-/* Reverse Animation node (runs when: Double Click) on .Blend_EDA:
-   add this class to play "Blend EDA-Open/Close Animation" backwards, staying on the first frame */
-.bw-reverse-blend-eda-blend-eda-open-close-animation { animation: bw-blend-eda-blend-eda-open-close-animation-move 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-color 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-fade 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-border-radius 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-box-shadow 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-height 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-opacity 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-width 0.5s linear 0s 1 reverse both, bw-blend-eda-blend-eda-open-close-animation-css-z-index 0.5s linear 0s 1 reverse both; transform-origin: 0% 0%; }
-
-/* Timeline Animation node (runs on Click Step "BlendEDA_OpenApp"):
-   add this class to .Blend_EDA to play frames 0-12 (0.5s), staying on the last frame */
-.bw-play-blend-eda-blend-eda-open-close-animation-0-12 { animation: bw-blend-eda-blend-eda-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-blend-eda-blend-eda-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0%; }
-
-/* Animation "Blend ACS-Open/Close Animation" */
-/* "Blend ACS" (.Blend_ACS) - action "Blend ACS-Open/Close Animation", frames 0-12 (0.5s); animates color, css border-radius, css box-shadow, css height, css opacity, css width, css z-index, location, rotation_euler, scale */
-/* played by 2 animation nodes (see below), not on page load */
-@keyframes bw-blend-acs-blend-acs-open-close-animation-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-620px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-620px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-css-height {
-  0% { height: 140px; }
-  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 599px; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-css-width {
-  0% { width: 140px; }
-  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 1366px; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-/* Animation "Blend ACS-Open/Close Animation" on "Blend ACS" (.Blend_ACS), frames 0-12 (0.5s) */
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-620px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-620px, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-height {
-  0% { height: 140px; }
-  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 599px; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-width {
-  0% { width: 140px; }
-  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 1366px; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-/* Reverse Animation node (runs when: Double Click) on .Blend_ACS:
-   add this class to play "Blend ACS-Open/Close Animation" backwards, staying on the first frame */
-.bw-reverse-blend-acs-blend-acs-open-close-animation { animation: bw-blend-acs-blend-acs-open-close-animation-move 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-color 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-fade 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-border-radius 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-box-shadow 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-height 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-opacity 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-width 0.5s linear 0s 1 reverse both, bw-blend-acs-blend-acs-open-close-animation-css-z-index 0.5s linear 0s 1 reverse both; transform-origin: 0% 0%; }
-
-/* Timeline Animation node (runs on Click Step "BlendACS_OpenApp"):
-   add this class to .Blend_ACS to play frames 0-12 (0.5s), staying on the last frame */
-.bw-play-blend-acs-blend-acs-open-close-animation-0-12 { animation: bw-blend-acs-blend-acs-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-blend-acs-blend-acs-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0%; }
-
-/* Animation "Kin Flow-Open/Close Animation" */
-/* "Kin Flow" (.Kin_Flow) - action "Kin Flow-Open/Close Animation", frames 0-12 (0.5s); animates color, css border-radius, css box-shadow, css height, css opacity, css width, css z-index, location, rotation_euler, scale */
-/* played by 2 animation nodes (see below), not on page load */
-@keyframes bw-kin-flow-kin-flow-open-close-animation-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-80px, -380px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-80px, -380px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-css-height {
-  0% { height: 140px; }
-  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 599px; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-css-width {
-  0% { width: 140px; }
-  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 1366px; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-/* Animation "Kin Flow-Open/Close Animation" on "Kin Flow" (.Kin_Flow), frames 0-12 (0.5s) */
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-80px, -380px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-80px, -380px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-height {
-  0% { height: 140px; }
-  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 599px; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-width {
-  0% { width: 140px; }
-  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 1366px; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-/* Reverse Animation node (runs when: Double Click) on .Kin_Flow:
-   add this class to play "Kin Flow-Open/Close Animation" backwards, staying on the first frame */
-.bw-reverse-kin-flow-kin-flow-open-close-animation { animation: bw-kin-flow-kin-flow-open-close-animation-move 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-color 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-fade 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-border-radius 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-box-shadow 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-height 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-opacity 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-width 0.5s linear 0s 1 reverse both, bw-kin-flow-kin-flow-open-close-animation-css-z-index 0.5s linear 0s 1 reverse both; transform-origin: 0% 0%; }
-
-/* Timeline Animation node (runs on Click Step "KinFow_OpenApp"):
-   add this class to .Kin_Flow to play frames 0-12 (0.5s), staying on the last frame */
-.bw-play-kin-flow-kin-flow-open-close-animation-0-12 { animation: bw-kin-flow-kin-flow-open-close-animation-0-12-move 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-color 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-fade 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-border-radius 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-box-shadow 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-height 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-opacity 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-width 0.5s linear 0s 1 normal both, bw-kin-flow-kin-flow-open-close-animation-0-12-css-z-index 0.5s linear 0s 1 normal both; transform-origin: 0% 0%; }
-
-/* <div>  object "Sun_Szu_AI_Content" - nested inside .Sun_Tzu_AI */
-.Sun_Tzu_AI_Content {
-  width: 140px;
-  height: 140px;
-  background-color: none;
-  z-index: 1;
-  display: none;
-  opacity: 1;
-  border-radius: 5px;
-  box-shadow: 0px 2px 6px 0 #9e9e9e;
-  clip-path: path('M 0 5 L 0.04 4.35 L 0.17 3.71 L 0.38 3.09 L 0.67 2.5 L 1.03 1.96 L 1.46 1.46 L 1.96 1.03 L 2.5 0.67 L 3.09 0.38 L 3.71 0.17 L 4.35 0.04 L 5 0 L 135 0 L 135.65 0.04 L 136.29 0.17 L 136.91 0.38 L 137.5 0.67 L 138.04 1.03 L 138.54 1.46 L 138.97 1.96 L 139.33 2.5 L 139.62 3.09 L 139.83 3.71 L 139.96 4.35 L 140 5 L 140 135 L 139.96 135.65 L 139.83 136.29 L 139.62 136.91 L 139.33 137.5 L 138.97 138.04 L 138.54 138.54 L 138.04 138.97 L 137.5 139.33 L 136.91 139.62 L 136.29 139.83 L 135.65 139.96 L 135 140 L 5 140 L 4.35 139.96 L 3.71 139.83 L 3.09 139.62 L 2.5 139.33 L 1.96 138.97 L 1.46 138.54 L 1.03 138.04 L 0.67 137.5 L 0.38 136.91 L 0.17 136.29 L 0.04 135.65 L 0 135 Z');
-}
-/* its outline is a custom shape (clip-path), and a clip-path hides
-   box-shadow: this wrapper sits at the same position and carries the
-   shadow as a drop-shadow filter, which follows the clipped shape */
-.Sun_Tzu_AI_Content-shadow-wrap {
-  width: 140px;
-  height: 140px;
-  filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.5));
-}
-
-/* <div>  object "Circle"  (no class or id: give it id="bw-Circle") -
-   nested inside .Sun_Tzu_AI_Content */
-#bw-Circle {
-  width: 40px;
-  height: 40px;
-  background-color: #676767;
-  border-radius: 50%;
-  z-index: 2;
-}
-
-/* <div>  object "Circle.001"  (no class or id: give it id="bw-Circle-001") -
-   nested inside .Sun_Tzu_AI_Content */
-#bw-Circle-001 {
-  width: 20px;
-  height: 20px;
-  background-color: #676767;
-  border-radius: 50%;
-  z-index: 2;
-}
-
-/* <div>  object "Circle.002"  (no class or id: give it id="bw-Circle-002") -
-   nested inside .Sun_Tzu_AI_Content */
-#bw-Circle-002 {
-  width: 40px;
-  height: 40px;
-  background-color: #676767;
-  border-radius: 50%;
-  z-index: 2;
-}
-
-/* <div>  object "Circle.003"  (no class or id: give it id="bw-Circle-003") -
-   nested inside .Sun_Tzu_AI_Content */
-#bw-Circle-003 {
-  width: 20px;
-  height: 20px;
-  background-color: #676767;
-  border-radius: 50%;
-  z-index: 2;
-}
-
-/* <div>  object "Circle.004"  (no class or id: give it id="bw-Circle-004") -
-   nested inside .Sun_Tzu_AI_Content */
-#bw-Circle-004 {
-  width: 20px;
-  height: 20px;
-  background-color: #676767;
-  border-radius: 50%;
-  z-index: 2;
-}
-
-/* <div>  object "Rectangle"  (no class or id: give it id="bw-Rectangle") -
-   nested inside .Sun_Tzu_AI_Content */
-#bw-Rectangle {
-  width: 180px;
-  height: 20px;
-  background-color: #2e327f;
-  z-index: 2;
-  background: #5a3d6c;
-  display: block;
-}
-
-/* <p>  object "STU_Title"  (no class or id: give it id="bw-STU_Title") -
-   nested inside .Sun_Tzu_AI_Content */
-#bw-STU_Title {
-  z-index: 2;
-  color: #767676;
-}
-
-/* Animation "Sun_Szu_AI_Content - Sun Tzu AI-Open/Close Animation" */
-/* "Sun_Szu_AI_Content" (.Sun_Tzu_AI_Content) - action "Sun_Szu_AI_Content - Sun Tzu AI-Open/Close Animation", frames 0-12 (0.5s); animates color, css border-radius, css box-shadow, css height, css opacity, css width, css z-index, location, rotation_euler, scale */
-/* NOT played anywhere yet: no animation rule uses these - the element stays as it is until a node plays it (keyframes kept for when one does) */
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-move {
   0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  25% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
   100% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
 }
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-height {
-  0% { height: 140px; }
-  25% { height: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 599px; }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-width {
-  0% { width: 140px; }
-  25% { width: 140px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 1366px; }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
+@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-move {
+  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
+  100% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
 }
 
-/* <div>  object "Triangle"  (no class or id: give it id="bw-Triangle") */
-#bw-Triangle {
-  width: 40px;
-  height: 40px;
-  background-color: #5c5c5c;
+/* Timeline Animation node (runs on Click Step "SunTzuAI_OpenApp"):
+   add this class to .Sun_Tzu_AI to play frames 0-12 (0.5s, linear),
+   staying on the last frame */
+.bw-play-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12 {
   z-index: 2;
-  clip-path: path('M 20 0 L 40 40 L 0 40 Z');
+  animation: bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-move 0.5s linear 0s 1 normal both;
+}
+
+/* Reverse Animation node (runs when: Double Click):
+   add this class to play it backwards, staying on the first frame */
+.bw-reverse-sun-tzu-ai-sun-tzu-ai-open-close-animation {
+  animation: bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-move 0.5s linear 0s 1 reverse both;
 }
 
 /* ===================== Desktop (narrow) layout =====================
-
    (min-width: 1094px) and (max-width: 1365px) - same elements, same HTML; positions / sizes are
-
-   scaled with the screen width (%) so nothing overflows sideways.
-
-   The @keyframes below REPLACE the base ones of the same name
-
-   on this platform (same timing and nodes, platform values). */
-
+   scaled with the screen width (% / vw) so nothing overflows
+   sideways. */
 @media (min-width: 1094px) and (max-width: 1365px) {
-
   body { width: auto; }
   #bw-Rectangle-007 { width: 100%; }
-  #bw-p-001 { left: 1.4641% !important; width: 9.5900%; }
-  #bw-p-004 { left: 19.0337% !important; width: 1.4641%; }
-  .Front_Page_Time { left: 20.4978% !important; width: 5.8565%; }
-  .Front_Page_Date { left: 10.2489% !important; width: 8.7848%; }
-  .App_Counter { left: 11.7130% !important; width: 30.7467%; }
-  #bw-p-005 { left: 5.8565% !important; width: 4.3924%; }
-  #bw-Rectangle-005 { left: 61.4934% !important; width: 32.2108%; }
-  /* app tiles sit where the platform keyframes expect them */
-  .Sun_Tzu_AI { left: 5.8565% !important; width: 10.2489%; }
-  .Blend_Web { left: 19.0337% !important; width: 10.2489%; }
-  .Blend_EDA { left: 32.2108% !important; width: 10.2489%; }
-  .Blend_ACS { left: 45.3880% !important; width: 10.2489%; }
-  .Kin_Flow { left: 5.8565% !important; width: 10.2489%; }
-  .Sun_Tzu_AI_Content-shadow-wrap,
-  .Sun_Tzu_AI_Content { width: 100%; height: 100%; }
-
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-5.8565vw, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-5.8565vw, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-height {
-  0% { height: 140.0px; }
-  25% { height: 140.0px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 599px; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-width {
-  0% { width: 10.2489vw; }
-  25% { width: 10.2489vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-5.8565vw, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-5.8565vw, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-height {
-  0% { height: 140.0px; }
-  25% { height: 140.0px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 599px; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-width {
-  0% { width: 10.2489vw; }
-  25% { width: 10.2489vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-blend-web-blend-web-open-close-animation-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-19.0337vw, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-19.0337vw, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-css-height {
-  0% { height: 140.0px; }
-  25% { height: 140.0px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 599px; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-css-width {
-  0% { width: 10.2489vw; }
-  25% { width: 10.2489vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-19.0337vw, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-19.0337vw, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-height {
-  0% { height: 140.0px; }
-  25% { height: 140.0px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 599px; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-width {
-  0% { width: 10.2489vw; }
-  25% { width: 10.2489vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-blend-eda-blend-eda-open-close-animation-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-32.2108vw, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-32.2108vw, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-css-height {
-  0% { height: 140.0px; }
-  25% { height: 140.0px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 599px; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-css-width {
-  0% { width: 10.2489vw; }
-  25% { width: 10.2489vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-32.2108vw, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-32.2108vw, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-height {
-  0% { height: 140.0px; }
-  25% { height: 140.0px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 599px; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-width {
-  0% { width: 10.2489vw; }
-  25% { width: 10.2489vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-blend-acs-blend-acs-open-close-animation-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-45.3880vw, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-45.3880vw, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-css-height {
-  0% { height: 140.0px; }
-  25% { height: 140.0px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 599px; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-css-width {
-  0% { width: 10.2489vw; }
-  25% { width: 10.2489vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-45.3880vw, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-45.3880vw, -200px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-height {
-  0% { height: 140.0px; }
-  25% { height: 140.0px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 599px; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-width {
-  0% { width: 10.2489vw; }
-  25% { width: 10.2489vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-kin-flow-kin-flow-open-close-animation-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-5.8565vw, -380px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-5.8565vw, -380px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-css-height {
-  0% { height: 140.0px; }
-  25% { height: 140.0px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 599px; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-css-width {
-  0% { width: 10.2489vw; }
-  25% { width: 10.2489vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-5.8565vw, -380px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-5.8565vw, -380px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-height {
-  0% { height: 140.0px; }
-  25% { height: 140.0px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 599px; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-width {
-  0% { width: 10.2489vw; }
-  25% { width: 10.2489vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  25% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-height {
-  0% { height: 140.0px; }
-  25% { height: 140.0px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 599px; }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-width {
-  0% { width: 10.2489vw; }
-  25% { width: 10.2489vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
+  #bw-p-001 { left: 2.1962% !important; width: 12.5110%; }
+  #bw-p-004 { left: 24.8902% !important; width: 1.9107%; }
+  .Front_Page_Time { left: 27.0864% !important; width: 7.6428%; }
+  .Front_Page_Date { left: 13.1772% !important; width: 11.4568%; }
+  .App_Counter { left: 15.3734% !important; width: 40.1098%; }
+  #bw-p-005 { left: 7.3206% !important; width: 5.7321%; }
+  /* the stat rows (the desktop design puts them below the 599px canvas) */
+  #bw-p-009 { left: 31.4788% !important; width: 10.9736%; }
+  #bw-p-010 { left: 46.1201% !important; width: 12.1962%; }
+  #bw-p-008 { left: 31.4788% !important; width: 10.9736%; }
+  #bw-p-011 { left: 46.1201% !important; width: 12.1962%; }
+  #bw-p-012 { left: 31.4788% !important; width: 10.9736%; }
+  /* the app tiles, desktop x 100/200/300/400/500 scaled */
+  .Sun_Tzu_AI { left: 7.3206% !important; width: 5.1245%; height: 5.1245vw; }
+  .Blend_Web { left: 14.6413% !important; width: 5.1245%; height: 5.1245vw; }
+  .Blend_EDA { left: 21.9619% !important; width: 5.1245%; height: 5.1245vw; }
+  .Blend_ACS { left: 29.2826% !important; width: 5.1245%; height: 5.1245vw; }
+  .Kin_Flow { left: 36.6032% !important; width: 5.1245%; height: 5.1245vw; }
+  /* the app window: covers the page (inside-container x -100 of 70px tile) */
+  .Sun_Tzu_AI_Content { left: -142.8571% !important; top: -270px !important; width: 100vw; height: 599px; }
+  #bw-div { width: 100vw; }
+  #bw-p-006 { left: 43.9239vw !important; width: 11.7130vw; }
+  #bw-button-002 { left: 31.7072vw !important; width: 14.6340vw; }
+  #bw-button-003 { left: 53.6589vw !important; width: 14.6340vw; }
+  #bw-p-007 { left: 46.3411vw !important; width: 12.1962vw; }
+  .Donation_Progress_Label { left: 32.3170vw !important; width: 35.3660vw; }
+  .Donation_Progress { left: 31.7072vw !important; width: 36.5886vw; }
+  .Donation_Progress_Fill { left: 0.6098vw !important; width: 1.4641vw; }
+  /* the bottom app-switcher row inside the window */
+  #bw-button-001 { left: 0.0000vw !important; width: 23.1698vw; }
+  #bw-button-004 { left: 25.6098vw !important; width: 23.1698vw; }
+  #bw-button-005 { left: 51.2196vw !important; width: 23.1698vw; }
+  #bw-button-006 { left: 76.8294vw !important; width: 23.1698vw; }
 }
 
 /* ===================== Tablet layout =====================
-
    (min-width: 606px) and (max-width: 1093px) - same elements, same HTML; positions / sizes are
-
-   scaled with the screen width (%) so nothing overflows sideways.
-
-   The @keyframes below REPLACE the base ones of the same name
-
-   on this platform (same timing and nodes, platform values). */
-
+   scaled with the screen width (% / vw) so nothing overflows
+   sideways. */
 @media (min-width: 606px) and (max-width: 1093px) {
-
   body { width: auto; height: auto; min-height: 1180px; }
   #bw-Rectangle-007 { width: 100%; height: 1180px; }
-  #bw-p-001 { left: 26.8293% !important; top: 260px !important; width: 14.6341%; height: 24px; }
+  #bw-p-001 { left: 2.4390% !important; top: 20px !important; width: 14.6341%; height: 24px; }
   #bw-p-004 { left: 31.7073% !important; top: 20px !important; width: 1.4634%; height: 12px; }
   .Front_Page_Time { left: 34.1463% !important; top: 20px !important; width: 9.7561%; height: 12px; }
   .Front_Page_Date { left: 17.0732% !important; top: 20px !important; width: 14.1415%; height: 12px; }
-  .App_Counter { left: 11.7073% !important; top: 84px !important; width: 30.7439%; height: 24px; }
-  #bw-p-005 { left: 5.8537% !important; top: 84px !important; width: 4.3902%; height: 24px; }
-  #bw-Rectangle-005 { left: 61.4878% !important; top: 72px !important; width: 32.2073%; height: 252.1px; }
-  /* app tiles sit where the platform keyframes expect them */
-  .Sun_Tzu_AI { left: 5.8561% !important; top: 120.06px !important; width: 10.2489%; height: 84.041px; }
-  .Blend_Web { left: 19.0341% !important; top: 120.06px !important; width: 10.2489%; height: 84.041px; }
-  .Blend_EDA { left: 32.2110% !important; top: 120.06px !important; width: 10.2489%; height: 84.041px; }
-  .Blend_ACS { left: 45.3878% !important; top: 120.06px !important; width: 10.2489%; height: 84.041px; }
-  .Kin_Flow { left: 5.8561% !important; top: 228.11px !important; width: 10.2489%; height: 84.041px; }
-  .Sun_Tzu_AI_Content-shadow-wrap,
-  .Sun_Tzu_AI_Content { width: 100%; height: 100%; }
-
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-5.8561vw, -120.06px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-5.8561vw, -120.06px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-height {
-  0% { height: 84.041px; }
-  25% { height: 84.041px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 1180px; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-width {
-  0% { width: 10.2489vw; }
-  25% { width: 10.2489vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-5.8561vw, -120.06px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-5.8561vw, -120.06px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-height {
-  0% { height: 84.041px; }
-  25% { height: 84.041px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 1180px; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-width {
-  0% { width: 10.2489vw; }
-  25% { width: 10.2489vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-blend-web-blend-web-open-close-animation-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-19.0341vw, -120.06px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-19.0341vw, -120.06px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-css-height {
-  0% { height: 84.041px; }
-  25% { height: 84.041px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 1180px; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-css-width {
-  0% { width: 10.2489vw; }
-  25% { width: 10.2489vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-19.0341vw, -120.06px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-19.0341vw, -120.06px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-height {
-  0% { height: 84.041px; }
-  25% { height: 84.041px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 1180px; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-width {
-  0% { width: 10.2489vw; }
-  25% { width: 10.2489vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-blend-eda-blend-eda-open-close-animation-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-32.2110vw, -120.06px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-32.2110vw, -120.06px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-css-height {
-  0% { height: 84.041px; }
-  25% { height: 84.041px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 1180px; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-css-width {
-  0% { width: 10.2489vw; }
-  25% { width: 10.2489vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-32.2110vw, -120.06px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-32.2110vw, -120.06px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-height {
-  0% { height: 84.041px; }
-  25% { height: 84.041px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 1180px; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-width {
-  0% { width: 10.2489vw; }
-  25% { width: 10.2489vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-blend-acs-blend-acs-open-close-animation-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-45.3878vw, -120.06px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-45.3878vw, -120.06px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-css-height {
-  0% { height: 84.041px; }
-  25% { height: 84.041px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 1180px; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-css-width {
-  0% { width: 10.2489vw; }
-  25% { width: 10.2489vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-45.3878vw, -120.06px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-45.3878vw, -120.06px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-height {
-  0% { height: 84.041px; }
-  25% { height: 84.041px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 1180px; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-width {
-  0% { width: 10.2489vw; }
-  25% { width: 10.2489vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-kin-flow-kin-flow-open-close-animation-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-5.8561vw, -228.11px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-5.8561vw, -228.11px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-css-height {
-  0% { height: 84.041px; }
-  25% { height: 84.041px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 1180px; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-css-width {
-  0% { width: 10.2489vw; }
-  25% { width: 10.2489vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-5.8561vw, -228.11px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-5.8561vw, -228.11px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-height {
-  0% { height: 84.041px; }
-  25% { height: 84.041px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 1180px; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-width {
-  0% { width: 10.2489vw; }
-  25% { width: 10.2489vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  25% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-height {
-  0% { height: 84.041px; }
-  25% { height: 84.041px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 1180px; }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-width {
-  0% { width: 10.2489vw; }
-  25% { width: 10.2489vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
+  .App_Counter { left: 12.1951% !important; top: 80px !important; width: 30.7439%; height: 24px; }
+  #bw-p-005 { left: 4.8780% !important; top: 80px !important; width: 4.3902%; height: 24px; }
+  /* the stat rows: (p-012, p-010) y620, (p-009, p-011) y660, (p-008, p-007) y700 */
+  #bw-p-012 { left: 31.7073% !important; top: 620px !important; width: 10.9756%; height: 20px; }
+  #bw-p-010 { left: 46.3415% !important; top: 620px !important; width: 12.1951%; height: 20px; }
+  #bw-p-009 { left: 31.7073% !important; top: 660px !important; width: 10.9756%; height: 20px; }
+  #bw-p-011 { left: 46.3415% !important; top: 660px !important; width: 12.1951%; height: 20px; }
+  #bw-p-008 { left: 31.7073% !important; top: 700px !important; width: 10.9756%; height: 20px; }
+  /* the app tiles: x 40/110/180/250/320, y 160, 50px high */
+  .Sun_Tzu_AI { left: 4.8780% !important; top: 160px !important; width: 6.0976%; height: 6.0976vw; }
+  .Blend_Web { left: 13.4146% !important; top: 160px !important; width: 6.0976%; height: 6.0976vw; }
+  .Blend_EDA { left: 21.9512% !important; top: 160px !important; width: 6.0976%; height: 6.0976vw; }
+  .Blend_ACS { left: 30.4878% !important; top: 160px !important; width: 6.0976%; height: 6.0976vw; }
+  .Kin_Flow { left: 39.0244% !important; top: 160px !important; width: 6.0976%; height: 6.0976vw; }
+  /* the app window: x 60 / y 120 inside its tile, 820 x 1180 */
+  .Sun_Tzu_AI_Content { left: 120% !important; top: 120px !important; width: 100vw; height: 143.9024vw; }
+  #bw-div { width: 100vw; height: 143.9024vw; }
+  /* the window's children (x / y inside the 820px-wide window) */
+  #bw-p-006 { left: 19.5122% !important; top: 160px !important; width: 41.3415%; height: 74px; }
+  #bw-button-002 { left: 21.9512% !important; top: 380px !important; width: 24.3902%; height: 60px; }
+  #bw-button-003 { left: 53.6585% !important; top: 380px !important; width: 24.3902%; height: 60px; }
+  .Donation_Progress_Label { left: 31.7073% !important; top: 520px !important; width: 36.5854%; height: 16px; }
+  .Donation_Progress { left: 31.7073% !important; top: 560px !important; width: 36.5854%; height: 12px; }
+  .Donation_Progress_Fill { left: 5px !important; top: 0px !important; width: 12px; height: 12px; }
+  #bw-p-007 { left: 46.3415% !important; top: 700px !important; width: 12.1951%; height: 20px; }
+  /* the bottom app-switcher row inside the window, y 1140 */
+  #bw-button-001 { left: 0.0000% !important; top: 1140px !important; width: 23.1707%; height: 40px; }
+  #bw-button-004 { left: 25.6098% !important; top: 1140px !important; width: 23.1707%; height: 40px; }
+  #bw-button-005 { left: 51.2195% !important; top: 1140px !important; width: 23.1707%; height: 40px; }
+  #bw-button-006 { left: 76.8293% !important; top: 1140px !important; width: 23.1707%; height: 40px; }
 }
 
 /* ===================== Phone layout =====================
-
    (max-width: 605px) - same elements, same HTML; positions / sizes are
-
-   scaled with the screen width (%) so nothing overflows sideways.
-
-   The @keyframes below REPLACE the base ones of the same name
-
-   on this platform (same timing and nodes, platform values). */
-
+   scaled with the screen width (% / vw) so nothing overflows
+   sideways. */
 @media (max-width: 605px) {
-
   body { width: auto; height: auto; min-height: 844px; }
   #bw-Rectangle-007 { width: 100%; height: 844px; }
-  #bw-p-001 { left: 1.4615% !important; top: 5.7px !important; width: 9.5897%; height: 11.4px; }
-  #bw-p-004 { left: 19.0256% !important; top: 5.7px !important; width: 1.4615%; height: 5.7px; }
-  .Front_Page_Time { left: 20.4872% !important; top: 5.7px !important; width: 5.8462%; height: 5.7px; }
-  .Front_Page_Date { left: 10.2564% !important; top: 5.7px !important; width: 8.7949%; height: 5.7px; }
-  .App_Counter { left: 11.7179% !important; top: 40px !important; width: 30.7436%; height: 11.4px; }
-  #bw-p-005 { left: 5.8462% !important; top: 40px !important; width: 4.3846%; height: 11.4px; }
-  #bw-Rectangle-005 { left: 61.4872% !important; top: 34.3px !important; width: 32.2051%; height: 119.9px; }
-  /* app tiles sit where the platform keyframes expect them */
-  .Sun_Tzu_AI { left: 5.8564% !important; top: 57.1px !important; width: 10.2490%; height: 39.971px; }
-  .Blend_Web { left: 19.0333% !important; top: 57.1px !important; width: 10.2490%; height: 39.971px; }
-  .Blend_EDA { left: 32.2103% !important; top: 57.1px !important; width: 10.2490%; height: 39.971px; }
-  .Blend_ACS { left: 45.3872% !important; top: 57.1px !important; width: 10.2490%; height: 39.971px; }
-  .Kin_Flow { left: 5.8564% !important; top: 108.49px !important; width: 10.2490%; height: 39.971px; }
-  .Sun_Tzu_AI_Content-shadow-wrap,
-  .Sun_Tzu_AI_Content { width: 100%; height: 100%; }
-
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-5.8564vw, -57.1px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-5.8564vw, -57.1px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-height {
-  0% { height: 39.971px; }
-  25% { height: 39.971px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 844px; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-width {
-  0% { width: 10.2490vw; }
-  25% { width: 10.2490vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-5.8564vw, -57.1px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-5.8564vw, -57.1px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-height {
-  0% { height: 39.971px; }
-  25% { height: 39.971px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 844px; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-width {
-  0% { width: 10.2490vw; }
-  25% { width: 10.2490vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-blend-web-blend-web-open-close-animation-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-19.0333vw, -57.1px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-19.0333vw, -57.1px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-css-height {
-  0% { height: 39.971px; }
-  25% { height: 39.971px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 844px; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-css-width {
-  0% { width: 10.2490vw; }
-  25% { width: 10.2490vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-19.0333vw, -57.1px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-19.0333vw, -57.1px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-height {
-  0% { height: 39.971px; }
-  25% { height: 39.971px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 844px; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-width {
-  0% { width: 10.2490vw; }
-  25% { width: 10.2490vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-blend-web-blend-web-open-close-animation-0-12-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-blend-eda-blend-eda-open-close-animation-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-32.2103vw, -57.1px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-32.2103vw, -57.1px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-css-height {
-  0% { height: 39.971px; }
-  25% { height: 39.971px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 844px; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-css-width {
-  0% { width: 10.2490vw; }
-  25% { width: 10.2490vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-32.2103vw, -57.1px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-32.2103vw, -57.1px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-height {
-  0% { height: 39.971px; }
-  25% { height: 39.971px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 844px; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-width {
-  0% { width: 10.2490vw; }
-  25% { width: 10.2490vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-blend-eda-blend-eda-open-close-animation-0-12-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-blend-acs-blend-acs-open-close-animation-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-45.3872vw, -57.1px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-45.3872vw, -57.1px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-css-height {
-  0% { height: 39.971px; }
-  25% { height: 39.971px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 844px; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-css-width {
-  0% { width: 10.2490vw; }
-  25% { width: 10.2490vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-45.3872vw, -57.1px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-45.3872vw, -57.1px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-height {
-  0% { height: 39.971px; }
-  25% { height: 39.971px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 844px; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-width {
-  0% { width: 10.2490vw; }
-  25% { width: 10.2490vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-blend-acs-blend-acs-open-close-animation-0-12-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-kin-flow-kin-flow-open-close-animation-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-5.8564vw, -108.49px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-5.8564vw, -108.49px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-css-height {
-  0% { height: 39.971px; }
-  25% { height: 39.971px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 844px; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-css-width {
-  0% { width: 10.2490vw; }
-  25% { width: 10.2490vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { transform: translate(-5.8564vw, -108.49px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(-5.8564vw, -108.49px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-height {
-  0% { height: 39.971px; }
-  25% { height: 39.971px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 844px; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-width {
-  0% { width: 10.2490vw; }
-  25% { width: 10.2490vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-kin-flow-kin-flow-open-close-animation-0-12-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-move {
-  0% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  25% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-  100% { transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg) rotate(0deg) scale(1, 1); }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-color {
-  0% { background-color: #d9d9d9; }
-  25% { background-color: #d9d9d9; }
-  100% { background-color: #d9d9d9; }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-fade {
-  0% { opacity: 1; }
-  25% { opacity: 1; }
-  100% { opacity: 1; }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-border-radius {
-  0% { border-radius: 5px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { border-radius: 0px; }
-  100% { border-radius: 0px; }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-box-shadow {
-  0% { box-shadow: 0px 2px 6px 0 #9e9e9e; animation-timing-function: steps(1, end); }
-  25% { box-shadow: 0 0px 0 0 rgba(89, 89, 89, 0.675); animation-timing-function: steps(1, end); }
-  100% { box-shadow: 3px 0px 6px 2px rgba(89, 89, 89, 0.675); }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-height {
-  0% { height: 39.971px; }
-  25% { height: 39.971px; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { height: 844px; }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-opacity {
-  0% { opacity: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { opacity: 0; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { opacity: 1; }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-width {
-  0% { width: 10.2490vw; }
-  25% { width: 10.2490vw; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  100% { width: 100vw; }
-}
-@keyframes bw-sun_szu_ai_content-sun_szu_ai_content---sun-tzu-ai-open-close-animation-css-z-index {
-  0% { z-index: 1; animation-timing-function: cubic-bezier(0.333, 0, 0.667, 1); }
-  25% { z-index: 2; }
-  100% { z-index: 2; }
-}
-
+  #bw-p-001 { left: 2.5641% !important; top: 10px !important; width: 33.3333%; height: 30px; }
+  #bw-p-004 { left: 74.3590% !important; top: 10px !important; width: 2.5641%; height: 20px; }
+  .Front_Page_Time { left: 79.4872% !important; top: 10px !important; width: 17.9487%; height: 20px; }
+  .Front_Page_Date { left: 41.0256% !important; top: 10px !important; width: 30.7692%; height: 20px; }
+  .App_Counter { left: 25.6410% !important; top: 60px !important; width: 69.2308%; height: 40px; }
+  #bw-p-005 { left: 5.1282% !important; top: 60px !important; width: 17.9487%; height: 40px; }
+  /* the app tiles: x 20/80/140/200/260, y 120, 39.971px */
+  .Sun_Tzu_AI { left: 5.1282% !important; top: 120px !important; width: 10.2490%; height: 10.2490vw; }
+  .Blend_Web { left: 20.5128% !important; top: 120px !important; width: 10.2490%; height: 10.2490vw; }
+  .Blend_EDA { left: 35.8974% !important; top: 120px !important; width: 10.2490%; height: 10.2490vw; }
+  .Blend_ACS { left: 51.2821% !important; top: 120px !important; width: 10.2490%; height: 10.2490vw; }
+  .Kin_Flow { left: 66.6667% !important; top: 120px !important; width: 10.2490%; height: 10.2490vw; }
+  /* the app window keeps the base design, scaled with the screen width */
+  .Sun_Tzu_AI_Content { left: -7.3206vw !important; top: -270px !important; width: 100vw; height: 43.8507vw; }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-platform="desktop">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,28 +13,53 @@
     <canvas class="Front_Page_Visual_Effects" style="position:fixed;left:0px;top:0px;width:100%;height:100%;"></canvas>
     <canvas id="bw-fx-overlay" style="position:fixed;left:0px;top:0px;width:100%;height:100%;"></canvas>
 
-    <p id="bw-p-001" style="position:absolute;left:20px;top:20px;">Sozin - X</p>
-    <p class="Front_Page_Date" style="position:absolute;left:140px;top:20px;">October 7th, 2026</p>
-    <p id="bw-p-004" style="position:absolute;left:260px;top:20px;">--</p>
-    <p class="Front_Page_Time" style="position:absolute;left:280px;top:20px;">4:20:00 pm</p>
+    <p id="bw-p-001" style="position:absolute;left:30px;top:30px;">Sozin - X</p>
+    <p class="Front_Page_Date" style="position:absolute;left:180px;top:30px;">October 7th, 2026</p>
+    <p id="bw-p-004" style="position:absolute;left:340px;top:30px;">--</p>
+    <p class="Front_Page_Time" style="position:absolute;left:370px;top:30px;">4:20:00 pm</p>
 
-    <div id="bw-Rectangle-005" style="position:absolute;left:840px;top:120px;"></div>
+    <p id="bw-p-005" style="position:absolute;left:100px;top:180px;">Apps</p>
+    <p class="App_Counter" style="position:absolute;left:210px;top:180px;">--</p>
 
-    <p id="bw-p-005" style="position:absolute;left:80px;top:140px;">Apps</p>
-    <p class="App_Counter" style="position:absolute;left:160px;top:140px;">--</p>
-
-    <div class="Sun_Tzu_AI" style="position:absolute;left:80px;top:200px;">
-        <!-- nested: .Sun_Tzu_AI_Content sits inside .Sun_Tzu_AI at its own
-             x/y minus the container's (0,0); the wrapper carries the
-             drop-shadow because a clip-path hides box-shadow -->
-        <div class="Sun_Tzu_AI_Content-shadow-wrap" style="position:absolute;left:0px;top:0px;">
-            <div class="Sun_Tzu_AI_Content" style="position:absolute;left:0px;top:0px;"></div>
+    <!-- app tiles; .Sun_Tzu_AI carries its app window (the exported
+         .Blen_Web class is kept as an alias on .Blend_Web so the wired
+         hover / Click Step triggers resolve to this element) -->
+    <div class="Sun_Tzu_AI" id="sun-tzu-ai" style="position:absolute;left:100px;top:270px;">
+        <!-- .Sun_Tzu_AI_Content's page x/y is (0,0): inside its container
+             (100,270) that's left -100 / top -270; it covers the page -->
+        <div class="Sun_Tzu_AI_Content" style="position:absolute;left:-100px;top:-270px;display:none;">
+            <div id="bw-div" style="position:absolute;left:0px;top:0px;"></div>
+            <div id="bw-div-001" style="position:absolute;left:27.8184%;top:100px;"></div>
+            <p id="bw-p-006" style="position:absolute;left:600px;top:180px;">Sun Tzu AI</p>
+            <button id="bw-button-002" style="position:absolute;left:433.12px;top:616.37px;">Download</button>
+            <button id="bw-button-003" style="position:absolute;left:732.98px;top:616.37px;">Donate</button>
+            <p id="bw-p-009" style="position:absolute;left:430px;top:880px;">Nations</p>
+            <p id="bw-p-010" style="position:absolute;left:630px;top:880px;">0</p>
+            <p id="bw-p-007" style="position:absolute;left:633.02px;top:949.54px;">0</p>
+            <p id="bw-p-008" style="position:absolute;left:430px;top:950px;">Income</p>
+            <p id="bw-p-012" style="position:absolute;left:430px;top:1029.93px;">Players</p>
+            <p id="bw-p-011" style="position:absolute;left:630px;top:1096.56px;">0</p>
+            <p class="Donation_Progress_Label" style="position:absolute;left:441.45px;top:739.64px;">Donations · $0/$75,000 </p>
+            <div class="Donation_Progress" style="position:absolute;left:433.12px;top:779.62px;">
+                <div class="Donation_Progress_Fill" style="position:absolute;left:8.33px;top:0px;"></div>
+            </div>
+            <button id="bw-button-001" style="position:absolute;left:0px;top:1899.07px;">The Game</button>
+            <button id="bw-button-004" style="position:absolute;left:349.83px;top:1899.07px;">Market Place</button>
+            <button id="bw-button-005" style="position:absolute;left:699.66px;top:1899.07px;">Tutorials</button>
+            <button id="bw-button-006" style="position:absolute;left:1049.49px;top:1899.07px;">Social Room</button>
         </div>
     </div>
-    <div class="Blend_Web Blen_Web" style="position:absolute;left:260px;top:200px;"></div>
-    <div class="Blend_EDA" style="position:absolute;left:440px;top:200px;"></div>
-    <div class="Blend_ACS" style="position:absolute;left:620px;top:200px;"></div>
-    <div class="Kin_Flow" style="position:absolute;left:80px;top:380px;"></div>
+    <div class="Blend_Web Blen_Web" id="blend-web" style="position:absolute;left:200px;top:270px;"></div>
+    <div class="Blend_EDA" id="blend-eda" style="position:absolute;left:300px;top:270px;"></div>
+    <div class="Blend_ACS" id="blend-acs" style="position:absolute;left:400px;top:270px;"></div>
+    <div class="Kin_Flow" id="kin-flow" style="position:absolute;left:500px;top:270px;"></div>
+
+    <!-- "Under Construction": a translucent blur layer over the page
+         background. It has no z-index, so it paints above the z-index:0
+         canvases / Rectangle.007 and below every z-index:1 element
+         (the header text, the app tiles and their windows stay sharp
+         and clickable above it). -->
+    <div id="bw-Under-Construction" style="position:absolute;left:0px;top:0px;"></div>
 
     <script src="script.js"></script>
 </body>
