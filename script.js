@@ -1,5 +1,5 @@
 // Components (Blend Web node logic):
-// - .Front_Page_Visual_Effects (n40, n45): a full-screen <canvas> in the
+// - .Front_Page_Visual_Effects (n36, n41): a full-screen <canvas> in the
 //   page background - above #bw-Rectangle-007, below every content
 //   element - carrying the two animated gradients on the GPU: a WebGL
 //   fragment shader on one full-screen triangle computes the colour per
@@ -8,16 +8,16 @@
 //   breathing from 60% to 200% of the area's gradient length and back
 //   every 12s, the bands bent into a wave 30% of the area's height,
 //   ~1.5 waves across the width, travelling sideways one full wave
-//   every 4s). n40 runs linear-gradient(135deg, #d5cbd3, #848ab1) from
-//   page load; after the Wait node (n41, 1s) n45's
+//   every 4s). n36 runs linear-gradient(135deg, #d5cbd3, #848ab1) from
+//   page load; after the Wait node (n37, 1s) n41's
 //   linear-gradient(135deg, #d5988b, #55aeb1) cross-fades in inside the
 //   same shader and the two schemes keep slowly alternating. When WebGL
 //   is not available the same bending is drawn in column strips on the
 //   overlay's 2D canvas as a fallback.
 // - #bw-fx-overlay: a second, transparent 2D canvas above the gradient:
-//   - Waves (n34): 4 smooth, layered sine waves gently moving inside a
+//   - Waves (n30): 4 smooth, layered sine waves gently moving inside a
 //     100px-high band at the bottom of the page, filled in #ffffff.
-//   - Particle network (n39): 80 slowly drifting dots joined by faint
+//   - Particle network (n35): 80 slowly drifting dots joined by faint
 //     lines when close (lines batched into 4 opacity groups - one path
 //     and one stroke() per group - and all dots in one path and one
 //     fill()), drawn in #ffffff, gently reaching toward the mouse; a
@@ -30,9 +30,8 @@
 // (x0.75, x0.5, coarser strips/wave points) when the average frame time
 // over ~60 drawn frames is above 21 ms, stepping back up only after
 // 30 s of easy frames - and if that step up is slow again it stays down
-// for good. The loop pauses while the canvases are off screen, the tab
-// is hidden or an open app window covers them, and stays calm when the
-// user prefers reduced motion.
+// for good. The loop pauses while the canvases are off screen or the
+// tab is hidden, and stays calm when the user prefers reduced motion.
 
 var WAVE_COLOR = '#ffffff';
 var WAVE_BAND = 100;     // px-high band at the bottom of the page
@@ -42,9 +41,9 @@ var LINK_DIST = 120;     // px; dots closer than this get a faint line
 var DOT_SPEED = 12;      // px/s drift
 var MOUSE_PULL = 18;     // px/s reach toward the mouse
 
-// Bent breathing gradients on .Front_Page_Visual_Effects (n40, n45):
+// Bent breathing gradients on .Front_Page_Visual_Effects (n36, n41):
 // linear-gradient(135deg, #d5cbd3, #848ab1) from page load, then after the
-// 1s Wait (n41) linear-gradient(135deg, #d5988b, #55aeb1) joins in and the
+// 1s Wait (n37) linear-gradient(135deg, #d5988b, #55aeb1) joins in and the
 // two schemes keep alternating inside the same shader. Colours repeat so
 // the first colour comes again at the end of each cycle (2-3 bands
 // visible). The gradient's length breathes from 60% to 200% of the area's
@@ -111,7 +110,6 @@ var frameCount = 0;
 var lastHeavy = 0;       // last time frames were slow (or detail changed)
 var testingStepUp = false;
 var onScreen = true;
-var bgCovered = false;   // an open app window covers the background
 var calm = false;
 
 var dots = [];
@@ -481,11 +479,11 @@ function drawStill() {
   drawScene(0);
 }
 
-// The shared loop runs whenever the canvases could be visible: on screen,
-// the tab not hidden and not covered by an open app window. Reduced
-// motion only stops the canvas drawing, the clock text still updates.
+// The shared loop runs whenever the canvases could be visible: on screen
+// and the tab not hidden. Reduced motion only stops the canvas drawing,
+// the clock text still updates.
 function running() {
-  return onScreen && !document.hidden && !bgCovered;
+  return onScreen && !document.hidden;
 }
 
 // Frame-time average over the last ~60 drawn frames: above 21 ms drops
@@ -569,187 +567,79 @@ function tickClock() {
 
 // ---- node flows ----
 //
-// Flows 1, 2, 3, 14 and 15 - hovering an app tile changes the counter
-// text in .App_Counter (the Change Text nodes' un-chosen element);
-// leaving it restores "--".
+// Flows 1-4: Double Click triggers on .Blend_Web, .Blend_EDA,
+// .Blend_ACS and .Kin_Flow - nothing is connected to them yet, so a
+// double-click / double-tap does nothing beyond the App Link below.
 //
-// Flow 4 ("SunTzuAI_OpenApp") is the only Click Step with steps wired:
-// every click or tap on .Sun_Tzu_AI goes on only while the "Sun Tzu AI"
-// gate is open (it starts open). If it's open: close the gate, play the
-// Blender "Sun Tzu AI-Open/Close Animation" (frames 0-12, 0.5s, linear -
-// the action has no keys, so nothing moves; its z-index key lifts the
-// tile above the others), Wait 0.5s, set .Sun_Tzu_AI_Content's display
-// to flex, then fade it in to opacity 1 over 0.5s (ease-out).
-// Flows 5, 9, 11 and 12 ("BlendWeb_OpenApp" on .Blen_Web,
-// "BlendEDA_OpenApp", "BlendACS_OpenApp", "KinFow_OpenApp") have nothing
-// connected: a click on those tiles does nothing yet.
+// Flow 5 - "Click Step 1" (n16-n19): a click or tap on
+// .QR_Code_Button sets display: flex on .Sun_Tzu_AI_Main, every time -
+// the wallpaper panel comes up over the Under Construction layer.
 //
-// Flow 6 is the Double Click (or double-tap) step on .Sun_Tzu_AI: play
-// the animation backwards (staying on the first frame) and open the
-// gate again - the app window hides so the next click can reopen it.
-// Flows 7, 8, 10 and 13 are the other tiles' double-click steps, also
-// with nothing connected.
-//
-// App Links (n60-n64): the site's address + #sun-tzu-ai, #blend-web,
-// #blend-eda, #blend-acs or #kin-flow runs that tile's click flow once -
-// on page load it waits until the page is ready plus 1 more second.
-// While an app is open its hash shows in the address bar and the tab
-// title is the app name; the Back button closes it; an unknown hash
-// just shows the normal page. Only Sun Tzu AI's click flow is wired, so
-// the other four links simply run an empty flow - the normal page.
+// App Links (n10-n14): the site's address + #sun-tzu-ai, #blend-web,
+// #blend-eda, #blend-acs or #kin-flow opens that app. A click / tap on a
+// tile opens it: it runs the tile's click flow (nothing else is wired),
+// puts the link in the address bar (history.pushState) and the app's
+// name in the tab title. The Back button closes it (popstate) and takes
+// the link back out. Loading the page with one of those addresses waits
+// until the page is ready plus 1 more second (the nodes' "Wait before
+// opening"), then does exactly what a click on the tile does. An
+// unknown link just shows the normal page.
+var baseTitle = document.title;
+var appLinks = {
+  '#sun-tzu-ai': { sel: '.Sun_Tzu_AI', name: 'Sun Tzu AI' },
+  '#blend-web': { sel: '.Blend_Web', name: 'Blend Web' },
+  '#blend-eda': { sel: '.Blend_EDA', name: 'Blend EDA' },
+  '#blend-acs': { sel: '.Blend_ACS', name: 'Blend ACS' },
+  '#kin-flow': { sel: '.Kin_Flow', name: 'Kin Flow' }
+};
+var openHash = null;
+
+function openApp(hash, push) {
+  if (!appLinks[hash]) return;
+  openHash = hash;
+  document.title = appLinks[hash].name;
+  if (push) history.pushState(null, '', hash);
+}
+function closeApp() {
+  if (openHash === null) return;
+  openHash = null;
+  document.title = baseTitle;
+}
+
 document.addEventListener('DOMContentLoaded', function () {
-  var gateSunTzuAI = true;             // "Sun Tzu AI" gate, starts open
-  var sunTile = document.querySelector('.Sun_Tzu_AI');
-  var sunContent = document.querySelector('.Sun_Tzu_AI_Content');
-  var sunOpen = false;                 // the app window is showing
-  var sunSeq = 0;                      // cancels stale open steps
-
-  var PLAY_CLS = 'bw-play-sun-tzu-ai-sun-tzu-ai-open-close-animation-0-12';
-  var REV_CLS = 'bw-reverse-sun-tzu-ai-sun-tzu-ai-open-close-animation';
-
-  var baseTitle = document.title;
-
-  // App links (n60-n64): each hash runs its element's click flow.
-  var appLinks = {
-    '#sun-tzu-ai': { title: 'Sun Tzu AI' },
-    '#blend-web': { title: 'Blend Web' },
-    '#blend-eda': { title: 'Blend EDA' },
-    '#blend-acs': { title: 'Blend ACS' },
-    '#kin-flow': { title: 'Kin Flow' }
-  };
-  var openHash = null;                 // hash of the currently open app
-
-  // The open app window covers the whole page: pause the background
-  // canvases while it's up.
-  function setCovered(covered) {
-    if (covered === bgCovered) return;
-    bgCovered = covered;
-    if (running()) startLoop(); else stopLoop();
-  }
-
-  function replayAnim(cls) {
-    sunTile.classList.remove(PLAY_CLS, REV_CLS);
-    void sunTile.offsetWidth;          // restart the animation
-    sunTile.classList.add(cls);
-  }
-
-  function showHash(hash) {
-    try { history.pushState(null, '', hash); }
-    catch (e) { location.hash = hash; }
-  }
-  function clearHash() {
-    // take the hash out without adding a history entry, so Back
-    // afterwards doesn't land on the open app's link and reopen it
-    try { history.replaceState(null, '', location.pathname + location.search); }
-    catch (e) { /* keep the hash */ }
-  }
-
-  // Flow 4 "SunTzuAI_OpenApp"; viaLink = the app link that triggered it
-  // (the address already shows its hash, keeps its title).
-  function openSunTzuAI(viaLink) {
-    if (!gateSunTzuAI) return;                    // step 1: gate closed, stop
-    gateSunTzuAI = false;                         // step 1.1: close the gate
-    var seq = ++sunSeq;
-    replayAnim(PLAY_CLS);                         // step 1.2: play frames 0-12
-    setTimeout(function () {                      // step 1.3: wait 0.5s
-      if (seq !== sunSeq) return;
-      sunContent.style.display = 'flex';          // step 1.4: display = flex
-      sunContent.style.transition = 'opacity 0.5s ease-out';
-      sunContent.style.opacity = '0';
-      void sunContent.offsetWidth;                // start the fade from 0
-      sunContent.style.opacity = '1';             // step 1.5: fade in
-      sunOpen = true;
-      setCovered(true);                           // window covers the page
-    }, 500);
-    if (!viaLink) {
-      openHash = '#sun-tzu-ai';
-      document.title = 'Sun Tzu AI';              // app name in the tab title
-      showHash('#sun-tzu-ai');                    // link in the address bar
-    } else {
-      openHash = viaLink;
-      document.title = 'Sun Tzu AI';
-    }
-  }
-
-  // Flow 6 (double click / double tap): play the animation backwards,
-  // then open the gate. fromPop = the browser's Back button already took
-  // the hash out of the address bar.
-  function closeSunTzuAI(fromPop) {
-    sunSeq++;                                     // cancel pending open steps
-    sunOpen = false;
-    replayAnim(REV_CLS);                          // step 1: play it backwards
-    sunContent.style.transition = '';
-    sunContent.style.opacity = '';
-    sunContent.style.display = 'none';            // hide the app window again
-    setCovered(false);
-    setTimeout(function () {
-      gateSunTzuAI = true;                        // step 2: open the gate
-    }, 500);
-    if (openHash === '#sun-tzu-ai') {
-      openHash = null;
-      document.title = baseTitle;
-      if (!fromPop) clearHash();                  // take the link out
-    }
-  }
-
-  var lastTap = 0;
-  sunTile.addEventListener('click', function () { openSunTzuAI(); });
-  sunTile.addEventListener('dblclick', function () { closeSunTzuAI(); });
-  sunTile.addEventListener('touchend', function (e) {
-    e.preventDefault();                           // don't double-fire via click
-    var now = Date.now();
-    if (now - lastTap < 350) {                    // double-tap
-      lastTap = 0;
-      closeSunTzuAI();
-    } else {
-      lastTap = now;
-      openSunTzuAI();
-    }
+  Object.keys(appLinks).forEach(function (hash) {
+    document.querySelectorAll(appLinks[hash].sel).forEach(function (el) {
+      el.addEventListener('click', function () {
+        // open the app: its Click Step flow (empty for now) runs, the
+        // link goes in the address bar, the title gets the app name
+        if (openHash !== hash) openApp(hash, true);
+      });
+    });
   });
 
-  // Back / Forward: a matching hash opens its app, anything else closes
-  // the open one instead of leaving the site. Only #sun-tzu-ai has a
-  // wired click flow - the other app links run an empty flow, so they
-  // just show the normal page.
-  window.addEventListener('popstate', function () {
-    if (location.hash === '#sun-tzu-ai') {
-      if (!sunOpen && gateSunTzuAI) openSunTzuAI('#sun-tzu-ai');
-    } else if (sunOpen) {
-      closeSunTzuAI(true);
-    } else if (openHash) {
-      openHash = null;
-      document.title = baseTitle;
-    }
-  });
+  function hashRoute() {
+    if (appLinks[location.hash]) openApp(location.hash, false);
+    else closeApp();
+  }
+  window.addEventListener('popstate', hashRoute);
+  window.addEventListener('hashchange', hashRoute);
 
   // Page loaded with an app link: wait until ready, then 1 more second
   // (the App Link nodes' "Wait before opening"), then run that element's
   // click flow once. An unknown link just shows the normal page.
-  setTimeout(function () {
-    if (location.hash === '#sun-tzu-ai' && !sunOpen) {
-      openSunTzuAI('#sun-tzu-ai');
-    }
-    // #blend-web / #blend-eda / #blend-acs / #kin-flow run their tiles'
-    // click flows, which have nothing connected yet - nothing happens
-  }, 1000);
+  var initialHash = location.hash;
+  if (appLinks[initialHash]) {
+    setTimeout(function () {
+      if (location.hash === initialHash) openApp(initialHash, false);
+    }, 1000);
+  }
 
-  var appCounter = document.querySelector('.App_Counter');
-  var hoverFlows = [
-    ['.Sun_Tzu_AI', 'Sun Tzu AI'],
-    ['.Blen_Web', 'Blend Web'],
-    ['.Blend_EDA', 'Blend EDA'],
-    ['.Blend_ACS', 'Blend ACS'],
-    ['.Kin_Flow', 'Kinflow']
-  ];
-  hoverFlows.forEach(function (f) {
-    var show = function () { appCounter.textContent = f[1]; };
-    var hide = function () { appCounter.textContent = '--'; };
-    document.querySelectorAll(f[0]).forEach(function (el) {
-      el.addEventListener('mouseenter', show);
-      el.addEventListener('mouseleave', hide);
-      el.addEventListener('touchstart', show, { passive: true });
-      el.addEventListener('touchend', hide);
-      el.addEventListener('touchcancel', hide);
+  // Flow 5 - "Click Step 1" (n16-n19): click / tap on .QR_Code_Button
+  // sets .Sun_Tzu_AI_Main's display to flex
+  var sunTzuMain = document.querySelector('.Sun_Tzu_AI_Main');
+  document.querySelectorAll('.QR_Code_Button').forEach(function (el) {
+    el.addEventListener('click', function () {
+      if (sunTzuMain) sunTzuMain.style.display = 'flex';
     });
   });
 
@@ -784,12 +674,12 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // mark the platform the page is using on <html data-platform=...>
-  // (Phone <= 605px, Tablet 606-1093px, Desktop >= 1094px); kept in
+  // (Phone <= 669px, Tablet 670-1157px, Desktop >= 1158px); kept in
   // step with the media queries in style.css as the window resizes
   function setPlatform() {
     var w = window.innerWidth;
     document.documentElement.dataset.platform =
-      w <= 605 ? 'phone' : w <= 1093 ? 'tablet' : 'desktop';
+      w <= 669 ? 'phone' : w <= 1157 ? 'tablet' : 'desktop';
   }
   setPlatform();
 

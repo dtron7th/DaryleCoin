@@ -1,0 +1,1106 @@
+/* the whole website */
+@font-face {
+  font-family: "Drafting* Mono";
+  src: url("fonts/DraftingMono-Regular.ttf") format("truetype");
+}
+body {
+  font-family: "Drafting* Mono", sans-serif;
+  font-size: 10px;
+  /* Blender's default text / border colour (currentcolor) */
+  color: #e6e6e6;
+}
+
+/* Uploaded fonts: copy each file into the website's fonts/ folder (they are in fonts/ next to the .blend) */
+@font-face {
+  font-family: "Bank Gothic Light";
+  src: url("fonts/Bank Gothic Light Regular.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Silkscreen";
+  src: url("fonts/Silkscreen-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Drafting* Mono";
+  src: url("fonts/DraftingMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Courier Prime";
+  src: url("fonts/CourierPrime-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* <div>  object "Blend ACS" */
+.Blend_ACS {
+  width: 70px;
+  height: 70px;
+  background-color: #d9d9d9;
+  box-shadow: 2px 2px 2px 0px #424242;
+  border-radius: 0px;
+  z-index: 1;
+  opacity: 1;
+}
+
+/* <div>  object "Blend EDA" */
+.Blend_EDA {
+  width: 70px;
+  height: 70px;
+  background-color: #d9d9d9;
+  box-shadow: 2px 2px 2px 0px #424242;
+  border-radius: 0px;
+  z-index: 1;
+  opacity: 1;
+}
+
+/* <div>  object "Blend Web" */
+.Blend_Web {
+  width: 70px;
+  height: 70px;
+  background-color: #d9d9d9;
+  box-shadow: 2px 2px 2px 0px #424242;
+  border-radius: 0px;
+  z-index: 1;
+  opacity: 1;
+}
+
+/* <button>  object "button.001"  (no class or id: give it id="bw-button-001") */
+#bw-button-001 {
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: #3c0a0000;
+  background-image: linear-gradient(0, #57575700 0%, #8a1c00 100%);
+  width: 316.5px;
+  height: 66.6px;
+  font-family: "Silkscreen";
+}
+
+/* <button>  object "button.002"  (no class or id: give it id="bw-button-002") */
+#bw-button-002 {
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: #79140000;
+  background-image: linear-gradient(0, #57575700 0%, #c52800 100%);
+  width: 199.9px;
+  height: 66.6px;
+  font-family: "Silkscreen";
+}
+
+/* <button>  object "button.003"  (no class or id: give it id="bw-button-003") */
+#bw-button-003 {
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: #000000;
+  background-image: linear-gradient(0, #57575700 0%, #c52800 100%);
+  width: 199.9px;
+  height: 66.6px;
+  font-family: "Silkscreen";
+}
+
+/* <button>  object "button.004"  (no class or id: give it id="bw-button-004") */
+#bw-button-004 {
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: #000000;
+  background-image: linear-gradient(0, #57575700 0%, #8a1c00 100%);
+  width: 316.5px;
+  height: 66.6px;
+  font-family: "Silkscreen";
+}
+
+/* <button>  object "button.005"  (no class or id: give it id="bw-button-005") */
+#bw-button-005 {
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: #79140000;
+  background-image: linear-gradient(0, #57575700 0%, #8a1c00 100%);
+  width: 316.5px;
+  height: 66.6px;
+  font-family: "Silkscreen";
+}
+
+/* <button>  object "button.006"  (no class or id: give it id="bw-button-006") */
+#bw-button-006 {
+  border-width: 0px;
+  border-radius: 0px;
+  background-color: #79140000;
+  background-image: linear-gradient(0, #57575700 0%, #8a1c00 100%);
+  width: 316.5px;
+  height: 66.6px;
+  font-family: "Silkscreen";
+}
+
+/* <div>  object "Circle"  (no class or id: give it id="bw-Circle") */
+#bw-Circle {
+  width: 7.2px;
+  height: 7.2px;
+  background-color: #51d900;
+  border-radius: 50%;
+  z-index: 6;
+}
+
+/* <div>  object "Circle.001"  (no class or id: give it id="bw-Circle-001") */
+#bw-Circle-001 {
+  width: 7.2px;
+  height: 7.2px;
+  background-color: #51d900;
+  border-radius: 50%;
+  z-index: 7;
+}
+
+/* <div>  object "Circle.002"  (no class or id: give it id="bw-Circle-002") */
+#bw-Circle-002 {
+  width: 7.2px;
+  height: 7.2px;
+  background-color: #51d900;
+  border-radius: 50%;
+  z-index: 8;
+}
+
+/* <div>  object "div"  (no class or id: give it id="bw-div") */
+#bw-div {
+  background-color: #00000018;
+  background-image: linear-gradient(0, #181818 0%, #68686800 100%);
+}
+
+/* <div>  object "div.001"  (no class or id: give it id="bw-div-001")
+   width/height come from the element list (the exported CSS omits them) */
+#bw-div-001 {
+  width: 300px;
+  height: 150px;
+}
+
+/* <div>  object "Donation Progress" */
+.Donation_Progress {
+  width: 499.8px;
+  height: 20px;
+  border-radius: 6px;
+  border-width: 0px;
+  background-color: #ffffff2e;
+}
+
+/* <div>  object "Donation Progress Fill" */
+.Donation_Progress_Fill {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border-width: 0px;
+  background-image: linear-gradient(90deg, #c52800 0%, #ff7a1a 100%);
+}
+
+/* <p>  object "Donation Progress Label" */
+.Donation_Progress_Label {
+  width: 483.1px;
+  height: 26.7px;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Silkscreen";
+}
+
+/* <div>  object "Kin Flow" */
+.Kin_Flow {
+  width: 70px;
+  height: 70px;
+  background-color: #d9d9d9;
+  box-shadow: 2px 2px 2px 0px #424242;
+  border-radius: 0px;
+  z-index: 1;
+  opacity: 1;
+}
+
+/* <p>  object "p" */
+.Front_Page_Time {
+  text-align: start;
+  width: 104.4px;
+  height: 26.1px;
+  font-size: 11px;
+  color: #ffffff;
+  z-index: 1;
+}
+
+/* <p>  object "p.001"  (no class or id: give it id="bw-p-001") */
+#bw-p-001 {
+  z-index: 1;
+  color: #ffffff;
+  width: 170.9px;
+  height: 52.2px;
+  font-size: 24px;
+  text-align: center;
+  font-family: "Bank Gothic Light";
+}
+
+/* <p>  object "p.002" */
+.Front_Page_Date {
+  text-align: end;
+  width: 156.5px;
+  height: 26.1px;
+  font-size: 11px;
+  color: #ffffff;
+  z-index: 1;
+}
+
+/* <p>  object "p.003" */
+.App_Counter {
+  width: 547.9px;
+  height: 52.2px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+/* <p>  object "p.004"  (no class or id: give it id="bw-p-004") */
+#bw-p-004 {
+  text-align: center;
+  width: 26.1px;
+  height: 26.1px;
+  font-size: 11px;
+  color: #ffffff;
+  z-index: 1;
+}
+
+/* <p>  object "p.005"  (no class or id: give it id="bw-p-005") */
+#bw-p-005 {
+  width: 78.3px;
+  height: 52.2px;
+  font-size: 24px;
+  border-bottom-style: none;
+  color: #ffffff;
+}
+
+/* <p>  object "p.006"  (no class or id: give it id="bw-p-006") */
+#bw-p-006 {
+  width: 160px;
+  height: 50px;
+  font-size: 48px;
+  text-align: center;
+  font-family: "Silkscreen";
+}
+
+/* <p>  object "p.007"  (no class or id: give it id="bw-p-007") */
+#bw-p-007 {
+  width: 166.6px;
+  height: 33.3px;
+  font-family: "Silkscreen";
+}
+
+/* <p>  object "p.008"  (no class or id: give it id="bw-p-008") */
+#bw-p-008 {
+  width: 149.9px;
+  height: 33.3px;
+  font-family: "Silkscreen";
+}
+
+/* <p>  object "p.009"  (no class or id: give it id="bw-p-009") */
+#bw-p-009 {
+  width: 149.9px;
+  height: 33.3px;
+  font-family: "Silkscreen";
+}
+
+/* <p>  object "p.010"  (no class or id: give it id="bw-p-010") */
+#bw-p-010 {
+  width: 166.6px;
+  height: 33.3px;
+  font-family: "Silkscreen";
+}
+
+/* <p>  object "p.011"  (no class or id: give it id="bw-p-011") */
+#bw-p-011 {
+  width: 166.6px;
+  height: 33.3px;
+  font-family: "Silkscreen";
+}
+
+/* <p>  object "p.012"  (no class or id: give it id="bw-p-012") */
+#bw-p-012 {
+  width: 149.9px;
+  height: 33.3px;
+  font-family: "Silkscreen";
+}
+
+/* <p>  object "p.013"  (no class or id: give it id="bw-p-013") */
+#bw-p-013 {
+  color: #ffffff;
+  z-index: 2;
+  width: 4.99px;
+  height: 8.26px;
+  font-size: 48px;
+  font-family: "Bank Gothic Light";
+  text-align: center;
+  align-items: center;
+  text-justify: auto;
+  background-color: #71717100;
+}
+
+/* <p>  object "p.014"  (no class or id: give it id="bw-p-014") */
+#bw-p-014 {
+  width: 262px;
+  height: 19.11px;
+  font-family: "Courier Prime";
+  text-align: center;
+  font-size: 32px;
+  background-color: #4c4c4c00;
+  color: #ffffff;
+  z-index: 2;
+}
+
+/* <p>  object "Tun Tzu AI Title"  (no class or id: give it id="bw-Tun-Tzu-AI-Title") */
+#bw-Tun-Tzu-AI-Title {
+  width: 276.4px;
+  height: 28.8px;
+  font-family: "Courier Prime";
+  color: #ffffff;
+  z-index: 13;
+}
+
+/* <p>  object "p.016"  (no class or id: give it id="bw-p-016") */
+#bw-p-016 {
+  width: 273.5px;
+  height: 21.6px;
+  font-family: "Courier Prime";
+  font-size: 12px;
+  z-index: 2;
+}
+
+/* <p>  object "p.017"  (no class or id: give it id="bw-p-017") */
+#bw-p-017 {
+  width: 108px;
+  height: 57.6px;
+  font-family: "Courier Prime";
+  font-size: 12px;
+  z-index: 3;
+}
+
+/* <p>  object "p.018"  (no class or id: give it id="bw-p-018") */
+#bw-p-018 {
+  width: 352.7px;
+  height: 194.3px;
+  font-family: "Courier Prime";
+  font-size: 12px;
+  z-index: 4;
+}
+
+/* <p>  object "p.019"  (no class or id: give it id="bw-p-019") */
+#bw-p-019 {
+  width: 251.9px;
+  height: 21.6px;
+  font-family: "Courier Prime";
+  font-size: 12px;
+  z-index: 9;
+}
+
+/* <p>  object "p.020"  (no class or id: give it id="bw-p-020") */
+#bw-p-020 {
+  width: 352.7px;
+  height: 21.6px;
+  font-family: "Courier Prime";
+  font-size: 12px;
+  z-index: 5;
+}
+
+/* <p>  object "p.021"  (no class or id: give it id="bw-p-021") */
+#bw-p-021 {
+  width: 295.1px;
+  height: 21.6px;
+  font-family: "Courier Prime";
+  font-size: 12px;
+  z-index: 10;
+}
+
+/* <p>  object "p.022"  (no class or id: give it id="bw-p-022") */
+#bw-p-022 {
+  width: 295.1px;
+  height: 21.6px;
+  font-family: "Courier Prime";
+  font-size: 12px;
+  z-index: 11;
+}
+
+/* <p>  object "p.023"  (no class or id: give it id="bw-p-023") */
+#bw-p-023 {
+  width: 295.1px;
+  height: 21.6px;
+  font-family: "Courier Prime";
+  font-size: 12px;
+  z-index: 12;
+}
+
+/* <div>  object "QR Code" */
+.QR_Code_Button {
+  width: 36.21px;
+  height: 36.21px;
+  background-color: #000000;
+}
+
+/* <p>  object "What Works Text"  (no class or id: give it id="bw-What-Works-Text") */
+#bw-What-Works-Text {
+  width: 1065.8px;
+  height: 285px;
+  font-size: 20px;
+  text-align: center;
+  z-index: 2;
+  color: #ffffff;
+  font-family: "Courier Prime";
+}
+
+/* <div>  object "Rectangle.003"  (no class or id: give it id="bw-Rectangle-003")
+   width/height come from the element list; it has no children, so its own
+   box clip-path is kept */
+#bw-Rectangle-003 {
+  width: 838.07px;
+  height: 421.81px;
+  background-color: none;
+  z-index: 1;
+  background: none;
+  border-width: 1px;
+  border-style: solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(180deg, #ffffff 0%, #9c1800 100%);
+  clip-path: path('M 0 0 L 838.07 0 L 838.07 421.81 L 0 421.81 Z');
+}
+
+/* <div>  object "Sun Tzu AI Box"  (no class or id: give it id="bw-Sun-Tzu-AI-Box")
+   width/height come from the element list. Its exported clip-path is the
+   element's own box - a no-op for the element itself - and is left off on
+   purpose: it would clip the card's text / dots, which are children of it
+   designed to overflow the box (Blender does not clip children). */
+#bw-Sun-Tzu-AI-Box {
+  width: 503.09px;
+  height: 253.21px;
+  background-color: none;
+  z-index: 3;
+  background: none;
+  border-width: 1px;
+  border-style: solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(180deg, #ffffff 0%, #ff2100 100%);
+}
+
+/* <div>  object "Blend Web Box"  (no class or id: give it id="bw-Blend-Web-Box") */
+#bw-Blend-Web-Box {
+  width: 503.09px;
+  height: 253.21px;
+  background-color: none;
+  z-index: 3;
+  background: none;
+  border-width: 1px;
+  border-style: solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(180deg, #ffffff 0%, #88ff00 100%);
+  clip-path: path('M 0 0 L 503.09 0 L 503.09 253.21 L 0 253.21 Z');
+}
+
+/* <div>  object "Blend ACS"  (no class or id: give it id="bw-Blend-ACS") */
+#bw-Blend-ACS {
+  width: 503.09px;
+  height: 253.21px;
+  background-color: none;
+  z-index: 3;
+  background: none;
+  border-width: 1px;
+  border-style: solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(180deg, #ffffff 0%, #00baff 100%);
+  clip-path: path('M 0 0 L 503.09 0 L 503.09 253.21 L 0 253.21 Z');
+}
+
+/* <div>  object "Rectangle.007"  (no class or id: give it id="bw-Rectangle-007") */
+#bw-Rectangle-007 {
+  width: 1366px;
+  height: 599px;
+  background-color: #4d4d4d;
+  z-index: 0;
+  background-image: linear-gradient(138deg, #ffffff 0%, #ffffff 100%);
+  background: #ffffff;
+}
+
+/* <div>  object "Sun Tzu AI" */
+.Sun_Tzu_AI {
+  width: 70px;
+  height: 70px;
+  background-color: #d9d9d9;
+  box-shadow: 2px 2px 2px 0px #424242;
+  border-radius: 0px;
+  z-index: 1;
+  opacity: 1;
+  display: flex;
+}
+
+/* <div>  object "Sun Tzu AI Content" */
+.Sun_Tzu_AI_Content {
+  display: none;
+  background: #2e2e2e;
+  background-image: url("images/Wallpaper/katerina-kirillova-katerina-kirillova-friz-final.jpg");
+  background-position: 39.53% 0%;
+  background-size: 2094.2px 1178.3px;
+  z-index: 2;
+}
+
+/* <div>  object "Sun Tzu AI Main" */
+.Sun_Tzu_AI_Main {
+  background-image: url("images/Wallpaper/katerina-kirillova-katerina-kirillova-friz-final.jpg");
+  background-position: 41.55% 16.71%;
+  background-size: 2447.9px 1376.9px;
+  z-index: 2;
+  display: none;
+}
+
+/* <div>  object "Triangle"  (no class or id: give it id="bw-Triangle")
+   the exported exact shape is a clip-path */
+#bw-Triangle {
+  width: 194.3px;
+  height: 170.8px;
+  background-color: #ffcf00;
+  clip-path: path('M 3.68 130.62 L 3.78 130.45 L 74.3 12.93 L 74.41 12.75 L 74.53 12.57 L 74.65 12.39 L 75.87 10.63 L 76.12 10.28 L 76.39 9.95 L 76.66 9.62 L 78.1 8.03 L 78.4 7.72 L 78.7 7.42 L 79.02 7.13 L 80.65 5.73 L 80.98 5.46 L 81.32 5.21 L 81.68 4.96 L 83.47 3.79 L 83.84 3.56 L 84.21 3.35 L 84.59 3.15 L 86.52 2.22 L 86.91 2.04 L 87.31 1.88 L 87.71 1.74 L 89.74 1.06 L 90.16 0.93 L 90.57 0.82 L 90.99 0.73 L 93.09 0.32 L 93.51 0.25 L 93.94 0.19 L 94.37 0.15 L 96.51 0.01 L 96.94 0 L 97.36 0 L 97.79 0.01 L 99.93 0.15 L 100.36 0.19 L 100.79 0.25 L 101.21 0.32 L 103.31 0.73 L 103.73 0.82 L 104.14 0.93 L 104.56 1.06 L 106.59 1.74 L 106.99 1.88 L 107.39 2.04 L 107.78 2.22 L 109.71 3.15 L 110.09 3.35 L 110.46 3.56 L 110.83 3.79 L 112.62 4.96 L 112.98 5.21 L 113.32 5.46 L 113.65 5.73 L 115.28 7.13 L 115.6 7.42 L 115.9 7.72 L 116.2 8.03 L 117.64 9.62 L 117.91 9.95 L 118.18 10.28 L 118.43 10.63 L 119.65 12.39 L 119.77 12.57 L 119.89 12.75 L 120 12.93 L 190.52 130.45 L 190.62 130.62 L 190.72 130.8 L 190.82 130.99 L 191.77 132.82 L 191.95 133.19 L 192.12 133.57 L 192.28 133.96 L 192.99 135.89 L 193.12 136.29 L 193.24 136.68 L 193.35 137.08 L 193.82 139.09 L 193.9 139.5 L 193.97 139.91 L 194.03 140.32 L 194.25 142.37 L 194.28 142.79 L 194.29 143.2 L 194.3 143.61 L 194.26 145.68 L 194.24 146.09 L 194.21 146.5 L 194.16 146.91 L 193.87 148.96 L 193.8 149.37 L 193.71 149.77 L 193.62 150.17 L 193.07 152.17 L 192.95 152.56 L 192.82 152.95 L 192.67 153.34 L 191.88 155.25 L 191.71 155.63 L 191.53 156 L 191.34 156.37 L 190.32 158.17 L 190.11 158.52 L 189.88 158.87 L 189.64 159.2 L 188.41 160.86 L 188.15 161.19 L 187.89 161.5 L 187.61 161.81 L 186.18 163.3 L 185.88 163.59 L 185.58 163.87 L 185.27 164.15 L 183.67 165.45 L 183.34 165.7 L 183 165.94 L 182.66 166.17 L 180.9 167.27 L 180.55 167.48 L 180.18 167.67 L 179.81 167.86 L 177.94 168.73 L 177.56 168.89 L 177.17 169.04 L 176.78 169.18 L 174.82 169.81 L 174.42 169.93 L 174.02 170.03 L 173.61 170.12 L 171.58 170.5 L 171.17 170.56 L 170.76 170.61 L 170.35 170.65 L 168.29 170.78 L 168.08 170.79 L 167.88 170.8 L 167.67 170.8 L 26.63 170.8 L 26.42 170.8 L 26.22 170.79 L 26.01 170.78 L 23.95 170.65 L 23.54 170.61 L 23.13 170.56 L 22.72 170.5 L 20.69 170.12 L 20.28 170.03 L 19.88 169.93 L 19.48 169.81 L 17.52 169.18 L 17.13 169.04 L 16.74 168.89 L 16.36 168.73 L 14.49 167.86 L 14.12 167.67 L 13.75 167.47 L 13.4 167.27 L 11.64 166.17 L 11.3 165.94 L 10.96 165.7 L 10.63 165.45 L 9.03 164.15 L 8.72 163.87 L 8.42 163.59 L 8.12 163.3 L 6.69 161.81 L 6.41 161.5 L 6.15 161.19 L 5.89 160.86 L 4.66 159.2 L 4.42 158.87 L 4.19 158.52 L 3.98 158.17 L 2.96 156.37 L 2.77 156 L 2.59 155.63 L 2.42 155.25 L 1.63 153.34 L 1.48 152.95 L 1.35 152.56 L 1.23 152.17 L 0.68 150.17 L 0.59 149.77 L 0.5 149.37 L 0.43 148.96 L 0.14 146.91 L 0.09 146.5 L 0.06 146.09 L 0.04 145.68 L 0 143.61 L 0.01 143.2 L 0.02 142.79 L 0.05 142.37 L 0.27 140.32 L 0.33 139.91 L 0.4 139.5 L 0.48 139.09 L 0.95 137.08 L 1.06 136.68 L 1.18 136.29 L 1.31 135.89 L 2.02 133.96 L 2.18 133.57 L 2.35 133.19 L 2.53 132.82 L 3.48 130.99 L 3.58 130.8 Z M 17.07 141.28 L 16.79 142.49 L 16.66 143.72 L 16.68 144.96 L 16.86 146.18 L 17.19 147.38 L 17.66 148.52 L 18.27 149.6 L 19.01 150.59 L 19.87 151.49 L 20.83 152.27 L 21.88 152.93 L 23 153.45 L 24.18 153.83 L 25.4 154.06 L 26.84 154.15 L 167.46 154.15 L 168.9 154.06 L 170.12 153.83 L 171.3 153.45 L 172.42 152.93 L 173.47 152.27 L 174.43 151.49 L 175.29 150.59 L 176.03 149.6 L 176.64 148.52 L 177.11 147.38 L 177.44 146.18 L 177.62 144.96 L 177.64 143.72 L 177.51 142.49 L 177.23 141.28 L 176.8 140.12 L 176.13 138.83 L 105.83 21.68 L 104.98 20.45 L 104.12 19.5 L 103.14 18.66 L 102.07 17.96 L 100.91 17.4 L 99.69 16.99 L 98.43 16.74 L 97.15 16.66 L 95.87 16.74 L 94.61 16.99 L 93.39 17.4 L 92.23 17.96 L 91.16 18.66 L 90.18 19.5 L 89.32 20.45 L 88.47 21.68 L 18.17 138.83 L 17.5 140.12 Z');
+}
+
+/* <div>  object "Under Construction"  (no class or id: give it id="bw-Under-Construction") */
+#bw-Under-Construction {
+  display: flex;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1;
+  background-color: #000000;
+}
+
+/* ===================== Page layout (Automatic anchors) =====================
+   Desktop base: designed at 1366 x 599. Between screen sizes nothing is
+   scaled: left-anchored elements keep their px distance to the left edge,
+   centred elements use calc(50% - half-width), stretched elements use
+   left/right (or top/bottom) together. The whole page (body) fills the
+   window; the page never gets narrower than 599px tall. */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  position: relative;
+  min-height: max(599px, 100vh);
+  overflow: hidden;
+}
+p {
+  margin: 0;
+  line-height: normal;     /* as in Blender: the font's own line height (a fixed 20px moved the text up / down) */
+}
+button {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* The effects canvases cover the whole screen in the page background: above
+   #bw-Rectangle-007 (z-index 0, later in DOM order) and below every content
+   element. The gradient canvas's own background is the first node's gradient
+   as a static fallback; a WebGL fragment shader draws both node gradients
+   breathing and bent by a sine wave. The overlay canvas carries the waves
+   and the particle network (see script.js). */
+.Front_Page_Visual_Effects {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(135deg, #d5cbd3, #848ab1);
+}
+#bw-fx-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Rectangle.007: stretch / stretch -> fills the page */
+#bw-Rectangle-007 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+}
+
+/* header: left / top anchors */
+#bw-p-001 { position: absolute; left: 40px; top: 40px; }
+.Front_Page_Date { position: absolute; left: 180px; top: 40px; }
+#bw-p-004 { position: absolute; left: 340px; top: 40px; }
+.Front_Page_Time { position: absolute; left: 360px; top: 40px; }
+#bw-p-005 { position: absolute; left: 100px; top: 180px; z-index: 1; }
+.App_Counter { position: absolute; left: 200px; top: 180px; z-index: 1; }
+
+/* the app tiles: left / top (a row of 5 kept together) */
+.Sun_Tzu_AI { position: absolute; left: 100px; top: 280px; }
+.Blend_Web  { position: absolute; left: 200px; top: 280px; }
+.Blend_EDA  { position: absolute; left: 300px; top: 280px; }
+.Blend_ACS  { position: absolute; left: 400px; top: 280px; }
+.Kin_Flow   { position: absolute; left: 500px; top: 280px; }
+
+/* Sun Tzu AI Content: the app window - stretch / bottom in the page (full
+   page width, 599px tall, its bottom edge 10px past the page's bottom
+   edge, so its top sits at page height - 589). It is a child of the
+   .Sun_Tzu_AI tile (page 100, 280), so inside the tile that is left -100
+   and top (page height) - 869. */
+.Sun_Tzu_AI_Content {
+  position: absolute;
+  left: -100px;
+  top: calc(max(599px, 100vh) - 869px);
+  width: 100vw;
+  height: 599px;
+}
+
+/* inside the app window. Its bottom edge sits 10px below the page's
+   (bottom: -10), so a child's page bottom anchor -B is B + 10 inside it */
+#bw-div { position: absolute; left: 0; right: 0; top: 0; bottom: 0; }
+#bw-div-001 { position: absolute; right: 432.98px; top: 166.59px; }
+#bw-p-006 { position: absolute; left: calc(50% - 83px); top: 180px; }
+#bw-button-002 { position: absolute; left: calc(50% - 249.88px); bottom: -83.97px; }
+#bw-button-003 { position: absolute; left: calc(50% + 49.98px); bottom: -83.97px; }
+#bw-p-009 { position: absolute; left: 430px; bottom: -314.3px; }
+#bw-p-010 { position: absolute; left: 630px; bottom: -314.3px; }
+#bw-p-008 { position: absolute; left: 430px; bottom: -384.3px; }
+#bw-p-007 { position: absolute; left: 633.02px; bottom: -383.84px; }
+#bw-p-012 { position: absolute; left: 430px; bottom: -464.23px; }
+#bw-p-011 { position: absolute; left: calc(50% - 53px); bottom: -530.86px; }
+.Donation_Progress_Label { position: absolute; left: calc(50% - 241.55px); bottom: -167.34px; }
+.Donation_Progress { position: absolute; left: calc(50% - 249.88px); bottom: -200.62px; }
+/* Donation Progress Fill is inside .Donation_Progress: page anchor
+   calc(50% - 73.43px) / bottom -522.24 - the bar's page box gives
+   left 176.45 / top 311.62 inside it */
+.Donation_Progress_Fill { position: absolute; left: 176.45px; top: 311.62px; }
+/* the bottom app-switcher row inside the window */
+#bw-button-001 { position: absolute; left: calc(50% - 683px); bottom: -1366.67px; }
+#bw-button-004 { position: absolute; left: calc(50% - 333.17px); bottom: -1366.67px; }
+#bw-button-005 { position: absolute; left: calc(50% + 16.66px); bottom: -1366.67px; }
+#bw-button-006 { position: absolute; left: calc(50% + 366.49px); bottom: -1366.67px; }
+
+/* Under Construction: stretch / stretch -> fills the page;
+   pointer-events: none keeps it visual-only so the click / hover flows
+   on the elements below it still work */
+#bw-Under-Construction {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  pointer-events: none;
+}
+/* its children are centred / top-anchored inside it */
+#bw-Triangle { position: absolute; left: calc(50% - 97.18px); top: 136.15px; }
+#bw-p-013 { position: absolute; left: calc(50% - 2.49px); top: 212px; }
+#bw-p-014 { position: absolute; left: calc(50% - 131px); top: 264px; }
+/* What Works Text: center / bottom inside the Under Construction layer
+   (the layer stretches to the page, so bottom is page coords) */
+#bw-What-Works-Text { position: absolute; left: calc(50% - 532.9px); bottom: -397.07px; }
+
+/* QR Code Background is inside the Sun Tzu AI box: its page anchor
+   left 393.17 / bottom -182.25 (599 + 182.25 - 83.29 = page top 697.96)
+   becomes left 333.17 / top 757.96 inside the card. The QR Code button
+   is centred in it; pointer-events: auto re-enables clicks inside the
+   pointer-events: none Under Construction layer so the Click Step
+   trigger works. */
+#bw-QR-Code-Background { position: absolute; left: 333.17px; top: 757.96px; width: 83.29px; height: 83.29px; }
+.QR_Code_Button { position: absolute; left: calc(50% - 30.16px); top: calc(50% - 30.16px); width: 60.32px; height: 60.32px; pointer-events: auto; cursor: pointer; }
+
+/* Blend Web Box / Blend ACS / Sun Tzu AI Box: inside the Under
+   Construction layer (which stretches to the page), left / top anchors,
+   sticking out over the page's top edge */
+#bw-Blend-Web-Box { position: absolute; left: 559.75px; top: -50px; }
+#bw-Blend-ACS { position: absolute; left: 1076.17px; top: -50px; }
+#bw-Sun-Tzu-AI-Box { position: absolute; left: 60px; top: -60px; }
+
+/* Sun Tzu AI Main: in the page, right / stretch - its right edge stays
+   419px from the page's right edge and it stretches top 0 / bottom -735 */
+.Sun_Tzu_AI_Main { position: absolute; right: 419px; top: 0px; bottom: -735px; width: 949px; }
+
+/* Sun Tzu AI Box's card contents sit inside it: page bottom anchor -B
+   becomes top = (599 - B - h) + 60 inside the card (card page x/y
+   60, -60). They are designed to overflow the card's box - that is why
+   the card keeps no clip-path. Rectangle.003 is a child of the card too:
+   its page left/top 93.32 / -1642.56 becomes 33.32 / -1582.56. */
+#bw-Rectangle-003 { position: absolute; left: 33.32px; top: -1582.56px; }
+#bw-Tun-Tzu-AI-Title { position: absolute; left: 53.26px; top: 675.45px; }
+#bw-p-018 { position: absolute; left: 53.26px; top: 819.32px; }
+#bw-p-019 { position: absolute; left: 23.97px; top: 815.27px; }
+#bw-p-020 { position: absolute; left: 53.26px; top: 1226.95px; }
+#bw-p-021 { position: absolute; left: 23.97px; top: 875.21px; }
+#bw-p-022 { position: absolute; left: 23.97px; top: 887.2px; }
+#bw-p-016 { position: absolute; left: 53.26px; top: 1286.9px; }
+#bw-p-017 { position: absolute; left: 77.23px; top: 1334.87px; }
+#bw-p-023 { position: absolute; left: 323.71px; top: 1091.02px; }
+#bw-Circle { position: absolute; left: 53.26px; top: 1342.05px; }
+#bw-Circle-001 { position: absolute; left: 53.26px; top: 1373.23px; }
+#bw-Circle-002 { position: absolute; left: 53.26px; top: 1406.8px; }
+
+/* ===================== Desktop, exactly as in Blender =====================
+   Every element's place and size on the 1366 x 599 Desktop page, from Blender (its Automatic
+   anchors say which side each keeps to on other screen widths). */
+/* Blend ACS - in the page, left / top  (a row of 5 kept together) */
+.Blend_ACS { position: absolute; left: 400px; width: 70px; top: 280px; height: 70px; bottom: auto; right: auto; }
+/* Blend EDA - in the page, left / top  (a row of 5 kept together) */
+.Blend_EDA { position: absolute; left: 300px; width: 70px; top: 280px; height: 70px; bottom: auto; right: auto; }
+/* Blend Web - in the page, left / top  (a row of 5 kept together) */
+.Blend_Web { position: absolute; left: 200px; width: 70px; top: 280px; height: 70px; bottom: auto; right: auto; }
+/* button.001 - inside "Sun Tzu AI Content" (.Sun_Tzu_AI_Content); its page anchor
+   center / bottom becomes center / bottom + 10px (the window's bottom is 10px
+   below the page's)  (a row of 4 kept together) */
+#bw-button-001 { position: absolute; left: calc(50% - 683px); width: 316.5px; bottom: -1366.67px; height: 66.6px; top: auto; right: auto; }
+/* button.002 - inside "Sun Tzu AI Content" (.Sun_Tzu_AI_Content), center / bottom  (a row of 2 kept together) */
+#bw-button-002 { position: absolute; left: calc(50% - 249.88px); width: 199.9px; bottom: -83.97px; height: 66.6px; top: auto; right: auto; }
+/* button.003 - inside "Sun Tzu AI Content" (.Sun_Tzu_AI_Content), center / bottom  (a row of 2 kept together) */
+#bw-button-003 { position: absolute; left: calc(50% + 49.98px); width: 199.9px; bottom: -83.97px; height: 66.6px; top: auto; right: auto; }
+/* button.004 - inside "Sun Tzu AI Content" (.Sun_Tzu_AI_Content), center / bottom  (a row of 4 kept together) */
+#bw-button-004 { position: absolute; left: calc(50% - 333.17px); width: 316.5px; bottom: -1366.67px; height: 66.6px; top: auto; right: auto; }
+/* button.005 - inside "Sun Tzu AI Content" (.Sun_Tzu_AI_Content), center / bottom  (a row of 4 kept together) */
+#bw-button-005 { position: absolute; left: calc(50% + 16.66px); width: 316.5px; bottom: -1366.67px; height: 66.6px; top: auto; right: auto; }
+/* button.006 - inside "Sun Tzu AI Content" (.Sun_Tzu_AI_Content), center / bottom  (a row of 4 kept together) */
+#bw-button-006 { position: absolute; left: calc(50% + 366.49px); width: 316.5px; bottom: -1366.67px; height: 66.6px; top: auto; right: auto; }
+/* Circle - inside "Sun Tzu AI Box" (#bw-Sun-Tzu-AI-Box); its page anchor
+   left 113.26 / bottom -695.04 becomes 53.26 / 1342.05 inside the card
+   (a row of 2 kept together) */
+#bw-Circle { position: absolute; left: 53.26px; width: 11.99px; top: 1342.05px; height: 11.99px; bottom: auto; right: auto; }
+/* Circle.001 - inside "Sun Tzu AI Box" (#bw-Sun-Tzu-AI-Box) */
+#bw-Circle-001 { position: absolute; left: 53.26px; width: 11.99px; top: 1373.23px; height: 11.99px; bottom: auto; right: auto; }
+/* Circle.002 - inside "Sun Tzu AI Box" (#bw-Sun-Tzu-AI-Box) */
+#bw-Circle-002 { position: absolute; left: 53.26px; width: 11.99px; top: 1406.8px; height: 11.99px; bottom: auto; right: auto; }
+/* div - inside "Sun Tzu AI Content" (.Sun_Tzu_AI_Content), stretch / stretch */
+#bw-div { position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; }
+/* div.001 - inside "Sun Tzu AI Content" (.Sun_Tzu_AI_Content), right / top */
+#bw-div-001 { position: absolute; right: 432.98px; width: 300px; top: 166.59px; height: 150px; bottom: auto; left: auto; }
+/* Donation Progress - inside "Sun Tzu AI Content" (.Sun_Tzu_AI_Content), center / bottom */
+.Donation_Progress { position: absolute; left: calc(50% - 249.88px); width: 499.8px; bottom: -200.62px; height: 20px; top: auto; right: auto; }
+/* Donation Progress Fill - inside .Donation_Progress; its page anchor
+   calc(50% - 73.43px) / bottom -522.24 becomes left 176.45px / top 311.62px
+   inside the 499.8 x 20 bar */
+.Donation_Progress_Fill { position: absolute; left: 176.45px; width: 20px; top: 311.62px; height: 20px; bottom: auto; right: auto; }
+/* Donation Progress Label - inside "Sun Tzu AI Content" (.Sun_Tzu_AI_Content), center / bottom */
+.Donation_Progress_Label { position: absolute; left: calc(50% - 241.55px); width: 483.1px; bottom: -167.34px; height: 26.7px; top: auto; right: auto; }
+/* Kin Flow - in the page, left / top  (a row of 5 kept together) */
+.Kin_Flow { position: absolute; left: 500px; width: 70px; top: 280px; height: 70px; bottom: auto; right: auto; }
+/* p - in the page, left / top  (a row of 2 kept together) */
+.Front_Page_Time { position: absolute; left: 360px; width: 104.4px; top: 40px; height: 26.1px; bottom: auto; right: auto; }
+/* p.001 - in the page, left / top  (a row of 2 kept together) */
+#bw-p-001 { position: absolute; left: 40px; width: 170.9px; top: 40px; height: 52.2px; bottom: auto; right: auto; }
+/* p.002 - in the page, left / top  (a row of 2 kept together) */
+.Front_Page_Date { position: absolute; left: 180px; width: 156.5px; top: 40px; height: 26.1px; bottom: auto; right: auto; }
+/* p.003 - in the page, left / top  (a row of 2 kept together) */
+.App_Counter { position: absolute; left: 200px; width: 547.9px; top: 180px; height: 52.2px; bottom: auto; right: auto; }
+/* p.004 - in the page, left / top  (a row of 2 kept together) */
+#bw-p-004 { position: absolute; left: 340px; width: 26.1px; top: 40px; height: 26.1px; bottom: auto; right: auto; }
+/* p.005 - in the page, left / top  (a row of 2 kept together) */
+#bw-p-005 { position: absolute; left: 100px; width: 78.3px; top: 180px; height: 52.2px; bottom: auto; right: auto; }
+/* p.006 - inside "Sun Tzu AI Content" (.Sun_Tzu_AI_Content), center / top */
+#bw-p-006 { position: absolute; left: calc(50% - 83px); width: 160px; top: 180px; height: 50px; bottom: auto; right: auto; }
+/* p.007 - inside "Sun Tzu AI Content" (.Sun_Tzu_AI_Content), left / bottom  (a row of 2 kept together) */
+#bw-p-007 { position: absolute; left: 633.02px; width: 166.6px; bottom: -383.84px; height: 33.3px; top: auto; right: auto; }
+/* p.008 - inside "Sun Tzu AI Content" (.Sun_Tzu_AI_Content), left / bottom  (a row of 2 kept together) */
+#bw-p-008 { position: absolute; left: 430px; width: 149.9px; bottom: -384.3px; height: 33.3px; top: auto; right: auto; }
+/* p.009 - inside "Sun Tzu AI Content" (.Sun_Tzu_AI_Content), left / bottom  (a row of 2 kept together) */
+#bw-p-009 { position: absolute; left: 430px; width: 149.9px; bottom: -314.3px; height: 33.3px; top: auto; right: auto; }
+/* p.010 - inside "Sun Tzu AI Content" (.Sun_Tzu_AI_Content), left / bottom  (a row of 2 kept together) */
+#bw-p-010 { position: absolute; left: 630px; width: 166.6px; bottom: -314.3px; height: 33.3px; top: auto; right: auto; }
+/* p.011 - inside "Sun Tzu AI Content" (.Sun_Tzu_AI_Content), center / bottom  (a row of 2 kept together) */
+#bw-p-011 { position: absolute; left: calc(50% - 53px); width: 166.6px; bottom: -530.86px; height: 33.3px; top: auto; right: auto; }
+/* p.012 - inside "Sun Tzu AI Content" (.Sun_Tzu_AI_Content), left / bottom */
+#bw-p-012 { position: absolute; left: 430px; width: 149.9px; bottom: -464.23px; height: 33.3px; top: auto; right: auto; }
+/* p.013 - inside "Under Construction" (#bw-Under-Construction), center / top */
+#bw-p-013 { position: absolute; left: calc(50% - 2.49px); width: 4.99px; top: 212px; height: 8.26px; bottom: auto; right: auto; }
+/* p.014 - inside "Under Construction" (#bw-Under-Construction), center / top */
+#bw-p-014 { position: absolute; left: calc(50% - 131px); width: 262px; top: 264px; height: 19.11px; bottom: auto; right: auto; }
+/* Tun Tzu AI Title - inside "Sun Tzu AI Box" (#bw-Sun-Tzu-AI-Box); page anchor
+   left 113.26 / bottom -64.43 becomes 53.26 / 675.45 inside the card */
+#bw-Tun-Tzu-AI-Title { position: absolute; left: 53.26px; width: 460.44px; top: 675.45px; height: 47.98px; bottom: auto; right: auto; }
+/* p.016 - inside "Sun Tzu AI Box" (#bw-Sun-Tzu-AI-Box); page anchor
+   left 113.26 / bottom -663.88 becomes 53.26 / 1286.9 inside the card */
+#bw-p-016 { position: absolute; left: 53.26px; width: 455.61px; top: 1286.9px; height: 35.98px; bottom: auto; right: auto; }
+/* p.017 - inside "Sun Tzu AI Box" (#bw-Sun-Tzu-AI-Box)  (a row of 2 kept together) */
+#bw-p-017 { position: absolute; left: 77.23px; width: 179.91px; top: 1334.87px; height: 95.95px; bottom: auto; right: auto; }
+/* p.018 - inside "Sun Tzu AI Box" (#bw-Sun-Tzu-AI-Box) */
+#bw-p-018 { position: absolute; left: 53.26px; width: 587.55px; top: 819.32px; height: 323.67px; bottom: auto; right: auto; }
+/* p.019 - inside "Sun Tzu AI Box" (#bw-Sun-Tzu-AI-Box) */
+#bw-p-019 { position: absolute; left: 23.97px; width: 419.63px; top: 815.27px; height: 35.98px; bottom: auto; right: auto; }
+/* p.020 - inside "Sun Tzu AI Box" (#bw-Sun-Tzu-AI-Box) */
+#bw-p-020 { position: absolute; left: 53.26px; width: 587.55px; top: 1226.95px; height: 35.98px; bottom: auto; right: auto; }
+/* p.021 - inside "Sun Tzu AI Box" (#bw-Sun-Tzu-AI-Box) */
+#bw-p-021 { position: absolute; left: 23.97px; width: 491.59px; top: 875.21px; height: 35.98px; bottom: auto; right: auto; }
+/* p.022 - inside "Sun Tzu AI Box" (#bw-Sun-Tzu-AI-Box) */
+#bw-p-022 { position: absolute; left: 23.97px; width: 491.59px; top: 887.2px; height: 35.98px; bottom: auto; right: auto; }
+/* p.023 - inside "Sun Tzu AI Box" (#bw-Sun-Tzu-AI-Box) */
+#bw-p-023 { position: absolute; left: 323.71px; width: 491.59px; top: 1091.02px; height: 35.98px; bottom: auto; right: auto; }
+/* QR Code - inside "QR Code Background" (#bw-QR-Code-Background), center / center */
+.QR_Code_Button { position: absolute; left: calc(50% - 30.16px); width: 60.32px; top: calc(50% - 30.16px); height: 60.32px; bottom: auto; right: auto; }
+/* QR Code Background - inside "Sun Tzu AI Box" (#bw-Sun-Tzu-AI-Box);
+   its page anchor left 393.17 / bottom -182.25 becomes
+   left 333.17 / top 757.96 inside the card */
+#bw-QR-Code-Background { position: absolute; left: 333.17px; width: 83.29px; top: 757.96px; height: 83.29px; bottom: auto; right: auto; }
+/* Blend Web Box - inside "Under Construction" (#bw-Under-Construction), left / top  (a row of 2 kept together) */
+#bw-Blend-Web-Box { position: absolute; left: 559.75px; width: 503.09px; top: -50px; height: 253.21px; bottom: auto; right: auto; }
+/* Blend ACS - inside "Under Construction" (#bw-Under-Construction), left / top  (a row of 2 kept together) */
+#bw-Blend-ACS { position: absolute; left: 1076.17px; width: 503.09px; top: -50px; height: 253.21px; bottom: auto; right: auto; }
+/* Rectangle.003 - inside "Sun Tzu AI Box" (#bw-Sun-Tzu-AI-Box); its page anchor
+   left 93.32 / top -1642.56 becomes 33.32 / -1582.56 inside the card */
+#bw-Rectangle-003 { position: absolute; left: 33.32px; width: 838.07px; top: -1582.56px; height: 421.81px; bottom: auto; right: auto; }
+/* Sun Tzu AI Box - inside "Under Construction" (#bw-Under-Construction), left / top */
+#bw-Sun-Tzu-AI-Box { position: absolute; left: 60px; width: 503.09px; top: -60px; height: 253.21px; bottom: auto; right: auto; }
+/* Rectangle.007 - in the page, stretch / stretch */
+#bw-Rectangle-007 { position: absolute; left: 0px; right: 0px; top: -0px; bottom: 0px; }
+/* Sun Tzu AI - in the page, left / top  (a row of 5 kept together) */
+.Sun_Tzu_AI { position: absolute; left: 100px; width: 70px; top: 280px; height: 70px; bottom: auto; right: auto; }
+/* Sun Tzu AI Main - in the page, right / stretch  (a row of 2 kept together) */
+.Sun_Tzu_AI_Main { position: absolute; right: 419px; width: 949px; top: -0px; bottom: -735px; left: auto; }
+/* Sun Tzu AI Content - in the page, stretch / bottom: positioned above
+   (it is nested in the .Sun_Tzu_AI tile, so covering the page from inside
+   it needs the page-covering offsets the earlier rule sets) */
+/* Triangle - inside "Under Construction" (#bw-Under-Construction), center / top */
+#bw-Triangle { position: absolute; left: calc(50% - 97.18px); top: 136.15px; width: 194.3px; height: 170.8px; bottom: auto; right: auto; clip-path: path(evenodd, 'M 3.68 130.62 L 3.78 130.45 L 74.3 12.93 L 74.41 12.75 L 74.53 12.57 L 74.65 12.39 L 75.87 10.63 L 76.12 10.28 L 76.39 9.95 L 76.66 9.62 L 78.1 8.03 L 78.4 7.72 L 78.7 7.42 L 79.02 7.13 L 80.65 5.73 L 80.98 5.46 L 81.32 5.21 L 81.68 4.96 L 83.47 3.79 L 83.84 3.56 L 84.21 3.35 L 84.59 3.15 L 86.52 2.22 L 86.91 2.04 L 87.31 1.88 L 87.71 1.74 L 89.74 1.06 L 90.16 0.93 L 90.57 0.82 L 90.99 0.73 L 93.09 0.32 L 93.51 0.25 L 93.94 0.19 L 94.37 0.15 L 96.51 0.01 L 96.94 0 L 97.36 0 L 97.79 0.01 L 99.93 0.15 L 100.36 0.19 L 100.79 0.25 L 101.21 0.32 L 103.31 0.73 L 103.73 0.82 L 104.14 0.93 L 104.56 1.06 L 106.59 1.74 L 106.99 1.88 L 107.39 2.04 L 107.78 2.22 L 109.71 3.15 L 110.09 3.35 L 110.46 3.56 L 110.83 3.79 L 112.62 4.96 L 112.98 5.21 L 113.32 5.46 L 113.65 5.73 L 115.28 7.13 L 115.6 7.42 L 115.9 7.72 L 116.2 8.03 L 117.64 9.62 L 117.91 9.95 L 118.18 10.28 L 118.43 10.63 L 119.65 12.39 L 119.77 12.57 L 119.89 12.75 L 120 12.93 L 190.52 130.45 L 190.62 130.62 L 190.72 130.8 L 190.82 130.99 L 191.77 132.82 L 191.95 133.19 L 192.12 133.57 L 192.28 133.96 L 192.99 135.89 L 193.12 136.29 L 193.24 136.68 L 193.35 137.08 L 193.82 139.09 L 193.9 139.5 L 193.97 139.91 L 194.03 140.32 L 194.25 142.37 L 194.28 142.79 L 194.29 143.2 L 194.3 143.61 L 194.26 145.68 L 194.24 146.09 L 194.21 146.5 L 194.16 146.91 L 193.87 148.96 L 193.8 149.37 L 193.71 149.77 L 193.62 150.17 L 193.07 152.17 L 192.95 152.56 L 192.82 152.95 L 192.67 153.34 L 191.88 155.25 L 191.71 155.63 L 191.53 156 L 191.34 156.37 L 190.32 158.17 L 190.11 158.52 L 189.88 158.87 L 189.64 159.2 L 188.41 160.86 L 188.15 161.19 L 187.89 161.5 L 187.61 161.81 L 186.18 163.3 L 185.88 163.59 L 185.58 163.87 L 185.27 164.15 L 183.67 165.45 L 183.34 165.7 L 183 165.94 L 182.66 166.17 L 180.9 167.27 L 180.55 167.48 L 180.18 167.67 L 179.81 167.86 L 177.94 168.73 L 177.56 168.89 L 177.17 169.04 L 176.78 169.18 L 174.82 169.81 L 174.42 169.93 L 174.02 170.03 L 173.61 170.12 L 171.58 170.5 L 171.17 170.56 L 170.76 170.61 L 170.35 170.65 L 168.29 170.78 L 168.08 170.79 L 167.88 170.8 L 167.67 170.8 L 26.63 170.8 L 26.42 170.8 L 26.22 170.79 L 26.01 170.78 L 23.95 170.65 L 23.54 170.61 L 23.13 170.56 L 22.72 170.5 L 20.69 170.12 L 20.28 170.03 L 19.88 169.93 L 19.48 169.81 L 17.52 169.18 L 17.13 169.04 L 16.74 168.89 L 16.36 168.73 L 14.49 167.86 L 14.12 167.67 L 13.75 167.47 L 13.4 167.27 L 11.64 166.17 L 11.3 165.94 L 10.96 165.7 L 10.63 165.45 L 9.03 164.15 L 8.72 163.87 L 8.42 163.59 L 8.12 163.3 L 6.69 161.81 L 6.41 161.5 L 6.15 161.19 L 5.89 160.86 L 4.66 159.2 L 4.42 158.87 L 4.19 158.52 L 3.98 158.17 L 2.96 156.37 L 2.77 156 L 2.59 155.63 L 2.42 155.25 L 1.63 153.34 L 1.48 152.95 L 1.35 152.56 L 1.23 152.17 L 0.68 150.17 L 0.59 149.77 L 0.5 149.37 L 0.43 148.96 L 0.14 146.91 L 0.09 146.5 L 0.06 146.09 L 0.04 145.68 L 0 143.61 L 0.01 143.2 L 0.02 142.79 L 0.05 142.37 L 0.27 140.32 L 0.33 139.91 L 0.4 139.5 L 0.48 139.09 L 0.95 137.08 L 1.06 136.68 L 1.18 136.29 L 1.31 135.89 L 2.02 133.96 L 2.18 133.57 L 2.35 133.19 L 2.53 132.82 L 3.48 130.99 L 3.58 130.8 Z M 17.07 141.28 L 16.79 142.49 L 16.66 143.72 L 16.68 144.96 L 16.86 146.18 L 17.19 147.38 L 17.66 148.52 L 18.27 149.6 L 19.01 150.59 L 19.87 151.49 L 20.83 152.27 L 21.88 152.93 L 23 153.45 L 24.18 153.83 L 25.4 154.06 L 26.84 154.15 L 167.46 154.15 L 168.9 154.06 L 170.12 153.83 L 171.3 153.45 L 172.42 152.93 L 173.47 152.27 L 174.43 151.49 L 175.29 150.59 L 176.03 149.6 L 176.64 148.52 L 177.11 147.38 L 177.44 146.18 L 177.62 144.96 L 177.64 143.72 L 177.51 142.49 L 177.23 141.28 L 176.8 140.12 L 176.13 138.83 L 105.83 21.68 L 104.98 20.45 L 104.12 19.5 L 103.14 18.66 L 102.07 17.96 L 100.91 17.4 L 99.69 16.99 L 98.43 16.74 L 97.15 16.66 L 95.87 16.74 L 94.61 16.99 L 93.39 17.4 L 92.23 17.96 L 91.16 18.66 L 90.18 19.5 L 89.32 20.45 L 88.47 21.68 L 18.17 138.83 L 17.5 140.12 Z'); }
+/* Under Construction - in the page, stretch / stretch */
+#bw-Under-Construction { position: absolute; left: 0px; right: 0px; top: -0px; bottom: 0px; }
+
+/* ===================== Tablet layout =====================
+   (min-width: 670px) and (max-width: 1157px) - same elements,
+   same HTML; designed at 949 x 1334. */
+@media (min-width: 670px) and (max-width: 1157px) {
+  /* Tablet, exactly as designed in Blender at 949 x 1334: every place and size in px, nothing scaled */
+  body { min-height: max(1334px, 100vh); }
+  /* p.001 */
+  #bw-p-001 { left: 20px; top: 20px; right: auto; bottom: auto; width: 120px; height: 24px; transform: none; aspect-ratio: auto; }
+  /* p.004 */
+  #bw-p-004 { left: 260px; top: 20px; right: auto; bottom: auto; width: 12px; height: 12px; transform: none; aspect-ratio: auto; }
+  /* p */
+  .Front_Page_Time { left: 280px; top: 20px; right: auto; bottom: auto; width: 80px; height: 12px; transform: none; aspect-ratio: auto; }
+  /* p.002 */
+  .Front_Page_Date { left: 140px; top: 20px; right: auto; bottom: auto; width: 115.96px; height: 12px; transform: none; aspect-ratio: auto; }
+  /* p.003 */
+  .App_Counter { left: 100px; top: 80px; right: auto; bottom: auto; width: 252.1px; height: 24px; transform: none; aspect-ratio: auto; }
+  /* p.005 */
+  #bw-p-005 { left: 40px; top: 80px; right: auto; bottom: auto; width: 36px; height: 24px; transform: none; aspect-ratio: auto; }
+  /* Rectangle.007 */
+  #bw-Rectangle-007 { left: 0; right: 0; top: 0; bottom: 0; width: auto; height: auto; transform: none; aspect-ratio: auto; }
+  /* Blend EDA */
+  .Blend_EDA { left: 180px; top: 160px; right: auto; bottom: auto; width: 50px; height: 50px; transform: none; aspect-ratio: auto; }
+  /* Sun Tzu AI */
+  .Sun_Tzu_AI { left: 40px; top: 160px; right: auto; bottom: auto; width: 50px; height: 50px; transform: none; aspect-ratio: auto; }
+  /* Kin Flow */
+  .Kin_Flow { left: 320px; top: 160px; right: auto; bottom: auto; width: 50px; height: 50px; transform: none; aspect-ratio: auto; }
+  /* Blend Web */
+  .Blend_Web { left: 120px; top: 160px; right: auto; bottom: auto; width: 50px; height: 50px; transform: none; aspect-ratio: auto; }
+  /* Blend ACS */
+  .Blend_ACS { left: 240px; top: 160px; right: auto; bottom: auto; width: 50px; height: 50px; transform: none; aspect-ratio: auto; }
+  /* Sun Tzu AI Content */
+  .Sun_Tzu_AI_Content { left: 20px; top: -40px; right: auto; bottom: auto; width: 949px; height: 1334px; transform: none; aspect-ratio: auto; }
+  /* div */
+  #bw-div { width: 949px; height: 1334px; transform: none; aspect-ratio: auto; }
+  /* p.006 */
+  #bw-p-006 { left: 100px; top: 40px; right: auto; bottom: auto; width: 339px; height: 74px; transform: none; aspect-ratio: auto; }
+  /* button.001 */
+  #bw-button-001 { left: 4.5px; top: 1174px; right: auto; bottom: auto; width: 190px; height: 40px; transform: none; aspect-ratio: auto; }
+  /* button.002 */
+  #bw-button-002 { left: 184.5px; top: 260px; right: auto; bottom: auto; width: 200px; height: 60px; transform: none; aspect-ratio: auto; }
+  /* Donation Progress Label */
+  .Donation_Progress_Label { left: 264.5px; top: 400px; right: auto; bottom: auto; width: 300px; height: 16px; transform: none; aspect-ratio: auto; }
+  /* Donation Progress */
+  .Donation_Progress { left: 264.5px; top: 440px; right: auto; bottom: auto; width: 300px; height: 12px; transform: none; aspect-ratio: auto; }
+  /* Donation Progress Fill */
+  .Donation_Progress_Fill { left: -124px; top: -92px; right: auto; bottom: auto; width: 12px; height: 12px; transform: none; aspect-ratio: auto; }
+  /* p.007 */
+  #bw-p-007 { left: 320px; top: 1315px; right: auto; bottom: auto; width: 100px; height: 20px; transform: none; aspect-ratio: auto; }
+  /* p.008 */
+  #bw-p-008 { left: 200px; top: 1315px; right: auto; bottom: auto; width: 90px; height: 20px; transform: none; aspect-ratio: auto; }
+  /* p.009 */
+  #bw-p-009 { left: 200px; top: 1275px; right: auto; bottom: auto; width: 90px; height: 20px; transform: none; aspect-ratio: auto; }
+  /* p.010 */
+  #bw-p-010 { left: 320px; top: 1235px; right: auto; bottom: auto; width: 100px; height: 20px; transform: none; aspect-ratio: auto; }
+  /* button.003 */
+  #bw-button-003 { left: 444.5px; top: 260px; right: auto; bottom: auto; width: 200px; height: 60px; transform: none; aspect-ratio: auto; }
+  /* button.004 */
+  #bw-button-004 { left: 214.5px; top: 1174px; right: auto; bottom: auto; width: 190px; height: 40px; transform: none; aspect-ratio: auto; }
+  /* button.005 */
+  #bw-button-005 { left: 424.5px; top: 1174px; right: auto; bottom: auto; width: 190px; height: 40px; transform: none; aspect-ratio: auto; }
+  /* button.006 */
+  #bw-button-006 { left: 634.5px; top: 1174px; right: auto; bottom: auto; width: 190px; height: 40px; transform: none; aspect-ratio: auto; }
+  /* p.011 */
+  #bw-p-011 { left: 320px; top: 1275px; right: auto; bottom: auto; width: 100px; height: 20px; transform: none; aspect-ratio: auto; }
+  /* p.012 */
+  #bw-p-012 { left: 200px; top: 1235px; right: auto; bottom: auto; width: 90px; height: 20px; transform: none; aspect-ratio: auto; }
+  /* div.001 */
+  #bw-div-001 { left: 449px; top: -20px; right: auto; bottom: auto; transform: none; aspect-ratio: auto; }
+  /* Sun Tzu AI Main */
+  .Sun_Tzu_AI_Main { left: -2px; top: 0px; right: auto; transform: none; aspect-ratio: auto; }
+  /* Under Construction */
+  #bw-Under-Construction { left: 0px; top: 0px; right: auto; bottom: auto; width: 949px; height: 1334px; transform: none; aspect-ratio: auto; }
+  /* Triangle */
+  #bw-Triangle { left: 427px; top: 228.3px; right: auto; bottom: auto; width: 95px; height: 83.52px; transform: none; aspect-ratio: auto; clip-path: path(evenodd, 'M 1.799 63.87 L 1.848 63.79 L 36.33 6.323 L 36.38 6.235 L 36.44 6.147 L 36.5 6.059 L 37.1 5.198 L 37.22 5.027 L 37.35 4.865 L 37.48 4.704 L 38.19 3.927 L 38.33 3.775 L 38.48 3.628 L 38.64 3.487 L 39.43 2.802 L 39.59 2.67 L 39.76 2.548 L 39.94 2.425 L 40.81 1.853 L 40.99 1.741 L 41.17 1.638 L 41.36 1.54 L 42.3 1.086 L 42.49 0.9975 L 42.69 0.9193 L 42.88 0.8508 L 43.88 0.5183 L 44.08 0.4548 L 44.28 0.401 L 44.49 0.357 L 45.51 0.1565 L 45.72 0.1222 L 45.93 0.09291 L 46.14 0.07335 L 47.19 0.00489 L 47.4 0 L 47.6 0 L 47.81 0.00489 L 48.86 0.07335 L 49.07 0.09291 L 49.28 0.1222 L 49.49 0.1565 L 50.51 0.357 L 50.72 0.401 L 50.92 0.4548 L 51.12 0.5183 L 52.12 0.8508 L 52.31 0.9193 L 52.51 0.9975 L 52.7 1.086 L 53.64 1.54 L 53.83 1.638 L 54.01 1.741 L 54.19 1.853 L 55.06 2.425 L 55.24 2.548 L 55.41 2.67 L 55.57 2.802 L 56.36 3.487 L 56.52 3.628 L 56.67 3.775 L 56.81 3.927 L 57.52 4.704 L 57.65 4.865 L 57.78 5.027 L 57.9 5.198 L 58.5 6.059 L 58.56 6.147 L 58.62 6.235 L 58.67 6.323 L 93.15 63.79 L 93.2 63.87 L 93.25 63.96 L 93.3 64.05 L 93.76 64.95 L 93.85 65.13 L 93.93 65.31 L 94.01 65.51 L 94.36 66.45 L 94.42 66.64 L 94.48 66.84 L 94.54 67.03 L 94.77 68.01 L 94.8 68.21 L 94.84 68.42 L 94.87 68.62 L 94.98 69.62 L 94.99 69.82 L 95 70.02 L 95 70.22 L 94.98 71.24 L 94.97 71.44 L 94.96 71.64 L 94.93 71.84 L 94.79 72.84 L 94.76 73.04 L 94.71 73.24 L 94.67 73.43 L 94.4 74.41 L 94.34 74.6 L 94.28 74.79 L 94.2 74.98 L 93.82 75.92 L 93.73 76.1 L 93.65 76.28 L 93.55 76.46 L 93.05 77.34 L 92.95 77.52 L 92.84 77.69 L 92.72 77.85 L 92.12 78.66 L 91.99 78.82 L 91.87 78.97 L 91.73 79.12 L 91.03 79.85 L 90.88 79.99 L 90.74 80.13 L 90.58 80.27 L 89.8 80.9 L 89.64 81.03 L 89.48 81.14 L 89.31 81.26 L 88.45 81.79 L 88.28 81.9 L 88.1 81.99 L 87.92 82.08 L 87 82.51 L 86.82 82.59 L 86.62 82.66 L 86.43 82.73 L 85.48 83.04 L 85.28 83.09 L 85.08 83.14 L 84.88 83.19 L 83.89 83.37 L 83.69 83.4 L 83.49 83.43 L 83.29 83.45 L 82.28 83.51 L 82.18 83.52 L 82.08 83.52 L 81.98 83.52 L 13.02 83.52 L 12.92 83.52 L 12.82 83.52 L 12.72 83.51 L 11.71 83.45 L 11.51 83.43 L 11.31 83.4 L 11.11 83.37 L 10.12 83.19 L 9.916 83.14 L 9.72 83.09 L 9.524 83.04 L 8.566 82.73 L 8.375 82.66 L 8.185 82.59 L 7.999 82.51 L 7.085 82.08 L 6.904 81.99 L 6.723 81.89 L 6.552 81.79 L 5.691 81.26 L 5.525 81.14 L 5.359 81.03 L 5.197 80.9 L 4.415 80.27 L 4.264 80.13 L 4.117 79.99 L 3.97 79.85 L 3.271 79.12 L 3.134 78.97 L 3.007 78.82 L 2.88 78.66 L 2.278 77.85 L 2.161 77.69 L 2.049 77.52 L 1.946 77.34 L 1.447 76.46 L 1.354 76.28 L 1.266 76.1 L 1.183 75.92 L 0.797 74.98 L 0.7236 74.79 L 0.6601 74.6 L 0.6014 74.41 L 0.3325 73.43 L 0.2885 73.24 L 0.2445 73.04 L 0.2102 72.84 L 0.06845 71.84 L 0.044 71.64 L 0.02934 71.44 L 0.01956 71.24 L 0 70.22 L 0.004889 70.02 L 0.009779 69.82 L 0.02445 69.62 L 0.132 68.62 L 0.1613 68.42 L 0.1956 68.21 L 0.2347 68.01 L 0.4645 67.03 L 0.5183 66.84 L 0.5769 66.64 L 0.6405 66.45 L 0.9876 65.51 L 1.066 65.31 L 1.149 65.13 L 1.237 64.95 L 1.701 64.05 L 1.75 63.96 Z M 8.346 69.08 L 8.209 69.68 L 8.146 70.28 L 8.155 70.88 L 8.243 71.48 L 8.405 72.07 L 8.635 72.63 L 8.933 73.15 L 9.295 73.64 L 9.715 74.08 L 10.18 74.46 L 10.7 74.78 L 11.25 75.04 L 11.82 75.22 L 12.42 75.33 L 13.12 75.38 L 81.88 75.38 L 82.58 75.33 L 83.18 75.22 L 83.75 75.04 L 84.3 74.78 L 84.82 74.46 L 85.28 74.08 L 85.71 73.64 L 86.07 73.15 L 86.37 72.63 L 86.6 72.07 L 86.76 71.48 L 86.84 70.88 L 86.85 70.28 L 86.79 69.68 L 86.65 69.08 L 86.44 68.52 L 86.12 67.89 L 51.74 10.6 L 51.33 10 L 50.91 9.535 L 50.43 9.125 L 49.91 8.782 L 49.34 8.508 L 48.74 8.308 L 48.13 8.186 L 47.5 8.147 L 46.87 8.186 L 46.26 8.308 L 45.66 8.508 L 45.09 8.782 L 44.57 9.125 L 44.09 9.535 L 43.67 10 L 43.26 10.6 L 8.884 67.89 L 8.556 68.52 Z'); }
+  /* p.013 */
+  #bw-p-013 { left: 453.4px; top: 254px; right: auto; bottom: auto; width: 42.16px; height: 48px; transform: none; aspect-ratio: auto; }
+  /* p.014 */
+  #bw-p-014 { left: 292.2px; top: 345px; right: auto; bottom: auto; width: 364.61px; height: 77px; transform: none; aspect-ratio: auto; }
+  /* What Works Text */
+  #bw-What-Works-Text { left: 104.3px; top: 494px; right: auto; bottom: auto; width: 740.44px; height: 198px; transform: none; aspect-ratio: auto; }
+  /* Blend Web Box */
+  #bw-Blend-Web-Box { left: 340px; top: 890px; right: auto; bottom: auto; width: 264px; height: 405px; transform: none; aspect-ratio: auto; clip-path: none; }
+  /* Blend ACS */
+  #bw-Blend-ACS { left: 650px; top: 890px; right: auto; bottom: auto; width: 264px; height: 405px; transform: none; aspect-ratio: auto; clip-path: none; }
+  /* Sun Tzu AI Box */
+  #bw-Sun-Tzu-AI-Box { left: 40px; top: 780px; right: auto; bottom: auto; width: 263px; height: 33px; transform: none; aspect-ratio: auto; clip-path: none; }
+  /* QR Code Background */
+  #bw-QR-Code-Background { left: 90px; top: 345px; right: auto; bottom: auto; transform: none; aspect-ratio: auto; }
+  /* QR Code */
+  .QR_Code_Button { left: 111.9px; top: 111.9px; right: auto; bottom: auto; width: 36.21px; height: 36.21px; transform: none; aspect-ratio: auto; }
+  /* Rectangle.003 */
+  #bw-Rectangle-003 { left: 0px; top: 170px; right: auto; bottom: auto; width: 263px; height: 458px; transform: none; aspect-ratio: auto; clip-path: none; }
+  /* Tun Tzu AI Title */
+  #bw-Tun-Tzu-AI-Title { left: 10px; top: 120px; right: auto; bottom: auto; width: 192px; height: 20px; transform: none; aspect-ratio: auto; }
+  /* p.018 */
+  #bw-p-018 { left: 10px; top: 180px; right: auto; bottom: auto; width: 245px; height: 135px; transform: none; aspect-ratio: auto; }
+  /* p.020 */
+  #bw-p-020 { left: 10px; top: 350px; right: auto; bottom: auto; width: 245px; height: 15px; transform: none; aspect-ratio: auto; }
+  /* p.016 */
+  #bw-p-016 { left: 10px; top: 375px; right: auto; bottom: auto; width: 190px; height: 15px; transform: none; aspect-ratio: auto; }
+  /* p.017 */
+  #bw-p-017 { left: 20px; top: 395px; right: auto; bottom: auto; width: 75px; height: 40px; transform: none; aspect-ratio: auto; }
+  /* Circle */
+  #bw-Circle { left: 10px; top: 398px; right: auto; bottom: auto; width: 5px; height: 5px; transform: none; aspect-ratio: auto; }
+  /* Circle.001 */
+  #bw-Circle-001 { left: 10px; top: 411px; right: auto; bottom: auto; width: 5px; height: 5px; transform: none; aspect-ratio: auto; }
+  /* Circle.002 */
+  #bw-Circle-002 { left: 10px; top: 425px; right: auto; bottom: auto; width: 5px; height: 5px; transform: none; aspect-ratio: auto; }
+  /* p.019 */
+  #bw-p-019 { left: -30px; top: -440px; right: auto; bottom: auto; width: 175px; height: 15px; transform: none; aspect-ratio: auto; }
+  /* p.021 */
+  #bw-p-021 { left: -30px; top: -425px; right: auto; bottom: auto; width: 205px; height: 15px; transform: none; aspect-ratio: auto; }
+  /* p.022 */
+  #bw-p-022 { left: -30px; top: -410px; right: auto; bottom: auto; width: 205px; height: 15px; transform: none; aspect-ratio: auto; }
+  /* p.023 */
+  #bw-p-023 { left: 90px; top: -325px; right: auto; bottom: auto; width: 60px; height: 15px; transform: none; aspect-ratio: auto; }
+}
+
+/* ===================== Phone layout =====================
+   (max-width: 669px) - same elements, same HTML; designed at 390 x 844. */
+@media (max-width: 669px) {
+  /* Phone, exactly as designed in Blender at 390 x 844: every place and size in px, nothing scaled */
+  body { min-height: max(844px, 100vh); }
+  /* p.001 */
+  #bw-p-001 { left: 0px; top: 0px; right: auto; bottom: auto; width: 130px; height: 30px; transform: none; aspect-ratio: auto; }
+  /* p.004 */
+  #bw-p-004 { left: 280px; top: 0px; right: auto; bottom: auto; width: 10px; height: 20px; transform: none; aspect-ratio: auto; }
+  /* p */
+  .Front_Page_Time { left: 320px; top: 0px; right: auto; bottom: auto; width: 70px; height: 20px; transform: none; aspect-ratio: auto; }
+  /* p.002 */
+  .Front_Page_Date { left: 160px; top: 0px; right: auto; bottom: auto; width: 120px; height: 20px; transform: none; aspect-ratio: auto; }
+  /* p.003 */
+  .App_Counter { left: 100px; top: 60px; right: auto; bottom: auto; width: 270px; height: 40px; transform: none; aspect-ratio: auto; }
+  /* p.005 */
+  #bw-p-005 { left: 20px; top: 60px; right: auto; bottom: auto; width: 70px; height: 40px; transform: none; aspect-ratio: auto; }
+  /* Rectangle.007 */
+  #bw-Rectangle-007 { left: 0; right: 0; top: 0; bottom: 0; width: auto; height: auto; transform: none; aspect-ratio: auto; }
+  /* Blend EDA */
+  .Blend_EDA { left: 140px; top: 120px; right: auto; bottom: auto; width: 39.971px; height: 39.971px; transform: none; aspect-ratio: auto; }
+  /* Sun Tzu AI */
+  .Sun_Tzu_AI { left: 20px; top: 120px; right: auto; bottom: auto; width: 39.971px; height: 39.971px; transform: none; aspect-ratio: auto; }
+  /* Kin Flow */
+  .Kin_Flow { left: 260px; top: 120px; right: auto; bottom: auto; width: 39.971px; height: 39.971px; transform: none; aspect-ratio: auto; }
+  /* Blend Web */
+  .Blend_Web { left: 80px; top: 120px; right: auto; bottom: auto; width: 39.971px; height: 39.971px; transform: none; aspect-ratio: auto; }
+  /* Blend ACS */
+  .Blend_ACS { left: 200px; top: 120px; right: auto; bottom: auto; width: 39.971px; height: 39.971px; transform: none; aspect-ratio: auto; }
+  /* Sun Tzu AI Content */
+  .Sun_Tzu_AI_Content { left: 8.5px; top: -62.9px; right: auto; bottom: auto; width: 390px; height: 844px; transform: none; aspect-ratio: auto; }
+  /* div */
+  #bw-div { width: 390px; height: 844px; transform: none; aspect-ratio: auto; }
+  /* p.006 */
+  #bw-p-006 { left: 47.6px; top: 19px; right: auto; bottom: auto; width: 161.2px; height: 35.2px; transform: none; aspect-ratio: auto; }
+  /* button.001 */
+  #bw-button-001 { left: -28.5px; top: 485.1px; right: auto; bottom: auto; width: 90.4px; height: 19px; transform: none; aspect-ratio: auto; }
+  /* button.002 */
+  #bw-button-002 { left: 57.1px; top: 123.6px; right: auto; bottom: auto; width: 95.1px; height: 28.5px; transform: none; aspect-ratio: auto; }
+  /* Donation Progress Label */
+  .Donation_Progress_Label { left: 95.2px; top: 190.2px; right: auto; bottom: auto; width: 142.7px; height: 7.6px; transform: none; aspect-ratio: auto; }
+  /* Donation Progress */
+  .Donation_Progress { left: 95.2px; top: 209.2px; right: auto; bottom: auto; width: 142.7px; height: 5.7px; transform: none; aspect-ratio: auto; }
+  /* Donation Progress Fill */
+  .Donation_Progress_Fill { left: 2.3px; top: -43.7px; right: auto; bottom: auto; width: 5.7px; height: 5.7px; transform: none; aspect-ratio: auto; }
+  /* p.007 */
+  #bw-p-007 { left: 152.2px; top: 275.8px; right: auto; bottom: auto; width: 47.6px; height: 9.5px; transform: none; aspect-ratio: auto; }
+  /* p.008 */
+  #bw-p-008 { left: 95.2px; top: 275.8px; right: auto; bottom: auto; width: 42.8px; height: 9.5px; transform: none; aspect-ratio: auto; }
+  /* p.009 */
+  #bw-p-009 { left: 95.2px; top: 256.8px; right: auto; bottom: auto; width: 42.8px; height: 9.5px; transform: none; aspect-ratio: auto; }
+  /* p.010 */
+  #bw-p-010 { left: 152.2px; top: 237.8px; right: auto; bottom: auto; width: 47.6px; height: 9.5px; transform: none; aspect-ratio: auto; }
+  /* button.003 */
+  #bw-button-003 { left: 180.8px; top: 123.6px; right: auto; bottom: auto; width: 95.1px; height: 28.5px; transform: none; aspect-ratio: auto; }
+  /* button.004 */
+  #bw-button-004 { left: 71.4px; top: 485.1px; right: auto; bottom: auto; width: 90.4px; height: 19px; transform: none; aspect-ratio: auto; }
+  /* button.005 */
+  #bw-button-005 { left: 171.3px; top: 485.1px; right: auto; bottom: auto; width: 90.4px; height: 19px; transform: none; aspect-ratio: auto; }
+  /* button.006 */
+  #bw-button-006 { left: 271.1px; top: 485.1px; right: auto; bottom: auto; width: 90.4px; height: 19px; transform: none; aspect-ratio: auto; }
+  /* p.011 */
+  #bw-p-011 { left: 152.2px; top: 256.8px; right: auto; bottom: auto; width: 47.6px; height: 9.5px; transform: none; aspect-ratio: auto; }
+  /* p.012 */
+  #bw-p-012 { left: 95.2px; top: 237.8px; right: auto; bottom: auto; width: 42.8px; height: 9.5px; transform: none; aspect-ratio: auto; }
+  /* div.001 */
+  #bw-div-001 { left: 152.2px; top: -9.5px; right: auto; bottom: auto; transform: none; aspect-ratio: auto; }
+  /* Under Construction */
+  #bw-Under-Construction { left: 0px; top: 0px; right: auto; bottom: auto; width: 390px; height: 844px; transform: none; aspect-ratio: auto; }
+  /* Triangle */
+  #bw-Triangle { left: 167.3px; top: 218.3px; right: auto; bottom: auto; width: 55.5px; height: 48.8px; transform: none; aspect-ratio: auto; clip-path: path(evenodd, 'M 1.051 37.32 L 1.08 37.27 L 21.22 3.694 L 21.25 3.643 L 21.29 3.591 L 21.32 3.54 L 21.67 3.037 L 21.74 2.937 L 21.82 2.843 L 21.9 2.749 L 22.31 2.294 L 22.39 2.206 L 22.48 2.12 L 22.57 2.037 L 23.04 1.637 L 23.13 1.56 L 23.23 1.489 L 23.33 1.417 L 23.84 1.083 L 23.95 1.017 L 24.05 0.9571 L 24.16 0.9 L 24.71 0.6343 L 24.83 0.5829 L 24.94 0.5371 L 25.05 0.4971 L 25.63 0.3029 L 25.75 0.2657 L 25.87 0.2343 L 25.99 0.2086 L 26.59 0.09143 L 26.71 0.07143 L 26.83 0.05429 L 26.96 0.04286 L 27.57 0.002857 L 27.69 0 L 27.81 0 L 27.93 0.002857 L 28.54 0.04286 L 28.67 0.05429 L 28.79 0.07143 L 28.91 0.09143 L 29.51 0.2086 L 29.63 0.2343 L 29.75 0.2657 L 29.87 0.3029 L 30.45 0.4971 L 30.56 0.5371 L 30.67 0.5829 L 30.79 0.6343 L 31.34 0.9 L 31.45 0.9571 L 31.55 1.017 L 31.66 1.083 L 32.17 1.417 L 32.27 1.489 L 32.37 1.56 L 32.46 1.637 L 32.93 2.037 L 33.02 2.12 L 33.11 2.206 L 33.19 2.294 L 33.6 2.749 L 33.68 2.843 L 33.76 2.937 L 33.83 3.037 L 34.18 3.54 L 34.21 3.591 L 34.25 3.643 L 34.28 3.694 L 54.42 37.27 L 54.45 37.32 L 54.48 37.37 L 54.51 37.43 L 54.78 37.95 L 54.83 38.05 L 54.88 38.16 L 54.92 38.27 L 55.13 38.83 L 55.16 38.94 L 55.2 39.05 L 55.23 39.17 L 55.36 39.74 L 55.39 39.86 L 55.41 39.97 L 55.42 40.09 L 55.49 40.68 L 55.49 40.8 L 55.5 40.91 L 55.5 41.03 L 55.49 41.62 L 55.48 41.74 L 55.47 41.86 L 55.46 41.97 L 55.38 42.56 L 55.36 42.68 L 55.33 42.79 L 55.31 42.91 L 55.15 43.48 L 55.11 43.59 L 55.08 43.7 L 55.03 43.81 L 54.81 44.36 L 54.76 44.47 L 54.71 44.57 L 54.65 44.68 L 54.36 45.19 L 54.3 45.29 L 54.24 45.39 L 54.17 45.49 L 53.82 45.96 L 53.74 46.05 L 53.67 46.14 L 53.59 46.23 L 53.18 46.66 L 53.09 46.74 L 53.01 46.82 L 52.92 46.9 L 52.46 47.27 L 52.37 47.34 L 52.27 47.41 L 52.18 47.48 L 51.67 47.79 L 51.57 47.85 L 51.47 47.91 L 51.36 47.96 L 50.83 48.21 L 50.72 48.25 L 50.61 48.3 L 50.5 48.34 L 49.94 48.52 L 49.82 48.55 L 49.71 48.58 L 49.59 48.61 L 49.01 48.71 L 48.89 48.73 L 48.78 48.75 L 48.66 48.76 L 48.07 48.79 L 48.01 48.8 L 47.95 48.8 L 47.89 48.8 L 7.607 48.8 L 7.547 48.8 L 7.49 48.8 L 7.43 48.79 L 6.841 48.76 L 6.724 48.75 L 6.607 48.73 L 6.49 48.71 L 5.91 48.61 L 5.793 48.58 L 5.679 48.55 L 5.564 48.52 L 5.004 48.34 L 4.893 48.3 L 4.782 48.25 L 4.673 48.21 L 4.139 47.96 L 4.033 47.91 L 3.928 47.85 L 3.828 47.79 L 3.325 47.48 L 3.228 47.41 L 3.131 47.34 L 3.036 47.27 L 2.579 46.9 L 2.491 46.82 L 2.405 46.74 L 2.319 46.66 L 1.911 46.23 L 1.831 46.14 L 1.757 46.05 L 1.682 45.96 L 1.331 45.49 L 1.263 45.39 L 1.197 45.29 L 1.137 45.19 L 0.8455 44.68 L 0.7912 44.57 L 0.7398 44.47 L 0.6913 44.36 L 0.4656 43.81 L 0.4227 43.7 L 0.3856 43.59 L 0.3513 43.48 L 0.1942 42.91 L 0.1685 42.79 L 0.1428 42.68 L 0.1228 42.56 L 0.03999 41.97 L 0.02571 41.86 L 0.01714 41.74 L 0.01143 41.62 L 0 41.03 L 0.002856 40.91 L 0.005713 40.8 L 0.01428 40.68 L 0.07712 40.09 L 0.09426 39.97 L 0.1143 39.86 L 0.1371 39.74 L 0.2714 39.17 L 0.3028 39.05 L 0.3371 38.94 L 0.3742 38.83 L 0.577 38.27 L 0.6227 38.16 L 0.6713 38.05 L 0.7227 37.95 L 0.994 37.43 L 1.023 37.37 Z M 4.876 40.37 L 4.796 40.71 L 4.759 41.06 L 4.764 41.42 L 4.816 41.77 L 4.91 42.11 L 5.044 42.43 L 5.219 42.74 L 5.43 43.03 L 5.676 43.28 L 5.95 43.51 L 6.25 43.69 L 6.57 43.84 L 6.907 43.95 L 7.255 44.02 L 7.667 44.04 L 47.83 44.04 L 48.24 44.02 L 48.59 43.95 L 48.93 43.84 L 49.25 43.69 L 49.55 43.51 L 49.82 43.28 L 50.07 43.03 L 50.28 42.74 L 50.46 42.43 L 50.59 42.11 L 50.68 41.77 L 50.74 41.42 L 50.74 41.06 L 50.7 40.71 L 50.62 40.37 L 50.5 40.03 L 50.31 39.67 L 30.23 6.194 L 29.99 5.843 L 29.74 5.571 L 29.46 5.331 L 29.16 5.131 L 28.82 4.971 L 28.48 4.854 L 28.12 4.783 L 27.75 4.76 L 27.38 4.783 L 27.02 4.854 L 26.68 4.971 L 26.34 5.131 L 26.04 5.331 L 25.76 5.571 L 25.51 5.843 L 25.27 6.194 L 5.19 39.67 L 4.999 40.03 Z'); }
+  /* p.013 */
+  #bw-p-013 { left: 190.3px; top: 238.3px; right: auto; bottom: auto; width: 9.4px; height: 12.4px; transform: none; aspect-ratio: auto; }
+  /* p.014 */
+  #bw-p-014 { left: 108.3px; top: 275.9px; right: auto; bottom: auto; width: 173.4px; height: 10.5px; transform: none; aspect-ratio: auto; }
+  /* What Works Text */
+  #bw-What-Works-Text { left: 42.9px; top: 203px; right: auto; bottom: auto; width: 304.3px; height: 81.4px; transform: none; aspect-ratio: auto; }
+  /* Blend Web Box */
+  #bw-Blend-Web-Box { left: 162.7px; top: 382.9px; right: auto; bottom: auto; width: 143.6px; height: 72.3px; transform: none; aspect-ratio: auto; clip-path: none; }
+  /* Blend ACS */
+  #bw-Blend-ACS { left: 310.1px; top: 382.9px; right: auto; bottom: auto; width: 143.6px; height: 72.3px; transform: none; aspect-ratio: auto; clip-path: none; }
+  /* Sun Tzu AI Box */
+  #bw-Sun-Tzu-AI-Box { left: 20px; top: 380px; right: auto; bottom: auto; width: 143.6px; height: 72.3px; transform: none; aspect-ratio: auto; clip-path: none; }
+  /* QR Code Background */
+  #bw-QR-Code-Background { left: 33.4px; top: 82.3px; right: auto; bottom: auto; transform: none; aspect-ratio: auto; }
+  /* QR Code */
+  .QR_Code_Button { left: -2px; top: -2px; right: auto; bottom: auto; transform: none; aspect-ratio: auto; }
+  /* Rectangle.003 */
+  #bw-Rectangle-003 { left: 0px; top: 0px; right: auto; bottom: auto; width: 143.6px; height: 72.3px; transform: none; aspect-ratio: auto; clip-path: none; }
+  /* Tun Tzu AI Title */
+  #bw-Tun-Tzu-AI-Title { left: 0.6px; top: -10.1px; right: auto; bottom: auto; width: 78.9px; height: 8.2px; transform: none; aspect-ratio: auto; }
+  /* p.018 */
+  #bw-p-018 { left: 0.6px; top: 14.5px; right: auto; bottom: auto; width: 100.7px; height: 55.5px; transform: none; aspect-ratio: auto; }
+  /* p.020 */
+  #bw-p-020 { left: 0.6px; top: 84.4px; right: auto; bottom: auto; width: 100.7px; height: 6.2px; transform: none; aspect-ratio: auto; }
+  /* p.016 */
+  #bw-p-016 { left: 0.6px; top: 94.7px; right: auto; bottom: auto; width: 78.1px; height: 6.2px; transform: none; aspect-ratio: auto; }
+  /* p.017 */
+  #bw-p-017 { left: 4.7px; top: 102.9px; right: auto; bottom: auto; width: 30.8px; height: 16.4px; transform: none; aspect-ratio: auto; }
+  /* Circle */
+  #bw-Circle { left: 0.6px; top: 104.1px; right: auto; bottom: auto; width: 2.1px; height: 2.1px; transform: none; aspect-ratio: auto; }
+  /* Circle.001 */
+  #bw-Circle-001 { left: 0.6px; top: 109.4px; right: auto; bottom: auto; width: 2.1px; height: 2.1px; transform: none; aspect-ratio: auto; }
+  /* Circle.002 */
+  #bw-Circle-002 { left: 0.6px; top: 115.2px; right: auto; bottom: auto; width: 2.1px; height: 2.1px; transform: none; aspect-ratio: auto; }
+  /* p.019 */
+  #bw-p-019 { left: -15.9px; top: -240.3px; right: auto; bottom: auto; width: 71.9px; height: 6.2px; transform: none; aspect-ratio: auto; }
+  /* p.021 */
+  #bw-p-021 { left: -15.9px; top: -230px; right: auto; bottom: auto; width: 84.2px; height: 6.2px; transform: none; aspect-ratio: auto; }
+  /* p.022 */
+  #bw-p-022 { left: -15.9px; top: -227.9px; right: auto; bottom: auto; width: 84.2px; height: 6.2px; transform: none; aspect-ratio: auto; }
+  /* p.023 */
+  #bw-p-023 { left: 35.5px; top: -193px; right: auto; bottom: auto; width: 84.2px; height: 6.2px; transform: none; aspect-ratio: auto; }
+}

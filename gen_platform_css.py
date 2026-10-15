@@ -1,174 +1,211 @@
-# Generates the media-query blocks for style.css from the Blend Web
-# export (keyframe values are website px at the designed width;
-# horizontal values are emitted in vw so they scale inside the band).
-# Bands: narrow desktop (1094-1365px, desktop design scaled down),
-# tablet (606-1093px) and phone (<=605px). Rerun to regenerate: the
-# generated section (everything from the first "===== layout" banner to
-# the end of style.css) is replaced, never duplicated.
+# Regenerates the platform media-query blocks at the END of style.css from
+# the current Blend Web export (.blendweb/blend-web-data.txt).
 #
-# The export's "Sun Tzu AI-Open/Close Animation" has no keys (nothing
-# moves): constant @keyframes on its resting transform are defined once
-# in the base stylesheet (they are the same on every platform), so the
-# media queries emit no keyframes - the play still fires animationend
-# for the click flow's Wait step. The other apps' click / double-click
-# triggers have nothing connected in the node window, so no keyframes
-# exist for them either.
+# The current export requires the numbers EXACTLY as px inside each media
+# query (no % / vw scaling, no aspect-ratio). Bands:
+#   Desktop (base styles)  >= 1158px   designed 1366 x 599
+#   Tablet                 670-1157px  designed  949 x 1334
+#   Phone                  <=  669px   designed  390 x 844
+#
+# Rerun:  python gen_platform_css.py
+# Everything from the "===== Tablet layout" banner to the end of style.css
+# is replaced by the generated output; the base styles and the desktop
+# "Automatic anchors" layout above it are hand-maintained and untouched.
+#
+# #bw-Triangle's clip-path (the export only gives the desktop path) is
+# rescaled to each platform's size from the desktop rule in style.css.
 
-# the app tiles, in the page's left-to-right order
-TILES = ['.Sun_Tzu_AI', '.Blend_Web', '.Blend_EDA', '.Blend_ACS', '.Kin_Flow']
+import re
+import sys
+
+STYLE = 'style.css'
+
+# (label, selector, left, top, width, height)
+# The export lists each differing element's x / y on that platform - for a
+# nested element already "from the top-left of its container", so the
+# values below are used as-is. None = property not emitted.
+# Special entries handled below.
+# The current export's tablet / phone lists cover only the Under
+# Construction layer and .Sun_Tzu_AI_Main - every element not listed
+# keeps the base (desktop) design on that platform.
+TABLET = [
+    ('body', 'body', 'min-height: max(1334px, 100vh)'),
+    # Sun Tzu AI Main: in the page at x -2 / y 0; its designed box is
+    # 949 x 1334 (the tablet page), so the base's bottom stretch is
+    # dropped for the fixed designed height
+    ('Sun Tzu AI Main', '.Sun_Tzu_AI_Main', -2, 0, 949, 1334),
+    ('Under Construction', '#bw-Under-Construction', 0, 0, 949, 1334),
+    # inside Under Construction (canvas 0, 0 - the layer fills the page)
+    ('Triangle', '#bw-Triangle', 'triangle', 427, 228.3, 95, 83.52),
+    ('p.013', '#bw-p-013', 453.4, 254, 42.16, 48),
+    ('p.014', '#bw-p-014', 292.2, 345, 364.61, 77),
+    ('What Works Text', '#bw-What-Works-Text', 104.3, 494, 740.44, 198),
+    ('Blend Web Box', '#bw-Blend-Web-Box', 'rect', 340, 890, 264, 405),
+    ('Blend ACS', '#bw-Blend-ACS', 'rect', 650, 890, 264, 405),
+    ('Sun Tzu AI Box', '#bw-Sun-Tzu-AI-Box', 'rect', 40, 780, 263, 33),
+    # inside Sun Tzu AI Box (x / y from the box's top-left)
+    ('Rectangle.003', '#bw-Rectangle-003', 'rect', 0, 60, 263, 458),
+    ('Tun Tzu AI Title', '#bw-Tun-Tzu-AI-Title', 10, 10, 192, 20),
+    ('p.018', '#bw-p-018', 10, 70, 245, 135),
+    ('p.020', '#bw-p-020', 10, 240, 245, 15),
+    ('p.016', '#bw-p-016', 10, 265, 190, 15),
+    ('p.017', '#bw-p-017', 20, 285, 75, 40),
+    ('Circle', '#bw-Circle', 10, 288, 5, 5),
+    ('Circle.001', '#bw-Circle-001', 10, 301, 5, 5),
+    ('Circle.002', '#bw-Circle-002', 10, 315, 5, 5),
+    ('p.019', '#bw-p-019', 10, 340, 175, 15),
+    ('p.021', '#bw-p-021', 10, 355, 205, 15),
+    ('p.022', '#bw-p-022', 10, 370, 205, 15),
+    ('p.023', '#bw-p-023', 130, 455, 60, 15),
+    ('QR Code Background', '#bw-QR-Code-Background', 200, 455, 50, 50),
+    # inside QR Code Background
+    ('QR Code', '.QR_Code_Button', 6.9, 6.9, 36.21, 36.21),
+]
+
+PHONE = [
+    ('body', 'body', 'min-height: max(844px, 100vh)'),
+    ('Under Construction', '#bw-Under-Construction', 0, 0, 390, 844),
+    # inside Under Construction (canvas 0, 0 - the layer fills the page)
+    ('Triangle', '#bw-Triangle', 'triangle', 167.3, 218.3, 55.5, 48.8),
+    ('p.013', '#bw-p-013', 190.3, 238.3, 9.4, 12.4),
+    ('p.014', '#bw-p-014', 108.3, 275.9, 173.4, 10.5),
+    ('What Works Text', '#bw-What-Works-Text', 42.9, 203, 304.3, 81.4),
+    ('Blend Web Box', '#bw-Blend-Web-Box', 'rect', 163.2, 383.4, 143.6, 72.3),
+    ('Blend ACS', '#bw-Blend-ACS', 'rect', 310.6, 383.4, 143.6, 72.3),
+    ('Sun Tzu AI Box', '#bw-Sun-Tzu-AI-Box', 'rect', 20.5, 380.5, 143.6, 72.3),
+    # inside Sun Tzu AI Box (x / y from the box's top-left)
+    ('Rectangle.003', '#bw-Rectangle-003', 'rect', -9.3, -242.3, 143.6, 72.3),
+    ('Tun Tzu AI Title', '#bw-Tun-Tzu-AI-Title', -9.2, -247.4, 78.9, 8.2),
+    ('p.018', '#bw-p-018', -9.2, -235.7, 100.7, 55.5),
+    ('p.020', '#bw-p-020', -9.2, -202.4, 100.7, 6.2),
+    ('p.016', '#bw-p-016', -9.2, -197.5, 78.1, 6.2),
+    ('p.017', '#bw-p-017', -7.3, -193.6, 30.8, 16.4),
+    ('Circle', '#bw-Circle', -9.2, -193.1, 2.1, 2.1),
+    ('Circle.001', '#bw-Circle-001', -9.2, -190.5, 2.1, 2.1),
+    ('Circle.002', '#bw-Circle-002', -9.2, -187.8, 2.1, 2.1),
+    ('p.019', '#bw-p-019', 1.9, 66.5, 71.9, 6.2),
+    ('p.021', '#bw-p-021', 1.9, 71.3, 84.2, 6.2),
+    ('p.022', '#bw-p-022', 1.9, 72.3, 84.2, 6.2),
+    ('p.023', '#bw-p-023', 26.4, 88.9, 84.2, 6.2),
+    ('QR Code Background', '#bw-QR-Code-Background', 'pos', 6.7, -150.8),
+    # inside QR Code Background
+    ('QR Code', '.QR_Code_Button', 'pos', -14.3, -128.8),
+]
+
+# #bw-Triangle's clip-path is emitted once (desktop size 194.3 x 170.8);
+# the platform rules get it rescaled to each platform's own size.
+TRI_DESKTOP_W = 194.3
+TRI_DESKTOP_H = 170.8
+
+TAIL = ' transform: none; aspect-ratio: auto;'
 
 
-def platform_block(name, mq, layout_css):
-    return f'''/* ===================== {name} layout =====================
-   {mq.strip()} - same elements, same HTML; positions / sizes are
-   scaled with the screen width (% / vw) so nothing overflows
-   sideways. */
-@media {mq} {{
-{layout_css}
-}}'''
+def px(v):
+    s = f'{v:g}'
+    return s + 'px'
 
 
-def pct(x, dw):
-    return f'{x / dw * 100:.4f}%'
+def desktop_clip(src):
+    """The desktop #bw-Triangle clip-path, from the base rules."""
+    m = re.search(
+        r'#bw-Triangle \{[^}]*clip-path: path\((?:evenodd,\s*)?'
+        r'\'([^\']+)\'\)',
+        src)
+    return m.group(1) if m else None
 
 
-def vw(x, dw):
-    return f'{x / dw * 100:.4f}vw'
+def scale_clip(path, w, h):
+    """Rescale the path()'s absolute x/y pairs to a w x h element box."""
+    sx, sy = w / TRI_DESKTOP_W, h / TRI_DESKTOP_H
+
+    def rep(m):
+        return (f"{m.group(1)} {float(m.group(2)) * sx:.4g} "
+                f"{float(m.group(3)) * sy:.4g}")
+
+    scaled = re.sub(r'([ML]) (-?[\d.]+) (-?[\d.]+)', rep, path)
+    return f"path(evenodd, '{scaled}')"
 
 
-def tile_rules(dw, xs, top=None, tw=None, th=None):
-    """One rule per app tile (each has its own class now)."""
+def rule(label, sel, *a, clip=None):
+    if label == 'body':
+        return f'  {sel} {{ {a[0]}; }}'
+    if a[0] == 'stretch':
+        body = ('left: 0; right: 0; top: 0; bottom: 0;'
+                ' width: auto; height: auto;')
+    elif a[0] == 'size':
+        body = f'width: {px(a[1])}; height: {px(a[2])};'
+    elif a[0] == 'pos':
+        body = f'left: {px(a[1])}; top: {px(a[2])}; right: auto; bottom: auto;'
+    elif a[0] == 'posstretch':
+        # left/top move, but the base's bottom stays (vertical stretch)
+        body = f'left: {px(a[1])}; top: {px(a[2])}; right: auto;'
+    else:
+        kind = a[0] if isinstance(a[0], str) else 'box'
+        vals = a[1:] if isinstance(a[0], str) else a
+        body = (f'left: {px(vals[0])}; top: {px(vals[1])}; right: auto; '
+                f'bottom: auto; width: {px(vals[2])}; height: {px(vals[3])};')
+        if kind == 'rect':
+            clip = 'none'
+    tail = TAIL + (f' clip-path: {clip};' if clip else '')
+    return f'  /* {label} */\n  {sel} {{ {body}{tail} }}'
+
+
+def emit(rows, tri_src):
     out = []
-    for cls, x in zip(TILES, xs):
-        rule = f'  {cls} {{ left: {pct(x, dw)} !important;'
-        if top is not None:
-            rule += f' top: {top}px !important;'
-        if tw is not None:
-            rule += f' width: {pct(tw, dw)};'
-        if th is not None:
-            # same unit as the width: the tile keeps its shape (a square
-            # stays a square) on every screen width inside the band
-            rule += f' height: {th / dw * 100:.4f}vw;'
-        out.append(rule + ' }')
+    for r in rows:
+        label, sel = r[0], r[1]
+        if sel == 'body':
+            out.append(rule('body', sel, r[2]))
+        elif r[2] == 'triangle':
+            clip = scale_clip(tri_src, r[5], r[6]) if tri_src else None
+            out.append(rule(label, sel, 'box', *r[3:], clip=clip))
+        else:
+            out.append(rule(label, sel, *r[2:]))
     return '\n'.join(out)
 
 
-# 1366-wide desktop design on screens 1094-1365px: only x/width scale,
-# every y/height keeps its desktop value (they're already in the base
-# styles, so just the horizontal rules are overridden here).
-# .Sun_Tzu_AI_Content sits inside its tile at page x 0 / y 0: left = the
-# negative of the tile's x in % of the tile, so it keeps covering the
-# page as the tile scales. Its children keep their relative places with
-# vw positions inside the stretched window.
-DESKTOP_NARROW_LAYOUT = f'''  body {{ width: auto; }}
-  #bw-Rectangle-007 {{ width: 100%; }}
-  #bw-p-001 {{ left: {pct(30, 1366)} !important; width: {pct(170.9, 1366)}; }}
-  #bw-p-004 {{ left: {pct(340, 1366)} !important; width: {pct(26.1, 1366)}; }}
-  .Front_Page_Time {{ left: {pct(370, 1366)} !important; width: {pct(104.4, 1366)}; }}
-  .Front_Page_Date {{ left: {pct(180, 1366)} !important; width: {pct(156.5, 1366)}; }}
-  .App_Counter {{ left: {pct(210, 1366)} !important; width: {pct(547.9, 1366)}; }}
-  #bw-p-005 {{ left: {pct(100, 1366)} !important; width: {pct(78.3, 1366)}; }}
-  /* the stat rows (the desktop design puts them below the 599px canvas) */
-  #bw-p-009 {{ left: {pct(430, 1366)} !important; width: {pct(149.9, 1366)}; }}
-  #bw-p-010 {{ left: {pct(630, 1366)} !important; width: {pct(166.6, 1366)}; }}
-  #bw-p-008 {{ left: {pct(430, 1366)} !important; width: {pct(149.9, 1366)}; }}
-  #bw-p-011 {{ left: {pct(630, 1366)} !important; width: {pct(166.6, 1366)}; }}
-  #bw-p-012 {{ left: {pct(430, 1366)} !important; width: {pct(149.9, 1366)}; }}
-  /* the app tiles, desktop x 100/200/300/400/500 scaled */
-{tile_rules(1366, [100, 200, 300, 400, 500], tw=70, th=70)}
-  /* the app window: covers the page (inside-container x -100 of 70px tile) */
-  .Sun_Tzu_AI_Content {{ left: -142.8571% !important; top: -270px !important; width: 100vw; height: 599px; }}
-  #bw-div {{ width: 100vw; }}
-  #bw-p-006 {{ left: {vw(600, 1366)} !important; width: {vw(160, 1366)}; }}
-  #bw-button-002 {{ left: {vw(433.12, 1366)} !important; width: {vw(199.9, 1366)}; }}
-  #bw-button-003 {{ left: {vw(732.98, 1366)} !important; width: {vw(199.9, 1366)}; }}
-  #bw-p-007 {{ left: {vw(633.02, 1366)} !important; width: {vw(166.6, 1366)}; }}
-  .Donation_Progress_Label {{ left: {vw(441.45, 1366)} !important; width: {vw(483.1, 1366)}; }}
-  .Donation_Progress {{ left: {vw(433.12, 1366)} !important; width: {vw(499.8, 1366)}; }}
-  .Donation_Progress_Fill {{ left: {vw(8.33, 1366)} !important; width: {vw(20, 1366)}; }}
-  /* the bottom app-switcher row inside the window */
-  #bw-button-001 {{ left: {vw(0, 1366)} !important; width: {vw(316.5, 1366)}; }}
-  #bw-button-004 {{ left: {vw(349.83, 1366)} !important; width: {vw(316.5, 1366)}; }}
-  #bw-button-005 {{ left: {vw(699.66, 1366)} !important; width: {vw(316.5, 1366)}; }}
-  #bw-button-006 {{ left: {vw(1049.49, 1366)} !important; width: {vw(316.5, 1366)}; }}'''
+def main():
+    src = open(STYLE, encoding='utf-8').read()
 
-# Tablet (820 x 1180): the export lists .Sun_Tzu_AI_Content at x 60 / y 120
-# inside its container (60px = 120% of the 50px tile), 820 x 1180 - it keeps
-# its shape, so the height is the width x 1180/820. The window's children
-# get their listed inside-container spots (x in % of the window, y and the
-# listed heights in px at the designed width). The Donation Progress
-# Fill's exported x 265 is the absolute page x - inside its bar that is
-# left 5px (its y 468 is stale: top 0 keeps it flush with the bar).
-TABLET_LAYOUT = f'''  body {{ width: auto; height: auto; min-height: 1180px; }}
-  #bw-Rectangle-007 {{ width: 100%; height: 1180px; }}
-  #bw-p-001 {{ left: {pct(220, 820)} !important; top: 260px !important; width: {pct(120, 820)}; height: 24px; }}
-  #bw-p-004 {{ left: {pct(260, 820)} !important; top: 20px !important; width: {pct(12, 820)}; height: 12px; }}
-  .Front_Page_Time {{ left: {pct(280, 820)} !important; top: 20px !important; width: {pct(80, 820)}; height: 12px; }}
-  .Front_Page_Date {{ left: {pct(140, 820)} !important; top: 20px !important; width: {pct(115.96, 820)}; height: 12px; }}
-  .App_Counter {{ left: {pct(100, 820)} !important; top: 80px !important; width: {pct(252.1, 820)}; height: 24px; }}
-  #bw-p-005 {{ left: {pct(40, 820)} !important; top: 80px !important; width: {pct(36, 820)}; height: 24px; }}
-  /* the stat rows: (p-012, p-010) y620, (p-009, p-011) y660, (p-008, p-007) y700 */
-  #bw-p-012 {{ left: {pct(260, 820)} !important; top: 620px !important; width: {pct(90, 820)}; height: 20px; }}
-  #bw-p-010 {{ left: {pct(380, 820)} !important; top: 620px !important; width: {pct(100, 820)}; height: 20px; }}
-  #bw-p-009 {{ left: {pct(260, 820)} !important; top: 660px !important; width: {pct(90, 820)}; height: 20px; }}
-  #bw-p-011 {{ left: {pct(380, 820)} !important; top: 660px !important; width: {pct(100, 820)}; height: 20px; }}
-  #bw-p-008 {{ left: {pct(260, 820)} !important; top: 700px !important; width: {pct(90, 820)}; height: 20px; }}
-  /* the app tiles: x 40/120/180/240/320, y 160, 50px high */
-{tile_rules(820, [40, 120, 180, 240, 320], top=160, tw=50, th=50)}
-  /* the app window: x 60 / y 120 inside its tile, 820 x 1180 */
-  .Sun_Tzu_AI_Content {{ left: 120% !important; top: 120px !important; width: 100vw; height: {1180 / 820 * 100:.4f}vw; }}
-  #bw-div {{ width: 100vw; height: {1180 / 820 * 100:.4f}vw; }}
-  /* the window's children (x / y inside the 820px-wide window) */
-  #bw-p-006 {{ left: {pct(240.5, 820)} !important; top: 210px !important; width: {pct(339, 820)}; height: 74px; }}
-  #bw-button-002 {{ left: {pct(180, 820)} !important; top: 380px !important; width: {pct(200, 820)}; height: 60px; }}
-  #bw-button-003 {{ left: {pct(440, 820)} !important; top: 380px !important; width: {pct(200, 820)}; height: 60px; }}
-  .Donation_Progress_Label {{ left: {pct(260, 820)} !important; top: 520px !important; width: {pct(300, 820)}; height: 16px; }}
-  .Donation_Progress {{ left: {pct(260, 820)} !important; top: 560px !important; width: {pct(300, 820)}; height: 12px; }}
-  .Donation_Progress_Fill {{ left: 5px !important; top: 0px !important; width: 12px; height: 12px; }}
-  #bw-p-007 {{ left: {pct(380, 820)} !important; top: 700px !important; width: {pct(100, 820)}; height: 20px; }}
-  /* the bottom app-switcher row inside the window, y 1140 */
-  #bw-button-001 {{ left: {pct(0, 820)} !important; top: 1140px !important; width: {pct(190, 820)}; height: 40px; }}
-  #bw-button-004 {{ left: {pct(210, 820)} !important; top: 1140px !important; width: {pct(190, 820)}; height: 40px; }}
-  #bw-button-005 {{ left: {pct(420, 820)} !important; top: 1140px !important; width: {pct(190, 820)}; height: 40px; }}
-  #bw-button-006 {{ left: {pct(630, 820)} !important; top: 1140px !important; width: {pct(190, 820)}; height: 40px; }}'''
+    tri_src = desktop_clip(src)
+    if not tri_src:
+        print('warning: desktop #bw-Triangle clip-path not found in'
+              ' style.css - platform rules emitted without it',
+              file=sys.stderr)
 
-# Phone (390 x 844): .Sun_Tzu_AI_Content isn't listed, so it keeps the
-# base design scaled with the screen width (-100 x / 1366 x 599). The new
-# paragraphs and the window's children aren't listed either - they keep
-# their desktop px places.
-PHONE_LAYOUT = f'''  body {{ width: auto; height: auto; min-height: 844px; }}
-  #bw-Rectangle-007 {{ width: 100%; height: 844px; }}
-  #bw-p-001 {{ left: {pct(10, 390)} !important; top: 10px !important; width: {pct(130, 390)}; height: 30px; }}
-  #bw-p-004 {{ left: {pct(290, 390)} !important; top: 10px !important; width: {pct(10, 390)}; height: 20px; }}
-  .Front_Page_Time {{ left: {pct(310, 390)} !important; top: 10px !important; width: {pct(70, 390)}; height: 20px; }}
-  .Front_Page_Date {{ left: {pct(160, 390)} !important; top: 10px !important; width: {pct(120, 390)}; height: 20px; }}
-  .App_Counter {{ left: {pct(100, 390)} !important; top: 60px !important; width: {pct(270, 390)}; height: 40px; }}
-  #bw-p-005 {{ left: {pct(20, 390)} !important; top: 60px !important; width: {pct(70, 390)}; height: 40px; }}
-  /* the app tiles: x 20/80/140/200/260, y 120, 39.971px */
-{tile_rules(390, [20, 80, 140, 200, 260], top=120, tw=39.971, th=39.971)}
-  /* the app window keeps the base design, scaled with the screen width */
-  .Sun_Tzu_AI_Content {{ left: {vw(-100, 1366)} !important; top: -270px !important; width: 100vw; height: {599 / 1366 * 100:.4f}vw; }}'''
+    out = '\n\n'
+    out += ('/* ===================== Tablet layout =====================\n'
+            '   (min-width: 670px) and (max-width: 1157px) - same elements,\n'
+            '   same HTML; designed at 949 x 1334. */\n')
+    out += '@media (min-width: 670px) and (max-width: 1157px) {\n'
+    out += ('  /* Tablet, exactly as designed in Blender at 949 x 1334:'
+            ' every place and size in px, nothing scaled */\n')
+    out += emit(TABLET, tri_src)
+    out += '\n}\n\n'
+    out += ('/* ===================== Phone layout =====================\n'
+            '   (max-width: 669px) - same elements, same HTML;'
+            ' designed at 390 x 844. */\n')
+    out += '@media (max-width: 669px) {\n'
+    out += ('  /* Phone, exactly as designed in Blender at 390 x 844:'
+            ' every place and size in px, nothing scaled */\n')
+    out += emit(PHONE, tri_src)
+    out += '\n}\n'
 
-out = '\n\n'
-out += platform_block(
-    'Desktop (narrow)', '(min-width: 1094px) and (max-width: 1365px)',
-    DESKTOP_NARROW_LAYOUT)
-out += '\n\n'
-out += platform_block(
-    'Tablet', '(min-width: 606px) and (max-width: 1093px)',
-    TABLET_LAYOUT)
-out += '\n\n'
-out += platform_block(
-    'Phone', '(max-width: 605px)',
-    PHONE_LAYOUT)
-out += '\n'
+    # replace only the generated tail (from the Tablet banner or the
+    # tablet @media line, whichever is present, to EOF)
+    for marker in ('/* ===================== Tablet layout',
+                   '@media (min-width: 670px)'):
+        i = src.find(marker)
+        if i != -1:
+            src = src[:i].rstrip('\n')
+            break
+    else:
+        sys.exit('generated-section marker not found in ' + STYLE)
 
-# replace the generated tail (everything from the first banner down)
-src = open('style.css', encoding='utf-8').read()
-marker = '/* ===================== '
-i = src.find(marker)
-if i != -1:
-    src = src[:i].rstrip('\n')
-with open('style.css', 'w', encoding='utf-8') as f:
-    f.write(src + out)
-print('wrote', len(out), 'chars of generated platform CSS')
+    with open(STYLE, 'w', encoding='utf-8') as f:
+        f.write(src + out)
+    print('wrote', len(out), 'chars of generated platform CSS')
+
+
+if __name__ == '__main__':
+    main()

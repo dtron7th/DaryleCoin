@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-platform="desktop">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sozin - X</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<!-- Blend Web page reporter: lets Blender read this page's size (remove any time) -->
+<script>(function(){var s=document.createElement('script');s.src=location.protocol+'//'+location.hostname+':8766/blend-web-reporter.js';s.async=true;document.head.appendChild(s);})();</script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="bw-Rectangle-007"></div>
+    <canvas class="Front_Page_Visual_Effects"></canvas>
+    <canvas id="bw-fx-overlay"></canvas>
+
+    <p id="bw-p-001">Sozin - X</p>
+    <p class="Front_Page_Date">October 7th, 2026</p>
+    <p id="bw-p-004">--</p>
+    <p class="Front_Page_Time">4:20:00 pm</p>
+
+    <p id="bw-p-005">Apps</p>
+    <p class="App_Counter">--</p>
+
+    <!-- app tiles; .Sun_Tzu_AI carries its app window (the exported
+         .Blen_Web class is kept as an alias on .Blend_Web so the wired
+         hover / Click Step triggers resolve to this element) -->
+    <div class="Sun_Tzu_AI" id="sun-tzu-ai">
+        <div class="Sun_Tzu_AI_Content">
+            <div id="bw-div"></div>
+            <div id="bw-div-001"></div>
+            <p id="bw-p-006">Sun Tzu AI</p>
+            <button id="bw-button-002">Download</button>
+            <button id="bw-button-003">Donate</button>
+            <p id="bw-p-012">Players</p>
+            <p id="bw-p-010">0</p>
+            <p id="bw-p-009">Nations</p>
+            <p id="bw-p-011">0</p>
+            <p id="bw-p-008">Income</p>
+            <p id="bw-p-007">0</p>
+            <p class="Donation_Progress_Label">Donations · $0/$75,000 </p>
+            <div class="Donation_Progress">
+                <div class="Donation_Progress_Fill"></div>
+            </div>
+            <button id="bw-button-001">The Game</button>
+            <button id="bw-button-004">Market Place</button>
+            <button id="bw-button-005">Tutorials</button>
+            <button id="bw-button-006">Social Room</button>
+        </div>
+    </div>
+    <div class="Blend_Web Blen_Web" id="blend-web"></div>
+    <div class="Blend_EDA" id="blend-eda"></div>
+    <div class="Blend_ACS" id="blend-acs"></div>
+    <div class="Kin_Flow" id="kin-flow"></div>
+
+    <!-- "Under Construction": a black layer with a 10px backdrop blur
+         over the whole page (z-index 1), carrying the three bordered
+         app boxes hanging off the page's top edge, the warning
+         triangle, the "!" and the "under construction" caption.
+         pointer-events: none keeps it visual-only so the app tiles
+         underneath still take clicks; the QR Code button inside the
+         Sun Tzu AI box re-enables events for itself.
+         The Sun Tzu AI box (z-index 3) carries the app's card text,
+         dots, title, Rectangle.003 and the QR code - all designed to
+         overflow its box. -->
+    <div id="bw-Under-Construction">
+        <div id="bw-Sun-Tzu-AI-Box">
+            <div id="bw-Rectangle-003"></div>
+            <p id="bw-Tun-Tzu-AI-Title">Sun Tzu AI</p>
+            <p id="bw-p-016">Tri domain warfare</p>
+            <p id="bw-p-017">Land.....<br>Air......    <br>Sea......  </p>
+            <p id="bw-p-018">Sun Tzu AI - An online game where you command all 3 domains and battle to become a millionaire (yes this game allows you to gamble with real money) (Fight on Land, Air and Sea all at the same time)....<br><br>This is a RTS game (Real Time Strategy)...use your battle skills to leave your enemies broke.</p>
+            <p id="bw-p-019"></p>
+            <p id="bw-p-020">Break down >>>>></p>
+            <p id="bw-p-021"></p>
+            <p id="bw-p-022"></p>
+            <p id="bw-p-023"></p>
+            <div id="bw-Circle"></div>
+            <div id="bw-Circle-001"></div>
+            <div id="bw-Circle-002"></div>
+            <div id="bw-QR-Code-Background"><div class="QR_Code_Button" id="bw-QR-Code"></div></div>
+        </div>
+        <div id="bw-Blend-Web-Box"></div>
+        <div id="bw-Blend-ACS"></div>
+        <div id="bw-Triangle"></div>
+        <p id="bw-p-013">!</p>
+        <p id="bw-p-014">Sozin - X is under construction</p>
+        <p id="bw-What-Works-Text">The apps that work are Sun Tzu AI....donate to Sun Tzu AI to help me build the app, Not only am I designing games, I also have ideas of helping the economy, I am designing advanced CAD systems that are way cheaper than other CAD design software, I want to help people design products, help startups with R&amp;D with AI, and start businesses that trade all across the world ( I have some good ideas for this ) </p>
+    </div>
+
+    <!-- Sun Tzu AI Main: the app's full-screen wallpaper panel
+         (949 x 1334, z-index 2 - above the Under Construction layer).
+         Hidden until the QR Code button's Click Step sets display:flex. -->
+    <div class="Sun_Tzu_AI_Main"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
