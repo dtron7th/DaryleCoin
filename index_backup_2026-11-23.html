@@ -1,0 +1,227 @@
+<!--
+For AI to follow...please read this for developmentpurposes !Important!: 
+
+round everything to the nearst 10th px.
+
+(html div rules)
+
+<div class="Example_Div">
+    <div class="Example_Div_Build" aria-label="Example_Div_Build">
+        // HTML elements will go here
+    </div>
+
+    <style aria-label="Example_Div_Style">
+        // Styles will go here
+    </style>
+
+    <script aria-label="Example_Div_Script">
+        // Script content go here
+    </script>
+</div>
+    
+(css rules) 
+
+ <style aria-label="AI_Agent_Manager">
+
+    :root {
+        --primary-color: #000;
+        --secondary-color: #fff;
+    }
+
+    </style>
+
+    button (Use pixel units for all measurements) {
+       border: 1px solid var(--Main_Button);
+       width: auto;
+       height: 20px;
+       color: var(--Main_Text_Color);
+       font-size: 8px;
+       border: var(--Main_Button);
+       background-color: var(--Main_UI_Background);
+       outline: none;
+       cursor: var(--Main_Cursor);
+    }
+
+    div (use pixel units for all measurements) {
+        width: auto;
+        height: auto;
+        border: var(--Main_Div);
+    }
+
+    input (use pixel units for all measurements) {
+        width: auto;
+        height: auto;
+        border: var(--Main_Input);
+    }
+ 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style aria-label="Sozin-X_Stlye_Manager">
+
+    :root {
+
+        /*Viewport*/
+        --Sozin_Main_Page_Background: #000;
+
+        /*Glass Materials*/
+        --Glass_Backdrop_Filter: blur(10px);
+
+        /*UI Styles*/
+        --Main_UI_Background: #79797944;
+        --Main_Text_Color: #ffffff;
+
+        /*No Border Elements*/
+        --Main_Div_No_Border: none #ffffff1f;
+        
+        /*Main Border*/
+        --Main_Button: 1px solid #ffffff1f;
+        --Main_Input: 1px solid #ffffff1f;
+        --Main_Div: 1px solid #ffffff1f;
+
+        /*Secondary Border*/
+        --Main_Button_Secondary: 1px solid #ff99001f;
+        --Main_Input_Secondary: 1px solid #ff99001f;
+        --Main_Div_Secondary: 1px solid #ff99001f;
+
+        /*Cursors*/
+        --Main_Cursor: cursor: pointer;
+        --Cursor_2: cursor: grab;
+        --Cursor_3: cursor: pointer;
+
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'SozinMainFont', sans-serif;
+    }
+
+    @font-face {
+        font-family: 'SozinMainFont';
+        src: url('/Fonts/geist-font-v1.9.2/geist-font/Geist/ttf/Geist-Regular.ttf') format('woff2'),
+    }
+
+
+
+    /* Tag Styles */
+    button {
+        color: var(--Main_Text_Color);
+        font-size: 8px;
+        border: var(--Main_Button);
+        background-color: var(--Main_UI_Background);
+        outline: none;
+        cursor: var(--Main_Cursor);
+    }
+
+    input {
+        color: var(--Main_Text_Color);
+        font-size: 8px;
+        border: var(--Main_Input);
+        background-color: var(--Main_UI_Background);
+        outline: none;
+        cursor: var(--Main_Cursor);
+    }
+
+    div {
+        border: var(--Main_Div);
+        background-color: var(--Main_UI_Background);
+        outline: none;
+        cursor: var(--Main_Cursor);
+    }
+
+    p {
+        color: var(--Main_Text_Color);
+        font-size: 8px;
+        outline: none;
+        cursor: var(--Main_Cursor);
+    }
+    </style>
+    
+</style>
+</head>
+<body>
+    <div class="Sozin_Main_Page">
+        <div class="Test_Container">
+
+            <div class="Test_Container_Build" aria-label="Test_Container_Build">
+                <img class="Test_Container_Build_Image" src="/Images/Background_Slide_Show_Data/38139928099642512.jpg" alt="">
+
+                <div class="Glass_Background">
+                    <div class="Glass_Background_Build">
+                        <button>Click Me</button>
+                    </div>
+                    <style aria-label="Glass_Background_Style">
+                        button {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            z-index: 3;
+                            width: 100px;
+                            height: 30px;
+                            cursor: var(--Cursor_2);
+                            z-index: 4;
+                        }
+
+                         .Glass_Background {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            backdrop-filter: var(--Glass_Backdrop_Filter);
+                            border: var(--Main_Div_No_Border);
+                            width: 100%;
+                            height: 100%;
+                            
+                        }
+                    </style>
+                    <script aria-label="Glass_Background_Script">
+
+                    </script>
+                    
+
+                </div>
+
+                
+            </div>
+
+            <style aria-label="Test_Container_Style">
+                .Test_Container_Build {
+                    width: 100%;
+                    height: 100%;
+                    
+                    
+                }
+                .Test_Container_Build > .Test_Container_Build_Image {
+                    position: absolute;
+                    width: 10%;
+                    height: 10%;
+                    object-fit: cover;
+                    
+                }
+            </style>
+            <script aria-label="Test_Container_Script">
+                
+            </script>
+        </div>
+        <style aria-label="Sozin_Main_Page_Style">
+            .Sozin_Main_Page {
+                position: absolute;
+                width: 100dvw;
+                height: 100dvh;
+                
+        </style>
+        <script aria-label="Sozin_Main_Page_Script">
+            
+        </script>
+    </div>
+    
+</body>
+</html>
