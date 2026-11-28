@@ -1,0 +1,911 @@
+<!--
+For AI to follow...please read this for developmentpurposes !Important!: 
+
+round everything to the nearst 10th px.
+
+(html div rules)
+
+<div class="Example_Div">
+    <div class="Example_Div_Build" aria-label="Example_Div_Build">
+        // HTML elements will go here
+    </div>
+
+    <style aria-label="Example_Div_Style">
+        // Styles will go here
+    </style>
+
+    <script aria-label="Example_Div_Script">
+        // Script content go here
+    </script>
+</div>
+    
+(css rules) 
+
+ <style aria-label="AI_Agent_Manager">
+
+    :root {
+        --primary-color: #000;
+        --secondary-color: #fff;
+    }
+
+    </style>
+
+    button (Use pixel units for all measurements) {
+       border: 1px solid var(--Main_Button);
+       width: auto;
+       height: 20px;
+       color: var(--Main_Text_Color);
+       font-size: 8px;
+       border: var(--Main_Button);
+       background-color: var(--Main_UI_Background);
+       outline: none;
+       cursor: var(--Main_Cursor);
+    }
+
+    div (use pixel units for all measurements) {
+        width: auto;
+        height: auto;
+        border: var(--Main_Div);
+    }
+
+    input (use pixel units for all measurements) {
+        width: auto;
+        height: auto;
+        border: var(--Main_Input);
+    }
+
+    for Aanimations (Opening and closing popup windows/elements)
+    use cubic-bezier(0,1,0,1) to open and close popup windows/elements
+ 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Madness</title>
+
+    <style aria-label="Sozin-X_Stlye_Manager">
+
+    :root {
+
+        /*Viewport*/
+        --Sozin_Main_Page_Background: #000;
+
+        /*Glass Materials*/
+        --Glass_Backdrop_Filter: blur(10px);
+
+        /*UI Styles*/
+        --Main_UI_Background: #79797944;
+        --Main_Text_Color: #ffffff;
+        --Font_Size-1: 8px;
+        --Font_Size-2: 16px;
+        --Font_Size-3: 32px;
+        --Font_Family: 'SozinMainFont', sans-serif;
+        --Div_Border-radius: 5px;
+        --Box_Shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        
+
+        /*No Border Elements*/
+        --Main_Div_No_Border: none #ffffff1f;
+        
+        /*Main Border*/
+        --Main_Button: 1px solid #ffffff1f;
+        --Main_Input: 1px solid #ffffff1f;
+        --Main_Div: 1px solid #ffffff1f;
+
+        /*Secondary Border*/
+        --Main_Button_Secondary: 1px solid #ff99001f;
+        --Main_Input_Secondary: 1px solid #ff99001f;
+        --Main_Div_Secondary: 1px solid #ff99001f;
+
+        /*Cursors*/
+        --Main_Cursor: pointer;
+        --Cursor_2: grab;
+        --Cursor_3: pointer;
+
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'SozinMainFont', sans-serif;
+    }
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    @font-face {
+        font-family: 'SozinMainFont';
+        src: url('/Fonts/geist-font-v1.9.2/geist-font/Geist/ttf/Geist-Thin.ttf') format('truetype');
+    }
+
+
+
+    /* Tag Styles */
+    ::selection {
+        background: transparent;
+    }
+    * {
+        -webkit-tap-highlight-color: transparent;
+    }
+    button {
+        color: var(--Main_Text_Color);
+        font-size: 8px;
+        border: var(--Main_Button);
+        background-color: var(--Main_UI_Background);
+        outline: none;
+        cursor: var(--Main_Cursor);
+    }
+
+    input {
+        color: var(--Main_Text_Color);
+        font-size: 8px;
+        border: var(--Main_Input);
+        background-color: var(--Main_UI_Background);
+        outline: none;
+        cursor: var(--Main_Cursor);
+    }
+
+    p {
+        color: var(--Main_Text_Color);
+        font-size: 8px;
+        outline: none;
+        cursor: var(--Main_Cursor);
+    }
+
+    .Div_Window_Header {
+        
+        background-color: var(--Main_UI_Background);
+        outline: none;
+        cursor: var(--Main_Cursor);
+        border-radius: var(--Div_Border-radius);
+    }
+
+    .Div_Window {
+        border: var(--Main_Div);
+        background-color: var(--Main_UI_Background);
+        outline: none;
+        cursor: var(--Main_Cursor);
+        border-radius: var(--Div_Border-radius);
+        box-shadow: var(--Box_Shadow);
+    }
+    </style>
+</head>
+<body>
+
+    <div class="Golf_Page">
+        <div class="Golf_Page_Build" aria-label="Golf_Page_Build">
+            <img class="Golf_Page_Render" src="Images/Games/Golf_Madness/golf-madness-render.jpg" alt="Golf Madness course render" draggable="false">
+            <div class="Golf_Page_Shade"></div>
+
+            <button class="Golf_Page_Back_Button" aria-label="Back to Sozin - X" title="Back to Sozin - X">
+                <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+
+            <div class="Golf_Page_Title_Build" aria-label="Golf_Page_Title_Build">
+                <p class="Golf_Page_Title">Golf Madness</p>
+            </div>
+
+            <div class="Golf_Page_Download" aria-label="Golf_Page_Download">
+                <a class="Golf_Page_Download_Button" href="https://github.com/dtron7th/DaryleCoin/releases/latest/download/GolfMadness.apk" download="GolfMadness.apk" aria-label="Download Golf Madness for Android">
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    <span>Download for Android</span>
+                </a>
+                <p class="Golf_Page_Download_Note">APK &middot; 410 MB</p>
+            </div>
+        </div>
+
+        <style aria-label="Golf_Page_Style">
+            body {
+                background: var(--Sozin_Main_Page_Background);
+            }
+            .Golf_Page {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100dvw;
+                height: 100dvh;
+                border: none;
+                background: none;
+                z-index: 1;
+            }
+            .Golf_Page > .Golf_Page_Build {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                border: none;
+                background: none;
+            }
+            .Golf_Page_Render {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                pointer-events: none;
+                user-select: none;
+                opacity: 0;
+                transition: opacity 1s ease-in-out;
+            }
+            .Golf_Page_Render.Golf_Page_Render_Loaded {
+                opacity: 1;
+            }
+            .Golf_Page_Shade {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+                pointer-events: none;
+                background: linear-gradient(to bottom, #00000066 0px, #00000000 160px, #00000000 60%, #00000099 100%);
+            }
+            .Golf_Page_Back_Button {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                width: 20px;
+                height: 20px;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: var(--Main_Button);
+                border-radius: 50%;
+                background: var(--Main_UI_Background);
+                backdrop-filter: var(--Glass_Backdrop_Filter);
+                -webkit-backdrop-filter: var(--Glass_Backdrop_Filter);
+                color: var(--Main_Text_Color);
+                cursor: var(--Main_Cursor);
+                z-index: 3;
+                transition: transform 0.2s;
+            }
+            .Golf_Page_Back_Button:active {
+                transform: scale(0.9);
+            }
+            .Golf_Page_Title_Build {
+                position: absolute;
+                top: 50px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                background: none;
+                z-index: 3;
+            }
+            .Golf_Page_Title {
+                color: var(--Main_Text_Color);
+                font-size: 20px;
+                cursor: default;
+            }
+            .Golf_Page_Download {
+                position: absolute;
+                bottom: 60px;
+                left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                border: none;
+                background: none;
+                z-index: 3;
+                opacity: 0;
+                transition: opacity 0.5s ease-in-out;
+            }
+            .Golf_Page_Download.Section_Intro_Shown {
+                opacity: 1;
+            }
+            .Golf_Page_Download_Button {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                height: 40px;
+                padding: 0 20px;
+                border: var(--Main_Button);
+                border-radius: 20px;
+                background: var(--Main_UI_Background);
+                backdrop-filter: var(--Glass_Backdrop_Filter);
+                -webkit-backdrop-filter: var(--Glass_Backdrop_Filter);
+                box-shadow: var(--Box_Shadow);
+                color: var(--Main_Text_Color);
+                font-size: 12px;
+                text-decoration: none;
+                white-space: nowrap;
+                cursor: var(--Main_Cursor);
+                transition: transform 0.2s;
+            }
+            .Golf_Page_Download_Button:active {
+                transform: scale(0.95);
+            }
+            .Golf_Page_Download_Note {
+                font-size: 8px;
+                opacity: 0.7;
+                cursor: default;
+            }
+        </style>
+        <script aria-label="Golf_Page_Script">
+            (function () {
+                var wait = function (ms) { return new Promise(function (r) { setTimeout(r, ms); }); };
+
+                // same title intro as the main page: 1s delay, then letters fade in over 0.5s
+                window.Sozin_Section_Intro = function (titleSelector, tileSelector, typeMs) {
+                    var title = document.querySelector(titleSelector);
+                    var tiles = tileSelector ? document.querySelectorAll(tileSelector) : [];
+                    var text = title.textContent;
+                    title.textContent = '';
+                    title.style.visibility = '';
+                    var letters = Array.prototype.map.call(text, function (ch) {
+                        var s = document.createElement('span');
+                        s.textContent = ch;
+                        s.style.opacity = '0';
+                        s.style.transition = 'opacity 0.3s ease-in-out';
+                        title.appendChild(s);
+                        return s;
+                    });
+                    return wait(1000).then(function () {
+                        var step = (typeMs || 100) / letters.length;
+                        return letters.reduce(function (p, s) {
+                            return p.then(function () { s.style.opacity = '1'; return wait(step); });
+                        }, Promise.resolve());
+                    }).then(function () {
+                        if (!tiles.length) { return wait(300); }
+                        return wait(1000).then(function () {
+                            tiles.forEach(function (tile, i) {
+                                setTimeout(function () { tile.classList.add('Section_Intro_Shown'); }, i * 100);
+                            });
+                            return wait(500 + (tiles.length - 1) * 100);
+                        });
+                    });
+                };
+
+                // fade the render in once it has loaded
+                var render = document.querySelector('.Golf_Page_Render');
+                var showRender = function () { render.classList.add('Golf_Page_Render_Loaded'); };
+                if (render.complete) { showRender(); } else { render.addEventListener('load', showRender); }
+
+                // title types in -> top right buttons fade in (Logo_Intro_Done) -> download button fades in
+                window.Sozin_Section_Intro('.Golf_Page_Title', null, 500).then(function () {
+                    document.dispatchEvent(new Event('Logo_Intro_Done'));
+                    return wait(600);
+                }).then(function () {
+                    document.querySelector('.Golf_Page_Download').classList.add('Section_Intro_Shown');
+                });
+
+                document.querySelector('.Golf_Page_Back_Button').addEventListener('click', function () {
+                    window.location.href = 'index.html';
+                });
+            })();
+        </script>
+    </div>
+
+
+    <div class="Div_Window Create_Account_Window" aria-label="Create_Account_Window">
+        <div class="Create_Account_Window_Build" aria-label="Create_Account_Window_Build">
+            <p class="Create_Account_Window_Title">Create Account</p>
+            <button class="Create_Account_Window_Close_Button" aria-label="Close Create Account">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+            </button>
+            <div class="Create_Account_Tabs" role="tablist">
+                <button class="Create_Account_Tab Create_Account_Tab_Active" data-tab="create" role="tab">Create an account</button>
+                <button class="Create_Account_Tab" data-tab="login" role="tab">Login</button>
+            </div>
+            <div class="Create_Account_Panel Create_Account_Panel_Active" data-panel="create">
+                <div class="Create_Account_Panel_Create">
+                    <p class="Create_Account_Intro">Welcome to the most secure account in the world, I use a SHA-512 to create your account. All you need is your State ID...Scan the bar code on the back, and the app converts 3 values from your ID into a SHA-512...No one (Not even me) can crack this code. This is the most secure way of creating accounts. No annoying email sends, no 3 step verifications, all hashed into a single line of code</p>
+                    <button class="Create_Account_Scan_Button" aria-label="Scan ID">Scan ID</button>
+                </div>
+            </div>
+            <div class="Create_Account_Panel" data-panel="login"></div>
+        </div>
+        <style aria-label="Create_Account_Window_Style">
+            .Create_Account_Window {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                width: calc(100% - 60px);
+                height: 300px;
+                backdrop-filter: var(--Glass_Backdrop_Filter);
+                -webkit-backdrop-filter: var(--Glass_Backdrop_Filter);
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 1s cubic-bezier(0, 1, 0, 1);
+                z-index: 20;
+                display: none;
+            }
+            .Create_Account_Window.Create_Account_Window_Open {
+                transition-delay: 0.2s;
+                display: block;
+                transform: translate(-50%, -50%);
+                opacity: 1;
+                pointer-events: auto;
+            }
+            @starting-style {
+                .Create_Account_Window.Create_Account_Window_Open {
+                    transform: translate(-50%, -50%);
+                    opacity: 0;
+                }
+            }
+            .Create_Account_Window > .Create_Account_Window_Build {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                background: none;
+                border: none;
+            }
+            .Create_Account_Window_Title {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                margin: 0;
+                color: var(--Main_Text_Color);
+                font-size: 12px;
+                font-family: var(--Font_Family);
+                font-weight: normal;
+            }
+            .Create_Account_Tabs {
+                position: absolute;
+                top: 40px;
+                left: 10px;
+                display: flex;
+                gap: 10px;
+            }
+            .Create_Account_Tab {
+                padding: 4px 12px;
+                border: var(--Main_Button);
+                border-radius: 20px;
+                background: transparent;
+                color: var(--Main_Text_Color);
+                cursor: var(--Main_Cursor);
+                font-size: 12px;
+                font-family: var(--Font_Family);
+                font-weight: normal;
+                outline: none;
+                -webkit-tap-highlight-color: transparent;
+                transition: background 0.3s cubic-bezier(0, 1, 0, 1), border-color 0.3s cubic-bezier(0, 1, 0, 1);
+            }
+            .Create_Account_Tab.Create_Account_Tab_Active {
+                border-color: #ffffff66;
+            }
+            .Create_Account_Panel {
+                position: absolute;
+                top: 80px;
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+                opacity: 0;
+                visibility: hidden;
+                pointer-events: none;
+                transition: opacity 0.3s cubic-bezier(0, 1, 0, 1), visibility 0s 0.3s;
+            }
+            .Create_Account_Panel.Create_Account_Panel_Active {
+                opacity: 1;
+                visibility: visible;
+                pointer-events: auto;
+                transition: opacity 0.3s cubic-bezier(0, 1, 0, 1);
+            }
+            .Create_Account_Panel_Create {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+            .Create_Account_Intro {
+                margin: 0;
+                color: var(--Main_Text_Color);
+                font-size: 12px;
+                font-family: var(--Font_Family);
+                font-weight: normal;
+                line-height: 1.6;
+                text-align: center;
+            }
+            .Create_Account_Scan_Button {
+                align-self: center;
+                padding: 4px 12px;
+                border: var(--Main_Button);
+                border-radius: 20px;
+                background: var(--Main_UI_Background);
+                backdrop-filter: var(--Glass_Backdrop_Filter);
+                color: var(--Main_Text_Color);
+                font-size: 12px;
+                font-family: var(--Font_Family);
+                font-weight: normal;
+                cursor: var(--Main_Cursor);
+            }
+            .Create_Account_Window_Close_Button {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 24px;
+                height: 24px;
+                padding: 0;
+                border: var(--Main_Button);
+                border-radius: 50%;
+                background: var(--Main_UI_Background);
+                backdrop-filter: var(--Glass_Backdrop_Filter);
+                color: var(--Main_Text_Color);
+                cursor: var(--Main_Cursor);
+            }
+        </style>
+        <script aria-label="Create_Account_Window_Script">
+            document.addEventListener('DOMContentLoaded', function () {
+                var win = document.querySelector('.Create_Account_Window');
+                var close = function () { win.classList.remove('Create_Account_Window_Open'); };
+                document.querySelector('.Profile_Popup_Create_Account_Button').addEventListener('click', function (event) {
+                    event.stopPropagation();
+                    win.classList.add('Create_Account_Window_Open');
+                });
+                document.querySelector('.Create_Account_Window_Close_Button').addEventListener('click', close);
+                var tabs = win.querySelectorAll('.Create_Account_Tab');
+                var panels = win.querySelectorAll('.Create_Account_Panel');
+                tabs.forEach(function (tab) {
+                    tab.addEventListener('click', function () {
+                        tabs.forEach(function (t) { t.classList.remove('Create_Account_Tab_Active'); });
+                        panels.forEach(function (pn) { pn.classList.remove('Create_Account_Panel_Active'); });
+                        tab.classList.add('Create_Account_Tab_Active');
+                        var panel = win.querySelector('.Create_Account_Panel[data-panel="' + tab.dataset.tab + '"]');
+                        if (panel) { panel.classList.add('Create_Account_Panel_Active'); }
+                    });
+                });
+                document.addEventListener('click', function (event) {
+                    if (!win.classList.contains('Create_Account_Window_Open')) { return; }
+                    if (win.contains(event.target)) { return; }
+                    close();
+                });
+                document.addEventListener('keydown', function (e) {
+                    if (e.key === 'Escape') { close(); }
+                });
+            });
+        </script>
+    </div>
+    <!-- Web Info sits outside both pages so it opens over whichever page is showing -->
+    <div class="Div_Window Left_Section">
+        <div class="Left_Section_Build" aria-label="Left_Section_Build">
+            <div class="Div_Window_Header Left_Section_Title">Web Info</div>
+        </div>
+
+        <style aria-label="Left_Section_Style">
+            .Left_Section {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                width: 200px;
+                height: calc(100dvh - 20px);
+                backdrop-filter: var(--Glass_Backdrop_Filter);
+                -webkit-backdrop-filter: var(--Glass_Backdrop_Filter);
+                transform-origin: top left;
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 1s cubic-bezier(0, 1, 0, 1);
+                z-index: 9;
+                display: none;
+            }
+            .Left_Section.Left_Section_Open {
+                transition-delay: 0.2s;
+                display: block;
+                opacity: 1;
+                pointer-events: auto;
+            }
+            @starting-style {
+                .Left_Section.Left_Section_Open {
+                    opacity: 0;
+                }
+            }
+            .Left_Section > .Left_Section_Build {
+                width: 100%;
+                height: 100%;
+                background: none;
+                border: none;
+            }
+            .Left_Section_Title {
+                position: absolute;
+                top: 4px;
+                left: 10px;
+                z-index: 5;
+                padding: 0px 10px;
+                font-family: monospace;
+                font-size: 10px;
+                letter-spacing: 0px;
+                color: var(--Main_Text_Color);
+                white-space: nowrap;
+                background-color: rgba(143, 143, 143, 0.377);
+                backdrop-filter: blur(10px);
+            }
+        </style>
+        <script aria-label="Left_Section_Script">
+            document.addEventListener('DOMContentLoaded', function () {
+                var title = document.querySelector('.Left_Section_Title');
+                var panel = document.querySelector('.Left_Section');
+                var webInfoButton = document.querySelector('.Settings_Popup_Web_Info_Button');
+                if (title) {
+                    title.addEventListener('click', function (event) {
+                        event.stopPropagation();
+                        panel.classList.toggle('Left_Section_Open');
+                    });
+                }
+                document.addEventListener('pointerdown', function (event) {
+                    if (!panel.classList.contains('Left_Section_Open')) { return; }
+                    if (panel.contains(event.target)) { return; }
+                    if (title && title.contains(event.target)) { return; }
+                    if (webInfoButton && webInfoButton.contains(event.target)) { return; }
+                    panel.classList.remove('Left_Section_Open');
+                }, true);
+            });
+        </script>
+    </div>
+
+    <div class="Top_Right_Section">
+        <div class="Top_Right_Section_Build" aria-label="Top_Right_Section_Build">
+            <button class="Top_Right_Widgets_Button" aria-label="Widgets">
+                <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            </button>
+            <button class="Top_Right_Notification_Button" aria-label="Notifications">
+                <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+            </button>
+            <button class="Top_Right_Message_Button" aria-label="Messages">
+                <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </button>
+            <button class="Top_Right_Settings_Button" aria-label="Settings">
+                <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </button>
+            <button class="Top_Right_Profile_Button" aria-label="Profile">
+                <svg viewBox="0 0 30 30" width="10" height="10"><circle cx="15" cy="11" r="5" fill="currentColor"/><path d="M5 26c0-6 4.5-9 10-9s10 3 10 9z" fill="currentColor"/></svg>
+            </button>
+        </div>
+        <style aria-label="Top_Right_Section_Style">
+            .Top_Right_Section {
+                position: fixed;
+                top: 10px;
+                right: 10px;
+                z-index: 10;
+                border: none;
+                background: none;
+            }
+            .Top_Right_Section > .Top_Right_Section_Build {
+                display: flex;
+                gap: 10px;
+                background: none;
+                border: none;
+            }
+            .Top_Right_Section_Build > button {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: var(--Main_Button);
+                background: var(--Main_UI_Background);
+                backdrop-filter: var(--Glass_Backdrop_Filter);
+                color: var(--Main_Text_Color);
+                cursor: var(--Main_Cursor);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                overflow: hidden;
+                opacity: 0;
+                will-change: opacity;
+                transition: opacity 0.5s ease-in-out;
+            }
+            .Top_Right_Section_Build > button.Section_Intro_Shown {
+                opacity: 1;
+            }
+        </style>
+        <script aria-label="Top_Right_Section_Script">
+            // after the Sozin - X title types in, fade the buttons in first to last (0.5s each, 0.1s apart)
+            document.addEventListener('Logo_Intro_Done', function () {
+                document.querySelectorAll('.Top_Right_Section_Build > button').forEach(function (button, i) {
+                    setTimeout(function () { button.classList.add('Section_Intro_Shown'); }, i * 100);
+                });
+            });
+
+        </script>
+
+        <div class="Div_Window Settings_Popup">
+            <div class="Settings_Popup_Build" aria-label="Settings_Popup_Build">
+                <button class="Settings_Popup_Web_Info_Button">
+                    <span class="Settings_Popup_List_Icon">
+                        <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="8"/></svg>
+                    </span>
+                    <span class="Settings_Popup_List_Text">Web Info</span>
+                </button>
+            </div>
+            <style aria-label="Settings_Popup_Style">
+                .Settings_Popup {
+                    position: absolute;
+                    top: 40px;
+                    right: 30px;
+                    width: 200px;
+                    height: 300px;
+                    backdrop-filter: var(--Glass_Backdrop_Filter);
+                    -webkit-backdrop-filter: var(--Glass_Backdrop_Filter);
+                    transform-origin: top right;
+                    opacity: 0;
+                    pointer-events: none;
+                    transition: opacity 1s cubic-bezier(0, 1, 0, 1);
+                    z-index: 6;
+                }
+                .Settings_Popup.Settings_Popup_Open {
+                    transition-delay: 0.2s;
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+                .Settings_Popup > .Settings_Popup_Build {
+                    width: 100%;
+                    height: 100%;
+                    background: none;
+                    border: none;
+                }
+                .Settings_Popup_Web_Info_Button {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    width: calc(100% - 20px);
+                    height: 40px;
+                    margin: 10px;
+                    padding: 0 10px;
+                    border: none;
+                    border-radius: 10px;
+                    background: transparent;
+                    color: var(--Main_Text_Color);
+                    cursor: var(--Main_Cursor);
+                    font-size: var(--Font_Size-1);
+                    text-align: left;
+                    transition: background 0.2s;
+                }
+                .Settings_Popup_Web_Info_Button:active {
+                    transform: scale(0.98);
+                }
+                .Settings_Popup_List_Icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 0;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background: var(--Main_UI_Background);
+                }
+                .Settings_Popup_List_Text {
+                    flex: 1;
+                    font-weight: 600;
+                }
+            </style>
+            <script aria-label="Settings_Popup_Script">
+                (function () {
+                    var button = document.querySelector('.Top_Right_Settings_Button');
+                    var popup = document.querySelector('.Settings_Popup');
+                    button.addEventListener('click', function (event) {
+                        event.stopPropagation();
+                        popup.classList.toggle('Settings_Popup_Open');
+                    });
+                    var webInfoButton = popup.querySelector('.Settings_Popup_Web_Info_Button');
+                    var leftSection = document.querySelector('.Left_Section');
+                    webInfoButton.addEventListener('click', function (event) {
+                        event.stopPropagation();
+                        leftSection.classList.toggle('Left_Section_Open');
+                    });
+                    popup.addEventListener('click', function (event) {
+                        if (event.target.closest('button')) {
+                            popup.classList.remove('Settings_Popup_Open');
+                        }
+                    }, true);
+                    document.addEventListener('click', function (event) {
+                        if (!popup.classList.contains('Settings_Popup_Open')) { return; }
+                        if (popup.contains(event.target)) { return; }
+                        popup.classList.remove('Settings_Popup_Open');
+                    });
+                })();
+            </script>
+        </div>
+
+        <div class="Div_Window Profile_Popup">
+            <div class="Profile_Popup_Build" aria-label="Profile_Popup_Build">
+                <button class="Profile_Popup_Create_Account_Button">
+                    <span class="Profile_Popup_List_Icon">
+                        <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
+                    </span>
+                    <span class="Profile_Popup_List_Text">Create Account</span>
+                </button>
+            </div>
+            <style aria-label="Profile_Popup_Style">
+                .Profile_Popup {
+                    position: absolute;
+                    top: 30px;
+                    right: 0;
+                    width: 200px;
+                    height: 80px;
+                    backdrop-filter: var(--Glass_Backdrop_Filter);
+                    -webkit-backdrop-filter: var(--Glass_Backdrop_Filter);
+                    transform-origin: top right;
+                    opacity: 0;
+                    pointer-events: none;
+                    transition: opacity 1s cubic-bezier(0, 1, 0, 1);
+                    z-index: 6;
+                }
+                .Profile_Popup.Profile_Popup_Open {
+                    transition-delay: 0.2s;
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+                .Profile_Popup > .Profile_Popup_Build {
+                    width: 100%;
+                    height: 100%;
+                    background: none;
+                    border: none;
+                }
+                .Profile_Popup_Create_Account_Button {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    width: calc(100% - 20px);
+                    height: 40px;
+                    margin: 10px;
+                    padding: 0 10px;
+                    border: none;
+                    border-radius: 10px;
+                    background: transparent;
+                    color: var(--Main_Text_Color);
+                    cursor: var(--Main_Cursor);
+                    font-size: var(--Font_Size-1);
+                    text-align: left;
+                    transition: background 0.2s;
+                }
+                .Profile_Popup_Create_Account_Button:active {
+                    transform: scale(0.98);
+                }
+                .Profile_Popup_List_Icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 0;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background: var(--Main_UI_Background);
+                }
+                .Profile_Popup_List_Text {
+                    flex: 1;
+                    font-weight: 600;
+                }
+            </style>
+            <script aria-label="Profile_Popup_Script">
+                (function () {
+                    var button = document.querySelector('.Top_Right_Profile_Button');
+                    var popup = document.querySelector('.Profile_Popup');
+                    button.addEventListener('click', function (event) {
+                        event.stopPropagation();
+                        popup.classList.toggle('Profile_Popup_Open');
+                    });
+                    popup.addEventListener('click', function (event) {
+                        if (event.target.closest('button')) {
+                            popup.classList.remove('Profile_Popup_Open');
+                        }
+                    }, true);
+                    document.addEventListener('click', function (event) {
+                        if (!popup.classList.contains('Profile_Popup_Open')) { return; }
+                        if (popup.contains(event.target)) { return; }
+                        popup.classList.remove('Profile_Popup_Open');
+                    });
+                })();
+            </script>
+        </div>
+    </div>
+
+</body>
+</html>

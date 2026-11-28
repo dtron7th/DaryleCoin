@@ -1,0 +1,2119 @@
+<!--
+For AI to follow...please read this for developmentpurposes !Important!: 
+
+round everything to the nearst 10th px.
+
+(html div rules)
+
+<div class="Example_Div">
+    <div class="Example_Div_Build" aria-label="Example_Div_Build">
+        // HTML elements will go here
+    </div>
+
+    <style aria-label="Example_Div_Style">
+        // Styles will go here
+    </style>
+
+    <script aria-label="Example_Div_Script">
+        // Script content go here
+    </script>
+</div>
+    
+(css rules) 
+
+ <style aria-label="AI_Agent_Manager">
+
+    :root {
+        --primary-color: #000;
+        --secondary-color: #fff;
+    }
+
+    </style>
+
+    button (Use pixel units for all measurements) {
+       border: 1px solid var(--Main_Button);
+       width: auto;
+       height: 20px;
+       color: var(--Main_Text_Color);
+       font-size: 8px;
+       border: var(--Main_Button);
+       background-color: var(--Main_UI_Background);
+       outline: none;
+       cursor: var(--Main_Cursor);
+    }
+
+    div (use pixel units for all measurements) {
+        width: auto;
+        height: auto;
+        border: var(--Main_Div);
+    }
+
+    input (use pixel units for all measurements) {
+        width: auto;
+        height: auto;
+        border: var(--Main_Input);
+    }
+
+    for Aanimations (Opening and closing popup windows/elements)
+    use cubic-bezier(0,1,0,1) to open and close popup windows/elements
+ 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style aria-label="Sozin-X_Stlye_Manager">
+
+    :root {
+
+        /*Viewport*/
+        --Sozin_Main_Page_Background: #000;
+
+        /*Glass Materials*/
+        --Glass_Backdrop_Filter: blur(10px);
+
+        /*UI Styles*/
+        --Main_UI_Background: #79797944;
+        --Main_Text_Color: #ffffff;
+        --Font_Size-1: 8px;
+        --Font_Size-2: 16px;
+        --Font_Size-3: 32px;
+        --Font_Family: 'SozinMainFont', sans-serif;
+        --Div_Border-radius: 5px;
+        --Box_Shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        
+
+        /*No Border Elements*/
+        --Main_Div_No_Border: none #ffffff1f;
+        
+        /*Main Border*/
+        --Main_Button: 1px solid #ffffff1f;
+        --Main_Input: 1px solid #ffffff1f;
+        --Main_Div: 1px solid #ffffff1f;
+
+        /*Secondary Border*/
+        --Main_Button_Secondary: 1px solid #ff99001f;
+        --Main_Input_Secondary: 1px solid #ff99001f;
+        --Main_Div_Secondary: 1px solid #ff99001f;
+
+        /*Cursors*/
+        --Main_Cursor: pointer;
+        --Cursor_2: grab;
+        --Cursor_3: pointer;
+
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'SozinMainFont', sans-serif;
+    }
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    @font-face {
+        font-family: 'SozinMainFont';
+        src: url('/Fonts/geist-font-v1.9.2/geist-font/Geist/ttf/Geist-Thin.ttf') format('truetype');
+    }
+
+
+
+    /* Tag Styles */
+    ::selection {
+        background: transparent;
+    }
+    * {
+        -webkit-tap-highlight-color: transparent;
+    }
+    button {
+        color: var(--Main_Text_Color);
+        font-size: 8px;
+        border: var(--Main_Button);
+        background-color: var(--Main_UI_Background);
+        outline: none;
+        cursor: var(--Main_Cursor);
+    }
+
+    input {
+        color: var(--Main_Text_Color);
+        font-size: 8px;
+        border: var(--Main_Input);
+        background-color: var(--Main_UI_Background);
+        outline: none;
+        cursor: var(--Main_Cursor);
+    }
+
+    p {
+        color: var(--Main_Text_Color);
+        font-size: 8px;
+        outline: none;
+        cursor: var(--Main_Cursor);
+    }
+
+    .Div_Window_Header {
+        
+        background-color: var(--Main_UI_Background);
+        outline: none;
+        cursor: var(--Main_Cursor);
+        border-radius: var(--Div_Border-radius);
+    }
+
+    .Div_Window {
+        border: var(--Main_Div);
+        background-color: var(--Main_UI_Background);
+        outline: none;
+        cursor: var(--Main_Cursor);
+        border-radius: var(--Div_Border-radius);
+        box-shadow: var(--Box_Shadow);
+    }
+    </style>
+
+    <div class="View_Tool">
+        <div class="View_Tool_Build" aria-label="View_Tool_Build">
+            <button id="View_Tool_Border_Button" aria-label="View_Tool_Border_Button">Border</button>
+            <button id="View_Tool_Labels_Button" aria-label="View_Tool_Labels_Button">Labels</button>
+        </div>
+        <style aria-label="View_Tool_Style">
+            .View_Tool {
+                position: fixed;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 99999;
+                display: none;
+            }
+            .View_Tool_Build > button {
+                width: 50px;
+                height: 20px;
+            }
+            .View_Tool_Build > button.View_Tool_On {
+                border-color: #ff0000;
+                color: #ff0000;
+            }
+            .View_Tool_Label {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 99998;
+                font: 14px monospace;
+                color: #ffffff;
+                background: #000000;
+                padding: 0 4px;
+                pointer-events: auto;
+            }
+            .View_Tool_Label > button {
+                width: auto;
+                height: auto;
+                margin-left: 4px;
+                font-size: 10px;
+            }
+        </style>
+        <script aria-label="View_Tool_Script">
+            (function () {
+                var borderBtn = document.getElementById('View_Tool_Border_Button');
+                var labelsBtn = document.getElementById('View_Tool_Labels_Button');
+                var borderStyle = null, labelChips = [];
+
+                function labelOf(el) {
+                    return el.id ? '#' + el.id
+                         : (el.className && typeof el.className === 'string' && el.className.trim())
+                             ? '.' + el.className.trim().split(/\s+/)[0]
+                             : el.tagName.toLowerCase();
+                }
+
+                function copyLabel(name, btn) {
+                    var done = function () {
+                        btn.textContent = 'ok';
+                        setTimeout(function () { btn.textContent = 'copy'; }, 600);
+                    };
+                    if (navigator.clipboard && navigator.clipboard.writeText) {
+                        navigator.clipboard.writeText(name).then(done, done);
+                    } else {
+                        var ta = document.createElement('textarea');
+                        ta.value = name;
+                        document.body.appendChild(ta);
+                        ta.select();
+                        document.execCommand('copy');
+                        ta.remove();
+                        done();
+                    }
+                }
+
+                // Border: 1px solid red on every element
+                borderBtn.addEventListener('click', function () {
+                    if (borderStyle) {
+                        borderStyle.remove();
+                        borderStyle = null;
+                    } else {
+                        borderStyle = document.createElement('style');
+                        borderStyle.textContent = 'body * { border: 1px solid red !important; }';
+                        document.head.appendChild(borderStyle);
+                    }
+                    borderBtn.classList.toggle('View_Tool_On', !!borderStyle);
+                });
+
+                // Labels: stamp every element's name but show no tag;
+                // Ctrl+Left Click on an element reveals/hides its tag
+                var labelsArmed = false;
+
+                function removeChip(entry) {
+                    entry.chip.remove();
+                    if (entry.madeRelative && entry.anchor) {
+                        entry.anchor.style.position = '';
+                    }
+                }
+
+                var voidTags = { area: 1, base: 1, br: 1, col: 1, embed: 1, hr: 1, img: 1, input: 1, link: 1, meta: 1, param: 1, source: 1, track: 1, wbr: 1 };
+
+                function showChip(el) {
+                    var name = el.getAttribute('data-view-tool-label');
+                    var madeRelative = false;
+                    var anchor = voidTags[el.tagName.toLowerCase()] ? el.parentElement : el;
+                    if (anchor && getComputedStyle(anchor).position === 'static') {
+                        anchor.style.position = 'relative';
+                        madeRelative = true;
+                    }
+                    var chip = document.createElement('span');
+                    chip.className = 'View_Tool_Label';
+                    var text = document.createElement('span');
+                    text.textContent = name;
+                    var btn = document.createElement('button');
+                    btn.type = 'button';
+                    btn.textContent = 'copy';
+                    btn.addEventListener('click', function (event) {
+                        event.stopPropagation();
+                        copyLabel(name, btn);
+                    });
+                    chip.appendChild(text);
+                    chip.appendChild(btn);
+                    if (anchor === el) {
+                        try { el.prepend(chip); } catch (e) {}
+                    } else if (anchor) {
+                        el.before(chip);
+                    }
+                    labelChips.push({ el: el, chip: chip, anchor: anchor, madeRelative: madeRelative });
+                }
+
+                function revealLabel(event) {
+                    if (event.target.closest && event.target.closest('.View_Tool_Label')) {
+                        return;
+                    }
+                    // a click outside the label hides it
+                    labelChips.forEach(removeChip);
+                    labelChips = [];
+                    if (!event.ctrlKey || event.button !== 0) {
+                        return;
+                    }
+                    var el = event.target.closest
+                        ? event.target.closest('[data-view-tool-label]')
+                        : null;
+                    if (!el) {
+                        return;
+                    }
+                    event.preventDefault();
+                    event.stopPropagation();
+                    showChip(el);
+                }
+
+                labelsBtn.addEventListener('click', function () {
+                    if (labelsArmed) {
+                        labelChips.forEach(removeChip);
+                        labelChips = [];
+                        document.querySelectorAll('[data-view-tool-label]').forEach(function (el) {
+                            el.removeAttribute('data-view-tool-label');
+                        });
+                        document.body.removeEventListener('click', revealLabel, true);
+                        labelsArmed = false;
+                    } else {
+                        document.body.querySelectorAll('*').forEach(function (el) {
+                            if (el.closest('.View_Tool')) {
+                                return;
+                            }
+                            el.setAttribute('data-view-tool-label', labelOf(el));
+                        });
+                        document.body.addEventListener('click', revealLabel, true);
+                        labelsArmed = true;
+                    }
+                    labelsBtn.classList.toggle('View_Tool_On', labelsArmed);
+                });
+            })();
+        </script>
+    </div>
+
+</head>
+<body>
+    <div class="Sozin_Main_Page">
+
+        <div class="Sozin_Main_Page_Build" aria-label="Sozin_Main_Page_Build">
+
+            <div class="Background_Slide_Show">
+
+                <div class="Background_Slide_Show_Build" aria-label="Background_Slide_Show_Build">
+                    <img src="/Images/Background_Slide_Show_Data/38139928099642512.jpg" alt="Background 1">
+                </div>
+                <!-- Background Slide Show Styles -->
+                <style aria-label="Background_Slide_Show_Style">
+                    .Background_Slide_Show {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100dvw;
+                        height: 100dvh;
+                        
+                    }
+                    .Background_Slide_Show_Build {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100dvw;
+                        height: 100dvh;
+                        object-fit: cover;
+                    }
+
+                    .Background_Slide_Show_Build > img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: opacity 1s ease;
+                    }
+                </style>
+                <script aria-label="Background_Slide_Show_Script">
+                    (function () {
+                        var base = '/Images/Background_Slide_Show_Data/';
+                        var slideMs = 10000;    // time each slide stays up
+                        var refreshMs = 15000; // re-checks the folder for new photos
+                        var imgExts = /\.(jpe?g|png|gif|webp|avif|bmp)$/i;
+
+                        // used only when the server won't list the folder
+                        // (Netlify, or opening index.html straight off disk).
+                        var slides = [
+                            '003e91723f082ed354129d996ed4d3ad.jpg',
+                            '38139928099642512.jpg',
+                            '927811960743055285.jpg',
+                            'download (1).jpg',
+                            'download (2).jpg',
+                            'download.jpg',
+                            'Wonderful autumn landscape.jpg',
+                            '🌹beautiful flowers pic🌹.jpg'
+                        ];
+
+                        // every .Background_Slide_Show_Build on the page (main page + second page) shows the same slide
+                        var shows = [];
+                        var i = -1;
+
+                        // two stacked layers per show: each tick the hidden one fades in on top
+                        function setupShow(build) {
+                            var layer0 = build.querySelector('img');
+                            var layer1 = layer0.cloneNode(false);
+                            layer1.removeAttribute('alt');
+                            layer1.style.opacity = '0';
+                            build.appendChild(layer1);
+                            layer0.style.zIndex = '1';
+                            layer1.style.zIndex = '2';
+                            return { layers: [layer0, layer1], active: 0 };
+                        }
+
+                        function pickNext() {
+                            var next_i;
+                            do { next_i = Math.floor(Math.random() * slides.length); }
+                            while (slides.length > 1 && next_i === i);
+                            i = next_i;
+                            shows.forEach(function (show) {
+                                var layers = show.layers;
+                                var next = 1 - show.active;
+                                layers[next].src = base + encodeURIComponent(slides[i]);
+                                layers[next].style.zIndex = '2';
+                                layers[show.active].style.zIndex = '1';
+                                layers[next].style.opacity = '1';
+                                layers[show.active].style.opacity = '0';
+                                show.active = next;
+                            });
+                        }
+
+                        // read the folder's index page and pull every image
+                        // name out of it — new photos join the show on their own
+                        function refreshSlides() {
+                            fetch(base).then(function (r) {
+                                if (!r.ok) throw new Error('no listing');
+                                return r.text();
+                            }).then(function (html) {
+                                var doc = new DOMParser().parseFromString(html, 'text/html');
+                                var found = [];
+                                doc.querySelectorAll('a[href]').forEach(function (a) {
+                                    var name = decodeURIComponent(a.getAttribute('href')).split('/').pop();
+                                    if (imgExts.test(name)) found.push(name);
+                                });
+                                if (found.length) {
+                                    // preload anything new so fades never stall
+                                    found.forEach(function (f2) {
+                                        if (slides.indexOf(f2) === -1) {
+                                            var im = new Image();
+                                            im.src = base + encodeURIComponent(f2);
+                                        }
+                                    });
+                                    slides = found;
+                                }
+                            }).catch(function () {});
+                        }
+
+                        // wait for the whole page so the second page's slide show is found too
+                        document.addEventListener('DOMContentLoaded', function () {
+                            shows = Array.prototype.map.call(document.querySelectorAll('.Background_Slide_Show_Build'), setupShow);
+                            if (!shows.length) return;
+                            refreshSlides();
+                            pickNext();
+                            setInterval(pickNext, slideMs);
+                            setInterval(refreshSlides, refreshMs);
+                        });
+                    })();
+                </script>
+            </div>
+
+            <div class="Glass_Background">
+                <style aria-label="Glass_Background_Style">
+                    .Glass_Background {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100dvw;
+                        height: 100dvh;
+                        backdrop-filter: var(--Glass_Backdrop_Filter);
+                        z-index: 2;
+                    }
+                </style>
+                <script aria-label="Glass_Background_Script">
+
+                </script>
+            </div>
+
+            <div class="Logo">
+                <div class="Logo_Build" aria-label="Logo_Build">
+                    <p>Sozin - X</p>
+                </div>
+
+                <style aria-label="Logo_Style">
+
+                    .Logo {
+                        position: absolute;
+                        top: 50px;
+                        width: 100%;
+                        background: none;
+                        border: none;
+                        z-index: 3;    
+                    }
+
+                    .Logo > .Logo_Build {
+                        background: none;
+                        border: none;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .Logo > .Logo_Build > p {
+                        color: var(--Main_Text_Color);
+                        font-size: 20px;
+                    }
+
+
+                </style>
+                <script aria-label="Logo_Script">
+                    (function () {
+                        var wait = function (ms) { return new Promise(function (r) { setTimeout(r, ms); }); };
+
+                        // 1s delay -> type the title (letters fade in) -> 1.0s delay -> overlapping 0.5s tile fades, 0.1s apart
+                        window.Sozin_Section_Intro = function (titleSelector, tileSelector, typeMs) {
+                            var title = document.querySelector(titleSelector);
+                            var tiles = tileSelector ? document.querySelectorAll(tileSelector) : [];
+                            var text = title.textContent;
+                            title.textContent = '';
+                            title.style.visibility = '';
+                            var letters = Array.prototype.map.call(text, function (ch) {
+                                var s = document.createElement('span');
+                                s.textContent = ch;
+                                s.style.opacity = '0';
+                                s.style.transition = 'opacity 0.3s ease-in-out';
+                                title.appendChild(s);
+                                return s;
+                            });
+                            return wait(1000).then(function () {
+                                var step = (typeMs || 100) / letters.length;
+                                return letters.reduce(function (p, s) {
+                                    return p.then(function () { s.style.opacity = '1'; return wait(step); });
+                                }, Promise.resolve());
+                            }).then(function () {
+                                if (!tiles.length) { return wait(300); }
+                                return wait(1000).then(function () {
+                                    var stagger = 100;
+                                    tiles.forEach(function (tile, i) {
+                                        setTimeout(function () { tile.classList.add('Section_Intro_Shown'); }, i * stagger);
+                                    });
+                                    return wait(500 + (tiles.length - 1) * stagger);
+                                });
+                            });
+                        };
+
+                        // page title types in first (0.5s), then the Apps and Games sections follow
+                        window.Sozin_Section_Intro('.Logo_Build > p', null, 500).then(function () {
+                            document.dispatchEvent(new Event('Logo_Intro_Done'));
+                        });
+                    })();
+                    
+                </script>
+            </div>
+
+            <div class="Apps_Section">
+                <div class="Apps_Section_Build" aria-label="Apps_Section_Build">
+                    <p class="Apps_Section_Title">Apps</p>
+                    <div class="Apps_Section_Grid">
+                        <button class="Apps_Section_App" aria-label="Kin Flow" title="Kin Flow"><img class="Apps_Section_App_Logo" src="Images/Apps/kin-flow.svg" alt="Kin Flow" draggable="false"></button>
+                        <button class="Apps_Section_App" aria-label="Edge CAD" title="Edge CAD"><img class="Apps_Section_App_Logo" src="Images/Apps/edge-cad.svg" alt="Edge CAD" draggable="false"></button>
+                        <button class="Apps_Section_App" aria-label="Nova EDA" title="Nova EDA"><img class="Apps_Section_App_Logo" src="Images/Apps/nova-eda.svg" alt="Nova EDA" draggable="false"></button>
+                        <button class="Apps_Section_App" aria-label="Barn IDE" title="Barn IDE"><img class="Apps_Section_App_Logo" src="Images/Apps/barn-ide.svg" alt="Barn IDE" draggable="false"></button>
+                        <button class="Apps_Section_App" aria-label="Open Earth" title="Open Earth"><img class="Apps_Section_App_Logo" src="Images/Apps/open-earth.svg" alt="Open Earth" draggable="false"></button>
+                    </div>
+                </div>
+
+                <style aria-label="Apps_Section_Style">
+                    .Apps_Section {
+                        position: absolute;
+                        top: 100px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background: none;
+                        border: none;
+                        z-index: 3;
+                    }
+                    .Apps_Section > .Apps_Section_Build {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        background: none;
+                        border: none;
+                    }
+                    .Apps_Section_Title {
+                        color: var(--Main_Text_Color);
+                        font-size: 12px;
+                        font-family: var(--Font_Family);
+                        font-weight: normal;
+                        cursor: default;
+                    }
+                    .Apps_Section_Grid {
+                        display: flex;
+                        gap: 10px;
+                        background: none;
+                        border: none;
+                    }
+                    .Apps_Section_App {
+                        width: 50px;
+                        height: 50px;
+                        border: var(--Main_Button);
+                        border-radius: 10px;
+                        background: var(--Main_UI_Background);
+                        backdrop-filter: var(--Glass_Backdrop_Filter);
+                        cursor: var(--Main_Cursor);
+                        opacity: 0;
+                        will-change: opacity;
+                        transition: transform 0.2s, opacity 0.5s ease-in-out;
+                    }
+                    .Apps_Section_App {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0;
+                    }
+                    .Apps_Section_App_Logo {
+                        width: 24px;
+                        height: 24px;
+                        pointer-events: none;
+                        user-select: none;
+                    }
+                    .Apps_Section_App.Section_Intro_Shown {
+                        opacity: 1;
+                    }
+                    .Apps_Section_App:active {
+                        transform: scale(0.9);
+                    }
+                </style>
+                <script aria-label="Apps_Section_Script">
+                    (function () {
+                        var title = document.querySelector('.Apps_Section_Title');
+                        title.style.visibility = 'hidden';
+                        document.addEventListener('Logo_Intro_Done', function () {
+                            window.Sozin_Section_Intro('.Apps_Section_Title', '.Apps_Section_App').then(function () {
+                                document.dispatchEvent(new Event('Apps_Section_Intro_Done'));
+                            });
+                        });
+                    })();
+                </script>
+            </div>
+
+            <div class="Games_Section">
+                <div class="Games_Section_Build" aria-label="Games_Section_Build">
+                    <p class="Games_Section_Title">Games</p>
+                    <div class="Games_Section_Grid">
+                        <button class="Games_Section_Game" aria-label="Game 1"></button>
+                        <button class="Games_Section_Game" aria-label="Game 2"></button>
+                        <button class="Games_Section_Game" aria-label="Game 3"></button>
+                    </div>
+                </div>
+
+                <style aria-label="Games_Section_Style">
+                    .Games_Section {
+                        position: absolute;
+                        bottom: 100px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background: none;
+                        border: none;
+                        z-index: 3;
+                    }
+                    .Games_Section > .Games_Section_Build {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        background: none;
+                        border: none;
+                    }
+                    .Games_Section_Title {
+                        color: var(--Main_Text_Color);
+                        font-size: 12px;
+                        font-family: var(--Font_Family);
+                        font-weight: normal;
+                        cursor: default;
+                    }
+                    .Games_Section_Grid {
+                        display: flex;
+                        gap: 10px;
+                        background: none;
+                        border: none;
+                    }
+                    .Games_Section_Game {
+                        width: 90px;
+                        height: 80px;
+                        border: var(--Main_Button);
+                        border-radius: 10px;
+                        background: var(--Main_UI_Background);
+                        backdrop-filter: var(--Glass_Backdrop_Filter);
+                        cursor: var(--Main_Cursor);
+                        opacity: 0;
+                        will-change: opacity;
+                        transition: transform 0.2s, opacity 0.5s ease-in-out;
+                    }
+                    .Games_Section_Game.Section_Intro_Shown {
+                        opacity: 1;
+                    }
+                    .Games_Section_Game:active {
+                        transform: scale(0.9);
+                    }
+                </style>
+                <script aria-label="Games_Section_Script">
+                    (function () {
+                        var title = document.querySelector('.Games_Section_Title');
+                        title.style.visibility = 'hidden';
+                        document.addEventListener('Apps_Section_Intro_Done', function () {
+                            title.style.visibility = '';
+                            window.Sozin_Section_Intro('.Games_Section_Title', '.Games_Section_Game').then(function () {
+                                document.dispatchEvent(new Event('Games_Section_Intro_Done'));
+                            });
+                        });
+                    })();
+                </script>
+            </div>
+
+            <div class="Page_Down">
+                <div class="Page_Down_Build" aria-label="Page_Down_Build">
+                    <button class="Page_Down_Button" aria-label="Next Page">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                </div>
+
+                <style aria-label="Page_Down_Style">
+                    .Page_Down {
+                        position: absolute;
+                        bottom: 20px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background: none;
+                        border: none;
+                        z-index: 3;
+                    }
+                    .Page_Down > .Page_Down_Build {
+                        background: none;
+                        border: none;
+                    }
+                    .Page_Down_Button {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 40px;
+                        height: 40px;
+                        padding: 0;
+                        border: var(--Main_Button);
+                        border-radius: 50%;
+                        background: var(--Main_UI_Background);
+                        backdrop-filter: var(--Glass_Backdrop_Filter);
+                        color: var(--Main_Text_Color);
+                        cursor: var(--Main_Cursor);
+                        opacity: 0;
+                        will-change: opacity;
+                        transition: opacity 0.5s ease-in-out;
+                    }
+                    .Page_Down_Button.Section_Intro_Shown {
+                        opacity: 1;
+                    }
+                </style>
+                <script aria-label="Page_Down_Script">
+                    document.querySelector('.Page_Down_Button').addEventListener('click', function () {
+                        document.body.classList.add('Second_Page_Open');
+                    });
+                    document.addEventListener('Games_Section_Intro_Done', function () {
+                        document.querySelector('.Page_Down_Button').classList.add('Section_Intro_Shown');
+                    });
+                </script>
+            </div>
+
+        </div>
+        
+        <style aria-label="Sozin_Main_Page_Style">
+            .Sozin_Main_Page {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100dvw;
+                height: 100dvh;
+                border: none;
+                overflow: hidden;
+                transition: transform 0.6s cubic-bezier(0, 1, 0, 1);
+            }
+            .Second_Page_Open .Sozin_Main_Page {
+                transform: translateY(-100dvh);
+            }
+        </style>
+        <script aria-label="Sozin_Main_Page_Script">
+            
+        </script>
+    </div>
+
+    <div class="Second_Page">
+        <div class="Background_Slide_Show">
+            <div class="Background_Slide_Show_Build" aria-label="Background_Slide_Show_Build">
+                <img src="/Images/Background_Slide_Show_Data/38139928099642512.jpg" alt="Background 1">
+            </div>
+        </div>
+        <div class="Glass_Background"></div>
+        <div class="Second_Page_Build" aria-label="Second_Page_Build">
+            <button class="Second_Page_Up_Button" aria-label="Back to Sozin - X">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 15 12 9 18 15"/></svg>
+            </button>
+            <div class="Shares_Section" aria-label="Shares_Section">
+                <p class="Shares_Title">Shares</p>
+                <p class="Shares_Sub_Title">Own a portion of the corporation.</p>
+                <button class="Road_Map_Button" aria-label="Road Map">Road Map</button>
+                <button class="Donation_Button" aria-label="Donation">Donation</button>
+            </div>
+            <div class="Shares_Deed" aria-label="Shares_Deed">
+                <div class="Shares_Deed_Header">
+                    <p class="Shares_Deed_Name">Sozin - X Shares</p>
+                </div>
+                <p class="Shares_Deed_Price">$20.00 a share</p>
+                <button class="Shares_Deed_Buy_Button" aria-label="Buy shares">Buy shares</button>
+            </div>
+            <div class="Shares_Sliders" aria-label="Shares_Sliders">
+                <div class="Shares_Slider_Quarters">
+                    <p>1st Q</p>
+                    <p>2nd Q</p>
+                    <p>3rd Q</p>
+                    <p>4th Q</p>
+                </div>
+                <div class="Shares_Slider_Row">
+                    <input class="Shares_Value_Slider" type="range" min="0" max="1000000" step="10000" value="1000000" aria-label="Shares value">
+                    <p class="Shares_Slider_Label Shares_Value_Label">$1.0M</p>
+                </div>
+                <div class="Shares_Slider_Row">
+                    <div class="Shares_Donation_Slider" role="progressbar" aria-label="Donations" aria-valuemin="0" aria-valuemax="10000" aria-valuenow="0">
+                        <div class="Shares_Donation_Fill"></div>
+                        <div class="Shares_Donation_Thumb"></div>
+                    </div>
+                    <p class="Shares_Slider_Label Shares_Donation_Label">$0/$10,000</p>
+                </div>
+            </div>
+        </div>
+        <style aria-label="Second_Page_Style">
+            .Shares_Section {
+                position: absolute;
+                top: 70px;
+                left: 10px;
+                background: none;
+                border: none;
+            }
+            .Shares_Title {
+                margin: 0;
+                color: var(--Main_Text_Color);
+                font-size: 20px;
+            }
+            .Shares_Sub_Title {
+                margin: 4px 0 0 0;
+                color: var(--Main_Text_Color);
+                font-size: 12px;
+                opacity: 0;
+                will-change: opacity;
+                transition: opacity 0.5s ease-in-out;
+            }
+            .Shares_Sub_Title.Section_Intro_Shown {
+                opacity: 1;
+            }
+            .Road_Map_Button, .Donation_Button {
+                padding: 4px 12px;
+                border: var(--Main_Button);
+                border-radius: 20px;
+                background: var(--Main_UI_Background);
+                backdrop-filter: var(--Glass_Backdrop_Filter);
+                color: var(--Main_Text_Color);
+                font-size: 12px;
+                cursor: var(--Main_Cursor);
+                opacity: 0;
+                pointer-events: none;
+                will-change: opacity;
+                transition: opacity 0.5s ease-in-out;
+            }
+            .Road_Map_Button {
+                margin-top: 10px;
+            }
+            .Donation_Button {
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+            .Road_Map_Button.Section_Intro_Shown, .Donation_Button.Section_Intro_Shown {
+                opacity: 1;
+                pointer-events: auto;
+            }
+            .Shares_Deed {
+                position: absolute;
+                top: calc(50% + 30px);
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+                width: 160px;
+                height: 200px;
+                padding: 10px;
+                border: var(--Main_Div);
+                border-radius: var(--Div_Border-radius);
+                background: var(--Main_UI_Background);
+                backdrop-filter: var(--Glass_Backdrop_Filter);
+                box-shadow: var(--Box_Shadow);
+                cursor: default;
+                opacity: 0;
+                pointer-events: none;
+                will-change: opacity;
+                transition: opacity 0.5s ease-in-out;
+            }
+            .Shares_Deed.Section_Intro_Shown {
+                opacity: 1;
+                pointer-events: auto;
+            }
+            .Shares_Deed p {
+                margin: 0;
+                color: var(--Main_Text_Color);
+                font-size: 10px;
+                cursor: default;
+            }
+            .Shares_Deed_Header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 4px;
+                height: 30px;
+                border: var(--Main_Div);
+                border-radius: var(--Div_Border-radius);
+                background: var(--Main_UI_Background);
+            }
+            .Shares_Deed .Shares_Deed_Name {
+                font-size: 12px;
+            }
+            .Shares_Deed .Shares_Deed_Price {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 50px;
+                font-size: 12px;
+            }
+            .Shares_Deed_Buy_Button {
+                margin-top: auto;
+                width: 100%;
+                height: 30px;
+                border: var(--Main_Button);
+                border-radius: var(--Div_Border-radius);
+                background: var(--Main_UI_Background);
+                color: var(--Main_Text_Color);
+                font-size: 12px;
+                cursor: var(--Main_Cursor);
+                transition: transform 0.2s;
+            }
+            .Shares_Deed_Buy_Button:active {
+                transform: scale(0.95);
+            }
+            .Shares_Sliders {
+                position: absolute;
+                left: 10px;
+                right: 10px;
+                bottom: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+                border: none;
+                background: none;
+                opacity: 0;
+                pointer-events: none;
+                will-change: opacity;
+                transition: opacity 0.5s ease-in-out;
+            }
+            .Shares_Sliders.Section_Intro_Shown {
+                opacity: 1;
+                pointer-events: auto;
+            }
+            .Shares_Sliders p {
+                margin: 0;
+                color: var(--Main_Text_Color);
+                font-size: 10px;
+                white-space: nowrap;
+                cursor: default;
+            }
+            .Shares_Slider_Quarters {
+                display: flex;
+                justify-content: space-around;
+                width: calc(100% - 90px);
+                border: none;
+                background: none;
+            }
+            .Shares_Slider_Row {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                height: 20px;
+                border: none;
+                background: none;
+            }
+            .Shares_Sliders .Shares_Slider_Label {
+                flex-shrink: 0;
+                width: 80px;
+            }
+            .Shares_Value_Slider {
+                flex: 1;
+                min-width: 0;
+                height: 6px;
+                margin: 0;
+                -webkit-appearance: none;
+                appearance: none;
+                border: var(--Main_Div);
+                border-radius: 10px;
+                background: linear-gradient(to right, #ffffff99 calc(6px + (100% - 12px) * var(--Slider_Ratio, 1)), var(--Main_UI_Background) calc(6px + (100% - 12px) * var(--Slider_Ratio, 1)));
+                outline: none;
+                cursor: var(--Main_Cursor);
+            }
+            .Shares_Value_Slider::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 12px;
+                height: 12px;
+                border: var(--Main_Button);
+                border-radius: 50%;
+                background: var(--Main_Text_Color);
+                box-shadow: var(--Box_Shadow);
+                cursor: var(--Main_Cursor);
+            }
+            .Shares_Value_Slider::-moz-range-thumb {
+                width: 12px;
+                height: 12px;
+                border: var(--Main_Button);
+                border-radius: 50%;
+                background: var(--Main_Text_Color);
+                box-shadow: var(--Box_Shadow);
+                cursor: var(--Main_Cursor);
+            }
+            .Shares_Donation_Slider {
+                position: relative;
+                flex: 1;
+                min-width: 0;
+                height: 6px;
+                border: var(--Main_Div);
+                border-radius: 10px;
+                background: var(--Main_UI_Background);
+            }
+            .Shares_Donation_Fill {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: calc(6px + (100% - 12px) * var(--Slider_Ratio, 0));
+                height: 100%;
+                border: none;
+                border-radius: 10px;
+                background: #ffffff99;
+            }
+            .Shares_Donation_Thumb {
+                position: absolute;
+                top: 50%;
+                left: calc((100% - 12px) * var(--Slider_Ratio, 0));
+                transform: translateY(-50%);
+                box-sizing: border-box;
+                width: 12px;
+                height: 12px;
+                border: var(--Main_Button);
+                border-radius: 50%;
+                background: var(--Main_Text_Color);
+                box-shadow: var(--Box_Shadow);
+            }
+            .Second_Page {
+                position: absolute;
+                top: 100dvh;
+                left: 0;
+                width: 100dvw;
+                height: 100dvh;
+                border: none;
+                overflow: hidden;
+                background: linear-gradient(180deg, #000000, #2a2a2a);
+                transition: transform 0.6s cubic-bezier(0, 1, 0, 1);
+            }
+            .Second_Page_Open .Second_Page {
+                transform: translateY(-100dvh);
+            }
+            .Second_Page > .Second_Page_Build {
+                position: relative;
+                z-index: 3;
+                width: 100%;
+                height: 100%;
+                background: none;
+                border: none;
+            }
+            .Second_Page_Up_Button {
+                position: absolute;
+                top: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                padding: 0;
+                border: var(--Main_Button);
+                border-radius: 50%;
+                background: var(--Main_UI_Background);
+                backdrop-filter: var(--Glass_Backdrop_Filter);
+                color: var(--Main_Text_Color);
+                cursor: var(--Main_Cursor);
+            }
+        </style>
+
+        <script aria-label="Second_Page_Script">
+            document.querySelector('.Second_Page_Up_Button').addEventListener('click', function () {
+                document.body.classList.remove('Second_Page_Open');
+            });
+
+            // first time the second page opens: type in "Shares" (letters fade in), then fade in the sub title
+            document.querySelector('.Shares_Title').style.visibility = 'hidden';
+            document.querySelector('.Page_Down_Button').addEventListener('click', function () {
+                window.Sozin_Section_Intro('.Shares_Title', null, 500).then(function () {
+                    document.querySelector('.Shares_Sub_Title').classList.add('Section_Intro_Shown');
+                    setTimeout(function () {
+                        document.querySelector('.Road_Map_Button').classList.add('Section_Intro_Shown');
+                        document.querySelector('.Donation_Button').classList.add('Section_Intro_Shown');
+                        setTimeout(function () {
+                            document.querySelector('.Shares_Deed').classList.add('Section_Intro_Shown');
+                            setTimeout(function () {
+                                document.querySelector('.Shares_Sliders').classList.add('Section_Intro_Shown');
+                            }, 500);
+                        }, 500);
+                    }, 500);
+                });
+            }, { once: true });
+
+            (function () {
+                var valueSlider = document.querySelector('.Shares_Value_Slider');
+                var valueLabel = document.querySelector('.Shares_Value_Label');
+                var formatMoney = function (n) {
+                    if (n >= 1000000) { return '$' + (n / 1000000).toFixed(1) + 'M'; }
+                    if (n >= 1000) { return '$' + Math.round(n / 1000) + 'K'; }
+                    return '$' + n;
+                };
+                var updateValue = function () {
+                    var n = Number(valueSlider.value);
+                    valueSlider.style.setProperty('--Slider_Ratio', n / Number(valueSlider.max));
+                    valueLabel.textContent = formatMoney(n);
+                };
+                valueSlider.addEventListener('input', updateValue);
+                updateValue();
+
+                var donationGoal = 10000;
+                var donationSlider = document.querySelector('.Shares_Donation_Slider');
+                var donationLabel = document.querySelector('.Shares_Donation_Label');
+                // call Sozin_Set_Donations(amount) with the total donated to move the donation slider
+                window.Sozin_Set_Donations = function (amount) {
+                    var n = Math.max(0, Math.min(Number(amount) || 0, donationGoal));
+                    donationSlider.style.setProperty('--Slider_Ratio', n / donationGoal);
+                    donationSlider.setAttribute('aria-valuenow', n);
+                    donationLabel.textContent = '$' + n.toLocaleString('en-US') + '/$' + donationGoal.toLocaleString('en-US');
+                };
+                window.Sozin_Set_Donations(0);
+            })();
+        </script>
+    </div>
+
+    <div class="Road_Map_Window" aria-label="Road_Map_Window">
+        <div class="Road_Map_Window_Build" aria-label="Road_Map_Window_Build">
+            <p class="Road_Map_Window_Title">Road Map</p>
+            <button class="Road_Map_Window_Close_Button" aria-label="Close Road Map">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+            </button>
+        </div>
+        <style aria-label="Road_Map_Window_Style">
+            .Road_Map_Window {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100dvw;
+                height: 100dvh;
+                z-index: 9999;
+                border: none;
+                background: var(--Main_UI_Background);
+                backdrop-filter: var(--Glass_Backdrop_Filter);
+                -webkit-backdrop-filter: var(--Glass_Backdrop_Filter);
+                box-shadow: var(--Box_Shadow);
+                opacity: 0;
+                visibility: hidden;
+                pointer-events: none;
+                transition: opacity 1s cubic-bezier(0, 1, 0, 1), visibility 1s;
+            }
+            .Road_Map_Window.Road_Map_Window_Open {
+                transition: opacity 1s cubic-bezier(0, 1, 0, 1) 0.2s, visibility 0s 0.2s;
+                opacity: 1;
+                visibility: visible;
+                pointer-events: auto;
+            }
+            .Road_Map_Window > .Road_Map_Window_Build {
+                width: 100%;
+                height: 100%;
+                background: none;
+                border: none;
+            }
+            .Road_Map_Window_Title {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                margin: 0;
+                color: var(--Main_Text_Color);
+                font-size: 20px;
+            }
+            .Road_Map_Window_Close_Button {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 24px;
+                height: 24px;
+                padding: 0;
+                border: var(--Main_Button);
+                border-radius: 50%;
+                background: var(--Main_UI_Background);
+                backdrop-filter: var(--Glass_Backdrop_Filter);
+                color: var(--Main_Text_Color);
+                cursor: var(--Main_Cursor);
+            }
+        </style>
+        <script aria-label="Road_Map_Window_Script">
+            (function () {
+                var win = document.querySelector('.Road_Map_Window');
+                var close = function () { win.classList.remove('Road_Map_Window_Open'); };
+                document.querySelector('.Road_Map_Button').addEventListener('click', function () {
+                    win.classList.add('Road_Map_Window_Open');
+                });
+                document.querySelector('.Road_Map_Window_Close_Button').addEventListener('click', close);
+                document.addEventListener('keydown', function (e) {
+                    if (e.key === 'Escape') { close(); }
+                });
+            })();
+        </script>
+    </div>
+
+    <div class="Div_Window Buy_Shares_Window" aria-label="Buy_Shares_Window">
+        <div class="Buy_Shares_Window_Build" aria-label="Buy_Shares_Window_Build">
+            <button class="Buy_Shares_Window_Close_Button" aria-label="Close Buy Shares">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+            </button>
+        </div>
+        <style aria-label="Buy_Shares_Window_Style">
+            .Buy_Shares_Window {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100dvw;
+                height: 100dvh;
+                backdrop-filter: var(--Glass_Backdrop_Filter);
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 1s cubic-bezier(0, 1, 0, 1);
+                z-index: 20;
+                display: none;
+            }
+            .Buy_Shares_Window.Buy_Shares_Window_Open {
+                transition-delay: 0.2s;
+                display: block;
+                opacity: 1;
+                pointer-events: auto;
+            }
+            @starting-style {
+                .Buy_Shares_Window.Buy_Shares_Window_Open {
+                    opacity: 0;
+                }
+            }
+            .Buy_Shares_Window > .Buy_Shares_Window_Build {
+                width: 100%;
+                height: 100%;
+                background: none;
+                border: none;
+            }
+            .Buy_Shares_Window_Close_Button {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 24px;
+                height: 24px;
+                padding: 0;
+                border: var(--Main_Button);
+                border-radius: 50%;
+                background: var(--Main_UI_Background);
+                backdrop-filter: var(--Glass_Backdrop_Filter);
+                color: var(--Main_Text_Color);
+                cursor: var(--Main_Cursor);
+            }
+        </style>
+        <script aria-label="Buy_Shares_Window_Script">
+            (function () {
+                var win = document.querySelector('.Buy_Shares_Window');
+                var close = function () { win.classList.remove('Buy_Shares_Window_Open'); };
+                document.querySelector('.Shares_Deed_Buy_Button').addEventListener('click', function (event) {
+                    event.stopPropagation();
+                    win.classList.add('Buy_Shares_Window_Open');
+                });
+                document.querySelector('.Buy_Shares_Window_Close_Button').addEventListener('click', close);
+                document.addEventListener('click', function (event) {
+                    if (!win.classList.contains('Buy_Shares_Window_Open')) { return; }
+                    if (win.contains(event.target)) { return; }
+                    close();
+                });
+                document.addEventListener('keydown', function (e) {
+                    if (e.key === 'Escape') { close(); }
+                });
+            })();
+        </script>
+    </div>
+    <div class="Div_Window Donation_Window" aria-label="Donation_Window">
+        <div class="Donation_Window_Build" aria-label="Donation_Window_Build">
+
+        </div>
+        <style aria-label="Donation_Window_Style">
+            .Donation_Window {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                width: calc(100% - 60px);
+                height: 280px;
+                backdrop-filter: var(--Glass_Backdrop_Filter);
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 1s cubic-bezier(0, 1, 0, 1);
+                z-index: 20;
+                display: none;
+            }
+            .Donation_Window.Donation_Window_Open {
+                transition-delay: 0.2s;
+                display: block;
+                transform: translate(-50%, -50%);
+                opacity: 1;
+                pointer-events: auto;
+            }
+            @starting-style {
+                .Donation_Window.Donation_Window_Open {
+                    transform: translate(-50%, -50%);
+                    opacity: 0;
+                }
+            }
+            .Donation_Window > .Donation_Window_Build {
+                width: 100%;
+                height: 100%;
+                background: none;
+                border: none;
+            }
+        </style>
+        <script aria-label="Donation_Window_Script">
+            (function () {
+                var win = document.querySelector('.Donation_Window');
+                var close = function () { win.classList.remove('Donation_Window_Open'); };
+                document.querySelector('.Donation_Button').addEventListener('click', function (event) {
+                    event.stopPropagation();
+                    win.classList.add('Donation_Window_Open');
+                });
+                document.addEventListener('click', function (event) {
+                    if (!win.classList.contains('Donation_Window_Open')) { return; }
+                    if (win.contains(event.target)) { return; }
+                    close();
+                });
+                document.addEventListener('keydown', function (e) {
+                    if (e.key === 'Escape') { close(); }
+                });
+            })();
+        </script>
+    </div>
+
+    <div class="Div_Window Create_Account_Window" aria-label="Create_Account_Window">
+        <div class="Create_Account_Window_Build" aria-label="Create_Account_Window_Build">
+            <p class="Create_Account_Window_Title">Create Account</p>
+            <button class="Create_Account_Window_Close_Button" aria-label="Close Create Account">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+            </button>
+            <div class="Create_Account_Tabs" role="tablist">
+                <button class="Create_Account_Tab Create_Account_Tab_Active" data-tab="create" role="tab">Create an account</button>
+                <button class="Create_Account_Tab" data-tab="login" role="tab">Login</button>
+            </div>
+            <div class="Create_Account_Panel Create_Account_Panel_Active" data-panel="create">
+                <div class="Create_Account_Panel_Create">
+                    <p class="Create_Account_Intro">Welcome to the most secure account in the world, I use a SHA-512 to create your account. All you need is your State ID...Scan the bar code on the back, and the app converts 3 values from your ID into a SHA-512...No one (Not even me) can crack this code. This is the most secure way of creating accounts. No annoying email sends, no 3 step verifications, all hashed into a single line of code</p>
+                    <button class="Create_Account_Scan_Button" aria-label="Scan ID">Scan ID</button>
+                </div>
+            </div>
+            <div class="Create_Account_Panel" data-panel="login"></div>
+        </div>
+        <style aria-label="Create_Account_Window_Style">
+            .Create_Account_Window {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                width: calc(100% - 60px);
+                height: 300px;
+                backdrop-filter: var(--Glass_Backdrop_Filter);
+                -webkit-backdrop-filter: var(--Glass_Backdrop_Filter);
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 1s cubic-bezier(0, 1, 0, 1);
+                z-index: 20;
+                display: none;
+            }
+            .Create_Account_Window.Create_Account_Window_Open {
+                transition-delay: 0.2s;
+                display: block;
+                transform: translate(-50%, -50%);
+                opacity: 1;
+                pointer-events: auto;
+            }
+            @starting-style {
+                .Create_Account_Window.Create_Account_Window_Open {
+                    transform: translate(-50%, -50%);
+                    opacity: 0;
+                }
+            }
+            .Create_Account_Window > .Create_Account_Window_Build {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                background: none;
+                border: none;
+            }
+            .Create_Account_Window_Title {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                margin: 0;
+                color: var(--Main_Text_Color);
+                font-size: 12px;
+                font-family: var(--Font_Family);
+                font-weight: normal;
+            }
+            .Create_Account_Tabs {
+                position: absolute;
+                top: 40px;
+                left: 10px;
+                display: flex;
+                gap: 10px;
+            }
+            .Create_Account_Tab {
+                padding: 4px 12px;
+                border: var(--Main_Button);
+                border-radius: 20px;
+                background: transparent;
+                color: var(--Main_Text_Color);
+                cursor: var(--Main_Cursor);
+                font-size: 12px;
+                font-family: var(--Font_Family);
+                font-weight: normal;
+                outline: none;
+                -webkit-tap-highlight-color: transparent;
+                transition: background 0.3s cubic-bezier(0, 1, 0, 1), border-color 0.3s cubic-bezier(0, 1, 0, 1);
+            }
+            .Create_Account_Tab.Create_Account_Tab_Active {
+                border-color: #ffffff66;
+            }
+            .Create_Account_Panel {
+                position: absolute;
+                top: 80px;
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+                opacity: 0;
+                visibility: hidden;
+                pointer-events: none;
+                transition: opacity 0.3s cubic-bezier(0, 1, 0, 1), visibility 0s 0.3s;
+            }
+            .Create_Account_Panel.Create_Account_Panel_Active {
+                opacity: 1;
+                visibility: visible;
+                pointer-events: auto;
+                transition: opacity 0.3s cubic-bezier(0, 1, 0, 1);
+            }
+            .Create_Account_Panel_Create {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+            }
+            .Create_Account_Intro {
+                margin: 0;
+                color: var(--Main_Text_Color);
+                font-size: 12px;
+                font-family: var(--Font_Family);
+                font-weight: normal;
+                line-height: 1.6;
+                text-align: center;
+            }
+            .Create_Account_Scan_Button {
+                align-self: center;
+                padding: 4px 12px;
+                border: var(--Main_Button);
+                border-radius: 20px;
+                background: var(--Main_UI_Background);
+                backdrop-filter: var(--Glass_Backdrop_Filter);
+                color: var(--Main_Text_Color);
+                font-size: 12px;
+                font-family: var(--Font_Family);
+                font-weight: normal;
+                cursor: var(--Main_Cursor);
+            }
+            .Create_Account_Window_Close_Button {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 24px;
+                height: 24px;
+                padding: 0;
+                border: var(--Main_Button);
+                border-radius: 50%;
+                background: var(--Main_UI_Background);
+                backdrop-filter: var(--Glass_Backdrop_Filter);
+                color: var(--Main_Text_Color);
+                cursor: var(--Main_Cursor);
+            }
+        </style>
+        <script aria-label="Create_Account_Window_Script">
+            document.addEventListener('DOMContentLoaded', function () {
+                var win = document.querySelector('.Create_Account_Window');
+                var close = function () { win.classList.remove('Create_Account_Window_Open'); };
+                document.querySelector('.Profile_Popup_Create_Account_Button').addEventListener('click', function (event) {
+                    event.stopPropagation();
+                    win.classList.add('Create_Account_Window_Open');
+                });
+                document.querySelector('.Create_Account_Window_Close_Button').addEventListener('click', close);
+                var tabs = win.querySelectorAll('.Create_Account_Tab');
+                var panels = win.querySelectorAll('.Create_Account_Panel');
+                tabs.forEach(function (tab) {
+                    tab.addEventListener('click', function () {
+                        tabs.forEach(function (t) { t.classList.remove('Create_Account_Tab_Active'); });
+                        panels.forEach(function (pn) { pn.classList.remove('Create_Account_Panel_Active'); });
+                        tab.classList.add('Create_Account_Tab_Active');
+                        var panel = win.querySelector('.Create_Account_Panel[data-panel="' + tab.dataset.tab + '"]');
+                        if (panel) { panel.classList.add('Create_Account_Panel_Active'); }
+                    });
+                });
+                document.addEventListener('click', function (event) {
+                    if (!win.classList.contains('Create_Account_Window_Open')) { return; }
+                    if (win.contains(event.target)) { return; }
+                    close();
+                });
+                document.addEventListener('keydown', function (e) {
+                    if (e.key === 'Escape') { close(); }
+                });
+            });
+        </script>
+    </div>
+    <!-- Web Info sits outside both pages so it opens over whichever page is showing -->
+    <div class="Div_Window Left_Section">
+        <div class="Left_Section_Build" aria-label="Left_Section_Build">
+            <div class="Div_Window_Header Left_Section_Title">Web Info</div>
+        </div>
+
+        <style aria-label="Left_Section_Style">
+            .Left_Section {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                width: 200px;
+                height: calc(100dvh - 20px);
+                backdrop-filter: var(--Glass_Backdrop_Filter);
+                -webkit-backdrop-filter: var(--Glass_Backdrop_Filter);
+                transform-origin: top left;
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 1s cubic-bezier(0, 1, 0, 1);
+                z-index: 9;
+                display: none;
+            }
+            .Left_Section.Left_Section_Open {
+                transition-delay: 0.2s;
+                display: block;
+                opacity: 1;
+                pointer-events: auto;
+            }
+            @starting-style {
+                .Left_Section.Left_Section_Open {
+                    opacity: 0;
+                }
+            }
+            .Left_Section > .Left_Section_Build {
+                width: 100%;
+                height: 100%;
+                background: none;
+                border: none;
+            }
+            .Left_Section_Title {
+                position: absolute;
+                top: 4px;
+                left: 10px;
+                z-index: 5;
+                padding: 0px 10px;
+                font-family: monospace;
+                font-size: 10px;
+                letter-spacing: 0px;
+                color: var(--Main_Text_Color);
+                white-space: nowrap;
+                background-color: rgba(143, 143, 143, 0.377);
+                backdrop-filter: blur(10px);
+            }
+        </style>
+        <script aria-label="Left_Section_Script">
+            document.addEventListener('DOMContentLoaded', function () {
+                var title = document.querySelector('.Left_Section_Title');
+                var panel = document.querySelector('.Left_Section');
+                var webInfoButton = document.querySelector('.Settings_Popup_Web_Info_Button');
+                if (title) {
+                    title.addEventListener('click', function (event) {
+                        event.stopPropagation();
+                        panel.classList.toggle('Left_Section_Open');
+                    });
+                }
+                document.addEventListener('pointerdown', function (event) {
+                    if (!panel.classList.contains('Left_Section_Open')) { return; }
+                    if (panel.contains(event.target)) { return; }
+                    if (title && title.contains(event.target)) { return; }
+                    if (webInfoButton && webInfoButton.contains(event.target)) { return; }
+                    panel.classList.remove('Left_Section_Open');
+                }, true);
+            });
+        </script>
+    </div>
+
+    <div class="Top_Right_Section">
+        <div class="Top_Right_Section_Build" aria-label="Top_Right_Section_Build">
+            <button class="Top_Right_Widgets_Button" aria-label="Widgets">
+                <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+            </button>
+            <button class="Top_Right_Notification_Button" aria-label="Notifications">
+                <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+            </button>
+            <button class="Top_Right_Message_Button" aria-label="Messages">
+                <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </button>
+            <button class="Top_Right_Settings_Button" aria-label="Settings">
+                <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </button>
+            <button class="Top_Right_Profile_Button" aria-label="Profile">
+                <svg viewBox="0 0 30 30" width="10" height="10"><circle cx="15" cy="11" r="5" fill="currentColor"/><path d="M5 26c0-6 4.5-9 10-9s10 3 10 9z" fill="currentColor"/></svg>
+            </button>
+        </div>
+        <style aria-label="Top_Right_Section_Style">
+            .Top_Right_Section {
+                position: fixed;
+                top: 10px;
+                right: 10px;
+                z-index: 10;
+                border: none;
+                background: none;
+            }
+            .Top_Right_Section > .Top_Right_Section_Build {
+                display: flex;
+                gap: 10px;
+                background: none;
+                border: none;
+            }
+            .Top_Right_Section_Build > button {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: var(--Main_Button);
+                background: var(--Main_UI_Background);
+                backdrop-filter: var(--Glass_Backdrop_Filter);
+                color: var(--Main_Text_Color);
+                cursor: var(--Main_Cursor);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                overflow: hidden;
+                opacity: 0;
+                will-change: opacity;
+                transition: opacity 0.5s ease-in-out;
+            }
+            .Top_Right_Section_Build > button.Section_Intro_Shown {
+                opacity: 1;
+            }
+        </style>
+        <script aria-label="Top_Right_Section_Script">
+            // after the Sozin - X title types in, fade the buttons in first to last (0.5s each, 0.1s apart)
+            document.addEventListener('Logo_Intro_Done', function () {
+                document.querySelectorAll('.Top_Right_Section_Build > button').forEach(function (button, i) {
+                    setTimeout(function () { button.classList.add('Section_Intro_Shown'); }, i * 100);
+                });
+            });
+
+        </script>
+
+        <div class="Div_Window Settings_Popup">
+            <div class="Settings_Popup_Build" aria-label="Settings_Popup_Build">
+                <button class="Settings_Popup_Web_Info_Button">
+                    <span class="Settings_Popup_List_Icon">
+                        <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="8"/></svg>
+                    </span>
+                    <span class="Settings_Popup_List_Text">Web Info</span>
+                </button>
+            </div>
+            <style aria-label="Settings_Popup_Style">
+                .Settings_Popup {
+                    position: absolute;
+                    top: 40px;
+                    right: 30px;
+                    width: 200px;
+                    height: 300px;
+                    backdrop-filter: var(--Glass_Backdrop_Filter);
+                    -webkit-backdrop-filter: var(--Glass_Backdrop_Filter);
+                    transform-origin: top right;
+                    opacity: 0;
+                    pointer-events: none;
+                    transition: opacity 1s cubic-bezier(0, 1, 0, 1);
+                    z-index: 6;
+                }
+                .Settings_Popup.Settings_Popup_Open {
+                    transition-delay: 0.2s;
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+                .Settings_Popup > .Settings_Popup_Build {
+                    width: 100%;
+                    height: 100%;
+                    background: none;
+                    border: none;
+                }
+                .Settings_Popup_Web_Info_Button {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    width: calc(100% - 20px);
+                    height: 40px;
+                    margin: 10px;
+                    padding: 0 10px;
+                    border: none;
+                    border-radius: 10px;
+                    background: transparent;
+                    color: var(--Main_Text_Color);
+                    cursor: var(--Main_Cursor);
+                    font-size: var(--Font_Size-1);
+                    text-align: left;
+                    transition: background 0.2s;
+                }
+                .Settings_Popup_Web_Info_Button:active {
+                    transform: scale(0.98);
+                }
+                .Settings_Popup_List_Icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 0;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background: var(--Main_UI_Background);
+                }
+                .Settings_Popup_List_Text {
+                    flex: 1;
+                    font-weight: 600;
+                }
+            </style>
+            <script aria-label="Settings_Popup_Script">
+                (function () {
+                    var button = document.querySelector('.Top_Right_Settings_Button');
+                    var popup = document.querySelector('.Settings_Popup');
+                    button.addEventListener('click', function (event) {
+                        event.stopPropagation();
+                        popup.classList.toggle('Settings_Popup_Open');
+                    });
+                    var webInfoButton = popup.querySelector('.Settings_Popup_Web_Info_Button');
+                    var leftSection = document.querySelector('.Left_Section');
+                    webInfoButton.addEventListener('click', function (event) {
+                        event.stopPropagation();
+                        leftSection.classList.toggle('Left_Section_Open');
+                    });
+                    popup.addEventListener('click', function (event) {
+                        if (event.target.closest('button')) {
+                            popup.classList.remove('Settings_Popup_Open');
+                        }
+                    }, true);
+                    document.addEventListener('click', function (event) {
+                        if (!popup.classList.contains('Settings_Popup_Open')) { return; }
+                        if (popup.contains(event.target)) { return; }
+                        popup.classList.remove('Settings_Popup_Open');
+                    });
+                })();
+            </script>
+        </div>
+
+        <div class="Div_Window Profile_Popup">
+            <div class="Profile_Popup_Build" aria-label="Profile_Popup_Build">
+                <button class="Profile_Popup_Create_Account_Button">
+                    <span class="Profile_Popup_List_Icon">
+                        <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
+                    </span>
+                    <span class="Profile_Popup_List_Text">Create Account</span>
+                </button>
+            </div>
+            <style aria-label="Profile_Popup_Style">
+                .Profile_Popup {
+                    position: absolute;
+                    top: 30px;
+                    right: 0;
+                    width: 200px;
+                    height: 80px;
+                    backdrop-filter: var(--Glass_Backdrop_Filter);
+                    -webkit-backdrop-filter: var(--Glass_Backdrop_Filter);
+                    transform-origin: top right;
+                    opacity: 0;
+                    pointer-events: none;
+                    transition: opacity 1s cubic-bezier(0, 1, 0, 1);
+                    z-index: 6;
+                }
+                .Profile_Popup.Profile_Popup_Open {
+                    transition-delay: 0.2s;
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+                .Profile_Popup > .Profile_Popup_Build {
+                    width: 100%;
+                    height: 100%;
+                    background: none;
+                    border: none;
+                }
+                .Profile_Popup_Create_Account_Button {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    width: calc(100% - 20px);
+                    height: 40px;
+                    margin: 10px;
+                    padding: 0 10px;
+                    border: none;
+                    border-radius: 10px;
+                    background: transparent;
+                    color: var(--Main_Text_Color);
+                    cursor: var(--Main_Cursor);
+                    font-size: var(--Font_Size-1);
+                    text-align: left;
+                    transition: background 0.2s;
+                }
+                .Profile_Popup_Create_Account_Button:active {
+                    transform: scale(0.98);
+                }
+                .Profile_Popup_List_Icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 0;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background: var(--Main_UI_Background);
+                }
+                .Profile_Popup_List_Text {
+                    flex: 1;
+                    font-weight: 600;
+                }
+            </style>
+            <script aria-label="Profile_Popup_Script">
+                (function () {
+                    var button = document.querySelector('.Top_Right_Profile_Button');
+                    var popup = document.querySelector('.Profile_Popup');
+                    button.addEventListener('click', function (event) {
+                        event.stopPropagation();
+                        popup.classList.toggle('Profile_Popup_Open');
+                    });
+                    popup.addEventListener('click', function (event) {
+                        if (event.target.closest('button')) {
+                            popup.classList.remove('Profile_Popup_Open');
+                        }
+                    }, true);
+                    document.addEventListener('click', function (event) {
+                        if (!popup.classList.contains('Profile_Popup_Open')) { return; }
+                        if (popup.contains(event.target)) { return; }
+                        popup.classList.remove('Profile_Popup_Open');
+                    });
+                })();
+            </script>
+        </div>
+    </div>
+
+    <div class="Kin_Flow">
+        <div class="Kin_Flow_Build" aria-label="Kin_Flow_Build">
+            <button class="Kin_Flow_Close_Button" aria-label="Close Kin Flow">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+            </button>
+            <div class="Kin_Flow_Sidebar" aria-label="Kin_Flow_Sidebar">
+                <button class="Kin_Flow_Nav_Button" aria-label="World">
+                    <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </button>
+                <button class="Kin_Flow_Nav_Button" aria-label="Message">
+                    <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                </button>
+                <button class="Kin_Flow_Nav_Button" aria-label="Feed">
+                    <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+                </button>
+                <button class="Kin_Flow_Nav_Button" aria-label="News">
+                    <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                </button>
+                <button class="Kin_Flow_Nav_Button" aria-label="Market">
+                    <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                </button>
+            </div>
+            <div class="Kin_Flow_Search" aria-label="Kin_Flow_Search">
+                <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="text" placeholder="Search" aria-label="Search Kin Flow">
+            </div>
+            <div class="Kin_Flow_Content" aria-label="Kin_Flow_Content">
+                <div class="Kin_Flow_Tab Kin_Flow_Tab_World Kin_Flow_Tab_Active" aria-label="World"></div>
+                <div class="Kin_Flow_Tab Kin_Flow_Tab_Message" aria-label="Message"></div>
+                <div class="Kin_Flow_Tab Kin_Flow_Tab_Feed" aria-label="Feed"></div>
+                <div class="Kin_Flow_Tab Kin_Flow_Tab_News" aria-label="News"></div>
+                <div class="Kin_Flow_Tab Kin_Flow_Tab_Market" aria-label="Market"></div>
+            </div>
+        </div>
+        <style aria-label="Kin_Flow_Style">
+            .Kin_Flow {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100dvw;
+                height: 100dvh;
+                border: var(--Main_Div);
+                border-radius: var(--Div_Border-radius);
+                background: var(--Main_UI_Background);
+                backdrop-filter: var(--Glass_Backdrop_Filter);
+                box-shadow: var(--Box_Shadow);
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 1s cubic-bezier(0, 1, 0, 1);
+                z-index: 20;
+                display: none;
+            }
+            .Kin_Flow.Kin_Flow_Open {
+                transition-delay: 0.2s;
+                display: block;
+                opacity: 1;
+                pointer-events: auto;
+            }
+            @starting-style {
+                .Kin_Flow.Kin_Flow_Open {
+                    opacity: 0;
+                }
+            }
+            .Kin_Flow > .Kin_Flow_Build {
+                width: 100%;
+                height: 100%;
+                background: none;
+                border: none;
+            }
+            .Kin_Flow_Close_Button {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 24px;
+                height: 24px;
+                padding: 0;
+                border: var(--Main_Button);
+                border-radius: 50%;
+                background: var(--Main_UI_Background);
+                backdrop-filter: var(--Glass_Backdrop_Filter);
+                color: var(--Main_Text_Color);
+                cursor: var(--Main_Cursor);
+            }
+            .Kin_Flow_Sidebar {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                display: flex;
+                gap: 10px;
+                border: none;
+                background: none;
+            }
+            .Kin_Flow_Nav_Button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 20px;
+                height: 20px;
+                padding: 0;
+                border: var(--Main_Button);
+                border-radius: 50%;
+                background: var(--Main_UI_Background);
+                backdrop-filter: var(--Glass_Backdrop_Filter);
+                color: var(--Main_Text_Color);
+                cursor: var(--Main_Cursor);
+            }
+            .Kin_Flow_Nav_Button.Kin_Flow_Nav_Active {
+                background: #ffffff66;
+            }
+            .Kin_Flow_Content {
+                position: absolute;
+                top: 40px;
+                left: 10px;
+                right: 10px;
+                bottom: 10px;
+                border: none;
+                background: none;
+            }
+            .Kin_Flow_Tab {
+                width: 100%;
+                height: 100%;
+                border: var(--Main_Div);
+                border-radius: var(--Div_Border-radius);
+                background: var(--Main_UI_Background);
+                backdrop-filter: var(--Glass_Backdrop_Filter);
+                box-shadow: var(--Box_Shadow);
+                opacity: 0;
+                display: none;
+                transition: opacity 0.3s cubic-bezier(0, 1, 0, 1);
+            }
+            .Kin_Flow_Tab.Kin_Flow_Tab_Active {
+                display: flex;
+                flex-direction: column;
+                opacity: 1;
+            }
+            @starting-style {
+                .Kin_Flow_Tab.Kin_Flow_Tab_Active {
+                    opacity: 0;
+                }
+            }
+            .Kin_Flow_Search {
+                position: absolute;
+                top: 10px;
+                right: 40px;
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                width: 200px;
+                height: 20px;
+                padding: 0 8px;
+                box-sizing: border-box;
+                border: var(--Main_Input);
+                border-radius: 999px;
+                background: var(--Main_UI_Background);
+                backdrop-filter: var(--Glass_Backdrop_Filter);
+                box-shadow: var(--Box_Shadow);
+            }
+            .Kin_Flow_Search svg {
+                flex: none;
+                color: var(--Main_Text_Color);
+                opacity: 0.6;
+            }
+            .Kin_Flow_Search input {
+                flex: 1;
+                min-width: 0;
+                height: 100%;
+                padding: 0;
+                border: none;
+                background: none;
+                color: var(--Main_Text_Color);
+                font-size: 10px;
+                outline: none;
+            }
+            .Kin_Flow_Search input::placeholder {
+                color: var(--Main_Text_Color);
+                opacity: 0.6;
+            }
+        </style>
+        <script aria-label="Kin_Flow_Script">
+            (function () {
+                var win = document.querySelector('.Kin_Flow');
+                var close = function () { win.classList.remove('Kin_Flow_Open'); };
+                document.querySelector('.Apps_Section_App[aria-label="Kin Flow"]').addEventListener('click', function (event) {
+                    event.stopPropagation();
+                    win.classList.add('Kin_Flow_Open');
+                });
+                document.querySelector('.Kin_Flow_Close_Button').addEventListener('click', close);
+                document.addEventListener('keydown', function (e) {
+                    if (e.key === 'Escape') { close(); }
+                });
+
+                // tab switching: click a nav button to show its tab
+                var navButtons = document.querySelectorAll('.Kin_Flow_Nav_Button');
+                navButtons.forEach(function (button, i) {
+                    if (i === 0) { button.classList.add('Kin_Flow_Nav_Active'); }
+                    button.addEventListener('click', function () {
+                        navButtons.forEach(function (b) { b.classList.remove('Kin_Flow_Nav_Active'); });
+                        document.querySelectorAll('.Kin_Flow_Tab').forEach(function (t) { t.classList.remove('Kin_Flow_Tab_Active'); });
+                        button.classList.add('Kin_Flow_Nav_Active');
+                        var name = button.getAttribute('aria-label');
+                        document.querySelector('.Kin_Flow_Tab_' + name).classList.add('Kin_Flow_Tab_Active');
+                    });
+                });
+            })();
+        </script>
+    </div>
+    
+</body>
+</html>

@@ -670,7 +670,7 @@ round everything to the nearst 10th px.
                 <div class="Games_Section_Build" aria-label="Games_Section_Build">
                     <p class="Games_Section_Title">Games</p>
                     <div class="Games_Section_Grid">
-                        <button class="Games_Section_Game" aria-label="Game 1"></button>
+                        <button class="Games_Section_Game" aria-label="Golf Madness" title="Golf Madness"><img class="Games_Section_Game_Image" src="Images/Games/Golf_Madness/golf-madness-tile.jpg" alt="Golf Madness" draggable="false"><span class="Games_Section_Game_Name">Golf Madness</span></button>
                         <button class="Games_Section_Game" aria-label="Game 2"></button>
                         <button class="Games_Section_Game" aria-label="Game 3"></button>
                     </div>
@@ -718,6 +718,33 @@ round everything to the nearst 10th px.
                         will-change: opacity;
                         transition: transform 0.2s, opacity 0.5s ease-in-out;
                     }
+                    .Games_Section_Game {
+                        position: relative;
+                        padding: 0;
+                        overflow: hidden;
+                    }
+                    .Games_Section_Game_Image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        pointer-events: none;
+                        user-select: none;
+                    }
+                    .Games_Section_Game_Name {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        padding: 4px 6px;
+                        font-size: 8px;
+                        text-align: left;
+                        color: var(--Main_Text_Color);
+                        background: linear-gradient(to top, #00000099, #00000000);
+                        pointer-events: none;
+                    }
                     .Games_Section_Game.Section_Intro_Shown {
                         opacity: 1;
                     }
@@ -729,6 +756,10 @@ round everything to the nearst 10th px.
                     (function () {
                         var title = document.querySelector('.Games_Section_Title');
                         title.style.visibility = 'hidden';
+                        // Golf Madness tile opens the game's page
+                        document.querySelector('.Games_Section_Game[aria-label="Golf Madness"]').addEventListener('click', function () {
+                            window.location.href = 'golf-madness.html';
+                        });
                         document.addEventListener('Apps_Section_Intro_Done', function () {
                             title.style.visibility = '';
                             window.Sozin_Section_Intro('.Games_Section_Title', '.Games_Section_Game').then(function () {
